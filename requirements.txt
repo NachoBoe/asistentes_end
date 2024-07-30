@@ -8,7 +8,6 @@ dill
 pyprojroot
 flask
 python-dotenv
-chromadb==0.3.29
 fastapi
 uvicorn
 pymongo
@@ -16,3 +15,4 @@ azure-search
 azure-search-documents
 azure-identity
 sse_starlette
+langserve
