@@ -62,7 +62,10 @@ class Input(BaseModel):
 class Output(BaseModel):
     output: Any
 
-
+# AGREGAR RUTA THE /HEALTH
+@app.get("/health")
+def health_check():
+    return 'OK'
 
 # AGREGAR RUTA POR ASISTENTE
 add_routes(
@@ -101,4 +104,4 @@ add_routes(
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="localhost", port=8000)
