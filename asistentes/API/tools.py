@@ -29,12 +29,9 @@ load_dotenv(dotenv_path=dotenv_path)
 
 # LEVANTAR DATOS
 
-## Archivos Locales
-with open('./asistentes/API/data/metodos_obj_str.pkl', 'rb') as archivo:
-    metodos_lista = dill.load(archivo)
 
 ## Indices Azure Ai Search
-index_name = "api11"
+index_name = "api_final"
 credential = AzureKeyCredential(os.getenv("AZURE_AI_SEARCH_API_KEY"))
 endpoint = os.getenv("AZURE_AI_SEARCH_SERVICE_NAME")
 embeddings = AzureOpenAIEmbeddings(model="text-embedding-ada-002", azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"), api_key=os.getenv("AZURE_OPENAI_API_KEY"))
@@ -46,10 +43,10 @@ search_client = SearchClient(endpoint=endpoint, index_name=index_name, credentia
 # FUNCIONES AUXILIARES
 def method_info_as_string(metod,params_info=False):
     strng  = ""
-    strng += f"Metodo: {metod.nombre} \n Sistema: {metod.sistema} \n Descripción: {metod.descripcion} \n "
+    strng += f"Metodo: {metod[0]} \n Sistema: {metod[1]} \n Descripción: {metod[2]} \n "
     if params_info:
-        strng  += f"{metod.entrada} \n {metod.salida} \n {metod.error} \n"
-        strng  += f"{metod.ej_in} \n {metod.ej_out}"
+        strng  += f"{metod[3]} \n {metod[4]} \n {metod[5]} \n"
+        strng  += f"{metod[6]} \n {metod[7]}"
     return strng
 
 def remover_tildes(input_str):
@@ -69,42 +66,34 @@ class method_decription(BaseModel):
 
 class method_name(BaseModel):
     method: str = Field(description="Method to search information of")
-    sistem: str = Field(description="Sistem to which the method belongs to", default="all")
+    sistem: str = Field(description="Sistem to which the method belongs to")
 
 
 
 ## TOOL 1
 @tool("get_methods_from_description", args_schema=method_decription)
-def get_method(method_description:str, sistem: str="all"):
+def get_methods_from_description(method_description:str, sistem: str="all"):
     """ Returns a list of possible methods provided a description. The parameter sistem is used to filter the search of the methods to a given sistem"""
 
     # VECTOR SEARCH
-    vector_query = VectorizedQuery(vector=embeddings.embed_query(method_description), k_nearest_neighbors=30, fields="content_vector", exhaustive=True)
+    if sistem != "all":
+        search_str = f"{sistem}. {method_description}"
+    else:
+        search_str = method_description
+    vector_query = VectorizedQuery(vector=embeddings.embed_query(method_description), k_nearest_neighbors=50, fields="vector", exhaustive=True)
     results = search_client.search(  
-        search_text=method_description,  
+        search_text=search_str,  
         vector_queries=[vector_query],
-        select=["id", "content"],
+        select=["nombre", "sistema", "descripcion"],
         query_type=QueryType.SEMANTIC, semantic_configuration_name='my-semantic-config', query_caption=QueryCaptionType.EXTRACTIVE, query_answer=QueryAnswerType.EXTRACTIVE,
         top=15,
     )
     ret_metods = []
     for res in results:
-        ret_metods.append(res["id"])
-    ret_metods = list(set(ret_metods))
-
-    # QUEADARSE CON LOS METODOS 
-    ret_metodos_obj = []
-    indices_list = []
-    for met in metodos_lista:
-        if "BT" + met.sistema + "_" + met.nombre in ret_metods:
-            ret_metodos_obj.append(met)
-            indices_list.append(ret_metods.index("BT" + met.sistema + "_" + met.nombre))
-
-    ret_metodos_obj_orden = sorted(zip(indices_list, ret_metodos_obj))
-    ret_metodos_obj = [elemento for valor, elemento in ret_metodos_obj_orden]
+        ret_metods.append((res["nombre"],res["sistema"],res["descripcion"]))
 
     resp = ""
-    for metod in ret_metodos_obj:
+    for metod in ret_metods:
         resp +=  method_info_as_string(metod) + "\n"
     return resp
 
@@ -112,44 +101,26 @@ def get_method(method_description:str, sistem: str="all"):
 
 ## TOOL 2
 @tool("get_method_info_from_name", args_schema=method_name)
-def get_method_info(method:str, sistem: str="all"):
+def get_method_info_from_name(method:str, sistem: str):
     """ Returns information (input-ouput squeema, possible errors and calling example using Soap or JSON) of a method. The parameter sistem is used to filter the search of the method to a given sistem """
 
-    # Search for the method exactly
-    possible_methods = []
-    for met in metodos_lista:
-        if met.nombre.lower().strip() == method.lower().strip():
-            possible_methods.append(met)
-    
-    if len(possible_methods) > 1 and sistem != "all":
-        ret_metodos_obj = []
-        for met in possible_methods:
-            if met.sistema.lower().strip() == sistem.lower().strip():
-                ret_metodos_obj.append(met)
-    else:
-        ret_metodos_obj = possible_methods
+    filters = f"sistema eq '{sistem}' and nombre eq '{method}'"
 
-    # In case exact match doesnt work
-    if len(ret_metodos_obj) == 0:
-        filter=""
-        if sistem != "all":
-            filter = f"sistem eq '{sistem}'"
-        # Pure Vector Search
-        vector_query = VectorizedQuery(vector=embeddings.embed_query(method), k_nearest_neighbors=10, fields="content_vector", exhaustive=True)
-        results = search_client.search(vector_queries= [vector_query],filter=filter,select=["sistem", "content","id"])
-        ret_metods_names = []
-        ret_metods_sistems = []
-        for res in results:
-            ret_metods_names.append(res["id"].split("_")[1])
-            ret_metods_sistems.append(res["id"].split("_")[0])
-        for met in metodos_lista:
-            if met.nombre in ret_metods_names:
-                indices = [indice for indice, elemento in enumerate(ret_metods_names) if elemento == met.nombre]
-                if met.sistema in [ret_metods_sistems[i] for i in indices]:
-                    ret_metodos_obj.append(met)
-    resp = ""
-    for metod in ret_metodos_obj:
-        resp +=  method_info_as_string(metod,params_info=True) + "\n"
+    # Pure Vector Search
+    results = search_client.search(  
+        search_text="", 
+        select=["nombre", "sistema", "descripcion", "entrada", "salida", "error", "ej_in", "ej_out"],
+        query_type=QueryType.SEMANTIC, semantic_configuration_name='my-semantic-config', query_caption=QueryCaptionType.EXTRACTIVE, query_answer=QueryAnswerType.EXTRACTIVE,
+        top=1,
+        filter=filters
+    )
+    ret_metod = []
+    for res in results:
+        ret_metod.append((res["nombre"],res["sistema"],res["descripcion"], res["entrada"], res["salida"], res["error"], res["ej_in"], res["ej_out"]))
+    ret_metod = ret_metod[0]
+    if len(ret_metod) == 0:
+        return "No se encontró el método. Por favor, verifique que el nombre del método y el sistema sean correctos."
+    resp =  method_info_as_string(ret_metod,params_info=True)
     return resp
 
 
@@ -158,22 +129,27 @@ def get_method_info(method:str, sistem: str="all"):
 def get_all_method_from_sistem(sistem: str="all"):
     """ Returns all methods for a given sistem. """
 
-    ret_metodos_obj = []
-    for met in metodos_lista:
-         if met.sistema.lower().strip() == remover_tildes(sistem.lower().strip()):
-            ret_metodos_obj.append(met)
+    filters = f"sistema eq '{sistem}'"
 
+    # Pure Vector Search
+    results = search_client.search(
+        search_text="",
+        select=["nombre", "sistema", "descripcion"],
+        query_type=QueryType.SEMANTIC, semantic_configuration_name='my-semantic-config', query_caption=QueryCaptionType.EXTRACTIVE, query_answer=QueryAnswerType.EXTRACTIVE,
+        top=1000,
+        filter=filters
+    )
+    
+    ret_metods = []
+    for res in results:
+        ret_metods.append((res["nombre"],res["sistema"],res["descripcion"]))
 
-    if len(ret_metodos_obj) == 0:
-        resp = "El sistema {sistem} no es parte de Bantotal"
-    else:
-        resp = ""
-        for metod in ret_metodos_obj:
-            resp +=  method_info_as_string(metod) + "\n"
-            
+    resp = ""
+    for metod in ret_metods:
+        resp +=  method_info_as_string(metod) + "\n"
+        
     return resp
 
 
 
-
-tools = [get_method, get_method_info,get_all_method_from_sistem]
+tools = [get_methods_from_description, get_method_info_from_name,get_all_method_from_sistem]
