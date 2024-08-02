@@ -14,5 +14,6 @@ pymongo
 azure-search
 azure-search-documents
 azure-identity
+azure-storage
 sse_starlette
 langserve
