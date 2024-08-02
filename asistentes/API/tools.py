@@ -62,7 +62,6 @@ class sistem(BaseModel):
 
 class method_decription(BaseModel):
     method_description: str = Field(description="Description of what the method should do")
-    sistem: str = Field(description="Sistem to which the method belongs to", default="all")
 
 class method_name(BaseModel):
     method: str = Field(description="Method to search information of")
@@ -72,17 +71,17 @@ class method_name(BaseModel):
 
 ## TOOL 1
 @tool("get_methods_from_description", args_schema=method_decription)
-def get_methods_from_description(method_description:str, sistem: str="all"):
-    """ Returns a list of possible methods provided a description. The parameter sistem is used to filter the search of the methods to a given sistem"""
+def get_methods_from_description(method_description:str):
+    """ Returns a list of possible methods provided a description. It ONLY returns the name, sistem and brief description of the methods. """
 
-    # VECTOR SEARCH
-    if sistem != "all":
-        search_str = f"{sistem}. {method_description}"
-    else:
-        search_str = method_description
+    # # VECTOR SEARCH
+    # if sistem != "all":
+    #     search_str = f"{sistem}. {method_description}"
+    # else:
+    #     search_str = method_description
     vector_query = VectorizedQuery(vector=embeddings.embed_query(method_description), k_nearest_neighbors=50, fields="vector", exhaustive=True)
     results = search_client.search(  
-        search_text=search_str,  
+        search_text=method_description,  
         vector_queries=[vector_query],
         select=["nombre", "sistema", "descripcion"],
         query_type=QueryType.SEMANTIC, semantic_configuration_name='my-semantic-config', query_caption=QueryCaptionType.EXTRACTIVE, query_answer=QueryAnswerType.EXTRACTIVE,
@@ -102,7 +101,7 @@ def get_methods_from_description(method_description:str, sistem: str="all"):
 ## TOOL 2
 @tool("get_method_info_from_name", args_schema=method_name)
 def get_method_info_from_name(method:str, sistem: str):
-    """ Returns information (input-ouput squeema, possible errors and calling example using Soap or JSON) of a method. The parameter sistem is used to filter the search of the method to a given sistem """
+    """ Returns information (input-ouput squeema, possible errors and calling example using Soap or JSON) of a method."""
 
     filters = f"sistema eq '{sistem}' and nombre eq '{method}'"
 
@@ -124,32 +123,32 @@ def get_method_info_from_name(method:str, sistem: str):
     return resp
 
 
-## TOOL 3
-@tool("get_all_method_from_sistem", args_schema=sistem)
-def get_all_method_from_sistem(sistem: str="all"):
-    """ Returns all methods for a given sistem. """
+# ## TOOL 3
+# @tool("get_all_method_from_sistem", args_schema=sistem)
+# def get_all_method_from_sistem(sistem: str="all"):
+#     """ Returns all methods for a given sistem. Only returns the name, sistem and brief description of the methods. """
 
-    filters = f"sistema eq '{sistem}'"
+#     filters = f"sistema eq '{sistem}'"
 
-    # Pure Vector Search
-    results = search_client.search(
-        search_text="",
-        select=["nombre", "sistema", "descripcion"],
-        query_type=QueryType.SEMANTIC, semantic_configuration_name='my-semantic-config', query_caption=QueryCaptionType.EXTRACTIVE, query_answer=QueryAnswerType.EXTRACTIVE,
-        top=1000,
-        filter=filters
-    )
+#     # Pure Vector Search
+#     results = search_client.search(
+#         search_text="",
+#         select=["nombre", "sistema", "descripcion"],
+#         query_type=QueryType.SEMANTIC, semantic_configuration_name='my-semantic-config', query_caption=QueryCaptionType.EXTRACTIVE, query_answer=QueryAnswerType.EXTRACTIVE,
+#         top=1000,
+#         filter=filters
+#     )
     
-    ret_metods = []
-    for res in results:
-        ret_metods.append((res["nombre"],res["sistema"],res["descripcion"]))
+#     ret_metods = []
+#     for res in results:
+#         ret_metods.append((res["nombre"],res["sistema"],res["descripcion"]))
 
-    resp = ""
-    for metod in ret_metods:
-        resp +=  method_info_as_string(metod) + "\n"
+#     resp = ""
+#     for metod in ret_metods:
+#         resp +=  method_info_as_string(metod) + "\n"
         
-    return resp
+#     return resp
 
 
 
-tools = [get_methods_from_description, get_method_info_from_name,get_all_method_from_sistem]
+tools = [get_methods_from_description, get_method_info_from_name]#,get_all_method_from_sistem]
