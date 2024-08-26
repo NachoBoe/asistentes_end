@@ -1,0 +1,173 @@
+{
+    "id": 64,
+    "nombre": "CrearParaPersonaJuridica",
+    "descripcion": "Método para crear una persona jurídica y su cuenta cliente.",
+    "entrada": {
+        "sdtPersonaJuridica": {
+            "type": "object",
+            "description": "Datos de la persona jurídica.",
+            "properties": {
+                "paisId": {
+                    "type": "number",
+                    "description": "Identificador del país."
+                },
+                "pais": {
+                    "type": "string",
+                    "description": "Nombre del país."
+                },
+                "tipoDocumentoId": {
+                    "type": "number",
+                    "description": "Identificador del tipo de documento."
+                },
+                "tipoDocumento": {
+                    "type": "string",
+                    "description": "Nombre del tipo de documento."
+                },
+                "nroDocumento": {
+                    "type": "string",
+                    "description": "Número de documento."
+                },
+                "razonSocial": {
+                    "type": "string",
+                    "description": "Razón social."
+                },
+                "nombreReducido": {
+                    "type": "string",
+                    "description": "Nombre reducido."
+                },
+                "fechaConstitucion": {
+                    "type": "string",
+                    "description": "Fecha de constitución."
+                },
+                "tipoActividadId": {
+                    "type": "number",
+                    "description": "Identificador de tipo de actividad."
+                },
+                "tipoActividad": {
+                    "type": "string",
+                    "description": "Nombre de tipo de actividad."
+                },
+                "actividadId": {
+                    "type": "number",
+                    "description": "Identificador de actividad."
+                },
+                "actividad": {
+                    "type": "string",
+                    "description": "Nombre de actividad."
+                },
+                "naturalezaJuridicaId": {
+                    "type": "number",
+                    "description": "Identificador de naturaleza jurídica."
+                },
+                "naturalezaJuridica": {
+                    "type": "string",
+                    "description": "Nombre de naturaleza jurídica."
+                },
+                "nroRegistro": {
+                    "type": "number",
+                    "description": "Número de registro."
+                },
+                "paisDomicilioId": {
+                    "type": "number",
+                    "description": "Identificador del país de domicilio."
+                },
+                "paisDomicilio": {
+                    "type": "string",
+                    "description": "Nombre del país de domicilio."
+                },
+                "departamentoId": {
+                    "type": "number",
+                    "description": "Identificador de departamento."
+                },
+                "departamento": {
+                    "type": "string",
+                    "description": "Nombre de departamento."
+                },
+                "localidadId": {
+                    "type": "number",
+                    "description": "Identificador de localidad."
+                },
+                "localidad": {
+                    "type": "string",
+                    "description": "Nombre de localidad."
+                },
+                "barrioId": {
+                    "type": "number",
+                    "description": "Identificador de barrio."
+                },
+                "barrio": {
+                    "type": "string",
+                    "description": "Nombre de barrio."
+                },
+                "calle": {
+                    "type": "string",
+                    "description": "Calle."
+                },
+                "numeroPuerta": {
+                    "type": "string",
+                    "description": "Número de puerta."
+                },
+                "apartamento": {
+                    "type": "string",
+                    "description": "Apartamento."
+                },
+                "codigoPostal": {
+                    "type": "string",
+                    "description": "Código postal."
+                },
+                "piso": {
+                    "type": "string",
+                    "description": "Piso."
+                },
+                "correoElectronico": {
+                    "type": "string",
+                    "description": "Correo electronico."
+                },
+                "telefonoFijo": {
+                    "type": "string",
+                    "description": "Número de teléfono fijo."
+                }
+            },
+            "required": [
+                "paisId",
+                "tipoDocumentoId",
+                "nroDocumento",
+                "razonSocial",
+                "fechaConstitucion",
+                "tipoActividadId",
+                "actividadId",
+                "naturalezaJuridicaId",
+                "nroRegistro",
+                "paisDomicilioId",
+                "departamentoId",
+                "localidadId",
+                "barrioId"
+            ]
+        },
+        "sdtIntegrantesJuridicosAlta": {
+            "type": "object",
+            "description": "Listado de personas físicas integrantes de la persona jurídica.",
+            "properties": {
+                "personaUId": {
+                    "type": "number",
+                    "description": "Identificador único de persona."
+                },
+                "vinculoId": {
+                    "type": "number",
+                    "description": "Identificador de vínculo."
+                },
+                "participacion": {
+                    "type": "number",
+                    "description": "Porcentaje de participación del integrante."
+                }
+            }
+        }
+    },
+    "salida": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "sistema": "Clientes"
+}

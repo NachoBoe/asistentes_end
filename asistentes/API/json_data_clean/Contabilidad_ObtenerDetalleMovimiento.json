@@ -1,0 +1,104 @@
+{
+    "id": 155,
+    "nombre": "ObtenerDetalleMovimiento",
+    "descripcion": "Método para obtener el detalle de un movimiento contable.",
+    "entrada": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento."
+        }
+    },
+    "salida": {
+        "sdtDetalleAsiento": {
+            "type": "object",
+            "description": "Datos del movimiento.",
+            "properties": {
+                "sucursalId": {
+                    "type": "number",
+                    "description": "Identificador de sucursal."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del movimiento."
+                },
+                "usuarioIngreso": {
+                    "type": "string",
+                    "description": "Usuario de ingreso del movimiento."
+                },
+                "usuarioConfirmacion": {
+                    "type": "string",
+                    "description": "Usuario de confirmación del movimiento."
+                },
+                "fechaContabilizacion": {
+                    "type": "string",
+                    "description": "Fecha de contabilización."
+                },
+                "hora": {
+                    "type": "string",
+                    "description": "Hora de contabilización."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha valor."
+                },
+                "anulado": {
+                    "type": "string",
+                    "description": "¿Anulado? (S/N)"
+                },
+                "movimientoUIdOriginal": {
+                    "type": "number",
+                    "description": "Identificador único de movimiento original."
+                },
+                "movimientoUIdAnulacion": {
+                    "type": "number",
+                    "description": "Identificador único de movimiento de anulación."
+                },
+                "ordinales": {
+                    "type": "object",
+                    "description": "Listado de ordinales del movimiento.",
+                    "properties": {
+                        "operacionUId": {
+                            "type": "number",
+                            "description": "Identificador único de operación."
+                        },
+                        "idOperacionBT": {
+                            "type": "string",
+                            "description": "Identificador String Bantotal (concatenación de todos los conceptos claves de la operación)."
+                        },
+                        "producto": {
+                            "type": "object",
+                            "description": "Datos del Producto.",
+                            "properties": {
+                                "productoUId": {
+                                    "type": "number",
+                                    "description": "Identificador único de producto."
+                                },
+                                "nombre": {
+                                    "type": "string",
+                                    "description": "Nombre del producto."
+                                },
+                                "moneda": {
+                                    "type": "string",
+                                    "description": "Símbolo de moneda."
+                                },
+                                "papel": {
+                                    "type": "string",
+                                    "description": "Símbolo de papel."
+                                }
+                            }
+                        },
+                        "debitoCredito": {
+                            "type": "string",
+                            "description": "¿Es débito o crédito? (Crédito: 'C', Débito: 'D')."
+                        },
+                        "importe": {
+                            "type": "number",
+                            "description": "Importe."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "Contabilidad"
+}

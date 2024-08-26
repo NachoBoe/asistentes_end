@@ -1,0 +1,13 @@
+{
+    "id": 46,
+    "nombre": "RechazarArchivo",
+    "descripcion": "Método para rechazar ordenes del archivo.",
+    "entrada": {
+        "archivoId": {
+            "type": "number",
+            "description": "Identificador de archivo."
+        }
+    },
+    "salida": {},
+    "sistema": "CASHManagement"
+}

@@ -1,0 +1,21 @@
+{
+    "id": 2,
+    "nombre": "ModificarCuentaOrigen",
+    "descripcion": "Método para modificar la cuenta de origen desde donde se toman los fondos para el ahorro.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "ahorroUId": {
+            "type": "number",
+            "description": "Identificador único de la operación de ahorro."
+        },
+        "cuentaUId": {
+            "type": "number",
+            "description": "Identificador único de la nueva operación cuenta origen del ahorro."
+        }
+    },
+    "salida": {},
+    "sistema": "AhorroProgramado"
+}

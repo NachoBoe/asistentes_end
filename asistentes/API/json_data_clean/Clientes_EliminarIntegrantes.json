@@ -1,0 +1,17 @@
+{
+    "id": 69,
+    "nombre": "EliminarIntegrantes",
+    "descripcion": "Método para eliminar un integrante de una cuenta cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {},
+    "sistema": "Clientes"
+}

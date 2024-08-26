@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo permite realizar validaciones de la información relativa a domicilios ingresada en el sistema Bantotal a través del panel HSNGC47. Se pueden realizar operaciones de agregar, modificar o consultar información relacionada con domicilios, utilizando diversas variables que representan datos específicos del cliente y del sistema.
+
+Las posibilidades que se admiten incluyen la validación de datos como la fecha de apertura del sistema, la empresa, el país, el tipo de documento, el número de documento, el modo de ejecución y la cuenta del cliente.

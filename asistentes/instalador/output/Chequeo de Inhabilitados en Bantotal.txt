@@ -1,0 +1,16 @@
+- Opciones generales:
+  - Opción General de Procesos Nº 1539: ¿Realizar control por nombre?
+
+- Guías y Guías Especiales de proceso:
+  - Código: 434, Correlativo: 1
+  - Código: 1044, Correlativo: 1
+
+- Programas particulares:
+  - Programa PRGLN002: Chequeo contra Listas de Inhabilitados por identificación de persona y por nombre-apellido o denominación.
+  - Programa RRGLN04: Controla 2 nombres y 2 apellidos en el chequeo contra Listas de Inhabilitados.
+  - Programa HSTD0012: Realiza chequeo al dar de alta una persona, generando un aviso si pertenece a una lista negra.
+  - Programa HSTD0013: Realiza chequeo al dar de alta una persona, generando un aviso si pertenece a una lista negra.
+  - Programa HSTDR108A: Controla que al agregar un integrante a una cuenta avise si pertenece a una lista negra.
+
+Descripción general de la funcionalidad:
+El procedimiento PRGLN002 permite realizar un chequeo contra Listas de Inhabilitados utilizando la identificación de la persona. Si no se encuentra coincidencia, se puede realizar una búsqueda adicional por nombre-apellido o denominación, dependiendo de si se trata de una persona física o jurídica. El procedimiento retorna un resultado que indica si se encontró a la persona en las listas, junto con el código y la descripción de la lista. Se pueden realizar búsquedas más específicas utilizando dos nombres y dos apellidos. Además, hay programas que controlan el alta de personas y la adición de integrantes a cuentas, generando avisos si se detecta que pertenecen a listas negras.

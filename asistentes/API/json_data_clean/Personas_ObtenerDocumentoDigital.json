@@ -1,0 +1,56 @@
+{
+    "id": 357,
+    "nombre": "ObtenerDocumentoDigital",
+    "descripcion": "Método para obtener los datos de un documento digital de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "documentoId": {
+            "type": "number",
+            "description": "Identificador de documento."
+        }
+    },
+    "salida": {
+        "sdtDocumentosDigitales": {
+            "type": "object",
+            "description": "Datos de documento digital.",
+            "properties": {
+                "DocumentoId": {
+                    "type": "number",
+                    "description": "Identificador del documento digital."
+                },
+                "TipoDocumentoDigital": {
+                    "type": "string",
+                    "description": "Tipo del documento digital."
+                },
+                "Nombre": {
+                    "type": "string",
+                    "description": "Nombre del documento digital."
+                },
+                "Version": {
+                    "type": "number",
+                    "description": "Número de versión del documento digital."
+                },
+                "Instancia": {
+                    "type": "number",
+                    "description": "Titulo del documento digital."
+                },
+                "FechaEmision": {
+                    "type": "string",
+                    "description": "Fecha de emisión del documento digital."
+                },
+                "FechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de Vencimiento del documento digital."
+                },
+                "Archivo": {
+                    "type": "string",
+                    "description": "Documento digital codificado en base 64."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

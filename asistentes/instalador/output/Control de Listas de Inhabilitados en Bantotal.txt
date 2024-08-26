@@ -1,0 +1,5 @@
+- Opciones generales:
+  - Opción General de Proceso No. 434
+
+Descripción general de la funcionalidad:
+El control contra Listas de Inhabilitados se habilita mediante un parámetro específico. Este control se basa en la lógica institucional de las listas de inhabilitados, aunque se puede incorporar un programa particular que lo reemplace. El control se lleva a cabo en dos instancias: al ingresar el país, tipo y número de documento; y al ingresar el primer nombre y primer apellido en el caso de personas físicas, o la razón social en el caso de personas jurídicas.

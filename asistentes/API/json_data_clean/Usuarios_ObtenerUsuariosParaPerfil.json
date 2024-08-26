@@ -1,0 +1,36 @@
+{
+    "id": 521,
+    "nombre": "ObtenerUsuariosParaPerfil",
+    "descripcion": "Método para obtener la lista de usuarios que tiene asociados determinado perfil.",
+    "entrada": {
+        "perfil": {
+            "type": "string",
+            "description": "Peril de usuario."
+        }
+    },
+    "salida": {
+        "sdtUsuarios": {
+            "type": "object",
+            "description": "Listado de usuarios.",
+            "properties": {
+                "empresa": {
+                    "type": "string",
+                    "description": "Nombre de la empresa."
+                },
+                "usuario": {
+                    "type": "string",
+                    "description": "Código del usuario."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre del usuario."
+                },
+                "ultimoAvisoActividad": {
+                    "type": "string",
+                    "description": "Último aviso de actividad del usuario."
+                }
+            }
+        }
+    },
+    "sistema": "Usuarios"
+}

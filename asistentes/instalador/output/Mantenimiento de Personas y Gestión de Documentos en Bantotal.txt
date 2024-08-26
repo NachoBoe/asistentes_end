@@ -1,0 +1,17 @@
+**Descripción general de la funcionalidad:**
+El programa HSNGC001 - Mantenimiento de Personas permite agregar, modificar o eliminar personas físicas o jurídicas, así como consultar información adicional del cliente. Se sugiere un país y tipo de documento por defecto, y se pueden aplicar filtros por nombre, tipo de persona o número de documento. La clave identificadora de una persona se compone de su país, tipo y número de documento identificatorio.
+
+**Opciones generales:**
+- Opción General de Procesos No. 418: Se define en ‘S’ para utilizar documento extendido (25 caracteres).
+
+**Guías y Guías Especiales de proceso:**
+- Guía de Procesos No. 307: Define el país de la instalación y el tipo de documento más utilizado en dicho país.
+
+**Programas particulares:**
+- Programa TTRN999: Utilizado para la numeración interna de la persona a partir del tipo de numerador 40.
+- Programa Ptrd001: Permite habilitar el botón ‘Eliminar’ a otros niveles de usuarios.
+
+**Tablas:**
+- Tabla Fsm001: Almacena las personas.
+- Tabla FSE201: Almacena el número de documento extendido.
+- Tabla FSN999: Utilizada por el programa TTRN999.

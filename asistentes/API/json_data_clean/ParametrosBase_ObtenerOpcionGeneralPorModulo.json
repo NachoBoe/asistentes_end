@@ -1,0 +1,40 @@
+{
+    "id": 312,
+    "nombre": "ObtenerOpcionGeneralPorModulo",
+    "descripcion": "Método para obtener los datos de una opción general de un determinado módulo.",
+    "entrada": {
+        "empresaId": {
+            "type": "number",
+            "description": "Código de empresa [Hidden]."
+        },
+        "modulo": {
+            "type": "number",
+            "description": "Identificador de módulo Bantotal."
+        },
+        "codigo": {
+            "type": "number",
+            "description": "Código de la opción general de procesos."
+        }
+    },
+    "salida": {
+        "sdtOpcionGeneralModulo": {
+            "type": "object",
+            "description": "Datos de la opción general de procesos.",
+            "properties": {
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de la opción general de procesos."
+                },
+                "identificador": {
+                    "type": "number",
+                    "description": "Código de la opción general de procesos."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor de la opción general de procesos (S/N)"
+                }
+            }
+        }
+    },
+    "sistema": "ParametrosBase"
+}

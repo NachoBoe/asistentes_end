@@ -1,0 +1,32 @@
+{
+    "id": 113,
+    "nombre": "ObtenerActividadesPorTipo",
+    "descripcion": "Método para obtener actividades por tipo.",
+    "entrada": {
+        "tipoActividadId": {
+            "type": "number",
+            "description": "Identificador de tipo de actividad."
+        }
+    },
+    "salida": {
+        "sdtActividades": {
+            "type": "object",
+            "description": "Listado de actividades.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de actividad."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de actividad."
+                },
+                "identificadorEntidadReguladora": {
+                    "type": "number",
+                    "description": "Identificador de entidad reguladora."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

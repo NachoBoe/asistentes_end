@@ -1,0 +1,33 @@
+{
+    "id": 54,
+    "nombre": "ActualizarDocumentoDigital",
+    "descripcion": "Método para actualizar el documento digital de una cuenta cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cuenta."
+        },
+        "documentoId": {
+            "type": "number",
+            "description": "Identificador del documento."
+        },
+        "nombre": {
+            "type": "string",
+            "description": "Nombre del documento."
+        },
+        "archivoCodificado": {
+            "type": "string",
+            "description": "Archivo a asociar codificado en Base 64."
+        },
+        "fechaEmision": {
+            "type": "string",
+            "description": "Fecha de emisión del documento (en caso que corresponda)."
+        },
+        "fechaVencimiento": {
+            "type": "string",
+            "description": "Fecha de emisión del documento (en caso que corresponda)."
+        }
+    },
+    "salida": {},
+    "sistema": "Clientes"
+}

@@ -1,0 +1,36 @@
+{
+    "id": 295,
+    "nombre": "ObtenerComisionesCuota",
+    "descripcion": "Método para obtener las comisiones parametrizadas por cuota para un producto de préstamos.",
+    "entrada": {
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador único de producto."
+        }
+    },
+    "salida": {
+        "sdtComisionesCuota": {
+            "type": "object",
+            "description": "Listado de comisiones.",
+            "properties": {
+                "porcentaje": {
+                    "type": "number",
+                    "description": "Porcentaje de comisión."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de la comisión."
+                },
+                "importe": {
+                    "type": "number",
+                    "description": "Importe de la comisión."
+                },
+                "codigo": {
+                    "type": "number",
+                    "description": "Código de comisión."
+                }
+            }
+        }
+    },
+    "sistema": "ModeladorPrestamos"
+}

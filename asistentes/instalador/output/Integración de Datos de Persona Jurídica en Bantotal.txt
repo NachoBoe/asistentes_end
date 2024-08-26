@@ -1,0 +1,10 @@
+La funcionalidad detallada en el archivo se refiere a la integración de datos de personas jurídicas en el sistema Bantotal, específicamente en el contexto del SNGC22. Este sistema permite gestionar información relacionada con entidades legales, incluyendo su identificación y características relevantes.
+
+Los campos definidos en el archivo son:
+
+- **sngc22PJPa**: Tipo N (3.0) - sngc22 PJpais
+- **sngc22PJTD**: Tipo N (2.0) - sngc22 Pjtdoc
+- **sngc22PJND**: Tipo C (12) - sngc22 Pjndoc
+- **sngc22sdt**: Tipo L(2000) - sngc22sdt
+
+Las posibilidades que se admiten incluyen la captura y almacenamiento de datos relacionados con el país de la persona jurídica, el tipo de documento, el número de documento y otros detalles relevantes en un formato estructurado.

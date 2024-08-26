@@ -1,0 +1,26 @@
+{
+    "id": 218,
+    "nombre": "ObtenerSaldoDisponible",
+    "descripcion": "Método para obtener el total de saldo disponible de una cuenta vista.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        }
+    },
+    "salida": {
+        "estado": {
+            "type": "number",
+            "description": "Estado de la operación."
+        },
+        "saldoDisponible": {
+            "type": "number",
+            "description": "Saldo disponible de la operación."
+        },
+        "moneda": {
+            "type": "string",
+            "description": "Signo de la moneda de la operación."
+        }
+    },
+    "sistema": "CuentasVista"
+}

@@ -1,0 +1,23 @@
+{
+    "id": 139,
+    "nombre": "ObtenerPizarras",
+    "descripcion": "Método para obtener un listado de los tipos de pizarras ingresados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtPizarras": {
+            "type": "object",
+            "description": "Listado de pizarras.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de pizarra."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripcion de pizarra."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

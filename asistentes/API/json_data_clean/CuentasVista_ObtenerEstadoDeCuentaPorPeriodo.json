@@ -1,0 +1,116 @@
+{
+    "id": 212,
+    "nombre": "ObtenerEstadoDeCuentaPorPeriodo",
+    "descripcion": "Método para obtener el estado de cuenta y los movimientos realizados para una operación en determinado rango de fechas.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "fechaDesde": {
+            "type": "string",
+            "description": "Fecha desde la cual se emite el estado de cuenta."
+        },
+        "fechaHasta": {
+            "type": "string",
+            "description": "Fecha hasta la cual se emite el estado de cuenta."
+        },
+        "cantidadMovimientos": {
+            "type": "number",
+            "description": "Cantidad de movimientos [Hidden: Valor fijo 20 para este método]."
+        }
+    },
+    "salida": {
+        "sdtEstadoDeCuenta": {
+            "type": "object",
+            "description": "Datos de Estado de Cuenta.",
+            "properties": {
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador de producto."
+                },
+                "fechaDesde": {
+                    "type": "string",
+                    "description": "Fecha desde la cual se emite el estado de cuenta."
+                },
+                "fechaHasta": {
+                    "type": "string",
+                    "description": "Fecha hasta la cual se emite el estado de cuenta."
+                },
+                "saldoPartida": {
+                    "type": "number",
+                    "description": "Saldo inicial."
+                },
+                "movimientos": {
+                    "type": "object",
+                    "description": "Datos de Movimiento.",
+                    "properties": {
+                        "movimientoUId": {
+                            "type": "number",
+                            "description": "Identificador de movimiento."
+                        },
+                        "fecha": {
+                            "type": "string",
+                            "description": "Fecha de movimiento."
+                        },
+                        "hora": {
+                            "type": "string",
+                            "description": "Hora de movimiento."
+                        },
+                        "concepto": {
+                            "type": "string",
+                            "description": "Concepto de movimiento."
+                        },
+                        "referencia": {
+                            "type": "string",
+                            "description": "Referencia."
+                        },
+                        "numeroCheque": {
+                            "type": "number",
+                            "description": "Número de cheque."
+                        },
+                        "debitoCredito": {
+                            "type": "string",
+                            "description": "Debito o Credito (D o C)."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Simbolo de moneda."
+                        },
+                        "importe": {
+                            "type": "number",
+                            "description": "Importe de movimiento."
+                        },
+                        "tipoCambio": {
+                            "type": "number",
+                            "description": "Tipo de cambio de moneda."
+                        },
+                        "arbitraje": {
+                            "type": "number",
+                            "description": "Arbitraje de moneda."
+                        },
+                        "saldo": {
+                            "type": "number",
+                            "description": "Saldo de Cuenta Vista."
+                        },
+                        "ordinal": {
+                            "type": "number",
+                            "description": "Ordinal."
+                        },
+                        "datosAdicionales": {
+                            "type": "object",
+                            "description": "Datos Adicionales.",
+                            "properties": {
+                                "detalle": {
+                                    "type": "string",
+                                    "description": "Detalle del dato adicional."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "CuentasVista"
+}

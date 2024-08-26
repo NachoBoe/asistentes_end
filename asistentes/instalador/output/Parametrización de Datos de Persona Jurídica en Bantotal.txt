@@ -1,0 +1,10 @@
+**Descripción general de la funcionalidad:**
+El archivo detalla la parametrización y configuración necesaria para el manejo de datos de personas jurídicas en el sistema Bantotal. Se establecen los pasos para crear literales, conceptos y elementos de programa, así como la parametrización de datos obligatorios y no obligatorios para la creación de una persona jurídica. Además, se especifican los vínculos entre personas jurídicas y personas físicas, así como los controles asociados a la integración de estos datos.
+
+**Opciones generales:**
+- Control de vínculo: se controla que la sumatoria de porcentajes ingresados sea 100. Es posible deshabilitar dicho control ingresando la opción general de proceso código 23570 desde el panel HFST200. Por defecto se realiza el control.
+
+**Guías y Guías Especiales de proceso:**
+- Guía de Procesos 1951, correlativo 2: Caracteres especiales válidos para la Razón Social.
+- Guía de Proceso Nº 1941, Correlativo 2: Parametrización para admitir símbolos en la razón social.
+- Guía de procesos 2099: Identificación de vínculos que habilitan el campo de ingreso del porcentaje, ingresando en el correlativo el código de vínculo incrementado en 100.

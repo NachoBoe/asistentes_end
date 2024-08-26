@@ -1,0 +1,34 @@
+{
+    "id": 459,
+    "nombre": "PagarCuotaTerceros",
+    "descripcion": "Método para realizar el pago de cuota de un préstamo con una cuenta de cobro de terceros.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación simulada."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "importe": {
+            "type": "number",
+            "description": "Importe a pagar."
+        },
+        "operacionCobroUId": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta vista de donde se cobrará el préstamo."
+        },
+        "referencia": {
+            "type": "string",
+            "description": "Referencia."
+        }
+    },
+    "salida": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento (asiento)."
+        }
+    },
+    "sistema": "Prestamos"
+}

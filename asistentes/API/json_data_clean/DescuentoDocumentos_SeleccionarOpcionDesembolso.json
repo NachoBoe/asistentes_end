@@ -1,0 +1,21 @@
+{
+    "id": 249,
+    "nombre": "SeleccionarOpcionDesembolso",
+    "descripcion": "Método para seleccionar una opción de desembolso.",
+    "entrada": {
+        "listaUId": {
+            "type": "number",
+            "description": "Identificador de lista."
+        },
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación de desembolso."
+        },
+        "tipoDesembolso": {
+            "type": "number",
+            "description": "Tipo de desembolso."
+        }
+    },
+    "salida": {},
+    "sistema": "DescuentoDocumentos"
+}

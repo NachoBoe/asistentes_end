@@ -1,0 +1,31 @@
+{
+    "id": 316,
+    "nombre": "ActualizarCorreoElectronico",
+    "descripcion": "Método para actualizar el correo electrónico de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "sdtCorreoElectronico": {
+            "type": "object",
+            "description": "Datos de correo electronico.",
+            "properties": {
+                "correlativo": {
+                    "type": "number",
+                    "description": "Correlativo de correo electronico."
+                },
+                "correoelectronico": {
+                    "type": "string",
+                    "description": "Correo electronico."
+                }
+            },
+            "required": [
+                "correlativo",
+                "correoelectronico"
+            ]
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

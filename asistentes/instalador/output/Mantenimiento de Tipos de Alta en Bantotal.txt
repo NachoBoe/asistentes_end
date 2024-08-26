@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere al mantenimiento de tipos de Alta en el sistema Bantotal, específicamente a través del panel de parametrización HTRT106. Los datos administrados en este panel se almacenan en la tabla FST106. Este panel permite gestionar diferentes tipos de alta, lo que implica que se pueden definir y modificar las configuraciones asociadas a estos tipos dentro del sistema.
+
+No se encontraron configuraciones asociadas, guías, reglas de negocio, programas particulares, tablas, ni otros controles y configuraciones.

@@ -1,0 +1,26 @@
+{
+    "id": 392,
+    "nombre": "ValidarExistencia",
+    "descripcion": "Método para validar la existencia de una persona.",
+    "entrada": {
+        "paisId": {
+            "type": "number",
+            "description": "Identificador del país de origen del documento."
+        },
+        "tipoDocumentoId": {
+            "type": "number",
+            "description": "Identificador del tipo de documento."
+        },
+        "numeroDocumento": {
+            "type": "string",
+            "description": "Número de documento de la persona."
+        }
+    },
+    "salida": {
+        "existe": {
+            "type": "string",
+            "description": "¿Existe? (S/N)."
+        }
+    },
+    "sistema": "Personas"
+}

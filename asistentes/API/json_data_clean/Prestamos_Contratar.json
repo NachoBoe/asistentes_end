@@ -1,0 +1,30 @@
+{
+    "id": 422,
+    "nombre": "Contratar",
+    "descripcion": "Método para dar el alta de un préstamo amortizable.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación simulada."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "operacionUId_desembolso": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta vista donde se acreditará el monto solicitado."
+        },
+        "operacionUId_cobro": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta vista de donde se cobrará el préstamo. En caso de no solicitarse una operación de cobro, enviar valor 999999999."
+        }
+    },
+    "salida": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento [Asiento]."
+        }
+    },
+    "sistema": "Prestamos"
+}

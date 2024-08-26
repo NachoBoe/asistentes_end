@@ -1,0 +1,30 @@
+{
+    "id": 30,
+    "nombre": "ObtenerInicioYFinMes",
+    "descripcion": "Método que devuelve la primer y última fecha hábil para el mes indicado. Si no se recibe identificador de calendario, devuelve para el calendario de la sucursal central.",
+    "entrada": {
+        "calendarioId": {
+            "type": "number",
+            "description": "Identificador de calendario."
+        },
+        "mesConsulta": {
+            "type": "number",
+            "description": "Mes de consulta."
+        },
+        "anioConsulta": {
+            "type": "number",
+            "description": "Año de consulta."
+        }
+    },
+    "salida": {
+        "fechaHabilInicio": {
+            "type": "string",
+            "description": "Primera fecha hábil del mes."
+        },
+        "fechaHabilFin": {
+            "type": "string",
+            "description": "Última fecha hábil del mes."
+        }
+    },
+    "sistema": "Calendarios"
+}

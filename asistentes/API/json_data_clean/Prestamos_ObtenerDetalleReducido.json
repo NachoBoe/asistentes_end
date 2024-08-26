@@ -1,0 +1,102 @@
+{
+    "id": 438,
+    "nombre": "ObtenerDetalleReducido",
+    "descripcion": "Método para obtener los datos básicos de un préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación simulada."
+        }
+    },
+    "salida": {
+        "sdtPrestamo": {
+            "type": "object",
+            "description": "Datos del préstamo",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de la operación simulada."
+                },
+                "idOperacionFmt": {
+                    "type": "string",
+                    "description": "Identificador String (concatenación de algunos conceptos claves de la operación)."
+                },
+                "idOperacionBT": {
+                    "type": "string",
+                    "description": "Identificador texto de operación."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Producto",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre de producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel."
+                        }
+                    }
+                },
+                "simboloMoneda": {
+                    "type": "string",
+                    "description": "Símbolo monetario."
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Sucursal del préstamo."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha de alta del préstamo."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento del préstamo."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo del préstamo."
+                },
+                "cantidadCuotas": {
+                    "type": "number",
+                    "description": "Cantidad de cuotas del préstamo."
+                },
+                "cantidadCuotasImpagas": {
+                    "type": "number",
+                    "description": "Cantidad de cuotas impagas."
+                },
+                "capitalOriginal": {
+                    "type": "number",
+                    "description": "Capital original del préstamo."
+                },
+                "saldoCapital": {
+                    "type": "number",
+                    "description": "Saldo de capital."
+                },
+                "tipoTasa": {
+                    "type": "string",
+                    "description": "Tipo de tasa."
+                },
+                "tasaVigente": {
+                    "type": "number",
+                    "description": "Tasa vigente."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Estado del préstamo."
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

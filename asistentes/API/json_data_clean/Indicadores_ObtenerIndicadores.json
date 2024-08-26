@@ -1,0 +1,28 @@
+{
+    "id": 253,
+    "nombre": "ObtenerIndicadores",
+    "descripcion": "Método para obtener los indicadores por agrupador.",
+    "entrada": {
+        "agrupadorId": {
+            "type": "integer",
+            "description": "Identificador de agrupador."
+        }
+    },
+    "salida": {
+        "sdtIndicadores": {
+            "type": "object",
+            "description": "Listado de indicadores.",
+            "properties": {
+                "codigo": {
+                    "type": "integer",
+                    "description": "Identificador de indicador."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del indicador."
+                }
+            }
+        }
+    },
+    "sistema": "Indicadores"
+}

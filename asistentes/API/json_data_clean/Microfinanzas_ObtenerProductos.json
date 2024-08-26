@@ -1,0 +1,36 @@
+{
+    "id": 282,
+    "nombre": "ObtenerProductos",
+    "descripcion": "Método para obtener una lista de los productos de préstamos.",
+    "entrada": {
+        "solicitudUId": {
+            "type": "number",
+            "description": "Identificador único de solicitud."
+        }
+    },
+    "salida": {
+        "sdtProductos": {
+            "type": "object",
+            "description": "Listado de productos.",
+            "properties": {
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre de producto."
+                },
+                "moneda": {
+                    "type": "string",
+                    "description": "Símbolo de moneda."
+                },
+                "papel": {
+                    "type": "string",
+                    "description": "Símbolo de papel."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

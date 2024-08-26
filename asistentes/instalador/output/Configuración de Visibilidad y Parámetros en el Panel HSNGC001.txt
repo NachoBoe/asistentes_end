@@ -1,0 +1,7 @@
+El panel ‘HSNGC001’ es parametrizable en cuanto a la determinación de la visibilidad de los campos y la descripción a mostrar. Se accede mediante el panel HSNG038 y se selecciona el programa de referencia. La visibilidad de un botón o elemento puede ser condicionada por regla de negocio o por un perfil en particular. Para realizar modificaciones de visibilidad y de descripción de los campos, el usuario debe tener asociado el perfil ‘MFINSTALL’.
+
+El botón de datos adicionales se parametriza a través de la FST900, con dos opciones: 
+- pgnom = ‘DATOSADIC’ habilita un llamado particular a un programa con los parámetros: (programa llamador, país, tipo de documento, número de documento).
+- Para habilitar el llamado a otro programa que contiene los parámetros del flujo de alta de una persona, se debe agregar un registro en la tabla FST900 al atributo pgmcall, con pgnom = 'DT_ADIC_PF', permitiendo que el modo del programa a llamar lo tome del atributo pgmcmd2. Si este atributo está vacío, por defecto enviará el modo tipo ‘INS’. 
+
+Los programas a invocar incluyen: (programa invocar, empresa, país, tipo documento, número de documento, cuenta, nombre de cuenta, procesos id, instancia, ítem, Modo).

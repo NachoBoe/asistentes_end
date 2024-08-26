@@ -1,0 +1,28 @@
+{
+    "id": 353,
+    "nombre": "ObtenerCorreosElectronicos",
+    "descripcion": "Método para obtener un listado de los correos electrónicos de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {
+        "sdtCorreoElectronicos": {
+            "type": "object",
+            "description": "Listado de correos electronicos.",
+            "properties": {
+                "correlativo": {
+                    "type": "number",
+                    "description": "Correlativo de correo electronico."
+                },
+                "correoElectronico": {
+                    "type": "string",
+                    "description": "Correo electrónico."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

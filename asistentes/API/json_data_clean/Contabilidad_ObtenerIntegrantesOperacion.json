@@ -1,0 +1,58 @@
+{
+    "id": 163,
+    "nombre": "ObtenerIntegrantesOperacion",
+    "descripcion": "Método para obtener los integrantes de una operación Bantotal, dado su identificador único.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        }
+    },
+    "salida": {
+        "sdtIntegrantes": {
+            "type": "object",
+            "description": "Datos de integrantes de la operación.",
+            "properties": {
+                "personaUId": {
+                    "type": "number",
+                    "description": "Identificador único de persona."
+                },
+                "paisDocumento": {
+                    "type": "string",
+                    "description": "Nombre del país del documento."
+                },
+                "tipoDocumento": {
+                    "type": "string",
+                    "description": "Nombre del tipo de documento."
+                },
+                "numeroDocumento": {
+                    "type": "string",
+                    "description": "Número de documento."
+                },
+                "nombre": {
+                    "type": "number",
+                    "description": "Nombre de la persona."
+                },
+                "titularidad": {
+                    "type": "object",
+                    "description": "Tipo de integrante.",
+                    "properties": {
+                        "identificador": {
+                            "type": "number",
+                            "description": "Identificador del tipo de integrante."
+                        },
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción del tipo de integrante."
+                        }
+                    }
+                },
+                "representativo": {
+                    "type": "string",
+                    "description": "Indica si es titular representativo (S/N)."
+                }
+            }
+        }
+    },
+    "sistema": "Contabilidad"
+}

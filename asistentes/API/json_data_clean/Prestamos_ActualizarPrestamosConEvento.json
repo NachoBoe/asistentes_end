@@ -1,0 +1,8 @@
+{
+    "id": 411,
+    "nombre": "ActualizarPrestamosConEvento",
+    "descripcion": "Método para actualizar préstamos con eventos de la tabla SNG912.",
+    "entrada": {},
+    "salida": {},
+    "sistema": "Prestamos"
+}

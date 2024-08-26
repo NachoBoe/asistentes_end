@@ -1,0 +1,30 @@
+{
+    "id": 29,
+    "nombre": "ObtenerInicioYFinMesSucursal",
+    "descripcion": "Método que devuelve la primer y última fecha hábil para el mes indicado, para la sucursal recibida por parámetro.",
+    "entrada": {
+        "mesConsulta": {
+            "type": "number",
+            "description": "Mes de consulta."
+        },
+        "anioConsulta": {
+            "type": "number",
+            "description": "Año de consulta."
+        },
+        "sucursalId": {
+            "type": "number",
+            "description": "Identificador de sucursal."
+        }
+    },
+    "salida": {
+        "fechaHabilInicio": {
+            "type": "string",
+            "description": "Primera fecha hábil del mes."
+        },
+        "fechaHabilFin": {
+            "type": "string",
+            "description": "Última fecha hábil del mes."
+        }
+    },
+    "sistema": "Calendarios"
+}

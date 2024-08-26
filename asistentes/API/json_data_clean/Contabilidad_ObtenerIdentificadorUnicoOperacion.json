@@ -1,0 +1,50 @@
+{
+    "id": 161,
+    "nombre": "ObtenerIdentificadorUnicoOperacion",
+    "descripcion": "Método para obtener el identificador único de una operación.",
+    "entrada": {
+        "empresaId": {
+            "type": "number",
+            "description": "Identificador de empresa."
+        },
+        "moduloId": {
+            "type": "number",
+            "description": "Módulo Bantotal."
+        },
+        "sucursalId": {
+            "type": "number",
+            "description": "Identificador de sucursal."
+        },
+        "monedaId": {
+            "type": "number",
+            "description": "Identificador de moneda."
+        },
+        "papelId": {
+            "type": "number",
+            "description": "Identificador de papel."
+        },
+        "cuentaBT": {
+            "type": "number",
+            "description": "Cuenta Bantotal."
+        },
+        "operacionBT": {
+            "type": "number",
+            "description": "Operación Bantotal."
+        },
+        "subOperacionBT": {
+            "type": "number",
+            "description": "Sub Operación Bantotal."
+        },
+        "tipoOperacionBT": {
+            "type": "number",
+            "description": "Tipo de operación Bantotal."
+        }
+    },
+    "salida": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        }
+    },
+    "sistema": "Contabilidad"
+}

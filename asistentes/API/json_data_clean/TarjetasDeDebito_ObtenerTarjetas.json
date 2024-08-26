@@ -1,0 +1,22 @@
+{
+    "id": 510,
+    "nombre": "ObtenerTarjetas",
+    "descripcion": "Método para devolver la tarjeta encriptada según las normas PCI.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de tarjeta."
+        }
+    },
+    "salida": {
+        "tarjeta": {
+            "type": "string",
+            "description": "Tarjeta encriptada."
+        }
+    },
+    "sistema": "TarjetasDeDebito"
+}

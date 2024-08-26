@@ -1,0 +1,28 @@
+{
+    "id": 180,
+    "nombre": "ObtenerEstadoDeChequera",
+    "descripcion": "Método para obtener el estado de una chequera.",
+    "entrada": {
+        "chequeraId": {
+            "type": "number",
+            "description": "Identificador de la solicitud de chequera."
+        }
+    },
+    "salida": {
+        "estado": {
+            "type": "object",
+            "description": "Estado de la chequera.",
+            "properties": {
+                "descripcion": {
+                    "type": "string",
+                    "description": "Estado actual de la solicitud de la chequera."
+                },
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador del estado."
+                }
+            }
+        }
+    },
+    "sistema": "CuentasCorrientes"
+}

@@ -1,0 +1,58 @@
+{
+    "id": 236,
+    "nombre": "ObtenerInstruccionesHabilitados",
+    "descripcion": "Método para obtener un listado de las instrucciones de un producto.",
+    "entrada": {
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador único de producto."
+        },
+        "tipoProducto": {
+            "type": "string",
+            "description": "Tipo de producto (VTO: Vencimiento, PP: Pago periódico)."
+        }
+    },
+    "salida": {
+        "sdtDatosExtendidos": {
+            "type": "object",
+            "description": "Listado de datos complementarios.",
+            "properties": {
+                "clave": {
+                    "type": "string",
+                    "description": "Clave del dato extendido."
+                },
+                "tipo": {
+                    "type": "string",
+                    "description": "Tipo de dato extendido."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor de dato extendido."
+                },
+                "Lista": {
+                    "type": "object",
+                    "description": "Lista de datos."
+                }
+            }
+        },
+        "sdtCodigoInstrucciones": {
+            "type": "object",
+            "description": "Listado de codigos de instrucciones.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción."
+                },
+                "datosExtendidos": {
+                    "type": "object",
+                    "description": "Listado de datos complementarios."
+                }
+            }
+        }
+    },
+    "sistema": "DepositosAPlazo"
+}

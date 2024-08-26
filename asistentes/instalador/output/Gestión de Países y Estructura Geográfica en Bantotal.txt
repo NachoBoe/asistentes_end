@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo permite realizar el ABM (Alta, Baja y Modificación) de 'Países' en la aplicación Bantotal. A través del panel de parametrización HFST013, los usuarios pueden ingresar y gestionar información sobre países, incluyendo la asociación de regiones, departamentos y códigos telefónicos adicionales. También se permite la definición de departamentos, localidades y barrios dentro de cada país.
+
+Las posibilidades que se admiten incluyen la gestión de los distintos departamentos que componen un país, la asignación de códigos telefónicos y postales, y la definición de localidades y barrios en cada departamento.

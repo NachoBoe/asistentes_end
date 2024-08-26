@@ -1,0 +1,79 @@
+{
+    "id": 166,
+    "nombre": "RegistrarAsiento",
+    "descripcion": "Método para registrar en el sistema un movimiento entre dos operaciones genéricas",
+    "entrada": {
+        "sdtDatosAsiento": {
+            "type": "object",
+            "description": "Datos del movimiento",
+            "properties": {
+                "operacionUId1": {
+                    "type": "number",
+                    "description": "Identificador único de operación 1"
+                },
+                "operacionUId2": {
+                    "type": "number",
+                    "description": "Identificador único de operación 2"
+                },
+                "operacionUId3": {
+                    "type": "number",
+                    "description": "Identificador único de operación 3"
+                },
+                "operacionUId4": {
+                    "type": "number",
+                    "description": "Identificador único de operación 4"
+                },
+                "operacionUId5": {
+                    "type": "number",
+                    "description": "Identificador único de operación 5"
+                },
+                "importe1": {
+                    "type": "number",
+                    "description": "Importe 1 del movimiento"
+                },
+                "importe2": {
+                    "type": "number",
+                    "description": "Importe 2 del movimiento"
+                },
+                "importe3": {
+                    "type": "number",
+                    "description": "Importe 3 del movimiento"
+                },
+                "importe4": {
+                    "type": "number",
+                    "description": "Importe 4 del movimiento"
+                },
+                "importe5": {
+                    "type": "number",
+                    "description": "Importe 5 del movimiento"
+                },
+                "importe6": {
+                    "type": "number",
+                    "description": "Importe 6 del movimiento"
+                },
+                "importe7": {
+                    "type": "number",
+                    "description": "Importe 7 del movimiento"
+                },
+                "importe8": {
+                    "type": "number",
+                    "description": "Importe 8 del movimiento"
+                },
+                "concepto": {
+                    "type": "string",
+                    "description": "Concepto del movimiento"
+                }
+            },
+            "required": [
+                "operacionUId1"
+            ]
+        }
+    },
+    "salida": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento."
+        }
+    },
+    "sistema": "Contabilidad"
+}

@@ -1,0 +1,34 @@
+{
+    "id": 159,
+    "nombre": "ObtenerIdBantotalProducto",
+    "descripcion": "Método para obtener la clave de identificación Bantotal de un producto.",
+    "entrada": {
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador único de producto."
+        }
+    },
+    "salida": {
+        "empresaId": {
+            "type": "number",
+            "description": "Identificador de empresa."
+        },
+        "moduloId": {
+            "type": "number",
+            "description": "Módulo Bantotal."
+        },
+        "tipoOperacionBT": {
+            "type": "number",
+            "description": "Tipo de operación Bantotal."
+        },
+        "monedaId": {
+            "type": "number",
+            "description": "Identificador de moneda."
+        },
+        "papelId": {
+            "type": "number",
+            "description": "Identificador de papel."
+        }
+    },
+    "sistema": "Contabilidad"
+}

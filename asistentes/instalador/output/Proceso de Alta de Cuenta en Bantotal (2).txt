@@ -1,0 +1,10 @@
+- Opciones generales:
+  - Opción General de Procesos No. 1132: Permite la integración mixta, es decir, compuesta por personas de distinta naturaleza.
+
+- Tablas:
+  - Tabla Fsn999: Utilizada para la asignación automática del número a la cuenta cliente.
+  - Tabla FST017: Define la sucursal correspondiente a Casa Central para el acceso al numerador.
+  - Tabla FST007: Contiene los códigos de titularidad disponibles.
+
+Descripción general de la funcionalidad:
+El proceso de alta de cuenta en el sistema Bantotal comienza con la determinación de los integrantes de la cuenta. Se asigna automáticamente un número a la cuenta cliente utilizando un numerador específico y se permite la integración de personas de distintas naturalezas mediante una opción general. Además, se pueden agregar, modificar o eliminar integrantes de la cuenta cliente, solicitando información como país, tipo de documento y número de documento, así como el código de titularidad correspondiente.

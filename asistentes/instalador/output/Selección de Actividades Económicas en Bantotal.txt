@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la forma en que serán visibles las distintas actividades económicas en la aplicación Bantotal. Se brinda la opción de elegir entre una Lista Desplegable o un Pop Up para la visualización de estas actividades, permitiendo al usuario seleccionar la forma que mejor se adapte a sus necesidades.
+
+No se encontraron configuraciones asociadas, reglas de negocio, programas particulares, tablas, ni otros controles y configuraciones.

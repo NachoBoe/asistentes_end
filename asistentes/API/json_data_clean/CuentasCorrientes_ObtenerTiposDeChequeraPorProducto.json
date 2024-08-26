@@ -1,0 +1,28 @@
+{
+    "id": 185,
+    "nombre": "ObtenerTiposDeChequeraPorProducto",
+    "descripcion": "Método para obtener un listado de las chequeras que se pueden asignar a un determinado producto.",
+    "entrada": {
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador único de producto."
+        }
+    },
+    "salida": {
+        "sdtTiposChequera": {
+            "type": "object",
+            "description": "Listado de tipos de chequera.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de tipo de chequera."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de tipo de chequera."
+                }
+            }
+        }
+    },
+    "sistema": "CuentasCorrientes"
+}

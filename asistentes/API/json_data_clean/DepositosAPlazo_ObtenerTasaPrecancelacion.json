@@ -1,0 +1,22 @@
+{
+    "id": 242,
+    "nombre": "ObtenerTasaPrecancelacion",
+    "descripcion": "Método para obtener la tasa de precancelación de un depósito a plazo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador de operación del depósito a plazo."
+        }
+    },
+    "salida": {
+        "tasa": {
+            "type": "number",
+            "description": "Tasa de precancelación."
+        },
+        "tipoTasa": {
+            "type": "string",
+            "description": "Tipo de tasa."
+        }
+    },
+    "sistema": "DepositosAPlazo"
+}

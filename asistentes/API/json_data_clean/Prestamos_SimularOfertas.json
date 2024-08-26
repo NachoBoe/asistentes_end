@@ -1,0 +1,124 @@
+{
+    "id": 475,
+    "nombre": "SimularOfertas",
+    "descripcion": "Método para simular ofertas de préstamos.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único del cliente."
+        },
+        "sdtSimulacion": {
+            "type": "object",
+            "description": "Datos necesarios para la simulación.",
+            "properties": {
+                "fechaPrimerPago": {
+                    "type": "string",
+                    "description": "Fecha de primer pago."
+                },
+                "monto": {
+                    "type": "number",
+                    "description": "Monto del préstamo."
+                },
+                "periodoCuotas": {
+                    "type": "number",
+                    "description": "Período entre cuotas."
+                },
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único del producto."
+                },
+                "cuotas": {
+                    "type": "object",
+                    "description": "Colección de cantidad de cuotas para simular.",
+                    "properties": {
+                        "cantidadCuotas": {
+                            "type": "number",
+                            "description": "Cantidad de cuotas."
+                        }
+                    }
+                }
+            },
+            "required": [
+                "clienteUId",
+                "sdtSimulacion"
+            ]
+        }
+    },
+    "salida": {
+        "simulacionUId": {
+            "type": "number",
+            "description": "Identificador único de la simulación."
+        },
+        "sdtOfertasPrestamo": {
+            "type": "object",
+            "description": "Colección de ofertas de préstamo.",
+            "properties": {
+                "otrosConceptos": {
+                    "type": "number",
+                    "description": "Monto para otros conceptos."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha valor."
+                },
+                "capital": {
+                    "type": "number",
+                    "description": "Capital del préstamo."
+                },
+                "totalComisiones": {
+                    "type": "number",
+                    "description": "Monto total para comisiones."
+                },
+                "valorCuota": {
+                    "type": "number",
+                    "description": "Valor cuota."
+                },
+                "cantidadCuotas": {
+                    "type": "number",
+                    "description": "Cantidad de las cuotas."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa del préstamo."
+                },
+                "totalSeguros": {
+                    "type": "number",
+                    "description": "Monto total para seguros."
+                },
+                "fechaPrimerPago": {
+                    "type": "string",
+                    "description": "Fecha de primer pago."
+                },
+                "totalIntereses": {
+                    "type": "number",
+                    "description": "Monto total para intereses."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento."
+                },
+                "tea": {
+                    "type": "number",
+                    "description": "TEA del préstamo."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo para el préstamo."
+                },
+                "totalAPagar": {
+                    "type": "number",
+                    "description": "Total a pagar."
+                },
+                "totalImpuestos": {
+                    "type": "number",
+                    "description": "Monto total para impuestos."
+                },
+                "cft": {
+                    "type": "number",
+                    "description": "CFT del préstamo."
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

@@ -1,0 +1,40 @@
+{
+    "id": 333,
+    "nombre": "AgregarIntegrantePersonaJuridica",
+    "descripcion": "Método para agregar un integrante a una persona jurídica.",
+    "entrada": {
+        "personaJuridicaUId": {
+            "type": "number",
+            "description": "Identificador único de persona jurídica."
+        },
+        "sdtIntegranteAlta": {
+            "type": "object",
+            "description": "Datos de la persona física integrante de la persona jurídica indicada.",
+            "properties": {
+                "personaUId": {
+                    "type": "number",
+                    "description": "Identificador único de persona."
+                },
+                "vinculoId": {
+                    "type": "number",
+                    "description": "Identificador de vínculo."
+                },
+                "participacion": {
+                    "type": "number",
+                    "description": "Porcentaje de participación del integrante."
+                }
+            },
+            "required": [
+                "personaUId",
+                "vinculoId",
+                "participacion"
+            ]
+        },
+        "modo": {
+            "type": "string",
+            "description": "[Hidden: Valor fijo 'INS' para este método]."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

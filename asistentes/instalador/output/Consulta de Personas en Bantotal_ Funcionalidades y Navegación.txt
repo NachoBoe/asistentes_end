@@ -1,0 +1,11 @@
+La funcionalidad detallada en el archivo se refiere a la consulta de personas dentro del sistema Bantotal, específicamente a través del panel HX999110. Este panel permite a los usuarios acceder a información relacionada con personas, utilizando varios botones que invocan diferentes paneles para realizar consultas específicas. Las posibilidades que se admiten incluyen la visualización de datos, acceso a documentos, información sobre impuestos, domicilios y otros aspectos relacionados con la consulta institucional de personas.
+
+**Botones y sus funciones:**
+- **Visualizar:** Invoca al panel HSNGCPF1 en modo consulta.
+- **Rel. Izquierda:** Invoca al panel institucional.
+- **Rel. Derecha:** Invoca al panel institucional.
+- **Documentos:** Invoca al panel HSNGCRD1 en modo consulta.
+- **Impuestos:** Invoca al panel HX999115 en modo consulta.
+- **Integrantes:** Invoca al panel institucional. No aplica para personas físicas.
+- **Domicilios:** Invoca al panel HSNGC22 en modo consulta.
+- **Textos:** Invoca al panel institucional.

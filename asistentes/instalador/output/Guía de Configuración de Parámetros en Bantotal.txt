@@ -1,0 +1,14 @@
+**Descripción general de la funcionalidad:**
+El archivo detalla diversas configuraciones y guías de proceso para la plataforma Bantotal, enfocándose en la gestión de prospectos y la validación de datos. Se establecen parámetros para la visualización de campos obligatorios, la gestión de alertas, el almacenamiento de información relacionada con personas y la validación de correos electrónicos. Estas configuraciones permiten personalizar la experiencia del usuario y asegurar la integridad de los datos ingresados en el sistema.
+
+**Opciones generales:**
+- Opción General Nº 1051: opgval=’N’ (se usa para validar que el e-mail que se ingrese tenga @ y .com. El control lo hace si la Opción General está con el valor en ‘N’).
+
+**Guías y Guías Especiales de proceso:**
+- Código: 307, Correlativo: 1, Descripción: Se debe dar de alta la guía, con correlativos 1 y 2 que trae el país y el tipo de documento respectivamente por defecto al agregar un nuevo prospecto.
+- Código: 2902, Correlativo: 1, Descripción: con correlativo 1 si se desea que los campos obligatorios se muestren en color rojo.
+- Código: 2902, Correlativo: 150, Descripción: en tpnro ingresar un número que corresponderá a la cantidad de días previos a la fecha de la tarea del asesor con que se disparará la alerta al mismo. Si no está dada de alta, la alerta se mostrará un día antes de la fecha de la tarea.
+- Código: 2907, Correlativo: 501, Descripción: en el tpnro ingresar un número (N3) que se usará para guardar el e-mail en la tabla FSX001 - Textos de Persona.
+- Código: 2907, Correlativo: 502, Descripción: en el tpnro ingresar un número (N3) que se usará para guardar el comentario en la tabla FSX001 - Textos de Persona.
+- Código: 2907, Correlativo: 503, Descripción: en el tpnro ingresar un número (N3) que se usará para guardar el motivo de la baja en la tabla FSX001.
+- Código: 2907, Correlativo: 504, Descripción: en el tpnro ingresar un número (N3) que se usará para guardar la sucursal de origen en la tabla FSX001.

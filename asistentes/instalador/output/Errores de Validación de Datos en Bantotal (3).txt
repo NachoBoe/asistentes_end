@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se centra en la validación de campos obligatorios y la verificación de la unicidad de ciertos datos en el sistema Bantotal. Se mencionan errores relacionados con la falta de información en campos críticos como el número de documento y el nombre, así como la validación de que el número de documento ingresado cumpla con las reglas establecidas. También se contempla la posibilidad de que se intente ingresar un registro que ya existe en el sistema, lo que genera un error.
+
+Las posibilidades que se admiten incluyen la validación de datos ingresados por los usuarios, asegurando que se completen todos los campos requeridos y que no se repitan registros en el sistema.

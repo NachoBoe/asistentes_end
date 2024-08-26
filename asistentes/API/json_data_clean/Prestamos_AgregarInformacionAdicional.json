@@ -1,0 +1,31 @@
+{
+    "id": 413,
+    "nombre": "AgregarInformacionAdicional",
+    "descripcion": "Método para agregar la información adicional de un préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de préstamo."
+        },
+        "sdtInformacionAdicional": {
+            "type": "object",
+            "description": "Listado de datos.",
+            "properties": {
+                "clave": {
+                    "type": "string",
+                    "description": "Identificador de información adicional."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor de información adicional."
+                }
+            }
+        },
+        "modo": {
+            "type": "string",
+            "description": "[Hidden, valor fijo 'INS' para este método]."
+        }
+    },
+    "salida": {},
+    "sistema": "Prestamos"
+}

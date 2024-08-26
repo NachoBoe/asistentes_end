@@ -1,0 +1,23 @@
+{
+    "id": 108,
+    "nombre": "ObtenerTiposDeIntegracion",
+    "descripcion": "Método para obtener un listado de los tipos de integración ingresados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtTiposIntegracion": {
+            "type": "object",
+            "description": "Lista de tipos de integrantes.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de tipo de integrante."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de tipo de integrante."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

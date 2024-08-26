@@ -1,0 +1,23 @@
+{
+    "id": 144,
+    "nombre": "ObtenerTiposTarjeta",
+    "descripcion": "Método para obtener un listado de los tipos de tarjeta ingresados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtTipos": {
+            "type": "object",
+            "description": "Listado de tipos de tarjeta.",
+            "properties": {
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de tipo de tarjeta."
+                },
+                "identificador": {
+                    "type": "string",
+                    "description": "Identificador de tipo de tarjeta."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

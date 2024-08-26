@@ -1,0 +1,36 @@
+{
+    "id": 177,
+    "nombre": "ObtenerChequesDeChequera",
+    "descripcion": "Método para obtener cheques de una chequera.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación de subcuenta."
+        },
+        "chequeraId": {
+            "type": "number",
+            "description": "Identificador de solicitud de chequera."
+        }
+    },
+    "salida": {
+        "sdtCheques": {
+            "type": "object",
+            "description": "Listado de cheques.",
+            "properties": {
+                "numero": {
+                    "type": "number",
+                    "description": "Número de cheque."
+                },
+                "estado": {
+                    "type": "number",
+                    "description": "Estado del cheque."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción."
+                }
+            }
+        }
+    },
+    "sistema": "CuentasCorrientes"
+}

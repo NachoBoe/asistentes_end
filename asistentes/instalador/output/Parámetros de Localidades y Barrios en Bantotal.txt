@@ -1,0 +1,12 @@
+El archivo del sistema Bantotal detalla la configuración de localidades en la tercera división administrativa. La funcionalidad principal es la gestión de datos relacionados con países, departamentos/provincias, localidades, barrios/colonias y regiones, permitiendo la identificación y descripción de cada una de estas entidades.
+
+Los campos definidos son:
+
+- **Fst071Pai**: Código del país (N, 3.0)
+- **Fst071Dpt**: Código del departamento o provincia (N, 5.0)
+- **Fst071Loc**: Código de la localidad (N, 5.0)
+- **Fst071Col**: Código del barrio o colonia (N, 9.0)
+- **Fst071Reg**: Código de la región (N, 3.0)
+- **Fst071Dsc**: Descripción de la localidad (C, 30)
+
+Las posibilidades que se admiten incluyen la creación, modificación y consulta de registros relacionados con las localidades y sus jerarquías administrativas.

@@ -1,0 +1,3 @@
+La funcionalidad del botón ‘Visualizar’ en el sistema Bantotal permite acceder a los datos de la cuenta en modo consulta. Al pulsar un registro y seleccionar esta opción, se presenta la información de la cuenta de manera que el usuario puede revisar los detalles sin realizar modificaciones. Esta funcionalidad es esencial para la consulta de información bancaria, permitiendo a los usuarios verificar datos relevantes de las cuentas de forma rápida y eficiente. 
+
+No se encontraron configuraciones asociadas, guías, reglas de negocio, programas particulares, tablas ni otros controles relacionados.

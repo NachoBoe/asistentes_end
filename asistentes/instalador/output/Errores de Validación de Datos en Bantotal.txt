@@ -1,0 +1,6 @@
+La funcionalidad detallada en el archivo se refiere a la validación de campos obligatorios y la verificación de la consistencia de la información ingresada en el sistema Bantotal. Se mencionan errores específicos que pueden ocurrir al intentar dar de alta a una persona, ya sea física o jurídica, y se destacan los campos que no deben dejarse en blanco, así como las restricciones relacionadas con los tipos de documentos.
+
+Posibilidades admitidas:
+- Validación de campos obligatorios como país, provincia/departamento y número de documento.
+- Verificación de la existencia previa de un tipo de documento para una persona.
+- Control sobre la correcta asociación entre tipos de documentos y la naturaleza de la persona (física o jurídica).

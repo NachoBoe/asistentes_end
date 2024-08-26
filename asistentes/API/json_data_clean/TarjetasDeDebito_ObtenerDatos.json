@@ -1,0 +1,82 @@
+{
+    "id": 504,
+    "nombre": "ObtenerDatos",
+    "descripcion": "Método para obtener los datos de un producto de tarjeta de débito.",
+    "entrada": {
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de tarjeta."
+        }
+    },
+    "salida": {
+        "sdtEntidadTarjetaDebito": {
+            "type": "object",
+            "description": "Datos de tarjeta de débito.",
+            "properties": {
+                "tarjetaUId": {
+                    "type": "number",
+                    "description": "Identificador único de tarjeta."
+                },
+                "numeroTarjeta": {
+                    "type": "string",
+                    "description": "Número de tarjeta."
+                },
+                "tipoTarjeta": {
+                    "type": "string",
+                    "description": "Tipo de tarjeta."
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Nombre de la sucursal."
+                },
+                "nombreTarjeta": {
+                    "type": "string",
+                    "description": "Nombre de la tarjeta."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vecnimiento."
+                },
+                "estadoTarjeta": {
+                    "type": "string",
+                    "description": "Descripción de estado de la tarjeta."
+                },
+                "estadoPlastico": {
+                    "type": "string",
+                    "description": "Descripción de estado del plastico."
+                },
+                "diasHastaVencimiento": {
+                    "type": "number",
+                    "description": "Días restantes para el vencimiento."
+                },
+                "paquete": {
+                    "type": "string",
+                    "description": "¿Tiene paquete? (S/N)."
+                },
+                "descPaquete": {
+                    "type": "string",
+                    "description": "Descripción de paquete."
+                },
+                "limites": {
+                    "type": "object",
+                    "description": "Listado de limites de la tarjeta.",
+                    "properties": {
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción del limite."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de la moneda."
+                        },
+                        "monto": {
+                            "type": "number",
+                            "description": "Monto del limite."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "TarjetasDeDebito"
+}

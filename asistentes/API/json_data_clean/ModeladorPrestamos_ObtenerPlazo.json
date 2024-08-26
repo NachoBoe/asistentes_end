@@ -1,0 +1,44 @@
+{
+    "id": 300,
+    "nombre": "ObtenerPlazo",
+    "descripcion": "Método para obtener los plazos parametrizados de un producto de préstamo.",
+    "entrada": {
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador de producto."
+        },
+        "parametro": {
+            "type": "number",
+            "description": "[Hidden: Valor 410 definido por defecto]."
+        }
+    },
+    "salida": {
+        "minimo": {
+            "type": "number",
+            "description": "Valor mínimo de palzo de cuotas."
+        },
+        "maximo": {
+            "type": "number",
+            "description": "Valor máximo de palzo de cuotas."
+        },
+        "valorPorDefecto": {
+            "type": "number",
+            "description": "Valor por defecto de palzo de cuotas."
+        },
+        "tipo": {
+            "type": "number",
+            "description": "Tipo de cuotas."
+        },
+        "sdtListaValores": {
+            "type": "object",
+            "description": "Listado de valores posibles.",
+            "properties": {
+                "valor": {
+                    "type": "number",
+                    "description": "Valor de plazo de cuotas."
+                }
+            }
+        }
+    },
+    "sistema": "ModeladorPrestamos"
+}

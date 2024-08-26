@@ -1,0 +1,40 @@
+{
+    "id": 309,
+    "nombre": "ObtenerGuiaDeProceso",
+    "descripcion": "Método para obtener los datos de una determinada guía de procesos.",
+    "entrada": {
+        "empresaId": {
+            "type": "number",
+            "description": "Código de empresa [Hidden]."
+        },
+        "codigo": {
+            "type": "number",
+            "description": "Código de la Guía de Procesos."
+        }
+    },
+    "salida": {
+        "sdtGuiaDeProceso": {
+            "type": "object",
+            "description": "Listado de datos de la guía de proceso.",
+            "properties": {
+                "correlativo": {
+                    "type": "number",
+                    "description": "Correlativo de la guía."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del correlativo."
+                },
+                "valorEspecifico": {
+                    "type": "number",
+                    "description": "Valor específico del correlativo."
+                },
+                "importeEspecifico": {
+                    "type": "number",
+                    "description": "Importe específico del correlativo."
+                }
+            }
+        }
+    },
+    "sistema": "ParametrosBase"
+}

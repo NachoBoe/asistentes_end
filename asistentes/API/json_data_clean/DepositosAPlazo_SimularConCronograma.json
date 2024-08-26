@@ -1,0 +1,290 @@
+{
+    "id": 243,
+    "nombre": "SimularConCronograma",
+    "descripcion": "Método para simular el alta de un depósito a plazo fijo.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador único de producto."
+        },
+        "capital": {
+            "type": "number",
+            "description": "Importe capital."
+        },
+        "plazo": {
+            "type": "number",
+            "description": "Plazo."
+        },
+        "periodicidad": {
+            "type": "number",
+            "description": "Período entre pagos de intereses."
+        },
+        "sdtDatosExtendidos": {
+            "type": "object",
+            "description": "Listado de datos complementarios.",
+            "properties": {
+                "clave": {
+                    "type": "string",
+                    "description": "Clave del dato extendido."
+                },
+                "tipo": {
+                    "type": "string",
+                    "description": "Tipo de dato extendido."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor de dato extendido."
+                },
+                "Lista": {
+                    "type": "object",
+                    "description": "Lista de datos.",
+                    "properties": {
+                        "clave": {
+                            "type": "string",
+                            "description": "Clave de dato de la lista."
+                        },
+                        "valor": {
+                            "type": "string",
+                            "description": "Valor de dato de la lista."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "salida": {
+        "sdtDatosExtendidos": {
+            "type": "object",
+            "description": "Listado de datos complementarios.",
+            "properties": {
+                "clave": {
+                    "type": "string",
+                    "description": "Clave del dato extendido."
+                },
+                "tipo": {
+                    "type": "string",
+                    "description": "Tipo de dato extendido."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor de dato extendido."
+                },
+                "Lista": {
+                    "type": "object",
+                    "description": "Lista de datos.",
+                    "properties": {
+                        "clave": {
+                            "type": "string",
+                            "description": "Clave de dato de la lista."
+                        },
+                        "valor": {
+                            "type": "string",
+                            "description": "Valor de dato de la lista."
+                        }
+                    }
+                }
+            }
+        },
+        "sBTSimulacionDepositoAPlazo": {
+            "type": "object",
+            "description": "Datos de simulación del depósito.",
+            "properties": {
+                "simulacionId": {
+                    "type": "number",
+                    "description": "Identificador de simulación."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre de producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel."
+                        }
+                    }
+                },
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador de cliente."
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Sucursal."
+                },
+                "tipoProducto": {
+                    "type": "string",
+                    "description": "Tipo de producto."
+                },
+                "capital": {
+                    "type": "number",
+                    "description": "Capital del cronograma."
+                },
+                "valorNominal": {
+                    "type": "number",
+                    "description": "Valor nominal."
+                },
+                "precio": {
+                    "type": "number",
+                    "description": "Precio."
+                },
+                "tipoTasa": {
+                    "type": "string",
+                    "description": "Tipo de tasa."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa."
+                },
+                "tipoAnio": {
+                    "type": "string",
+                    "description": "Tipo de año."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo."
+                },
+                "tipoDia": {
+                    "type": "string",
+                    "description": "Tipo de día."
+                },
+                "fechaInicio": {
+                    "type": "string",
+                    "description": "Fecha de inicio."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento."
+                },
+                "periodicidad": {
+                    "type": "number",
+                    "description": "Periodicidad."
+                },
+                "intereses": {
+                    "type": "number",
+                    "description": "Intereses."
+                },
+                "impuestos": {
+                    "type": "object",
+                    "description": "Datos de impuestos.",
+                    "properties": {
+                        "concepto": {
+                            "type": "string",
+                            "description": "Concepto."
+                        },
+                        "valor": {
+                            "type": "number",
+                            "description": "Importe."
+                        },
+                        "texto": {
+                            "type": "string",
+                            "description": "Texto."
+                        }
+                    }
+                },
+                "otrosConceptos": {
+                    "type": "object",
+                    "description": "Otros conceptos.",
+                    "properties": {
+                        "concepto": {
+                            "type": "string",
+                            "description": "Concepto."
+                        },
+                        "valor": {
+                            "type": "number",
+                            "description": "Importe."
+                        },
+                        "texto": {
+                            "type": "string",
+                            "description": "Texto."
+                        }
+                    }
+                },
+                "cronograma": {
+                    "type": "object",
+                    "description": "Cronograma del préstamo.",
+                    "properties": {
+                        "sBTCronogramaDeposito": {
+                            "type": "object",
+                            "description": "Cronograma deposito.",
+                            "properties": {
+                                "fechaPago": {
+                                    "type": "string",
+                                    "description": "Fecha de pago."
+                                },
+                                "plazo": {
+                                    "type": "number",
+                                    "description": "Plazo."
+                                },
+                                "tipoCuota": {
+                                    "type": "string",
+                                    "description": "Tipo de cuota."
+                                },
+                                "capital": {
+                                    "type": "number",
+                                    "description": "Capital."
+                                },
+                                "interes": {
+                                    "type": "number",
+                                    "description": "Interés."
+                                },
+                                "impuestos": {
+                                    "type": "object",
+                                    "description": "Datos de impuestos.",
+                                    "properties": {
+                                        "concepto": {
+                                            "type": "string",
+                                            "description": "Concepto."
+                                        },
+                                        "valor": {
+                                            "type": "number",
+                                            "description": "Importe."
+                                        },
+                                        "texto": {
+                                            "type": "string",
+                                            "description": "Texto."
+                                        }
+                                    }
+                                },
+                                "otrosConceptos": {
+                                    "type": "object",
+                                    "description": "Otros conceptos.",
+                                    "properties": {
+                                        "concepto": {
+                                            "type": "string",
+                                            "description": "Concepto."
+                                        },
+                                        "valor": {
+                                            "type": "number",
+                                            "description": "Importe."
+                                        },
+                                        "texto": {
+                                            "type": "string",
+                                            "description": "Texto."
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "DepositosAPlazo"
+}

@@ -1,0 +1,40 @@
+{
+    "id": 506,
+    "nombre": "ObtenerLimites",
+    "descripcion": "Método para obtener los límites de una tarjeta de débito.",
+    "entrada": {
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador de la tarjeta de débito."
+        }
+    },
+    "salida": {
+        "sdtLimites": {
+            "type": "object",
+            "description": "Datos de los límites de la tarjeta.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Código de límite."
+                },
+                "moneda": {
+                    "type": "number",
+                    "description": "Código de moneda."
+                },
+                "limiteEMV": {
+                    "type": "number",
+                    "description": "Monto límite EMV."
+                },
+                "limiteBandaMagnetica": {
+                    "type": "number",
+                    "description": "Monto límite en banda magnética."
+                },
+                "limiteNoPresencial": {
+                    "type": "number",
+                    "description": "Monto límite no presencial."
+                }
+            }
+        }
+    },
+    "sistema": "TarjetasDeDebito"
+}

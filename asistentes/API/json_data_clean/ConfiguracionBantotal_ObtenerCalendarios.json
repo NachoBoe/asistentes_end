@@ -1,0 +1,23 @@
+{
+    "id": 119,
+    "nombre": "ObtenerCalendarios",
+    "descripcion": "Método para obtener los calendarios ingresados en el sistema.",
+    "entrada": {},
+    "salida": {
+        "sdtCalendarios": {
+            "type": "object",
+            "description": "Colección de calendarios.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Código del calendario."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del calendario."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

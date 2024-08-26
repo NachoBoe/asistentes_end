@@ -1,0 +1,6 @@
+- Guías y Guías Especiales de proceso:
+  - ("Codigo":20001 , "Correlativo1": 1 , "Correlativo2": 49 , "Correlativo3": 0)
+  - ("Codigo":20001 , "Correlativo1": 1 , "Correlativo2": 49 , "Correlativo3": nivel del agrupador)
+
+Descripción general de la funcionalidad:
+La funcionalidad permite habilitar la selección de todos los agrupadores de direcciones sin necesidad de realizar una selección en cascada. Además, se puede parametrizar un código de dirección por defecto para cada nivel de agrupador. Esto facilita la parametrización y gestión de direcciones dentro del sistema Bantotal.

@@ -1,0 +1,15 @@
+Descripción general de la funcionalidad:
+El panel HSNGCRD1 de la plataforma Bantotal se utiliza para ingresar documentos adicionales relacionados con una persona, como pasaportes, además del documento de identidad. Permite agregar, modificar y gestionar estos documentos, asegurando que se cumplan ciertos requisitos de obligatoriedad en la información ingresada.
+
+Opciones generales:
+- Opción General de Procesos 1082: Controla la obligatoriedad de que se ingrese como mínimo un documento adicional.
+
+Guías y Guías Especiales de proceso:
+- Guía de Procesos No. 50161: Define cuál es el país para los documentos nacionales.
+- Guía de Procesos 2094: Indica si el documento es solo para el país del banco, si es un documento extranjero o será válido para ambos.
+
+Programas particulares:
+- Programa HTRT900: Permite agregar de manera automática un documento adicional (Argentina).
+
+Otros controles y configuraciones:
+- Parametrización del campo “Tipo Documento” como editable: Al modificar el tipo de documento adicional, se borra el registro existente y se agrega uno nuevo con el tipo de documento.

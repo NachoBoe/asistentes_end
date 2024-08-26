@@ -1,0 +1,14 @@
+La funcionalidad detallada en el archivo se refiere a la gestión de relaciones entre personas dentro del sistema Bantotal. Se especifican los campos necesarios para registrar información relevante sobre documentos de identificación de personas, incluyendo datos como el país, tipo de documento, número de documento, fechas de emisión y vencimiento, así como códigos de departamento y localidad. Esto permite llevar un control adecuado de la documentación de los usuarios en el sistema.
+
+Los campos admitidos son:
+
+- DocPais: País
+- DocTdoc: Tipo Documento
+- DocNdoc: Nro. Documento
+- Tdocum: T/docum.
+- DocPais1: País
+- DocNdoc1: Nro. Documento
+- DocFchEmi: Fecha emisión
+- DocFchVto: Fecha Vencimiento
+- DepCod: Código de Departamento
+- LocCod: Código de localidad

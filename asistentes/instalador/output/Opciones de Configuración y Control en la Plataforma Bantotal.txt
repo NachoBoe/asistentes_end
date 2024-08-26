@@ -1,0 +1,156 @@
+**Descripción general de la funcionalidad:**
+El archivo detalla diversas opciones generales de procesos dentro de la plataforma Bantotal, que permiten configurar y personalizar el funcionamiento de la aplicación en relación a la gestión de cuentas, domicilios, inhabilitaciones, y otros aspectos relacionados con la administración de clientes y sus datos. Las configuraciones permiten habilitar o deshabilitar funcionalidades específicas, así como establecer controles y requisitos para la integración de personas y entidades en el sistema.
+
+**Opciones generales:**
+- **Nº:** 2507  
+  **Concepto:** Habilita la visibilidad de Información Adicional en el panel HSNGCP4  
+  **Valor:** N  
+  **Descripción:** Para indicar en el panel HSNGCP4 si un documento es principal o no, debe estar definida esta opción en ‘S’.
+
+- **Nº:** 179  
+  **Concepto:** Habilita Nombre reducido  
+  **Valor:** N  
+
+- **Nº:** 471  
+  **Concepto:** Cat. Comercial defecto CTES  
+  **Valor:** S  
+
+- **Nº:** 818  
+  **Concepto:** Inhabilitación de Cuentas  
+  **Valor:** S  
+  **Descripción:** A los efectos de que la programación estándar de la Aplicación acceda a los motivos de inhabilitación de cuentas, se debe tener esta opción definida en ‘S’.
+
+- **Nº:** 434  
+  **Concepto:** Control de Listas de Inhabilitados  
+  **Valor:** S  
+  **Descripción:** Si se desea realizar el control contra Listas de Inhabilitados, se habilita este parámetro. Por definición, se utiliza la lógica institucional de control de Listas de Inhabilitados, pero puede adicionarse un programa particular que lo sustituye.
+
+- **Nº:** 2060  
+  **Concepto:** Actividad por defecto por ocupación  
+  **Valor:** N  
+  **Descripción:** Se define esta opción en el caso que se quiera definir una actividad económica fija por ocupación.
+
+- **Nº:** 2038  
+  **Concepto:** Tipos de Actividad  
+  **Valor:** N  
+  **Descripción:** Para visualizar el botón Tipos de Actividad en el panel donde se realiza la parametrización de Ocupaciones (HSNGC07), se debe definir en ‘S’ esta opción y en descripción escribir el texto ‘Tipos de Actividad’.
+
+- **Nº:** 4042  
+  **Concepto:** Condiciona botón copiar en los programas HSNGC22 y HSNGC47  
+  **Valor:** N  
+  **Descripción:** Se debe definir con valor ‘S’ para visualizar el botón ‘Copiar’ en las pantallas de Domicilio de Personas (HSNGC22) y Cuentas (HSNGC47). Su funcionalidad consiste en copiar la información de un código de domicilio existente, con sus teléfonos asociados, en un nuevo código de domicilio, permitiendo además, sobrescribir uno ya existente.
+
+- **Nº:** 3058  
+  **Concepto:** Código Postal Pop up  
+  **Valor:** S  
+  **Descripción:** A los efectos de poder seleccionar el código postal que corresponda mediante pop up, debe habilitarse esta opción con valor ‘S’. Dicha opción permite ingresar ‘N’ códigos postales por barrio. Asimismo, en el panel HSNGC21 se controla que no permita ingresar un código postal distinto a los códigos parametrizados por barrio.
+
+- **Nº:** 444  
+  **Concepto:** Dep/Loc Obl.  
+  **Valor:** S  
+  **Descripción:** Para que el ingreso del Departamento y Localidad sea obligatorio, se debe definir esta opción en ‘S’.
+
+- **Nº:** 442  
+  **Concepto:** Documentos extendidos  
+  **Valor:** S  
+  **Descripción:** Para que el alta de domicilios solicite datos adicionales como ser referencia de domicilio, barrio, y ubicación postal debe definirse esta opción en ‘S’.
+
+- **Nº:** 23570  
+  **Concepto:** Hab. integración % menor 100  
+  **Valor:** N  
+  **Descripción:** En la Aplicación se controla que la sumatoria de porcentajes ingresados sea 100%. Es caso de querer deshabilitar dicho control se debe definir esta opción. Por defecto se realiza el control.
+
+- **Nº:** 1016  
+  **Concepto:** Rel Der. e Izq. sólo para PF  
+  **Valor:** N  
+  **Descripción:** En caso que se desee controlar que las relaciones apliquen únicamente para personas físicas, se debe definir esta opción en ‘S’.
+
+- **Nº:** 1082  
+  **Concepto:** Controla que se ingrese un documento adicional obligatoriamente  
+  **Valor:** N  
+  **Descripción:** Para que controle la obligatoriedad de que se ingrese como mínimo un documento adicional se debe definir esta opción en ‘S’.
+
+- **Nº:** 443  
+  **Concepto:** Impuestos por Default  
+  **Valor:** N  
+  **Descripción:** Si se desea que el panel de impuestos traiga los impuestos y condiciones definidos por defecto, se debe definir esta opción en ‘S’.
+
+- **Nº:** 461  
+  **Concepto:** Ocultar Botón Cond. Impositiva  
+  **Valor:** N  
+  **Descripción:** Si se desea permitir cambiar las condiciones, se debe definir esta opción en ‘S’.
+
+- **Nº:** 1132  
+  **Concepto:** Integración Mixta  
+  **Valor:** S  
+  **Descripción:** En caso de querer utilizar integración mixta, es decir, compuesta por personas de distinta naturaleza, se define esta opción en ‘S’.
+
+- **Nº:** 1254  
+  **Concepto:** Domicilio legal obligatorio  
+  **Valor:** N  
+  **Descripción:** Si se define en ‘S’, permite controlar que las personas que van a integrar una cuenta cliente tengan asociado un domicilio legal al momento de asociarlo a la cuenta. El código de domicilio legal se obtiene del valor específico de la guía de procesos 2029, correlativo 986.
+
+- **Nº:** 1044  
+  **Concepto:** Integración de Listas de Inhabilitados  
+  **Valor:** S  
+  **Descripción:** Permite controlar que las personas que van a integrar una cuenta cliente no se encuentren en lista de inhabilitados. Adicionalmente, debe estar definida la opción general de procesos 434 con valor ‘S’.
+
+- **Nº:** 601  
+  **Concepto:** Control Banco Central  
+  **Valor:** N  
+  **Descripción:** Esta opción definida en ‘S’ permite controlar que las personas que van a integrar una cuenta cliente no se encuentre en lista de control de Banco Central (CHU010).
+
+- **Nº:** 1539  
+  **Concepto:** Control de nombre y apellido en Listas de Inhabilitados  
+  **Valor:** N  
+  **Descripción:** Habilita el control de nombre y apellido en Listas de Inhabilitados.
+
+- **Nº:** 5750  
+  **Concepto:** Visibilidad campos en hsngcpa5  
+  **Valor:** S  
+  **Descripción:** Habilita la visibilidad de los campos ‘Fecha de la Constancia' y 'Fecha de Vencimiento de la Constancia'.
+
+- **Nº:** 20354  
+  **Concepto:** Integración Persona Jurídica  
+  **Valor:** N  
+  **Descripción:** A través de esta opción se define si se acepta dar de alta Personas Jurídicas sin integrantes.
+
+- **Nº:** 99992  
+  **Concepto:** Condic. Imp. obligatoria  
+  **Valor:** N  
+  **Descripción:** Permite controlar que las personas que van a integrar una cuenta cliente tengan definida una condición impositiva. En el valor específico 1 de la guía especial de procesos 8692, correlativo 1 con valor 1, se define el código de impuesto a considerar para el control.
+
+- **Nº:** 11101  
+  **Concepto:** Control Inhabilitados por Perfil  
+  **Valor:** S  
+  **Descripción:** Habilita el control que permite al usuario dar de alta, modificar y eliminar solamente aquellos tipos de lista autorizadas para sus perfiles. Relación en FST502. Muestra el botón “Perfiles” en HRGLN001.
+
+- **Nº:** 12003  
+  **Concepto:** Habilita concatenación de apellidos y nombres.  
+  **Valor:** N  
+  **Descripción:** En caso de definirse en ‘S’ concatena primer apellido, segundo apellido, primer nombre y segundo nombre al grabar la tabla FSD001 campo Penom. Tanto desde el Mantenimiento de personas (HSNGCPF1) como en el de integración de persona Jurídica, botón ‘Agr. Integrante’ (HSNGCA01).
+
+- **Nº:** 10151  
+  **Concepto:** Oculta campo cód. clasificación interna en el panel de Instituciones Financieras  
+  **Valor:** S  
+  **Descripción:** En caso de definirse en ‘S’ se ocultará el campo “Cód. clasificación interna” en el panel de instituciones financieras (hif002b).
+
+- **Nº:** 12800  
+  **Concepto:** Activa la funcionalidad de listas con excepción  
+  **Valor:** S  
+  **Descripción:** En caso de definir la opción en valor “S” se habilita la parametrización de listas de inhabilitados con excepción.
+
+- **Nº:** 12803  
+  **Concepto:** Complementa la funcionalidad de listas con excepción  
+  **Valor:** S  
+  **Descripción:** En caso de definir la opción en valor “S” a la vez que se encuentra activada la Opción 12800, la evaluación de listas de inhabilitados se realiza mediante tabla FSD202.
+
+- **Nº:** 2376  
+  **Concepto:** Múltiple relación integración Per. Jur.  
+  **Valor:** S  
+  **Descripción:** En caso de definir la opción en valor “S” se habilita que una misma persona pueda integrar más de una vez una persona jurídica con vínculos diferentes.
+
+- **Nº:** 2384  
+  **Concepto:** Fecha Actualización Teléfono  
+  **Valor:** S  
+  **Descripción:** Habilita la posibilidad de poder identificar cual es el último teléfono o celular ingresado/modificado. Para contemplar esto se agregará la fecha de ingreso o modificación de estos a los mantenimientos de teléfonos (personas y cuentas) así como también en las consultas.

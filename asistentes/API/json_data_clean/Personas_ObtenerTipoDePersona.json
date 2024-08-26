@@ -1,0 +1,18 @@
+{
+    "id": 383,
+    "nombre": "ObtenerTipoDePersona",
+    "descripcion": "Método para obtener el tipo de una persona (Física o Jurídica).",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {
+        "tipoPersona": {
+            "type": "string",
+            "description": "Tipo de Persona. (F/J)"
+        }
+    },
+    "sistema": "Personas"
+}

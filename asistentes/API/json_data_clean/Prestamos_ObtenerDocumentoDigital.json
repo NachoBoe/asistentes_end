@@ -1,0 +1,52 @@
+{
+    "id": 444,
+    "nombre": "ObtenerDocumentoDigital",
+    "descripcion": "Método para obtener los datos de un documento digital de un préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "documentoId": {
+            "type": "number",
+            "description": "Identificador del documento."
+        }
+    },
+    "salida": {
+        "sdtDocumentosDigitales": {
+            "type": "object",
+            "description": "Datos de version de documento digital.",
+            "properties": {
+                "DocumentoId": {
+                    "type": "number",
+                    "description": "Titulo del documento digital."
+                },
+                "FechaEmision": {
+                    "type": "string",
+                    "description": "Fecha de emisión del documento digital."
+                },
+                "Archivo": {
+                    "type": "string",
+                    "description": "Documento digital codificado en base 64."
+                },
+                "FechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento del documento digital."
+                },
+                "TipoDocumentoDigital": {
+                    "type": "string",
+                    "description": "tipo del documento digital."
+                },
+                "Nombre": {
+                    "type": "string",
+                    "description": "Nombre del documento digital."
+                },
+                "Version": {
+                    "type": "number",
+                    "description": "Número de versión del documento digital."
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

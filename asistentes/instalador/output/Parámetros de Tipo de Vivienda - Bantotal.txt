@@ -1,0 +1,8 @@
+La funcionalidad detallada en el archivo se refiere a la configuración de tipos de vivienda dentro del sistema Bantotal. Se definen varios campos relacionados con la identificación y descripción de los tipos de vivienda, permitiendo la clasificación y gestión de esta información en el contexto bancario.
+
+Los campos definidos son:
+
+- **sngc12VivC**: Código del tipo de vivienda (1 carácter).
+- **sngc12Dsc**: Descripción del tipo de vivienda (30 caracteres).
+- **sngc12Est**: Estado del tipo de vivienda (1 carácter).
+- **sngc12Aux**: Campo auxiliar para información adicional (50 caracteres).

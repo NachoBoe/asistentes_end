@@ -1,0 +1,9 @@
+La funcionalidad detallada en el archivo se refiere al proceso de "Alta de Personas" en la plataforma Bantotal. Este proceso permite registrar nuevos clientes o usuarios en el sistema, estableciendo parámetros y configuraciones necesarias para su correcta gestión. Las posibilidades que se admiten incluyen la validación de documentos, el control de domicilios y la categorización de las personas según diferentes criterios.
+
+- Opciones generales:
+  - Ingresa nombre reducido: 1.3
+  - Categoría por defecto: 1.3
+  - Validación de documentos contra listas BC: 1.3
+  - Tipos de alta: 1.3
+  - Control de documentos: 1.3
+  - Domicilios: 1.5

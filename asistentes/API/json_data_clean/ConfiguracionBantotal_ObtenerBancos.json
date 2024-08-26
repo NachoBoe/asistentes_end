@@ -1,0 +1,23 @@
+{
+    "id": 116,
+    "nombre": "ObtenerBancos",
+    "descripcion": "Método para obtener un listado de los bancos ingresados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtBancos": {
+            "type": "object",
+            "description": "Listado de bancos.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de banco."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripcion de banco."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

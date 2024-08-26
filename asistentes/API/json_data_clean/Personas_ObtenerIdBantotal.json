@@ -1,0 +1,26 @@
+{
+    "id": 365,
+    "nombre": "ObtenerIdBantotal",
+    "descripcion": "Método para obtener la clave de identificación Bantotal de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {
+        "paisDocumentoId": {
+            "type": "number",
+            "description": "Identificador del país de documento."
+        },
+        "tipoDocumentoId": {
+            "type": "number",
+            "description": "Identificador del tipo de documento."
+        },
+        "numeroDocumento": {
+            "type": "string",
+            "description": "Número de documento."
+        }
+    },
+    "sistema": "Personas"
+}

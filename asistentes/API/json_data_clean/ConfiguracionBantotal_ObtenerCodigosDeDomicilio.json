@@ -1,0 +1,23 @@
+{
+    "id": 121,
+    "nombre": "ObtenerCodigosDeDomicilio",
+    "descripcion": "Método para obtener un listado de los códigos de domicilio ingresados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtCodigos": {
+            "type": "object",
+            "description": "Listado de códigos de domicilio.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de código de domicilio."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de código de domicilio."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

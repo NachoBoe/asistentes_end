@@ -1,0 +1,7 @@
+La funcionalidad detallada en el archivo se refiere al control de documentos dentro del sistema Bantotal, permitiendo parametrizar este control de dos maneras: a través de Guías de Procesos y mediante una Tabla SNGCP. Esto sugiere que el sistema ofrece flexibilidad en la gestión y seguimiento de documentos, adaptándose a diferentes procesos y requerimientos específicos de la entidad bancaria.
+
+**Guías de Procesos**
+- No se encontraron configuraciones asociadas.
+
+**Tabla SNGCP**
+- No se encontraron configuraciones asociadas.

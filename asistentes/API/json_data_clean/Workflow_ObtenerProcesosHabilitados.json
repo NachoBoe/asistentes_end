@@ -1,0 +1,47 @@
+{
+    "id": 526,
+    "nombre": "ObtenerProcesosHabilitados",
+    "descripcion": "Método para obtener los procesos habilitados de Workflow.",
+    "entrada": {},
+    "salida": {
+        "sdtProcesos": {
+            "type": "object",
+            "description": "Listado de procesos habilitados.",
+            "properties": {
+                "idProceso": {
+                    "type": "number",
+                    "description": "Código de proceso."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre del proceso."
+                },
+                "fechaCreacion": {
+                    "type": "string",
+                    "description": "Fecha de creación."
+                },
+                "fechaActualizacion": {
+                    "type": "string",
+                    "description": "Fecha de actualización."
+                },
+                "warning": {
+                    "type": "number",
+                    "description": "Tiempo de warning."
+                },
+                "deadline": {
+                    "type": "number",
+                    "description": "Tiempo de deadline."
+                },
+                "idVersion": {
+                    "type": "number",
+                    "description": "Versión del proceso."
+                }
+            }
+        }
+    },
+    "sistema": "Workflow"
+}

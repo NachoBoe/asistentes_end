@@ -1,0 +1,5 @@
+La funcionalidad detallada en el archivo se refiere a la gestión de datos de cuentas en la plataforma Bantotal. Permite registrar y administrar información relevante sobre las cuentas de clientes, incluyendo datos del titular, sucursal, asesor, clasificación interna, y otros aspectos relacionados con la cuenta. Se requiere que ciertos campos sean obligatorios, y se establecen condiciones específicas para la visualización de algunos campos en función de la clasificación del cliente.
+
+Las posibilidades que se admiten incluyen la selección de sucursales y asesores de listas predefinidas, así como la adición de domicilios adicionales para el titular de la cuenta. También se contempla la ocultación de ciertos campos bajo condiciones específicas, lo que permite una personalización en la visualización de la información según el tipo de cliente.
+
+No se encontraron configuraciones asociadas, guías, reglas de negocio, programas particulares, tablas, ni otros controles y configuraciones.

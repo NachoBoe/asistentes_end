@@ -1,0 +1,32 @@
+{
+    "id": 133,
+    "nombre": "ObtenerMonedaNacional",
+    "descripcion": "Método para obtener los datos de la moneda nacional.",
+    "entrada": {
+        "tipoMoneda": {
+            "type": "string",
+            "description": "[Hidden: Valor fijo 'MN' para este método]."
+        }
+    },
+    "salida": {
+        "sdtMoneda": {
+            "type": "object",
+            "description": "Datos de la moneda.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de moneda."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de moneda."
+                },
+                "simbolo": {
+                    "type": "string",
+                    "description": "Símbolo de moneda."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

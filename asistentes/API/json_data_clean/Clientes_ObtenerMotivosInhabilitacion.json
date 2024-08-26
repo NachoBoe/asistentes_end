@@ -1,0 +1,23 @@
+{
+    "id": 89,
+    "nombre": "ObtenerMotivosInhabilitacion",
+    "descripcion": "Método para obtener un listado de los motivos de inhabilitacion.",
+    "entrada": {},
+    "salida": {
+        "sdtMotivosInhabilitacion": {
+            "type": "object",
+            "description": "Listado de motivos de inhabilitación.",
+            "properties": {
+                "Codigo": {
+                    "type": "number",
+                    "description": "Código del motivo de inhabilitación."
+                },
+                "Descripcion": {
+                    "type": "string",
+                    "description": "Descripción del motivo de inhabilitación."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

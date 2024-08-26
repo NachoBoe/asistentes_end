@@ -1,0 +1,27 @@
+{
+    "id": 384,
+    "nombre": "ObtenerTiposDeDocumento",
+    "descripcion": "Método para obtener un listado de los tipos de documento registrados.",
+    "entrada": {},
+    "salida": {
+        "sdtTipoDocumentos": {
+            "type": "object",
+            "description": "Listado de tipos de documento.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de tipo de documento."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de tipo de documento."
+                },
+                "tipoPersona": {
+                    "type": "string",
+                    "description": "Tipo de Persona (F/J)."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

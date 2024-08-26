@@ -1,0 +1,5 @@
+La funcionalidad detallada en el archivo se refiere al panel HSNGC22 del sistema Bantotal, que se utiliza durante el alta de Personas Físicas o Jurídicas. Este panel permite gestionar la información de domicilios y correos electrónicos de la persona que se está registrando. Se muestra la información básica de la persona, como país, tipo y número de documento, así como el nombre. 
+
+En la categoría de domicilios, se establece que si la dirección del negocio y la dirección legal coinciden, no se puede modificar la dirección de la casa. Al modificar la dirección del negocio, ambas direcciones se actualizan. La carga de direcciones depende de un parámetro general relacionado con domicilios. En la categoría de correo electrónico, se puede agregar, modificar o eliminar correos electrónicos asociados a la persona.
+
+No se encontraron configuraciones asociadas, reglas de negocio, programas particulares, tablas ni otros controles y configuraciones en el texto proporcionado.

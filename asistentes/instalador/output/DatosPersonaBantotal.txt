@@ -1,0 +1,5 @@
+El archivo del sistema Bantotal describe un conjunto de campos relacionados con la información de una persona, específicamente en el contexto de documentos y textos asociados a dicha persona. La funcionalidad general se centra en almacenar y gestionar datos como el país del documento, el tipo de documento, el número de documento, el tipo de texto, el renglón de texto, el texto en sí, el usuario que lo ingresó y la fecha de ingreso.
+
+Los campos permiten la entrada de información estructurada, lo que facilita la organización y recuperación de datos relacionados con personas en el sistema. Las posibilidades que se admiten incluyen la identificación de documentos por país, la clasificación de textos por tipo y la asociación de estos textos a usuarios específicos, lo que puede ser útil para auditorías y seguimiento de cambios en la información.
+
+No se encontraron configuraciones asociadas, guías, reglas de negocio, programas particulares, tablas ni otros controles en el contenido proporcionado.

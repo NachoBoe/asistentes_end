@@ -1,0 +1,42 @@
+La funcionalidad detallada en el archivo se refiere a la extensión de datos de personas jurídicas en la plataforma Bantotal. Este archivo define una serie de campos que permiten registrar y gestionar información financiera y administrativa de entidades jurídicas, incluyendo datos sobre activos, pasivos, resultados, y otros aspectos contables relevantes. Las posibilidades que se admiten incluyen la captura de información sobre la situación financiera de la entidad, así como detalles sobre su objeto social y estructura organizativa.
+
+Los campos definidos en el archivo son los siguientes:
+
+- DcpjPais: N (3.0) - País
+- DcpjTdoc: N (2.0) - Tipo de documento
+- DcpjNdoc: C (12) - Número de documento
+- DcpjTotAct: N (12.0) - Total de Activo
+- DcpjActCor: N (10.0) - Activo corriente
+- DcpjBcbCor: N (10.0) - Bienes Cambio Corriente
+- DcpjTCrVc: N (10.0) - Tot.créd. p/vtas. Corr.
+- DcpjTCrVnc: N (10.0) - Tot.créd. p/vtas. no Corr.
+- DcpjTotPas: N (12.0) - Total de Pasivo
+- DcpjPasCor: N (10.0) - Pasivo Corriente
+- DcpjCPpC: N (10.0) - Cuentas por pagar Corriente
+- DcpjCPpNc: N (10.0) - Cuentas por pagar no Corriente
+- DcpjResNA: N (10.0) - Resultados no asignados
+- DcpjPatrNe: N (12.0) - Patrimonio Neto
+- DcpjOtrAP: N (12.0) - Otros Ajustes al Patrimonio
+- DcpjGanOrd: N (10.0) - Ganancia (Perdida) Ordinaria
+- DcpjResFin: N (10.0) - Res. Financ. y por Tenen.
+- DcpjImpGan: N (10.0) - Impuestos a las ganancias
+- DcpjDsRsAc: N (10.0) - Distr. de resultados acum.
+- DcpjFcUltA: N (8.0) - Fecha ult. asamblea ord.
+- DcpjFcIUB: N (8.0) - Fecha Inicio Último Balance
+- DcpjFcCUB: N (8.0) - Fecha de Cierre Último Balance
+- DcpjVtNtBn: N (10.0) - Ventas netas de bienes y serv.
+- DcpjBCNCor: N (10.0) - Bienes cambio no corriente
+- DcpjBCCor: N (10.0) - Bienes de Cambio Corriente
+- DcpjCanPer: N (6.0) - Cant. personal ocupado
+- DcpjPGrEc: N (1.0) - Pertenece al grupo económico
+- DcpjVinc: N (1.0) - Vinculado ?
+- DcpjObSoc1: C (63) - Objeto social parte 1
+- DcpjObSoc2: C (64) - Objeto social parte 2
+- DcpjNroSec: N (2.0) - Numero de secuencia del O.S.
+- DcpjResBru: N (10.0) - Resultado bruto
+- DcpjResExt: N (10.0) - Resultados extraordinarios
+- DcpjResNet: N (10.0) - Resultado neto
+- DcpjImReTe: N (10.0) - Imp. neto revaluos técnicos
+- DcpjCpPnIn: N (10.0) - Cap. pend. integración
+- DcpjTipBal: N (1.0) - Tipo de balance
+- DcpjTEndEx: N (1.0) - Titular de end. con el ext.

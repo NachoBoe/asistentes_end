@@ -1,0 +1,28 @@
+{
+    "id": 368,
+    "nombre": "ObtenerInformacionAdicional",
+    "descripcion": "Método para obtener la información adicional de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {
+        "sdtInformacionAdicional": {
+            "type": "object",
+            "description": "Información Adicional de datos.",
+            "properties": {
+                "clave": {
+                    "type": "string",
+                    "description": "Identificador de información adicional."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor de información adicional."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

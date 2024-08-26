@@ -1,0 +1,44 @@
+{
+    "id": 293,
+    "nombre": "ObtenerCantidadCuotas",
+    "descripcion": "Método para obtener las cantidades de cuotas parametrizadas de un producto de préstamo.",
+    "entrada": {
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador de producto."
+        },
+        "parametro": {
+            "type": "number",
+            "description": "[Hidden: Valor 409 definido por defecto]."
+        }
+    },
+    "salida": {
+        "minimo": {
+            "type": "number",
+            "description": "Valor mínimo de cantidad de cuotas."
+        },
+        "maximo": {
+            "type": "number",
+            "description": "Valor máximo de cantidad de cuotas."
+        },
+        "valorPorDefecto": {
+            "type": "number",
+            "description": "Valor por defecto de cantidad de cuotas."
+        },
+        "tipo": {
+            "type": "number",
+            "description": "Tipo de cuotas."
+        },
+        "sdtListaValores": {
+            "type": "object",
+            "description": "Listado de valores.",
+            "properties": {
+                "valor": {
+                    "type": "number",
+                    "description": "Valor de cantidad de cuotas."
+                }
+            }
+        }
+    },
+    "sistema": "ModeladorPrestamos"
+}

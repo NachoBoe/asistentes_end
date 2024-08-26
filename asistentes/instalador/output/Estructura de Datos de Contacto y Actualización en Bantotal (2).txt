@@ -1,0 +1,9 @@
+El archivo del sistema Bantotal detalla las tablas y atributos grabados relacionados con la gestión de teléfonos y datos de contacto de empresas. Se presentan dos conjuntos de datos: uno para teléfonos y otro para información de empresas, cada uno con sus respectivos atributos.
+
+**Descripción general de la funcionalidad:**
+La funcionalidad del archivo se centra en la gestión de información de contacto, incluyendo teléfonos, fax, telex, y datos relevantes de empresas, como cuentas, país, tipo y número de documento, entre otros. Esto permite a la plataforma bancaria mantener un registro organizado y accesible de la información de contacto y datos empresariales, facilitando la comunicación y gestión de relaciones con los clientes.
+
+**Posibilidades que se admiten:**
+- Registro de múltiples números de contacto (teléfonos, fax, telex) para cada entidad.
+- Almacenamiento de información detallada sobre empresas, incluyendo datos de identificación y ubicación.
+- Actualización de la información de contacto y empresarial, asegurando que los datos estén siempre actualizados.

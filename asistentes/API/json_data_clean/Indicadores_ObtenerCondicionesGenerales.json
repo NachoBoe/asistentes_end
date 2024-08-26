@@ -1,0 +1,71 @@
+{
+    "id": 252,
+    "nombre": "ObtenerCondicionesGenerales",
+    "descripcion": "Método para obtener las condiciones generales ingresadas en el sistema.",
+    "entrada": {},
+    "salida": {
+        "sdtCondicionesGenerales": {
+            "type": "object",
+            "description": "Listado de las Condiciones Generales.",
+            "properties": {
+                "debug": {
+                    "type": "string",
+                    "description": "Opción debug."
+                },
+                "opcion7x24": {
+                    "type": "string",
+                    "description": "Opción 7x24."
+                },
+                "periodo7x24": {
+                    "type": "string",
+                    "description": "Periodo 7x24."
+                },
+                "opcionPAE": {
+                    "type": "string",
+                    "description": "Opción PAE."
+                },
+                "cantidadPAE": {
+                    "type": "integer",
+                    "description": "Cantidad PAE."
+                },
+                "reglasNegocio": {
+                    "type": "string",
+                    "description": "Opción reglas de negocio."
+                },
+                "cantidadReglas": {
+                    "type": "integer",
+                    "description": "Cantidad reglas."
+                },
+                "parametrosGeneralesWF": {
+                    "type": "string",
+                    "description": "Parametros Generales de Workflow."
+                },
+                "opcionWorkFlow": {
+                    "type": "string",
+                    "description": "Opción Workflow."
+                },
+                "empresasIguales": {
+                    "type": "string",
+                    "description": "Empresas iguales."
+                },
+                "fechaAperturaCanales": {
+                    "type": "string",
+                    "description": "Fecha de apertura de canales."
+                },
+                "fechaCierreCanales": {
+                    "type": "string",
+                    "description": "Fecha de cierre de canales."
+                },
+                "fechaApertura": {
+                    "type": "string",
+                    "description": "Fecha de apertura."
+                },
+                "fechaCierre": {
+                    "type": "string",
+                    "description": "Fecha de cierre."
+                }
+            }
+        }
+    },
+    "sistema": "Indicadores"
+}

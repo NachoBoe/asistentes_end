@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la extensión de datos de personas en el sistema Bantotal, específicamente en el módulo SNGC11. Este módulo permite gestionar información relacionada con personas, incluyendo datos personales, documentos de identificación, ubicación geográfica, establecimiento, actividad económica, y otros datos auxiliares. Las posibilidades que se admiten incluyen la captura y almacenamiento de información variada sobre individuos, así como la posibilidad de asociar datos adicionales a través de campos auxiliares y códigos de actividad.
+
+No se encontraron configuraciones asociadas, guías, reglas de negocio, programas particulares, tablas, ni otros controles y configuraciones.

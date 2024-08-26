@@ -1,0 +1,18 @@
+{
+    "id": 447,
+    "nombre": "ObtenerFechaUltimoPago",
+    "descripcion": "Método para obtener fechas de ultimo pago de un préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación del préstamo."
+        }
+    },
+    "salida": {
+        "fecha_ultimo_pago": {
+            "type": "Date",
+            "description": "Fecha de ultimo pago."
+        }
+    },
+    "sistema": "Prestamos"
+}

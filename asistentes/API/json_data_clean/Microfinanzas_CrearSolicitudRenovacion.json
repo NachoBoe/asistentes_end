@@ -1,0 +1,63 @@
+{
+    "id": 269,
+    "nombre": "CrearSolicitudRenovacion",
+    "descripcion": "Método para crear una solicitud de renovación de crédito.",
+    "entrada": {
+        "procesoId": {
+            "type": "number",
+            "description": "[Hidden: Identificador de proceso Workflow]."
+        },
+        "tareaId": {
+            "type": "number",
+            "description": "[Hidden: Identificador de tarea Workflow]."
+        },
+        "tipoSolicitud": {
+            "type": "number",
+            "description": "[Hidden: Identificador de tipo de solicitud 'Renovación']."
+        },
+        "usuarioIngreso": {
+            "type": "string",
+            "description": "Usuario que ingresa la solicitud. En caso de no especificarse, se asigna el usuario conectado."
+        },
+        "fechaIngreso": {
+            "type": "string",
+            "description": "Fecha en la que se ingresa la solicitud. En caso de no especificarse, se asigna fecha apertura."
+        },
+        "usuarioAsignacion": {
+            "type": "string",
+            "description": "Usuario al que queda asignada la tarea de solicitud. En caso de no especificarse, se asigna al Asesor de créditos."
+        },
+        "datosSolicitud": {
+            "type": "object",
+            "description": "Datos de la solicitud.",
+            "properties": {
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador único de cliente que solicita el préstamo."
+                },
+                "asesorId": {
+                    "type": "number",
+                    "description": "Identificador del Asesor de la solicitud. En caso de no especificarse, se asigna el Asesor del cliente."
+                },
+                "sucursalId": {
+                    "type": "number",
+                    "description": "Sucursal de la solicitud. En caso de no especificarse, se asigna la sucursal del cliente."
+                },
+                "origenCaptacion": {
+                    "type": "number",
+                    "description": "Identificador de origen captación."
+                }
+            },
+            "required": [
+                "clienteUId"
+            ]
+        }
+    },
+    "salida": {
+        "solicitudUId": {
+            "type": "number",
+            "description": "Identificador de instancia Workflow."
+        }
+    },
+    "sistema": "Microfinanzas"
+}

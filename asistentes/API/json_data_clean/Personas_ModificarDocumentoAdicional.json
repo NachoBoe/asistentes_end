@@ -1,0 +1,58 @@
+{
+    "id": 350,
+    "nombre": "ModificarDocumentoAdicional",
+    "descripcion": "Método para modificar un documento adicional de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de Persona."
+        },
+        "sdtDocumentoAdicional": {
+            "type": "object",
+            "description": "Datos de documento adicional.",
+            "properties": {
+                "paisDocumento": {
+                    "type": "number",
+                    "description": "Identificador de país del documento."
+                },
+                "paisDocumentoDsc": {
+                    "type": "string",
+                    "description": "Nombre del país del documento."
+                },
+                "tipoDocumento": {
+                    "type": "number",
+                    "description": "Identificador de tipo de documento."
+                },
+                "tipoDocumentoDsc": {
+                    "type": "string",
+                    "description": "Nombre del tipo de documento."
+                },
+                "nroDocumento": {
+                    "type": "string",
+                    "description": "Número de documento."
+                },
+                "fechaEmision": {
+                    "type": "string",
+                    "description": "Fecha de emisión del documento."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento del documento."
+                }
+            },
+            "required": [
+                "paisDocumento",
+                "tipoDocumento",
+                "nroDocumento",
+                "fechaEmision",
+                "fechaVencimiento"
+            ]
+        },
+        "modo": {
+            "type": "string",
+            "description": "[Hidden: Valor fijo 'UPD' para este método]."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

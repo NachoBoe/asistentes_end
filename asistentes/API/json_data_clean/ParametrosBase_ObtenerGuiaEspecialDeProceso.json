@@ -1,0 +1,64 @@
+{
+    "id": 310,
+    "nombre": "ObtenerGuiaEspecialDeProceso",
+    "descripcion": "Método para obtener los datos de una determinada guía especial de procesos.",
+    "entrada": {
+        "empresaId": {
+            "type": "number",
+            "description": "Código de empresa [Hidden]."
+        },
+        "codigo": {
+            "type": "number",
+            "description": "Código de la Guía de Procesos."
+        }
+    },
+    "salida": {
+        "sdtGuiaEspecialDeProceso": {
+            "type": "object",
+            "description": "Listado de datos de la guía especial de proceso.",
+            "properties": {
+                "correlativo1": {
+                    "type": "number",
+                    "description": "Correlativo 1."
+                },
+                "correlativo2": {
+                    "type": "number",
+                    "description": "Correlativo 2."
+                },
+                "correlativo3": {
+                    "type": "number",
+                    "description": "Correlativo 3."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción."
+                },
+                "valorEspecifico1": {
+                    "type": "number",
+                    "description": "Valor específico 1."
+                },
+                "valorEspecifico2": {
+                    "type": "number",
+                    "description": "Valor específico 2."
+                },
+                "valorEspecifico3": {
+                    "type": "number",
+                    "description": "Valor específico 3."
+                },
+                "importeEspecifico1": {
+                    "type": "number",
+                    "description": "Importe específico 1."
+                },
+                "importeEspecifico2": {
+                    "type": "number",
+                    "description": "Importe específico 2."
+                },
+                "importeEspecifico3": {
+                    "type": "number",
+                    "description": "Importe específico 3."
+                }
+            }
+        }
+    },
+    "sistema": "ParametrosBase"
+}

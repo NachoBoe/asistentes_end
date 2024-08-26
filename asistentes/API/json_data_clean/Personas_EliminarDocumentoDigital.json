@@ -1,0 +1,17 @@
+{
+    "id": 344,
+    "nombre": "EliminarDocumentoDigital",
+    "descripcion": "Método para eliminar un documento digital de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "documentoId": {
+            "type": "number",
+            "description": "Identificador de instancia de documento digital asociado."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

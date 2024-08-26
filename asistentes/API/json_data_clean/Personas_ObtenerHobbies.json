@@ -1,0 +1,23 @@
+{
+    "id": 363,
+    "nombre": "ObtenerHobbies",
+    "descripcion": "Método para obtener un listado de los hobbies ingresados en el sistema.",
+    "entrada": {},
+    "salida": {
+        "sdtHobbies": {
+            "type": "object",
+            "description": "Listado de hobbies.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código de Hobby."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de Hobby."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

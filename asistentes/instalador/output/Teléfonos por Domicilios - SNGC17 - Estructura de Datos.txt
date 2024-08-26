@@ -1,0 +1,10 @@
+La funcionalidad detallada en el archivo se refiere a la gestión de teléfonos asociados a domicilios dentro del sistema Bantotal. Este módulo permite registrar y manejar información relacionada con los números de teléfono de los clientes, incluyendo detalles como el país, tipo de documento, número de documento, y otros códigos relevantes para la identificación y clasificación de los datos.
+
+Los campos definidos en el archivo son:
+
+- **sngc17pais**: Código del país (numérico, 3 dígitos).
+- **sngc17Ndoc**: Número de documento (caracteres, 12).
+- **sngc17tdoc**: Tipo de documento (numérico, 2 dígitos).
+- **sngc17DCod**: Código del documento (numérico, 2 dígitos).
+- **sngc17corr**: Correlativo (numérico, 2 dígitos).
+- **sngc16TTel**: Tipo de teléfono (numérico, 3 dígitos).

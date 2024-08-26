@@ -1,0 +1,33 @@
+{
+    "id": 57,
+    "nombre": "ActualizarTelefono",
+    "descripcion": "Método para actualizar el teléfono de un cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "domicilioId": {
+            "type": "number",
+            "description": "Identificador de tipo de domicilio."
+        },
+        "numeroTelefono": {
+            "type": "string",
+            "description": "Número de teléfono."
+        },
+        "tipoTelefonoId": {
+            "type": "number",
+            "description": "Identificador de tipo de teléfono."
+        },
+        "modo": {
+            "type": "string",
+            "description": "[Hidden: Valor fijo 'UPD' para este método]."
+        },
+        "telefonoId": {
+            "type": "number",
+            "description": "Identificador correlativo de teléfono."
+        }
+    },
+    "salida": {},
+    "sistema": "Clientes"
+}

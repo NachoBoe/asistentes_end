@@ -1,0 +1,34 @@
+{
+    "id": 396,
+    "nombre": "ConvertirTasaMensualEfectivaALineal",
+    "descripcion": "Método para convertir una tasa efectiva mensual a lineal mensual.",
+    "entrada": {
+        "tipoTasaOrigen": {
+            "type": "number",
+            "description": "Tipo de tasa origen [Hidden: Valor fijo '3' para este método]."
+        },
+        "tasaOrigen": {
+            "type": "number",
+            "description": "Tasa a convertir."
+        },
+        "tipoAnio": {
+            "type": "number",
+            "description": "Tipo de año [1 - Comercial / 2 - Calendario]."
+        },
+        "plazo": {
+            "type": "number",
+            "description": "Plazo."
+        },
+        "tipoTasaDestino": {
+            "type": "number",
+            "description": "Tipo de tasa destino [Hidden: Valor fijo '4' para este método]."
+        }
+    },
+    "salida": {
+        "tasaDestino": {
+            "type": "number",
+            "description": "Tasa convertida."
+        }
+    },
+    "sistema": "Precios"
+}

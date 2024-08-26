@@ -1,0 +1,54 @@
+{
+    "id": 101,
+    "nombre": "ObtenerResumenPorProductoACierreAnio",
+    "descripcion": "Método para obtener un listado con el detalle de las operaciones del cliente ingresado al cierre del año indicado.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "anioConsulta": {
+            "type": "number",
+            "description": "Año de consulta."
+        }
+    },
+    "salida": {
+        "sdtOperaciones": {
+            "type": "object",
+            "description": "Listado de detalle de operaciones.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre de producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel."
+                        }
+                    }
+                },
+                "saldo": {
+                    "type": "number",
+                    "description": "Saldo."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

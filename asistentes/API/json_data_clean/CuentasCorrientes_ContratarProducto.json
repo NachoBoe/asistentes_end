@@ -1,0 +1,30 @@
+{
+    "id": 170,
+    "nombre": "ContratarProducto",
+    "descripcion": "Método para contratar una cuenta corriente en Bantotal.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador único de producto."
+        },
+        "nombreSubCuenta": {
+            "type": "string",
+            "description": "Nombre de la cuenta cliente."
+        },
+        "sucursalId": {
+            "type": "number",
+            "description": "Identificador de sucursal."
+        }
+    },
+    "salida": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de la operación."
+        }
+    },
+    "sistema": "CuentasCorrientes"
+}

@@ -1,0 +1,22 @@
+{
+    "id": 301,
+    "nombre": "ObtenerRequiereSeguroDeVidaObligatorio",
+    "descripcion": "Método para obtener si un producto de préstamo requiere seguro de vida obligatorio.",
+    "entrada": {
+        "productoUID": {
+            "type": "number",
+            "description": "Identificador de producto."
+        },
+        "parametro": {
+            "type": "number",
+            "description": "[Hidden: Valor 350 definido por defecto]."
+        }
+    },
+    "salida": {
+        "valor": {
+            "type": "string",
+            "description": "Requiere o no seguro de vida obligatorio."
+        }
+    },
+    "sistema": "ModeladorPrestamos"
+}

@@ -1,0 +1,3 @@
+El archivo del sistema Bantotal detalla las tablas y atributos grabados relacionados con cuentas corporativas. La funcionalidad principal se centra en la gestión de información relevante para las cuentas, incluyendo datos como el nombre de la cuenta, fecha de alta, código de sector, actividad económica, clasificación interna, segmento de mercado, sucursal de origen, y otros atributos relacionados con la cuenta y su administración.
+
+Las posibilidades que se admiten incluyen la creación, modificación y consulta de cuentas corporativas, así como la gestión de información asociada a estas cuentas, permitiendo a los usuarios acceder a datos críticos para la toma de decisiones y el análisis de la actividad económica de las cuentas registradas.

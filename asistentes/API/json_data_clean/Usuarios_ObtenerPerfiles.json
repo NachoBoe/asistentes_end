@@ -1,0 +1,32 @@
+{
+    "id": 520,
+    "nombre": "ObtenerPerfiles",
+    "descripcion": "Método para consultar los perfiles que tiene asignado un usuario.",
+    "entrada": {
+        "usuario": {
+            "type": "string",
+            "description": "Usuario a consultar."
+        }
+    },
+    "salida": {
+        "sdtPerfiles": {
+            "type": "object",
+            "description": "Perfiles del usuario.",
+            "properties": {
+                "Perfil": {
+                    "type": "string",
+                    "description": "Identificación de perfil Bantotal."
+                },
+                "FechaAlta": {
+                    "type": "string",
+                    "description": "Fecha a partir de la cual el usuario se encuentra habilitado para operar con el perfil."
+                },
+                "FechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento del perfil para el usuario."
+                }
+            }
+        }
+    },
+    "sistema": "Usuarios"
+}

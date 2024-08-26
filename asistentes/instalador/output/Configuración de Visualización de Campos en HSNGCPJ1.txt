@@ -1,0 +1,19 @@
+El panel HSNGCPJ1 es parametrizable en cuanto a la determinación de la visibilidad de los campos y la descripción a mostrar. Debe accederse por el panel HSNG038 y seleccionar el programa de referencia. Este panel permite gestionar información relacionada con personas y personas jurídicas, así como datos de instituciones financieras y del negocio. Se pueden agregar y eliminar vínculos entre personas y gestionar información auxiliar.
+
+**Opciones generales**
+- No se encontraron configuraciones asociadas.
+
+**Guías y Guías Especiales de proceso**
+- No se encontraron configuraciones asociadas.
+
+**Reglas de negocio**
+- Código: 40, Correlativo: 1, Descripción: Segmento de Mercado, Valor Param. (Regla de Negocios 40) - No editable.
+
+**Programas particulares**
+- No se encontraron configuraciones asociadas.
+
+**Tablas**
+- No se encontraron tablas asociadas.
+
+**Otros controles y configuraciones**
+- No se encontraron configuraciones asociadas.

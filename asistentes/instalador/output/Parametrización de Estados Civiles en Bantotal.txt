@@ -1,0 +1,16 @@
+Estado Civil
+
+Panel de parametrización: HTRT009.
+
+Se definen en este panel los distintos tipos de estado civil que la Institución Financiera desee tener como opción al momento de dar de alta un cliente. Los Códigos de Estados Civiles son fijos en el sistema:
+
+1 - Soltero/a  
+2 - Casado/a  
+3 - Separado/a  
+4 - Viudo/a  
+5 - Divorciado/a  
+6 - Concubino/a  
+7 - Casado c/Sep. De Bienes  
+8 - Unión Libre  
+
+La funcionalidad permite a la institución financiera seleccionar y parametrizar los diferentes estados civiles que pueden ser asignados a los clientes al momento de su registro en el sistema. Esto asegura que se cuente con opciones estandarizadas y reconocidas para la clasificación del estado civil de los clientes.

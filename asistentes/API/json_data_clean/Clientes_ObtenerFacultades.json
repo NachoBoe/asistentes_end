@@ -1,0 +1,44 @@
+{
+    "id": 85,
+    "nombre": "ObtenerFacultades",
+    "descripcion": "Método para obtener un listado de las facultades de una cuenta cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único del cliente."
+        }
+    },
+    "salida": {
+        "sdtFacultades": {
+            "type": "object",
+            "description": "Listado de datos de facultades.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción."
+                },
+                "tipo": {
+                    "type": "string",
+                    "description": "Tipo."
+                },
+                "grupos": {
+                    "type": "object",
+                    "description": "Listado de grupos de la facultad."
+                },
+                "firmantes": {
+                    "type": "object",
+                    "description": "Listado de firmantes de la facultad."
+                }
+            }
+        },
+        "sdtFirmantes": {
+            "type": "object",
+            "description": "Listado de datos de firmantes."
+        }
+    },
+    "sistema": "Clientes"
+}

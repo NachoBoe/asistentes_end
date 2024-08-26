@@ -1,0 +1,15 @@
+**Descripción general de la funcionalidad:**
+La funcionalidad descrita en el archivo se refiere al proceso de alta de datos de personas en el sistema Bantotal. Permite registrar información de personas físicas o jurídicas, incluyendo la selección de país, tipo de documento, número de documento, tipo de alta y canal de información. La aplicación reconoce automáticamente el tipo de persona según el documento seleccionado y ofrece opciones para registrar datos completos o básicos.
+
+**Opciones generales:**
+- País: se sugiere el país definido en el mantenimiento de parámetros.
+- Tipo Documento: se sugiere el tipo de documento definido en el mantenimiento de parámetros.
+- Número de Documento: de ingreso obligatorio.
+- Tipo de Alta: se indica si se requiere un registro de datos completo (Normal) o solo se registrarán los datos básicos de la persona (Reducida).
+- Canal de información: El valor por defecto es el primer código ingresado en la tabla FST107.
+- Tipo de Persona: se determina a partir de la selección en el campo ‘Tipo de Documento’.
+
+**Tablas:**
+- Tablas de obtención de país: FST013.
+- Tablas de obtención de tipo de documento: FST014.
+- Canal de información: FST107.

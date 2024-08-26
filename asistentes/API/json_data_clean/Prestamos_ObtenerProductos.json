@@ -1,0 +1,31 @@
+{
+    "id": 456,
+    "nombre": "ObtenerProductos",
+    "descripcion": "Método para devolver una lista de los productos de préstamos.",
+    "entrada": {},
+    "salida": {
+        "sdtProductos": {
+            "type": "object",
+            "description": "Listado de productos.",
+            "properties": {
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto"
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre de producto"
+                },
+                "moneda": {
+                    "type": "string",
+                    "description": "Símbolo de moneda"
+                },
+                "papel": {
+                    "type": "string",
+                    "description": "Símbolo de papel"
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

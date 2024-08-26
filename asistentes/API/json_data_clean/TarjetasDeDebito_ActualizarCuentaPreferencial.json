@@ -1,0 +1,21 @@
+{
+    "id": 490,
+    "nombre": "ActualizarCuentaPreferencial",
+    "descripcion": "Método para actualizar la cuenta preferencial de tarjeta de débito.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de tarjeta."
+        },
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación de cuenta preferencial del cliente."
+        }
+    },
+    "salida": {},
+    "sistema": "TarjetasDeDebito"
+}

@@ -1,0 +1,32 @@
+{
+    "id": 525,
+    "nombre": "ObtenerMetadataDeTarea",
+    "descripcion": "Método para obtener la metadata de una determinada tarea de Workflow.",
+    "entrada": {
+        "procesoId": {
+            "type": "integer",
+            "description": "Identificador de proceso Workflow."
+        },
+        "tareaId": {
+            "type": "integer",
+            "description": "Identificador de tarea Workflow."
+        }
+    },
+    "salida": {
+        "sdtMetadatas": {
+            "type": "object",
+            "description": "Listado de datos de metadata Workflow.",
+            "properties": {
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre del campo."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor del campo."
+                }
+            }
+        }
+    },
+    "sistema": "Workflow"
+}

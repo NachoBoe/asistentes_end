@@ -1,0 +1,13 @@
+La funcionalidad detallada en el archivo se refiere a la integración de datos en el sistema Bantotal, específicamente para el manejo de información relacionada con cuentas bancarias. Se definen varios campos que permiten identificar y clasificar documentos y cuentas, incluyendo el código de la cuenta, el número de cuenta, el país del documento, el tipo de documento, la titularidad y el tipo de firma. Esto sugiere que el sistema permite gestionar información de cuentas y documentos de manera estructurada, facilitando la integración de datos necesarios para procesos bancarios.
+
+Los campos definidos son:
+
+- **Pgcod**: Código (N(3))
+- **Ctnro**: Número de cuenta (N(9))
+- **Pepais**: País del documento (N(3))
+- **Petdoc**: Tipo de documento (N(2))
+- **Pendoc**: Documento (C(12))
+- **Ttcod**: Titularidad (N(2))
+- **Cttfir**: Tipo de firma (C(1))
+
+Las posibilidades que se admiten incluyen la identificación de cuentas y documentos a través de códigos y números específicos, así como la clasificación de la titularidad y el tipo de firma, lo que permite una gestión más eficiente y organizada de la información bancaria.

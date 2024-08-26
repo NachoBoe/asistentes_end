@@ -1,0 +1,23 @@
+{
+    "id": 105,
+    "nombre": "ObtenerSegmentos",
+    "descripcion": "Método para obtener un listado de los segmentos ingresados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtSegmentos": {
+            "type": "object",
+            "description": "Listado de segmentos.",
+            "properties": {
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del segmento."
+                },
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador del segmento."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

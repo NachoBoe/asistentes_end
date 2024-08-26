@@ -1,0 +1,17 @@
+{
+    "id": 199,
+    "nombre": "ActualizarPeriodoDeAcreditacion",
+    "descripcion": "Método para actualizar el período de acreditación de intereses de una subcuenta contratada.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador de subcuenta."
+        },
+        "periodoAcreditacion": {
+            "type": "number",
+            "description": "Período de acreditación."
+        }
+    },
+    "salida": {},
+    "sistema": "CuentasVista"
+}

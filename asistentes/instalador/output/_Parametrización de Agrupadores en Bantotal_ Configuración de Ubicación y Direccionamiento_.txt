@@ -1,0 +1,10 @@
+La funcionalidad detallada en el archivo se centra en la asignación de valores a agrupadores dentro del sistema Bantotal, permitiendo la parametrización de campos como país, departamento, localidad, barrio, dirección y código postal. Se permite la visualización de combos para seleccionar divisiones administrativas y la entrada de códigos específicos como el 'UBIGEO' en el caso de Perú. Además, se establece cómo se debe manejar la concatenación de descripciones y la obligatoriedad del ingreso de ciertos datos.
+
+- Opciones generales:
+  - Proceso 3058: Habilitar opción general con valor ‘S’ para permitir el ingreso de ‘n’ códigos postales por barrio.
+
+- Tablas:
+  - FST013: Países ingresados.
+  - FST068: Descripciones para la primera división administrativa.
+  - FST070: Descripciones para la segunda división administrativa.
+  - FST071: Descripciones para la tercera división administrativa y códigos de ubicación geográfica (UBIGEO).

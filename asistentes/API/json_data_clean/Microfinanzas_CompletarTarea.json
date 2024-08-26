@@ -1,0 +1,13 @@
+{
+    "id": 265,
+    "nombre": "CompletarTarea",
+    "descripcion": "Método para completar la tarea de solicitud de créditos y pasar a la etapa de evaluación.",
+    "entrada": {
+        "solicitudUId": {
+            "type": "number",
+            "description": "Identificador de instancia Workflow."
+        }
+    },
+    "salida": {},
+    "sistema": "Microfinanzas"
+}

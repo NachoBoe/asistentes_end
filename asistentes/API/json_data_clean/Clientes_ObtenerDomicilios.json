@@ -1,0 +1,76 @@
+{
+    "id": 84,
+    "nombre": "ObtenerDomicilios",
+    "descripcion": "Método para devolver un listado de los domicilios asociados al cliente indicado.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "domicilios": {
+            "type": "object",
+            "description": "Listado de domicilios.",
+            "properties": {
+                "localidad": {
+                    "type": "string",
+                    "description": "Nombre de la localidad."
+                },
+                "paisDomicilio": {
+                    "type": "string",
+                    "description": "Nombre del país."
+                },
+                "barrioId": {
+                    "type": "number",
+                    "description": "Identificador del barrio."
+                },
+                "departamento": {
+                    "type": "string",
+                    "description": "Nombre del departamento."
+                },
+                "numeroPuerta": {
+                    "type": "string",
+                    "description": "Número de puerta."
+                },
+                "barrio": {
+                    "type": "string",
+                    "description": "Nombre del barrio."
+                },
+                "localidadId": {
+                    "type": "number",
+                    "description": "Identificador de la localidad."
+                },
+                "tipoDeDomicilioId": {
+                    "type": "number",
+                    "description": "Identificador del tipo de domicilio."
+                },
+                "codigoPostal": {
+                    "type": "string",
+                    "description": "Código postal."
+                },
+                "calle": {
+                    "type": "string",
+                    "description": "Calle del domicilio."
+                },
+                "apartamento": {
+                    "type": "string",
+                    "description": "Número de apartamento."
+                },
+                "tipoDeDomicilio": {
+                    "type": "string",
+                    "description": "Nombre del tipo de domicilio."
+                },
+                "departamentoId": {
+                    "type": "number",
+                    "description": "Identificador del departamento."
+                },
+                "paisDomicilioId": {
+                    "type": "number",
+                    "description": "Identificador del país."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

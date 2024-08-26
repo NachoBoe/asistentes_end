@@ -1,0 +1,21 @@
+{
+    "id": 152,
+    "nombre": "CrearCondicionImpositiva",
+    "descripcion": "Método para dar de alta una condición impositiva para una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "codigoImpuesto": {
+            "type": "number",
+            "description": "Código de impuesto."
+        },
+        "codigoCondicion": {
+            "type": "number",
+            "description": "Código de condición."
+        }
+    },
+    "salida": {},
+    "sistema": "Contabilidad"
+}

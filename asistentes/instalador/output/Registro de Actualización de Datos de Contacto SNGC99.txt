@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la gestión de datos relacionados con la actualización de información de contacto en el sistema Bantotal. Este archivo permite registrar y actualizar información sobre empresas, cuentas, documentos y domicilios, así como datos auxiliares que pueden ser utilizados para diversos propósitos dentro del sistema.
+
+Las posibilidades que se admiten incluyen la captura de información como el número de documento, el tipo de documento, el país, y la fecha de actualización, así como varios campos auxiliares que pueden ser utilizados para almacenar información adicional numérica, de importe, carácter y fecha. Esto permite una flexibilidad en la gestión de datos y su posterior utilización en procesos bancarios y administrativos.

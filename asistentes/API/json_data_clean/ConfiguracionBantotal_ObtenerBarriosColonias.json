@@ -1,0 +1,36 @@
+{
+    "id": 117,
+    "nombre": "ObtenerBarriosColonias",
+    "descripcion": "Método para obtener un listado de los barrios/colonias ingresados en Bantotal para una determinada ciudad de un país.",
+    "entrada": {
+        "pais": {
+            "type": "number",
+            "description": "Identificador de país."
+        },
+        "estado": {
+            "type": "number",
+            "description": "Identificador de estado."
+        },
+        "ciudad": {
+            "type": "number",
+            "description": "Identificador de ciudad."
+        }
+    },
+    "salida": {
+        "sdtBarrios": {
+            "type": "object",
+            "description": "Listado de barrios.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de barrio."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripcion de barrio."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

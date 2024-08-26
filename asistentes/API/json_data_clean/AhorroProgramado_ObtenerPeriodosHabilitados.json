@@ -1,0 +1,32 @@
+{
+    "id": 10,
+    "nombre": "ObtenerPeriodosHabilitados",
+    "descripcion": "Método para obtener un listado de periodos habilitados para los casos que el alta de ahorro programado se realice mediante selección de período como lista de valores.",
+    "entrada": {
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador único de producto."
+        }
+    },
+    "salida": {
+        "sdtPeriodos": {
+            "type": "object",
+            "description": "Listado de periodos habilitados.",
+            "properties": {
+                "Valor": {
+                    "type": "number",
+                    "description": "Período."
+                },
+                "Tipo": {
+                    "type": "string",
+                    "description": "Tipo de período (Diario: 'D', Mensual: 'M', Anual: 'A')."
+                },
+                "Descripcion": {
+                    "type": "string",
+                    "description": "Descripción extendida del período."
+                }
+            }
+        }
+    },
+    "sistema": "AhorroProgramado"
+}

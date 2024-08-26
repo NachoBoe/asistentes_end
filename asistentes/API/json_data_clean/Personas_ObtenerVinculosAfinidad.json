@@ -1,0 +1,32 @@
+{
+    "id": 385,
+    "nombre": "ObtenerVinculosAfinidad",
+    "descripcion": "Método para obtener un listado de los vínculos de afinidad registrados.",
+    "entrada": {
+        "tipo": {
+            "type": "string",
+            "description": "Tipo de vínculo [Hidden: Valor fijo 'A' para este método]."
+        }
+    },
+    "salida": {
+        "sdtVinculos": {
+            "type": "object",
+            "description": "Listado de vínculos.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de vínculo."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de vínculo."
+                },
+                "tipo": {
+                    "type": "string",
+                    "description": "Tipo de vínculo."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

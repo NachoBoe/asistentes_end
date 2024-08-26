@@ -1,0 +1,72 @@
+{
+    "id": 393,
+    "nombre": "ValidarListasInhabilitados",
+    "descripcion": "Método para obtener todas las listas de inhabilitados en las que se encuentra una persona a partir de los datos ingresados. (Es mandatorio ingresar al menos una de las siguientes claves: pais, tipo de documento y número de documento, o primer nombre y primer apellido)",
+    "entrada": {
+        "pais": {
+            "type": "number",
+            "description": "Identificador de país."
+        },
+        "tipoDocumento": {
+            "type": "number",
+            "description": "Identificador de tipo de documento."
+        },
+        "numeroDocumento": {
+            "type": "string",
+            "description": "Numero de documento."
+        },
+        "tipoPersona": {
+            "type": "string",
+            "description": "Tipo de persona (Física / Jurídica)."
+        },
+        "primerNombre": {
+            "type": "string",
+            "description": "Primer nombre."
+        },
+        "segundoNombre": {
+            "type": "string",
+            "description": "Segundo nombre."
+        },
+        "primerApellido": {
+            "type": "string",
+            "description": "Primer apellido."
+        },
+        "segundoApellido": {
+            "type": "string",
+            "description": "Segundo apellido."
+        },
+        "razonSocial": {
+            "type": "string",
+            "description": "Razón social."
+        }
+    },
+    "salida": {
+        "listaInhabilitados": {
+            "type": "object",
+            "description": "Listado de lista de inhabilitados.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Identificador de lista de inhabilitados."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de lista de inhabilitados."
+                },
+                "bloqueante": {
+                    "type": "string",
+                    "description": "¿Es bloqueante? (S/N)."
+                },
+                "fechaDesde": {
+                    "type": "string",
+                    "description": "Fecha en que la persona ingresa a la lista de inhabilitados."
+                },
+                "fechaHasta": {
+                    "type": "string",
+                    "description": "Fecha en que la persona deja de pertenecer a la lista."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

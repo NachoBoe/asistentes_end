@@ -1,0 +1,23 @@
+{
+    "id": 371,
+    "nombre": "ObtenerNivelesEducativos",
+    "descripcion": "Método para obtener los niveles educativos.",
+    "entrada": {},
+    "salida": {
+        "sdtNivelesEducativos": {
+            "type": "object",
+            "description": "Listado de niveles educativos.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código de nivel educativo."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de nivel educativo."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

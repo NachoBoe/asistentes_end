@@ -1,0 +1,124 @@
+{
+    "id": 81,
+    "nombre": "ObtenerDatos",
+    "descripcion": "Método para obtener datos de un cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "sdtDatosCuentaCliente": {
+            "type": "object",
+            "description": "Datos de la cuenta cliente.",
+            "properties": {
+                "empresaId": {
+                    "type": "number",
+                    "description": "Identificador de empresa."
+                },
+                "cuentaBT": {
+                    "type": "number",
+                    "description": "Cuenta Bantotal."
+                },
+                "fechaAlta": {
+                    "type": "string",
+                    "description": "Fecha del alta."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre del cliente."
+                },
+                "sucursalId": {
+                    "type": "number",
+                    "description": "Identificador de la sucursal."
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Nombre de la sucursal."
+                },
+                "asesorId": {
+                    "type": "number",
+                    "description": "Identificador del asesor."
+                },
+                "asesor": {
+                    "type": "string",
+                    "description": "Nombre del asesor."
+                },
+                "ejecutivoId": {
+                    "type": "number",
+                    "description": "Identificador del ejecutivo."
+                },
+                "ejecutivo": {
+                    "type": "string",
+                    "description": "Nombre del ejecutivo."
+                },
+                "clasificacionInternaId": {
+                    "type": "number",
+                    "description": "Identificador de clasificación interna."
+                },
+                "clasificacionInterna": {
+                    "type": "string",
+                    "description": "Descripción de clasificación interna."
+                },
+                "fechaVtoClasificacion": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento de clasificación."
+                },
+                "segmentoId": {
+                    "type": "number",
+                    "description": "Identificador de segmento."
+                },
+                "segmento": {
+                    "type": "string",
+                    "description": "Descripción del segmento."
+                },
+                "actividadLaboralId": {
+                    "type": "number",
+                    "description": "Identificador de la actividad laboral."
+                },
+                "actividadLaboral": {
+                    "type": "string",
+                    "description": "Descripción de la actividad laboral."
+                },
+                "sectorId": {
+                    "type": "number",
+                    "description": "Identificador de sector."
+                },
+                "sector": {
+                    "type": "string",
+                    "description": "Descripción del sector."
+                },
+                "residente": {
+                    "type": "string",
+                    "description": "¿Es residente? (S/N)."
+                },
+                "empleado": {
+                    "type": "string",
+                    "description": "¿Es empleado de la institución? (S/N)."
+                },
+                "proveedor": {
+                    "type": "string",
+                    "description": "¿Es proveedor? (S/N)."
+                },
+                "retenerCorrespondencia": {
+                    "type": "string",
+                    "description": "¿Retiene correspondencia? (S/N)."
+                },
+                "correoElectronico": {
+                    "type": "string",
+                    "description": "Correo electrónico."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Descripcion de estado."
+                },
+                "estadoId": {
+                    "type": "number",
+                    "description": "Identificador de estado."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

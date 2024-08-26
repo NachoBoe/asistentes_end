@@ -1,0 +1,32 @@
+{
+    "id": 53,
+    "nombre": "VisualizarSituacionLineas",
+    "descripcion": "Método para obtener las líneas del archivo con su estado.",
+    "entrada": {
+        "archivoId": {
+            "type": "number",
+            "description": "Identificador del archivo."
+        }
+    },
+    "salida": {
+        "situacionLineas": {
+            "type": "object",
+            "description": "Lista de líneas del archivo con su estado y mensaje.",
+            "properties": {
+                "linea": {
+                    "type": "string",
+                    "description": "Línea de texto."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Estado de la línea."
+                },
+                "mensajesError": {
+                    "type": "string",
+                    "description": "Lista de mensajes de la línea."
+                }
+            }
+        }
+    },
+    "sistema": "CASHManagement"
+}

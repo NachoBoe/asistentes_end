@@ -1,0 +1,32 @@
+{
+    "id": 287,
+    "nombre": "QuitarOperacionesACancelar",
+    "descripcion": "Método para quitar operaciones a cancelar para una solicitud de créditos.",
+    "entrada": {
+        "solicitudUId": {
+            "type": "number",
+            "description": "Identificador de instancia Workflow."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único del cliente."
+        },
+        "sdtOperaciones": {
+            "type": "object",
+            "description": "Listado de operaciones.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                }
+            }
+        }
+    },
+    "salida": {
+        "montoCancelacion": {
+            "type": "number",
+            "description": "Monto de cancelación de la operación."
+        }
+    },
+    "sistema": "Microfinanzas"
+}

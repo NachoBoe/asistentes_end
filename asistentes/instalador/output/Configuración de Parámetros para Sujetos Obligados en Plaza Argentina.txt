@@ -1,0 +1,7 @@
+La funcionalidad detallada en el archivo se refiere al proceso de alta de personas en el sistema Bantotal, específicamente para la Plaza Argentina y los Sujetos Obligados. Desde el panel ‘Mantenimiento de Parámetros - Cuentas y Personas’ (HSNGPPCP), se puede agregar el flujo de alta de persona mediante el botón ‘Parm. Persona’. Posteriormente, se deben configurar las actividades que se desplegarán en el panel ‘Datos adicionales de Personas – Sujeto Obligado’ (Panel HSNGCPA5) a través del Maestro de tablas (FBC206) con el código 29, que se relaciona con los tipos de Sujeto Obligado. 
+
+- Opciones generales: 
+  - Código: 29
+
+- Tablas:
+  - Maestro de tablas (FBC206) con el código 29.

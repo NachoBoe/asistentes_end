@@ -1,0 +1,76 @@
+{
+    "id": 305,
+    "nombre": "ObtenerScores",
+    "descripcion": "Método para obtener los scores de los modelos de evaluación.",
+    "entrada": {
+        "modeloEvaluacionId": {
+            "type": "integer",
+            "description": "Código de modelo de evaluación."
+        }
+    },
+    "salida": {
+        "sdtScoresPAE": {
+            "type": "object",
+            "description": "Listado de scores de un modelo PAE.",
+            "properties": {
+                "codigoModelo": {
+                    "type": "number",
+                    "description": "Código de modelo."
+                },
+                "codigoItem": {
+                    "type": "number",
+                    "description": "Código de item."
+                },
+                "correlativo": {
+                    "type": "number",
+                    "description": "Correlativo."
+                },
+                "desdeNumerico": {
+                    "type": "number",
+                    "description": "Número desde."
+                },
+                "desdeCaracter": {
+                    "type": "string",
+                    "description": "Caracter desde."
+                },
+                "desdeFecha": {
+                    "type": "string",
+                    "description": "Fecha desde."
+                },
+                "hastaNumerico": {
+                    "type": "number",
+                    "description": "Número hasta."
+                },
+                "hastaCaracter": {
+                    "type": "string",
+                    "description": "Caracter hasta."
+                },
+                "hastaFecha": {
+                    "type": "string",
+                    "description": "Fecha hasta."
+                },
+                "valorScoreRango": {
+                    "type": "number",
+                    "description": "Rango del valor score."
+                },
+                "valorPolitica": {
+                    "type": "string",
+                    "description": "Valor de política para el rango (S/N)."
+                },
+                "idPolitica": {
+                    "type": "number",
+                    "description": "Código de política."
+                },
+                "mensajeIncumPolitica": {
+                    "type": "string",
+                    "description": "Mensaje de política incumplida."
+                },
+                "tipoRestriccion": {
+                    "type": "string",
+                    "description": "Tipo de restricción por defecto. ('I'= Informativa; 'A'= Alerta; 'B'= Bloqueante; 'E'= Bloqueante con Excepción;)."
+                }
+            }
+        }
+    },
+    "sistema": "PAE"
+}

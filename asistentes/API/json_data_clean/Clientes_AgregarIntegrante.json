@@ -1,0 +1,21 @@
+{
+    "id": 61,
+    "nombre": "AgregarIntegrante",
+    "descripcion": "Método para agregar un integrante a una cuenta cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "codigoDeTitularidad": {
+            "type": "number",
+            "description": "Código de titularidad."
+        }
+    },
+    "salida": {},
+    "sistema": "Clientes"
+}

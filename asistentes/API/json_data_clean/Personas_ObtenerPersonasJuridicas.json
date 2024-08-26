@@ -1,0 +1,52 @@
+{
+    "id": 374,
+    "nombre": "ObtenerPersonasJuridicas",
+    "descripcion": "Método para obtener un listado de personas jurídicas (10 máximo), dada una razón social.",
+    "entrada": {
+        "razonSocial": {
+            "type": "string",
+            "description": "Razón social."
+        }
+    },
+    "salida": {
+        "sdtPersonasJuridicas": {
+            "type": "object",
+            "description": "Listado de personas jurídicas.",
+            "properties": {
+                "personaUId": {
+                    "type": "number",
+                    "description": "Identificador único de persona."
+                },
+                "paisId": {
+                    "type": "number",
+                    "description": "Identificador de país."
+                },
+                "pais": {
+                    "type": "string",
+                    "description": "Nombre de país."
+                },
+                "tipoDocumentoId": {
+                    "type": "number",
+                    "description": "Identificador de tipo de documento."
+                },
+                "tipoDocumento": {
+                    "type": "string",
+                    "description": "Nombre de tipo de documento."
+                },
+                "nroDocumento": {
+                    "type": "string",
+                    "description": "Número de documento."
+                },
+                "razonSocial": {
+                    "type": "string",
+                    "description": "Razón social."
+                },
+                "fechaConstitucion": {
+                    "type": "string",
+                    "description": "Fecha de constitución."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

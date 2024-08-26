@@ -1,0 +1,13 @@
+{
+    "id": 129,
+    "nombre": "ObtenerFechaDeSistema",
+    "descripcion": "Método para obtener la fecha del sistema.",
+    "entrada": {},
+    "salida": {
+        "fecha_sistema": {
+            "type": "Date",
+            "description": "Fecha del sistema."
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

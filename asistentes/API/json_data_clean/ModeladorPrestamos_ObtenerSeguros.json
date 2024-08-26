@@ -1,0 +1,44 @@
+{
+    "id": 302,
+    "nombre": "ObtenerSeguros",
+    "descripcion": "Método para obtener los seguros disponibles de un producto de préstamo.",
+    "entrada": {
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador de producto."
+        }
+    },
+    "salida": {
+        "sdtSeguros": {
+            "type": "object",
+            "description": "Listado de seguros.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Codigo del seguro."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripcion del seguro."
+                },
+                "tipo": {
+                    "type": "string",
+                    "description": "Tipo del seguro."
+                },
+                "modificable": {
+                    "type": "string",
+                    "description": "Indica si es modificable."
+                },
+                "importeFijo": {
+                    "type": "number",
+                    "description": "Importe fijo del seguro."
+                },
+                "porcentaje": {
+                    "type": "number",
+                    "description": "Porcentaje del seguro."
+                }
+            }
+        }
+    },
+    "sistema": "ModeladorPrestamos"
+}

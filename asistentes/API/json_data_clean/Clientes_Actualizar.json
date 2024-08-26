@@ -1,0 +1,165 @@
+{
+    "id": 58,
+    "nombre": "Actualizar",
+    "descripcion": "Método para actualizar los datos de un cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "sdtPersona": {
+            "type": "object",
+            "description": "Datos de cliente.",
+            "properties": {
+                "paisDocumentoId": {
+                    "type": "number",
+                    "description": "Identificador de país del documento."
+                },
+                "tipoDocumentoId": {
+                    "type": "number",
+                    "description": "Identificador de tipo de documento."
+                },
+                "nroDocumento": {
+                    "type": "string",
+                    "description": "Número de documento."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento de documento."
+                },
+                "primerApellido": {
+                    "type": "string",
+                    "description": "Primer apellido."
+                },
+                "segundoApellido": {
+                    "type": "string",
+                    "description": "Segundo apellido."
+                },
+                "primerNombre": {
+                    "type": "string",
+                    "description": "Primer nombre."
+                },
+                "segundoNombre": {
+                    "type": "string",
+                    "description": "Segundo nombre."
+                },
+                "sexo": {
+                    "type": "string",
+                    "description": "Sexo (M/F)."
+                },
+                "fechaNacimiento": {
+                    "type": "string",
+                    "description": "Fecha de nacimiento."
+                },
+                "estadoCivilId": {
+                    "type": "string",
+                    "description": "Identificador de estado civil."
+                },
+                "estadoCivil": {
+                    "type": "string",
+                    "description": "Descripción de estado civil."
+                },
+                "nacionalidadId": {
+                    "type": "number",
+                    "description": "Identificador de país."
+                },
+                "ocupacionId": {
+                    "type": "number",
+                    "description": "Identificador de ocupación."
+                },
+                "actividadLaboralId": {
+                    "type": "number",
+                    "description": "Identificador de actividad."
+                },
+                "fechaInicioActividad": {
+                    "type": "string",
+                    "description": "Fecha inicio actividad."
+                },
+                "ingresos": {
+                    "type": "number",
+                    "description": "Ingresos."
+                },
+                "sectorId": {
+                    "type": "number",
+                    "description": "Identificador de sector."
+                },
+                "clasificacionInternaId": {
+                    "type": "number",
+                    "description": "Identificador de clasificacion interna."
+                },
+                "paisDomicilioId": {
+                    "type": "number",
+                    "description": "Identificador de país de domicilio."
+                },
+                "departamentoId": {
+                    "type": "number",
+                    "description": "Identificador de departamento."
+                },
+                "localidadId": {
+                    "type": "number",
+                    "description": "Identificador de localidad."
+                },
+                "barrioId": {
+                    "type": "number",
+                    "description": "Identificador de localidad."
+                },
+                "calle": {
+                    "type": "string",
+                    "description": "Calle."
+                },
+                "numeroPuerta": {
+                    "type": "string",
+                    "description": "Número de puerta."
+                },
+                "apartamento": {
+                    "type": "string",
+                    "description": "Apartamento."
+                },
+                "codigoPostal": {
+                    "type": "string",
+                    "description": "Código postal."
+                },
+                "telefonoFijo": {
+                    "type": "string",
+                    "description": "Teléfono fijo."
+                },
+                "telefonoCelular": {
+                    "type": "string",
+                    "description": "Teléfono celular."
+                },
+                "correoElectronico": {
+                    "type": "string",
+                    "description": "Correo electronico."
+                },
+                "ejecutivoId": {
+                    "type": "number",
+                    "description": "Identificador del ejecutivo."
+                },
+                "piso": {
+                    "type": "string",
+                    "description": "Piso del domicilio."
+                }
+            },
+            "required": [
+                "clienteUId",
+                "primerApellido",
+                "primerNombre",
+                "fechaNacimiento",
+                "sexo",
+                "ocupacionId",
+                "fechaInicioActividad",
+                "paisDomicilioId",
+                "departamentoId",
+                "localidadId",
+                "calle",
+                "telefonoFijo",
+                "telefonoCelular",
+                "correoElectronico",
+                "sectorId",
+                "clasificacionInternaId"
+            ]
+        }
+    },
+    "salida": {},
+    "sistema": "Clientes"
+}

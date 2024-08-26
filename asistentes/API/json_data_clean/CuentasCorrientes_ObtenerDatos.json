@@ -1,0 +1,130 @@
+{
+    "id": 179,
+    "nombre": "ObtenerDatos",
+    "descripcion": "Método para obtener los datos de un producto cuenta corriente en Bantotal.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        }
+    },
+    "salida": {
+        "sdtCuentaCorriente": {
+            "type": "object",
+            "description": "Datos del producto.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "idOperacionFmt": {
+                    "type": "string",
+                    "description": "Identificador String (concatenación de algunos conceptos claves de la operación)."
+                },
+                "idOperacionBT": {
+                    "type": "string",
+                    "description": "Identificador String Bantotal (concatenación de todos los conceptos claves de la operación)."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre del producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel."
+                        }
+                    }
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Nombre de la sucursal de alta."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Descrición de estado de la operación."
+                },
+                "ejecutivo": {
+                    "type": "string",
+                    "description": "Nombre de ejecutivo de alta."
+                },
+                "fechaApertura": {
+                    "type": "string",
+                    "description": "Fecha de alta."
+                },
+                "saldoContable": {
+                    "type": "number",
+                    "description": "Saldo total."
+                },
+                "saldoDisponible": {
+                    "type": "number",
+                    "description": "Saldo disponible."
+                },
+                "saldoBloqueado": {
+                    "type": "number",
+                    "description": "Saldo bloqueado."
+                },
+                "saldoPorConfirmar": {
+                    "type": "number",
+                    "description": "Saldo pendiente de confirmación."
+                },
+                "saldoCobertura": {
+                    "type": "number",
+                    "description": "Saldo de cobertura."
+                },
+                "paquete": {
+                    "type": "string",
+                    "description": "¿Tiene paquete? (S/N)."
+                },
+                "descPaquete": {
+                    "type": "string",
+                    "description": "Descripción de paquete."
+                },
+                "pagaComisBajoPromedio": {
+                    "type": "string",
+                    "description": "¿Paga comisión por bajo promedio? (S/N)."
+                },
+                "pagaComisCantMovimientos": {
+                    "type": "string",
+                    "description": "¿Paga comisión por cantidad de movimientos? (S/N)."
+                },
+                "pagaComisEstadoCuenta": {
+                    "type": "string",
+                    "description": "¿Paga Comisión por estado de cuenta? (S/N)."
+                },
+                "sobregiroAutorizado": {
+                    "type": "string",
+                    "description": "¿Sobregiro autorizado? (S/N)."
+                },
+                "diasSobregiro": {
+                    "type": "number",
+                    "description": "Días de Sobregiro."
+                },
+                "cobraIntereses": {
+                    "type": "string",
+                    "description": "¿Cobra intereses? (S/N)."
+                },
+                "chequeras": {
+                    "type": "string",
+                    "description": "Datos de la chequera."
+                },
+                "frecuenciaEmisionEC": {
+                    "type": "string",
+                    "description": "Frecuencia de emisión de estado de cuenta."
+                }
+            }
+        }
+    },
+    "sistema": "CuentasCorrientes"
+}

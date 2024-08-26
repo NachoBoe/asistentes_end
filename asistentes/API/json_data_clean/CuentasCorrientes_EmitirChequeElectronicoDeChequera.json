@@ -1,0 +1,64 @@
+{
+    "id": 174,
+    "nombre": "EmitirChequeElectronicoDeChequera",
+    "descripcion": "Método para emitir un cheque electrónico de una chequera existente.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación de subcuenta."
+        },
+        "importe": {
+            "type": "number",
+            "description": "Importe."
+        },
+        "cantidadCheques": {
+            "type": "number",
+            "description": "Cantidad de cheques a emitir."
+        },
+        "CUITBeneficiario": {
+            "type": "string",
+            "description": "CUIT del beneficiario."
+        },
+        "paisBeneficiarioId": {
+            "type": "number",
+            "description": "Identificador de país del beneficiario."
+        },
+        "tipoDocumentoBeneficiarioId": {
+            "type": "number",
+            "description": "Identificador de tipo de documento del beneficiario."
+        },
+        "fechaPago": {
+            "type": "string",
+            "description": "Fecha de pago."
+        }
+    },
+    "salida": {
+        "listaCheques": {
+            "type": "object",
+            "description": "Lista de cheques.",
+            "properties": {
+                "numeroChequera": {
+                    "type": "number",
+                    "description": "Numero de chequera electrónica."
+                },
+                "numeroCheque": {
+                    "type": "number",
+                    "description": "Numero de cheque electrónico."
+                },
+                "importe": {
+                    "type": "number",
+                    "description": "Importe."
+                },
+                "beneficiario": {
+                    "type": "string",
+                    "description": "Nombre del beneficiario."
+                },
+                "CMC7": {
+                    "type": "number",
+                    "description": "Identificador CMC7 de cheque electrónico."
+                }
+            }
+        }
+    },
+    "sistema": "CuentasCorrientes"
+}

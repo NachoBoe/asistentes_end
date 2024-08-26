@@ -1,0 +1,12 @@
+El archivo del sistema Bantotal describe el "4to Nivel de Agrupación de Direcciones" en el contexto del SNGC04. La funcionalidad se centra en la gestión de identificadores y descripciones asociadas a diferentes niveles de agrupación, permitiendo una estructura jerárquica en la organización de direcciones dentro del sistema.
+
+Los campos definidos son:
+
+- sngc01id: Identificador (N, 3.0)
+- sngc02id: Identificador Nivel 2 (N, 3.0)
+- sngc03id: Identificador Nivel 3 (N, 3.0)
+- sngc04id: Identificador Nivel 4 (N, 3.0)
+- sngc04Dsc: Descripción (C, 35)
+- sngc04DeEx: Descripción Extendida (C, 80)
+
+Esta configuración permite la creación y gestión de niveles de agrupación de direcciones, facilitando la organización y el acceso a la información relacionada con cada nivel.

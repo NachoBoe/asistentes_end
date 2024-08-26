@@ -1,0 +1,18 @@
+{
+    "id": 446,
+    "nombre": "ObtenerFechaDeIncumplimiento",
+    "descripcion": "Método para obtener fecha de incumplimiento de un préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación de préstamo."
+        }
+    },
+    "salida": {
+        "fecha_incumplimiento": {
+            "type": "string",
+            "description": "Fecha de incumplimiento."
+        }
+    },
+    "sistema": "Prestamos"
+}

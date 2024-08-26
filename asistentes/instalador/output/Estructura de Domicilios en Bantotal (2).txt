@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la gestión de domicilios dentro del sistema Bantotal. Esta incluye la captura y almacenamiento de información relevante sobre direcciones, como el código de domicilio, calle, número, piso, país, departamento/provincia, localidad, distrito, código postal, y otros atributos relacionados con la ubicación de un cliente o entidad. Las posibilidades que se admiten incluyen la identificación de la vivienda o negocio, la referencia a arrendadores, y la categorización mediante agrupadores que permiten clasificar y describir los domicilios de manera más detallada.
+
+No se encontraron configuraciones asociadas, reglas de negocio, programas particulares, tablas, ni otros controles y configuraciones.

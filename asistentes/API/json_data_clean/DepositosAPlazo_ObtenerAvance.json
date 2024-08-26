@@ -1,0 +1,38 @@
+{
+    "id": 233,
+    "nombre": "ObtenerAvance",
+    "descripcion": "Método para obtener el avance de un depósito a plazo.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "depositoUId": {
+            "type": "number",
+            "description": "Identificador único de operación de depósito."
+        }
+    },
+    "salida": {
+        "fechaAlta": {
+            "type": "string",
+            "description": "Fecha de alta del depósito."
+        },
+        "fechaVencimiento": {
+            "type": "string",
+            "description": "Fecha de vencimiento del depósito."
+        },
+        "plazoTranscurrido": {
+            "type": "number",
+            "description": "Plazo transcurrido del depósito."
+        },
+        "plazoTotal": {
+            "type": "number",
+            "description": "Plazo total del depósito."
+        },
+        "porcentajeAvance": {
+            "type": "number",
+            "description": "Porcentaje de avance del depósito (según el plazo)."
+        }
+    },
+    "sistema": "DepositosAPlazo"
+}

@@ -1,0 +1,26 @@
+{
+    "id": 203,
+    "nombre": "Cancelar",
+    "descripcion": "Método para realizar la liquidación de una cuenta vista.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cuenta cliente."
+        },
+        "cuentaLiquidacionUId": {
+            "type": "number",
+            "description": "Identificador único de la cuenta vista a cancelar."
+        },
+        "cuentaAcreditacionUId": {
+            "type": "number",
+            "description": "Identificador único de la cuenta vista de acreditación/cobro de la liquidación."
+        }
+    },
+    "salida": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único del movimiento realizado."
+        }
+    },
+    "sistema": "CuentasVista"
+}

@@ -1,0 +1,34 @@
+{
+    "id": 86,
+    "nombre": "ObtenerIdentificadorUnico",
+    "descripcion": "Método para devolver el identificador único de un cliente, dado su identificador de cuenta en Bantotal.",
+    "entrada": {
+        "cuentaBT": {
+            "type": "integer",
+            "description": "Cuenta Bantotal."
+        }
+    },
+    "salida": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "tipoDocumento": {
+            "type": "string",
+            "description": "Tipo de documento."
+        },
+        "numeroDocumento": {
+            "type": "string",
+            "description": "Número de documento."
+        },
+        "nombre": {
+            "type": "string",
+            "description": "Nombre."
+        },
+        "ejecutivo": {
+            "type": "string",
+            "description": "Ejecutivo."
+        }
+    },
+    "sistema": "Clientes"
+}

@@ -1,0 +1,25 @@
+{
+    "id": 171,
+    "nombre": "DepositarChequeElectronicoPropio",
+    "descripcion": "Método para depositar un cheque electrónico propio.",
+    "entrada": {
+        "operacionUIdOrigen": {
+            "type": "number",
+            "description": "Identificador único de operación de origen."
+        },
+        "operacionUIdDestino": {
+            "type": "number",
+            "description": "Identificador único de operación destino."
+        },
+        "importe": {
+            "type": "number",
+            "description": "Importe."
+        },
+        "numeroCheque": {
+            "type": "number",
+            "description": "Numero de cheque."
+        }
+    },
+    "salida": {},
+    "sistema": "CuentasCorrientes"
+}

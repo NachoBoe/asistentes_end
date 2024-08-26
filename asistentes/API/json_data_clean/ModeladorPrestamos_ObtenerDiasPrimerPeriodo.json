@@ -1,0 +1,22 @@
+{
+    "id": 297,
+    "nombre": "ObtenerDiasPrimerPeriodo",
+    "descripcion": "Método para obtener cantidad mínima y máxima de días para el primer período de un producto de préstamo.",
+    "entrada": {
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador de producto."
+        }
+    },
+    "salida": {
+        "minimo": {
+            "type": "number",
+            "description": "Mínimo de días posibles para el primer período."
+        },
+        "maximo": {
+            "type": "number",
+            "description": "Máximo de días posibles para el primer período."
+        }
+    },
+    "sistema": "ModeladorPrestamos"
+}

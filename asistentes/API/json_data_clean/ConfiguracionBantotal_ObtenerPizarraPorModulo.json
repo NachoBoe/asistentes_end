@@ -1,0 +1,28 @@
+{
+    "id": 138,
+    "nombre": "ObtenerPizarraPorModulo",
+    "descripcion": "Método que devuelve la pizarra genérica del módulo.",
+    "entrada": {
+        "modulo": {
+            "type": "number",
+            "description": "Módulo."
+        }
+    },
+    "salida": {
+        "sdtPizarras": {
+            "type": "object",
+            "description": "Pizarras.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Identificador de pizarra."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Nombre de la pizarra."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

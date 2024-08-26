@@ -1,0 +1,13 @@
+{
+    "id": 45,
+    "nombre": "ProcesarOrden",
+    "descripcion": "Método para procesar una orden.",
+    "entrada": {
+        "ordenId": {
+            "type": "number",
+            "description": "Identificador de orden CASH."
+        }
+    },
+    "salida": {},
+    "sistema": "CASHManagement"
+}

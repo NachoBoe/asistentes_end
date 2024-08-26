@@ -1,0 +1,78 @@
+{
+    "id": 338,
+    "nombre": "CrearConyuge",
+    "descripcion": "Método para crear una persona y asociar una relación de cónyuge con otra.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "estadoCivilId": {
+            "type": "string",
+            "description": "Identificador del estado civil."
+        },
+        "sdtPersona": {
+            "type": "object",
+            "description": "Datos del cónyuge.",
+            "properties": {
+                "paisDocumentoId": {
+                    "type": "number",
+                    "description": "Identificador del país."
+                },
+                "paisDocumento": {
+                    "type": "string",
+                    "description": "Nombre del país."
+                },
+                "tipoDocumentoId": {
+                    "type": "number",
+                    "description": "Identificador del tipo de documento."
+                },
+                "tipoDocumento": {
+                    "type": "string",
+                    "description": "Nombre del tipo de documento."
+                },
+                "nroDocumento": {
+                    "type": "string",
+                    "description": "Número de documento."
+                },
+                "primerApellido": {
+                    "type": "string",
+                    "description": "Primer apellido."
+                },
+                "segundoApellido": {
+                    "type": "string",
+                    "description": "Segundo apellido."
+                },
+                "primerNombre": {
+                    "type": "string",
+                    "description": "Primer nombre."
+                },
+                "segundoNombre": {
+                    "type": "string",
+                    "description": "Segundo nombre."
+                },
+                "sexo": {
+                    "type": "string",
+                    "description": "Sexo (M/F)."
+                }
+            },
+            "required": [
+                "personaUId",
+                "estadoCivilId",
+                "paisDocumentoId",
+                "tipoDocumentoId",
+                "nroDocumento",
+                "primerApellido",
+                "primerNombre",
+                "sexo"
+            ]
+        }
+    },
+    "salida": {
+        "personaUIdConyuge": {
+            "type": "number",
+            "description": "Identificador único del cónyuge."
+        }
+    },
+    "sistema": "Personas"
+}

@@ -1,0 +1,7 @@
+El archivo del sistema Bantotal describe los códigos de domicilio, que son parámetros utilizados para identificar y gestionar domicilios dentro de la plataforma bancaria. 
+
+**Descripción de la funcionalidad:**
+- **Docod (N(2))**: Este campo representa el código del domicilio, que es un número de dos dígitos.
+- **Donom (C(20))**: Este campo contiene el nombre del domicilio, que puede tener hasta 20 caracteres.
+
+Las posibilidades que se admiten incluyen la creación, modificación y consulta de domicilios mediante la utilización de los códigos y nombres asociados.

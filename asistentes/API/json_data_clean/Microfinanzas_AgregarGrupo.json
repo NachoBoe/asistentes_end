@@ -1,0 +1,84 @@
+{
+    "id": 261,
+    "nombre": "AgregarGrupo",
+    "descripcion": "Método para agregar un grupo de crédito.",
+    "entrada": {
+        "sdtDetalleGrupo": {
+            "type": "object",
+            "description": "Datos del grupo.",
+            "properties": {
+                "tipoId": {
+                    "type": "number",
+                    "description": "Identificador del tipo de grupo."
+                },
+                "tipo": {
+                    "type": "string",
+                    "description": "Tipo de grupo."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre del grupo."
+                },
+                "nombreExtendido": {
+                    "type": "string",
+                    "description": "Nombre extendido del grupo."
+                },
+                "asesorId": {
+                    "type": "number",
+                    "description": "Identificador del asesor del grupo."
+                },
+                "asesor": {
+                    "type": "string",
+                    "description": "Asesor del grupo."
+                },
+                "fechaAlta": {
+                    "type": "string",
+                    "description": "Fecha de alta del grupo."
+                },
+                "fechaDesde": {
+                    "type": "string",
+                    "description": "Fecha comienzo vigencia."
+                },
+                "fechaHasta": {
+                    "type": "string",
+                    "description": "Fecha fin vigencia."
+                },
+                "usuarioAlta": {
+                    "type": "string",
+                    "description": "Usuario de alta del grupo."
+                },
+                "vigente": {
+                    "type": "string",
+                    "description": "¿Es vigente? (S/N)."
+                },
+                "bloqueado": {
+                    "type": "string",
+                    "description": "¿Está bloqueado? (S/N)."
+                },
+                "nroSecuencia": {
+                    "type": "number",
+                    "description": "Número de secuencia."
+                },
+                "agenciaId": {
+                    "type": "number",
+                    "description": "Identificador de agencia."
+                },
+                "agencia": {
+                    "type": "string",
+                    "description": "Agencia."
+                }
+            },
+            "required": [
+                "tipoId",
+                "nombre"
+            ]
+        }
+    },
+    "salida": {
+        "grupoId": {
+            "type": "number",
+            "description": "Identificador de grupo."
+        }
+    },
+    "sistema": "Microfinanzas"
+}

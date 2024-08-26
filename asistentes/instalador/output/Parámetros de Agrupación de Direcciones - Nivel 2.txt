@@ -1,0 +1,10 @@
+El archivo del sistema Bantotal describe el "2do Nivel de Agrupación de Direcciones" en el contexto del SNGC02. Esta funcionalidad permite la organización y clasificación de direcciones dentro del sistema, facilitando la gestión de información relacionada con las mismas.
+
+Los campos definidos en la configuración son:
+
+- **sngc01id**: Identificador (N, 3.0)
+- **sngc02id**: Identificador Nivel 2 (N, 3.0)
+- **sngc02Dsc**: Descripción (C, 35)
+- **sngc02DeEx**: Descripción Extendida (C, 80)
+
+Las posibilidades que se admiten incluyen la creación de diferentes niveles de agrupación de direcciones, permitiendo una mejor organización y acceso a la información relacionada con las direcciones en el sistema.

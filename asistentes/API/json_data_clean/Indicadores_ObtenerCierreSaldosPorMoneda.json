@@ -1,0 +1,31 @@
+{
+    "id": 251,
+    "nombre": "ObtenerCierreSaldosPorMoneda",
+    "descripcion": "Método para obtener el cierre de saldos por moneda.",
+    "entrada": {},
+    "salida": {
+        "sdtBalanceMonedaSaldos": {
+            "type": "object",
+            "description": "Listado de cierre de saldos por moneda.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código de la moneda."
+                },
+                "saldo": {
+                    "type": "number",
+                    "description": "Saldo de cierre de moneda."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre de moneda."
+                },
+                "signo": {
+                    "type": "string",
+                    "description": "Signo de moneda."
+                }
+            }
+        }
+    },
+    "sistema": "Indicadores"
+}

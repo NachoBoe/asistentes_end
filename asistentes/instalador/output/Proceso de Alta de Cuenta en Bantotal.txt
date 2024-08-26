@@ -1,0 +1,5 @@
+- Opciones generales:
+  - Opción General de Procesos No. 1132: Se debe definir en ‘S’ para utilizar integración mixta, es decir, compuesta por personas de distinta naturaleza.
+
+Descripción general de la funcionalidad:
+El proceso de alta de cuenta en el sistema Bantotal comienza con la determinación de los integrantes de la cuenta cliente. Se asigna automáticamente un número a la cuenta utilizando un tipo numerador específico y se accede a este numerador a través de la sucursal correspondiente a Casa Central. Además, se permite la integración de personas de distintas naturalezas mediante una opción específica. También se pueden agregar, modificar o eliminar otros integrantes de la cuenta cliente, solicitando datos como país, tipo de documento y código de titularidad.

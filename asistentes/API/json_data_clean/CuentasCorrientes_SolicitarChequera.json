@@ -1,0 +1,69 @@
+{
+    "id": 189,
+    "nombre": "SolicitarChequera",
+    "descripcion": "Método para solicitar chequeras para una cuenta.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación de subcuenta."
+        },
+        "tipoCheque": {
+            "type": "number",
+            "description": "Tipo de chequera a solicitar."
+        },
+        "cantidadLibretas": {
+            "type": "number",
+            "description": "Cantidad de libretas a solicitar."
+        },
+        "datosSolicitud": {
+            "type": "object",
+            "description": "Datos de solicitud de chequera.",
+            "properties": {
+                "persona1Texto1": {
+                    "type": "string",
+                    "description": "Información persona 1."
+                },
+                "persona1Texto2": {
+                    "type": "string",
+                    "description": "Información complementaria persona 1."
+                },
+                "persona2Texto1": {
+                    "type": "string",
+                    "description": "Información persona 2."
+                },
+                "persona2Texto2": {
+                    "type": "string",
+                    "description": "Información complementaria persona 2."
+                },
+                "persona3Texto1": {
+                    "type": "string",
+                    "description": "Información persona 3."
+                },
+                "persona3Texto2": {
+                    "type": "string",
+                    "description": "Información complementaria persona 3."
+                },
+                "domicilio": {
+                    "type": "string",
+                    "description": "Domicilio a enviar la chequera."
+                },
+                "sucuraslDeRetiroId": {
+                    "type": "number",
+                    "description": "Identificador de la sucursal de retiro."
+                }
+            },
+            "required": [
+                "persona1Texto1",
+                "domicilio",
+                "sucuraslDeRetiroId"
+            ]
+        }
+    },
+    "salida": {
+        "chequeraId": {
+            "type": "number",
+            "description": "Identificador de la solicitud de chequera."
+        }
+    },
+    "sistema": "CuentasCorrientes"
+}

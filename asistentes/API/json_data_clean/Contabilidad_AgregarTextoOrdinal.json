@@ -1,0 +1,45 @@
+{
+    "id": 150,
+    "nombre": "AgregarTextoOrdinal",
+    "descripcion": "Método para agregar un texto a un ordinal de un asiento.",
+    "entrada": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único del asiento."
+        },
+        "ordinal": {
+            "type": "number",
+            "description": "Ordinal."
+        },
+        "textoMovimiento": {
+            "type": "object",
+            "description": "Datos del texto del movimiento.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código del texto."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del tipo de texto."
+                },
+                "renglon": {
+                    "type": "number",
+                    "description": "Renglón."
+                },
+                "texto": {
+                    "type": "string",
+                    "description": "Texto asociado."
+                }
+            },
+            "required": [
+                "codigo",
+                "descripcion",
+                "renglon",
+                "texto"
+            ]
+        }
+    },
+    "salida": {},
+    "sistema": "Contabilidad"
+}

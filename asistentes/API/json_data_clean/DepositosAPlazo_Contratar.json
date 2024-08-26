@@ -1,0 +1,42 @@
+{
+    "id": 229,
+    "nombre": "Contratar",
+    "descripcion": "Método para dar de alta de un depósito a plazo.",
+    "entrada": {
+        "simulacionUId": {
+            "type": "number",
+            "description": "Identificador único de la simulación."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "operacionUIdOrigen": {
+            "type": "number",
+            "description": "Identificador único de la operación de donde se retira el monto del DPF."
+        },
+        "operacionUIdDestino": {
+            "type": "number",
+            "description": "Identificador único de la operación de acreditación (Capital y/o intereses según instrucción)."
+        },
+        "instruccionAlVencimiento": {
+            "type": "number",
+            "description": "Identificador de instrucción al vencimiento."
+        },
+        "controlaMismoCliente": {
+            "type": "string",
+            "description": "¿Controla correspondencia de cuenta de débito contra cuenta cliente originante? [Hidden: Valores 'S'/'N']."
+        }
+    },
+    "salida": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento."
+        }
+    },
+    "sistema": "DepositosAPlazo"
+}

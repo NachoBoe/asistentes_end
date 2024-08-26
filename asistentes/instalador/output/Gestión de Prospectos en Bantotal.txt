@@ -1,0 +1,11 @@
+La funcionalidad detallada en el archivo describe el funcionamiento del Web panel HSNGC90 en la plataforma Bantotal, que permite gestionar prospectos en una base de datos. Al acceder al panel, se presenta una grilla con los prospectos existentes, y se ofrecen diversas opciones para agregar, modificar, eliminar, consultar y gestionar la agenda de prospectos. 
+
+Las posibilidades que se admiten incluyen:
+
+- Agregar nuevos prospectos y productos de interés, con la opción de agendar tareas y alertar a asesores.
+- Modificar datos de prospectos existentes, excluyendo la clave del prospecto.
+- Eliminar prospectos, que en realidad asigna una fecha de baja en lugar de eliminar el registro.
+- Consultar información detallada de prospectos y sus productos de interés.
+- Crear personas físicas a partir de prospectos seleccionados con alta inconclusa.
+
+No se encontraron configuraciones asociadas, reglas de negocio, programas particulares, tablas ni otros controles y configuraciones en el texto proporcionado.

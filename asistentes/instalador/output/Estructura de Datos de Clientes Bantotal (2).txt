@@ -1,0 +1,12 @@
+El archivo del sistema Bantotal describe una tabla denominada "FSE102" que contiene los siguientes atributos grabados:
+
+- Correlativo: PfxCorr
+- Tipo: PfxTipo
+- Relación: PfxVicod
+- Nombre: PfxNom
+- Domicilio 1: PfxDom1
+- Domicilio 2: PfxDom2
+- Domicilio 3: PfxDom3
+- Teléfono: PfxTel
+
+La funcionalidad detallada en el archivo se centra en la gestión de información relacionada con entidades, permitiendo el registro de datos como el nombre, domicilios y teléfono, así como la relación y tipo de la entidad. Las posibilidades que se admiten incluyen la captura y almacenamiento de información básica de contacto y relación de las entidades en el sistema.

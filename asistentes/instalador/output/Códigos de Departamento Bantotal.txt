@@ -1,0 +1,10 @@
+El archivo del sistema Bantotal detalla los códigos de departamento, que son parámetros utilizados para identificar y clasificar los departamentos dentro de un país. La funcionalidad principal de este archivo es proporcionar un esquema que permite la gestión de información geográfica relacionada con los departamentos, facilitando así la organización y el acceso a datos específicos de cada uno.
+
+Los campos definidos en el archivo son:
+
+- **País**: N(3) - Código del país.
+- **DepCod**: N(5) - Código de departamento.
+- **DepNom**: C(20) - Nombre del departamento.
+- **ZonCod**: N(3) - Código de zona.
+
+Las posibilidades que se admiten incluyen la asignación de códigos únicos a cada departamento, así como la posibilidad de agrupar departamentos bajo diferentes zonas, lo que permite una mejor segmentación y análisis de datos en el contexto bancario.

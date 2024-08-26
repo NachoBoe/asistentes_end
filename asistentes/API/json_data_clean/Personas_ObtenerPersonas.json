@@ -1,0 +1,76 @@
+{
+    "id": 376,
+    "nombre": "ObtenerPersonas",
+    "descripcion": "Método para obtener los datos de la/s persona/s con el nombre ingresado.",
+    "entrada": {
+        "primerNombre": {
+            "type": "string",
+            "description": "Primer nombre."
+        },
+        "segundoNombre": {
+            "type": "string",
+            "description": "Segundo nombre."
+        },
+        "primerApellido": {
+            "type": "string",
+            "description": "Primer apellido."
+        },
+        "segundoApellido": {
+            "type": "string",
+            "description": "Segundo apellido."
+        }
+    },
+    "salida": {
+        "sdtPersonas": {
+            "type": "object",
+            "description": "Listado de datos de persona.",
+            "properties": {
+                "personaUId": {
+                    "type": "number",
+                    "description": "Identificador único de persona."
+                },
+                "primerNombre": {
+                    "type": "string",
+                    "description": "Primer nombre."
+                },
+                "segundoNombre": {
+                    "type": "string",
+                    "description": "Segundo nombre."
+                },
+                "primerApellido": {
+                    "type": "string",
+                    "description": "Primer apellido."
+                },
+                "segundoApellido": {
+                    "type": "string",
+                    "description": "Segundo apellido."
+                },
+                "nroDocumento": {
+                    "type": "string",
+                    "description": "Número de documento."
+                },
+                "paisId": {
+                    "type": "number",
+                    "description": "Identificador del país."
+                },
+                "pais": {
+                    "type": "string",
+                    "description": "Nombre del país."
+                },
+                "tipoDocumentoId": {
+                    "type": "number",
+                    "description": "Identificador de tipo de documento."
+                },
+                "tipoDocumento": {
+                    "type": "string",
+                    "description": "Descripción del tipo de documento."
+                },
+                "fechaNacimiento": {
+                    "type": "string",
+                    "description": "Fecha de nacimiento."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

@@ -1,0 +1,29 @@
+{
+    "id": 4,
+    "nombre": "ModificarMetaDeAhorro",
+    "descripcion": "Método para modificar la meta de ahorro.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "ahorroUId": {
+            "type": "number",
+            "description": "Identificador único de operación de ahorro."
+        },
+        "motivoAhorro": {
+            "type": "string",
+            "description": "Descripción del motivo por el cual se ahorra [Ingreso opcional]."
+        },
+        "montoMetaAhorro": {
+            "type": "number",
+            "description": "Monto propuesto como meta para el ahorro [Discriminante el ingreso según si se definió 'Meta de ahorro por monto' o 'Meta de ahorro por fecha']."
+        },
+        "fechaMetaAhorro": {
+            "type": "string",
+            "description": "Fecha propuesta como meta para el ahorro [Discriminante el ingreso según si se definió 'Meta de ahorro por monto' o 'Meta de ahorro por fecha']."
+        }
+    },
+    "salida": {},
+    "sistema": "AhorroProgramado"
+}

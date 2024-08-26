@@ -1,0 +1,17 @@
+{
+    "id": 488,
+    "nombre": "RegistrarDispositivo",
+    "descripcion": "Método para registrar un dispositivo en el sistema.",
+    "entrada": {
+        "usuario": {
+            "type": "string",
+            "description": "Identificador de usuario."
+        },
+        "idDispositivo": {
+            "type": "string",
+            "description": "Identificador de dispositivo."
+        }
+    },
+    "salida": {},
+    "sistema": "Seguridad"
+}

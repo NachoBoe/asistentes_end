@@ -1,0 +1,25 @@
+{
+    "id": 412,
+    "nombre": "AgregarCuentaDeCobro",
+    "descripcion": "Método para agregar una cuenta de cobro de un préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación del préstamo."
+        },
+        "operacionUId_cobro": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta de cobro."
+        },
+        "permite_sobregirar": {
+            "type": "string",
+            "description": "Define si la cuenta de cobro puede sobregirar o no (S/N)."
+        },
+        "permite_pago_parcial": {
+            "type": "string",
+            "description": "Define si se permiten pagos parciales de la cuenta de cobro (S/N)."
+        }
+    },
+    "salida": {},
+    "sistema": "Prestamos"
+}

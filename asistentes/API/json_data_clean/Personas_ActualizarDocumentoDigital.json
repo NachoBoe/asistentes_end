@@ -1,0 +1,33 @@
+{
+    "id": 318,
+    "nombre": "ActualizarDocumentoDigital",
+    "descripcion": "Método para actualizar el documento digital de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "documentoId": {
+            "type": "number",
+            "description": "Identificador de instancia de documento."
+        },
+        "nombre": {
+            "type": "string",
+            "description": "Nombre del documento."
+        },
+        "archivoCodificado": {
+            "type": "string",
+            "description": "Archivo a asociar codificado."
+        },
+        "fechaEmision": {
+            "type": "string",
+            "description": "Fecha de emisión del documento (en caso que corresponda)."
+        },
+        "fechaVencimiento": {
+            "type": "string",
+            "description": "Fecha de emisión del documento (en caso que corresponda)."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

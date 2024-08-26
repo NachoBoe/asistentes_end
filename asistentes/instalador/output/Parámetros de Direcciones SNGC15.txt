@@ -1,0 +1,8 @@
+La funcionalidad detallada en el archivo se refiere a la configuración de direcciones dentro del sistema Bantotal, específicamente en el contexto del módulo SNGC15. Este módulo permite gestionar información relacionada con países, tipos de documentos y números de documentos, así como detalles adicionales en formato XML. Las posibilidades que se admiten incluyen la especificación de un país, tipo de documento, número de documento, y un campo para información adicional en formato XML.
+
+**Descripción de los campos:**
+- **sngc15Pais**: Código del país (numérico, 3 dígitos).
+- **sngc15Tdoc**: Tipo de documento (numérico, 2 dígitos).
+- **sngc15Ndoc**: Número de documento (alfanumérico, hasta 12 caracteres).
+- **sngc15DDoc**: Documento adicional (numérico, 2 dígitos).
+- **sngc15Dxml**: Documento en formato XML (texto, hasta 5000 caracteres).

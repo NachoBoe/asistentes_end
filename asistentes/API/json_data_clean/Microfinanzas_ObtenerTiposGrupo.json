@@ -1,0 +1,23 @@
+{
+    "id": 285,
+    "nombre": "ObtenerTiposGrupo",
+    "descripcion": "Método para obtener los tipos de grupo de crédito.",
+    "entrada": {},
+    "salida": {
+        "sdtTiposGrupos": {
+            "type": "object",
+            "description": "Listado de tipos de grupos.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código del tipo de grupo."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del tipo de grupo."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

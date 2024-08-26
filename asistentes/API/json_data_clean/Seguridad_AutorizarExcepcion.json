@@ -1,0 +1,25 @@
+{
+    "id": 484,
+    "nombre": "AutorizarExcepcion",
+    "descripcion": "Método para confirmar una excepción.",
+    "entrada": {
+        "idExcepcion": {
+            "type": "integer",
+            "description": "Identificador de excepción."
+        },
+        "usuario": {
+            "type": "string",
+            "description": "Usuario."
+        },
+        "contraseña": {
+            "type": "string",
+            "description": "Contraseña."
+        },
+        "autoriza": {
+            "type": "string",
+            "description": "Autoriza [Hidden: Valor fijo 'S' para este método]."
+        }
+    },
+    "salida": {},
+    "sistema": "Seguridad"
+}

@@ -1,0 +1,29 @@
+{
+    "id": 325,
+    "nombre": "ActualizarTelefono",
+    "descripcion": "Método para actualizar el teléfono de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "numeroTelefono": {
+            "type": "string",
+            "description": "Número de teléfono."
+        },
+        "tipoTelefonoId": {
+            "type": "number",
+            "description": "Identificador de tipo de teléfono."
+        },
+        "domicilioId": {
+            "type": "number",
+            "description": "Identificador de tipo de domicilio."
+        },
+        "telefonoId": {
+            "type": "number",
+            "description": "Identificador correlativo de teléfono."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la extensión de datos de personas en la plataforma Bantotal, que incluye información personal, laboral y financiera de los usuarios. Se admiten datos como el país, tipo y número de documento, información sobre padres y cónyuge, detalles de empleo actual y anterior, ingresos, egresos, activos y referencias. Esta información es crucial para la evaluación de la situación financiera de los usuarios y para la toma de decisiones en el ámbito bancario.
+
+No se encontraron configuraciones asociadas, guías, reglas de negocio, programas particulares, tablas ni otros controles y configuraciones.

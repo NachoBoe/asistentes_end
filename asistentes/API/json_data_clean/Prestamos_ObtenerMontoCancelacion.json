@@ -1,0 +1,22 @@
+{
+    "id": 450,
+    "nombre": "ObtenerMontoCancelacion",
+    "descripcion": "Método para devolver el monto de cancelación de una operación.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador de la operación."
+        },
+        "fecha": {
+            "type": "string",
+            "description": "Fecha a consultar."
+        }
+    },
+    "salida": {
+        "montoCancelacion": {
+            "type": "number",
+            "description": "Monto de cancelación de la operación."
+        }
+    },
+    "sistema": "Prestamos"
+}

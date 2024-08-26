@@ -1,0 +1,28 @@
+{
+    "id": 449,
+    "nombre": "ObtenerInformacionAdicional",
+    "descripcion": "Método para obtener información adicional de un préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        }
+    },
+    "salida": {
+        "sdtInformacionAdicional": {
+            "type": "object",
+            "description": "Información Adicional de datos.",
+            "properties": {
+                "clave": {
+                    "type": "string",
+                    "description": "Identificador de información adicional."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor de información adicional."
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

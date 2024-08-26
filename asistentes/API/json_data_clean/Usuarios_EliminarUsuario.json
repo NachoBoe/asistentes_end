@@ -1,0 +1,13 @@
+{
+    "id": 516,
+    "nombre": "EliminarUsuario",
+    "descripcion": "Método para eliminar un usuario.",
+    "entrada": {
+        "usuario": {
+            "type": "string",
+            "description": "Identificador del usuario."
+        }
+    },
+    "salida": {},
+    "sistema": "Usuarios"
+}

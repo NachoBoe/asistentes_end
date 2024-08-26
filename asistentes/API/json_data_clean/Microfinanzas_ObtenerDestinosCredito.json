@@ -1,0 +1,32 @@
+{
+    "id": 275,
+    "nombre": "ObtenerDestinosCredito",
+    "descripcion": "Método para obtener los destinos posibles para un crédito.",
+    "entrada": {
+        "solicitudUId": {
+            "type": "number",
+            "description": "Identificador único de solicitud."
+        },
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador único de producto."
+        }
+    },
+    "salida": {
+        "sdtDestinosCredito": {
+            "type": "object",
+            "description": "Listado de destinos de crédito.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de destino de crédito."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de destino de crédito."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

@@ -1,0 +1,38 @@
+{
+    "id": 160,
+    "nombre": "ObtenerIdentificadorUnicoMovimiento",
+    "descripcion": "Método para obtener el identificador único de un movimiento contable.",
+    "entrada": {
+        "empresaId": {
+            "type": "number",
+            "description": "Identificador de empresa."
+        },
+        "sucursalId": {
+            "type": "number",
+            "description": "Identificador de sucursal."
+        },
+        "moduloId": {
+            "type": "number",
+            "description": "Módulo Bantotal."
+        },
+        "transaccionId": {
+            "type": "number",
+            "description": "Identificador de transacción Bantotal."
+        },
+        "relacion": {
+            "type": "number",
+            "description": "Relación."
+        },
+        "fechaContabilizacion": {
+            "type": "string",
+            "description": "Fecha de contabilización."
+        }
+    },
+    "salida": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento (asiento)."
+        }
+    },
+    "sistema": "Contabilidad"
+}

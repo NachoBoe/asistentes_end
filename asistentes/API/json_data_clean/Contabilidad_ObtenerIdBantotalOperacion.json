@@ -1,0 +1,50 @@
+{
+    "id": 158,
+    "nombre": "ObtenerIdBantotalOperacion",
+    "descripcion": "Método para obtener la clave de identificación Bantotal de una operación.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        }
+    },
+    "salida": {
+        "empresa": {
+            "type": "number",
+            "description": "Identificador de empresa."
+        },
+        "sucursalId": {
+            "type": "number",
+            "description": "Identificador de sucursal."
+        },
+        "moduloId": {
+            "type": "number",
+            "description": "Identificador de módulo."
+        },
+        "monedaId": {
+            "type": "number",
+            "description": "Identificador de moneda."
+        },
+        "papelId": {
+            "type": "number",
+            "description": "Identificador de papel."
+        },
+        "cuenta": {
+            "type": "number",
+            "description": "Número de cuenta."
+        },
+        "operacionId": {
+            "type": "number",
+            "description": "Identificador de operación."
+        },
+        "subOperacionId": {
+            "type": "number",
+            "description": "Identificador de sub operación."
+        },
+        "tipoOperacionId": {
+            "type": "number",
+            "description": "Identificador de tipo de operación."
+        }
+    },
+    "sistema": "Contabilidad"
+}

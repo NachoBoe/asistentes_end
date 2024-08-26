@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la gestión de relaciones entre personas dentro de la plataforma Bantotal. Se presentan varios mensajes de error que indican restricciones y condiciones que deben cumplirse al intentar relacionar personas en la base de datos. Las posibilidades admitidas incluyen la creación de relaciones entre personas físicas, pero con limitaciones específicas, como no poder relacionar a la misma persona o utilizar vínculos de cónyuge.
+
+No se encontraron configuraciones asociadas, reglas de negocio, programas particulares, tablas ni otros controles y configuraciones.

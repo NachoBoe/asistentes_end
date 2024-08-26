@@ -1,0 +1,34 @@
+{
+    "id": 421,
+    "nombre": "ContratarRefinanciacionSaldoCapital",
+    "descripcion": "Método para dar alta de un préstamo refinanciado, cancelando las operaciones indicadas en la simulación.",
+    "entrada": {
+        "refinanciacionId": {
+            "type": "number",
+            "description": "Identificador de la refinanciación simulada."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "accion": {
+            "type": "string",
+            "description": "[Hidden: Valor fijo 'REFIS' para este método]."
+        },
+        "operacionUId_dif": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta vista de donde se cobrará la diferencia entre la deuda total de los préstamos a refinanciar y el capital del nuevo préstamo."
+        },
+        "operacionUId_cobro": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta vista de donde se cobrará el préstamo."
+        }
+    },
+    "salida": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento [Asiento]."
+        }
+    },
+    "sistema": "Prestamos"
+}

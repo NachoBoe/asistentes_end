@@ -1,0 +1,5 @@
+- Opciones generales:
+  - Opción General de Procesos No. 179 en ‘N’.
+
+Descripción general de la funcionalidad:
+La funcionalidad permite el ingreso de un nombre reducido para una persona física en el sistema Bantotal. Si se habilita esta opción, se controla la obligatoriedad de su ingreso. En caso de que se desee ocultar el campo para que el nombre reducido no sea ingresado manualmente, se puede configurar para que se complete automáticamente con el nombre y apellido de la persona. El nombre se determina concatenando el apellido paterno, el apellido materno y el primer nombre.

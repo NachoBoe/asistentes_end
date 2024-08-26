@@ -1,0 +1,23 @@
+La funcionalidad detallada en el archivo se refiere a la validación de la existencia de personas contra una lista externa proporcionada por el Banco Central. Esta validación permite obtener automáticamente los datos básicos de la persona si se encuentra en dicha lista. La validación puede realizarse de dos maneras: por programa o por reporte/consulta.
+
+**Opciones generales**
+- Validación por programa: Se debe desarrollar una rutina con parámetros específicos que retorna información sobre la existencia de datos.
+- Validación por reporte/consulta: Se debe crear un reporte con parámetros y campos específicos para obtener información sobre la persona.
+
+**Guías y Guías Especiales de proceso**
+- No se encontraron configuraciones asociadas.
+
+**Reglas de negocio**
+- No se encontraron configuraciones asociadas.
+
+**Programas particulares**
+- HSNGCA01: Panel de alta de personas.
+- HSNGCA02: Programa que verifica el valor del parámetro para la validación.
+- HSNGCPF1: Programa al que se pasa si no aplica la validación.
+- HSNGCPJ1: Programa al que se pasa si no aplica la validación.
+
+**Tablas**
+- No se encontraron tablas asociadas.
+
+**Otros controles y configuraciones**
+- No se encontraron configuraciones asociadas.

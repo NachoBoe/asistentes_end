@@ -1,0 +1,28 @@
+Los paneles HSNGCRD1 y HSNGCRD2 son parametrizables en cuanto a la determinación de la visibilidad de los campos y la descripción a mostrar. Se accede a través del panel HSNG038, donde se selecciona el programa de referencia. 
+
+HSNGCRD1:
+- Id: 0, Tipo: Título panel, Concepto: Documentos adicionales, #
+- Id: 1, Tipo: Campo, Concepto: Persona, #
+- Id: 2, Tipo: Campo, Concepto: Tipo, #
+- Id: 3, Tipo: Campo, Concepto: Descripción, #
+- Id: 4, Tipo: Campo, Concepto: País, #
+- Id: 5, Tipo: Campo, Concepto: Número de documento, #
+- Id: 6, Tipo: Campo, Concepto: Fecha de vencimiento, #
+
+HSNGCRD2:
+- Id: 0, Tipo: Título panel, Concepto: Documentos adicionales, #
+- Id: 1, Tipo: Campo, Concepto: Personas, #
+- Id: 2, Tipo: Campo, Concepto: Tipo documento, #
+- Id: 3, Tipo: Campo, Concepto: País emisor, #
+- Id: 4, Tipo: Campo, Concepto: Departamento (1º div.administrativa), #
+- Id: 5, Tipo: Campo, Concepto: Localidad (2º div.administrativa), #
+- Id: 6, Tipo: Campo, Concepto: 3º división administrativa, #
+- Id: 7, Tipo: Campo, Concepto: Nro. Documento, #
+- Id: 8, Tipo: Campo, Concepto: Fecha de vencimiento, #
+- Id: 9, Tipo: Campo, Concepto: Fecha de expedición, #
+- Id: 10, Tipo: Campo, Concepto: Expedido por, #
+- Id: 20, Tipo: Botón, Concepto: Confirmar, #
+- Id: 21, Tipo: Botón, Concepto: Cancelar, #
+- Id: 23, Tipo: Botón, Concepto: Volver, # 
+
+La funcionalidad permite la visualización y parametrización de campos relacionados con documentos adicionales, facilitando la gestión de información relevante en el contexto bancario. Se admiten configuraciones para la visibilidad y descripción de los campos, así como la interacción a través de botones para confirmar, cancelar o volver.

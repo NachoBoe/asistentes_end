@@ -1,0 +1,21 @@
+{
+    "id": 317,
+    "nombre": "ActualizarConyuge",
+    "descripcion": "Método para actualizar el cónyuge de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "conyugeUId": {
+            "type": "number",
+            "description": "Identificador único del cónyuge de la persona."
+        },
+        "estadoCivilId": {
+            "type": "string",
+            "description": "Identificador del estado civil de la persona."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

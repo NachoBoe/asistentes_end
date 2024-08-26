@@ -1,0 +1,23 @@
+{
+    "id": 131,
+    "nombre": "ObtenerInstrucciones",
+    "descripcion": "Método para obtener un listado de las instrucciones dadas de alta en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtInstrucciones": {
+            "type": "object",
+            "description": "Listado de instrucciones.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de instrucción."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripcion de instrucción."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

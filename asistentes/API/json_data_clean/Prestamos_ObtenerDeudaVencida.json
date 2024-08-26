@@ -1,0 +1,22 @@
+{
+    "id": 442,
+    "nombre": "ObtenerDeudaVencida",
+    "descripcion": "Método para obtener la deuda vencida de un préstamo a una determinada fecha.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación simulada."
+        },
+        "fechaDeCalculo": {
+            "type": "string",
+            "description": "Fecha a la que se calcula la deuda."
+        }
+    },
+    "salida": {
+        "deuda": {
+            "type": "number",
+            "description": "Deuda a la fecha."
+        }
+    },
+    "sistema": "Prestamos"
+}

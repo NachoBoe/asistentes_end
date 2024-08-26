@@ -1,0 +1,40 @@
+{
+    "id": 123,
+    "nombre": "ObtenerDetalleCalendario",
+    "descripcion": "Método para obtener el detalle de los días de un calendario dado.",
+    "entrada": {
+        "calendarioId": {
+            "type": "number",
+            "description": "Identificador de calendario."
+        },
+        "fechaInicio": {
+            "type": "string",
+            "description": "Fecha de inicio de visualización de calendario."
+        },
+        "fechaFin": {
+            "type": "string",
+            "description": "Fecha de fin de visualización de calendario."
+        }
+    },
+    "salida": {
+        "descripcionCalendario": {
+            "type": "string",
+            "description": "Descripción del calendario."
+        },
+        "sdtDetalleCalendario": {
+            "type": "object",
+            "description": "Detalle de la consulta del calendario.",
+            "properties": {
+                "fecha": {
+                    "type": "string",
+                    "description": "Día del calendario."
+                },
+                "habil": {
+                    "type": "string",
+                    "description": "¿Día hábil? (S/N)"
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

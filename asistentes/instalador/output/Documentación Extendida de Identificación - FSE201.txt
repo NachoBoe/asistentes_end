@@ -1,0 +1,3 @@
+El archivo del sistema Bantotal describe la estructura de datos para documentos extendidos de personas. La funcionalidad principal se centra en la gestión de información relacionada con documentos de identificación, incluyendo detalles como el país, tipo de documento, número de documento, y otros campos auxiliares. 
+
+Los campos permiten almacenar información variada, como el calificativo del documento y datos adicionales que pueden ser utilizados para fines específicos dentro del sistema. Las posibilidades que se admiten incluyen la identificación de personas a través de diferentes tipos de documentos y la posibilidad de extender la información con datos adicionales que pueden ser relevantes para la gestión bancaria.

@@ -1,0 +1,23 @@
+{
+    "id": 104,
+    "nombre": "ObtenerSectores",
+    "descripcion": "Método para obtener un listado de los sectores ingresados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtSectores": {
+            "type": "object",
+            "description": "Listado de sectores.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de sector."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de sector."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

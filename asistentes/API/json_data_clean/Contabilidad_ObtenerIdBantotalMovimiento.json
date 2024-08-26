@@ -1,0 +1,38 @@
+{
+    "id": 157,
+    "nombre": "ObtenerIdBantotalMovimiento",
+    "descripcion": "Método para obtener la clave de identificación Bantotal de un movimiento.",
+    "entrada": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento."
+        }
+    },
+    "salida": {
+        "empresa": {
+            "type": "number",
+            "description": "Identificador de empresa."
+        },
+        "sucursalId": {
+            "type": "number",
+            "description": "Identificador de sucursal."
+        },
+        "moduloId": {
+            "type": "number",
+            "description": "Identificador de módulo."
+        },
+        "transaccionId": {
+            "type": "number",
+            "description": "Identificador de transacción."
+        },
+        "relacion": {
+            "type": "number",
+            "description": "Relación."
+        },
+        "fechaContabilizacion": {
+            "type": "string",
+            "description": "Fecha de contabilización."
+        }
+    },
+    "sistema": "Contabilidad"
+}

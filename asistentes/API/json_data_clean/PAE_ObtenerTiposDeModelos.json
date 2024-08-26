@@ -1,0 +1,31 @@
+{
+    "id": 306,
+    "nombre": "ObtenerTiposDeModelos",
+    "descripcion": "Método para obtener los diferentes tipos de modelos de evaluación.",
+    "entrada": {},
+    "salida": {
+        "sdtTModelosPAE": {
+            "type": "object",
+            "description": "Listado de los modelos de evaluacion.",
+            "properties": {
+                "tipoModelo": {
+                    "type": "number",
+                    "description": "Identificador del tipo de modelo."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del tipo de modelo."
+                },
+                "categoriaModelo": {
+                    "type": "number",
+                    "description": "Categoría de Modelo (1 - Lineal, 2 - Mínimo, 3 - Máximo, 4 - Especial)."
+                },
+                "programaEvaluacion": {
+                    "type": "string",
+                    "description": "Programa particular para realizar la evaluación del modelo."
+                }
+            }
+        }
+    },
+    "sistema": "PAE"
+}

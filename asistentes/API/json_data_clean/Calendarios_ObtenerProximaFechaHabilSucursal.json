@@ -1,0 +1,26 @@
+{
+    "id": 31,
+    "nombre": "ObtenerProximaFechaHabilSucursal",
+    "descripcion": "Método que devuelve la próxima fecha hábil a la fecha ingresada, para la sucursal recibida por parámetro.",
+    "entrada": {
+        "fecha": {
+            "type": "string",
+            "description": "Fecha de consulta."
+        },
+        "sucursalId": {
+            "type": "number",
+            "description": "Identificador de sucursal."
+        },
+        "sentido": {
+            "type": "string",
+            "description": "[Hidden, valor fijo 'A' para este método]."
+        }
+    },
+    "salida": {
+        "fechaHabil": {
+            "type": "string",
+            "description": "Próxima fecha hábil."
+        }
+    },
+    "sistema": "Calendarios"
+}

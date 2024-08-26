@@ -1,0 +1,11 @@
+El archivo del sistema Bantotal describe la estructura de una tabla que incluye varios atributos relacionados con la información de un cliente o titular en el contexto bancario. Los atributos mencionados son:
+
+- **País**: Pepais
+- **T.Doc**: Petdoc
+- **Documento**: Pendoc
+- **Cod**: Ttcod
+- **Titular Representativo**: Cttfir
+
+La funcionalidad detallada en el archivo sugiere que se trata de un sistema que gestiona información de clientes, incluyendo su país de origen, tipo de documento, número de documento, un código asociado y un titular representativo. Esto permite a la plataforma manejar datos relevantes para la identificación y representación de los clientes en el sistema bancario, facilitando procesos como la apertura de cuentas, la gestión de transacciones y el cumplimiento de normativas de identificación. 
+
+Las posibilidades que se admiten incluyen la captura y almacenamiento de datos de identificación de clientes, así como la posibilidad de relacionar a un titular representativo con un cliente específico, lo que puede ser útil en situaciones donde se requiere un apoderado o representante legal.

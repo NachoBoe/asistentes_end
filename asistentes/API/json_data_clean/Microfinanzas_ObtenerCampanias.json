@@ -1,0 +1,32 @@
+{
+    "id": 274,
+    "nombre": "ObtenerCampanias",
+    "descripcion": "Método para obtener campañas de préstamos.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único del cliente fiador."
+        },
+        "fecha": {
+            "type": "string",
+            "description": "Fecha de inicio de campaña."
+        }
+    },
+    "salida": {
+        "sdtCampanias": {
+            "type": "object",
+            "description": "Listado de campañas.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Identificador de campaña."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de campaña."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

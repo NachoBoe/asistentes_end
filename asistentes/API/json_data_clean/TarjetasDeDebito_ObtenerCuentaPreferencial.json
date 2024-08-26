@@ -1,0 +1,18 @@
+{
+    "id": 499,
+    "nombre": "ObtenerCuentaPreferencial",
+    "descripcion": "Método para obtener la operación de la cuenta preferencial de tarjeta de débito.",
+    "entrada": {
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de tarjeta."
+        }
+    },
+    "salida": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación de cuenta preferencial del cliente."
+        }
+    },
+    "sistema": "TarjetasDeDebito"
+}

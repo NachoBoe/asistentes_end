@@ -1,0 +1,31 @@
+{
+    "id": 43,
+    "nombre": "ObtenerServicios",
+    "descripcion": "Método para obtener los servicios de CASH.",
+    "entrada": {},
+    "salida": {
+        "sdtServicios": {
+            "type": "object",
+            "description": "Listados de los servicios del contrato.",
+            "properties": {
+                "idContrato": {
+                    "type": "number",
+                    "description": "Identificador del contrato CASH."
+                },
+                "servicio": {
+                    "type": "number",
+                    "description": "Servicio CASH."
+                },
+                "descServicio": {
+                    "type": "string",
+                    "description": "Descripción de servicios."
+                },
+                "tipoServicio": {
+                    "type": "string",
+                    "description": "Tipo de servicio."
+                }
+            }
+        }
+    },
+    "sistema": "CASHManagement"
+}

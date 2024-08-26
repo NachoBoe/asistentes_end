@@ -1,0 +1,3 @@
+No se encontró información adicional sobre configuraciones, opciones generales, guías, reglas de negocio, programas particulares, tablas, ni otros controles en el archivo proporcionado. 
+
+La funcionalidad detallada en el archivo se refiere a la parametrización de distintos clubes dentro del sistema Bantotal, permitiendo a la institución financiera definir y gestionar la información adicional de los clientes asociada a estos clubes. Esto facilita la obtención de datos relevantes que pueden ser utilizados para mejorar la atención al cliente y personalizar servicios.

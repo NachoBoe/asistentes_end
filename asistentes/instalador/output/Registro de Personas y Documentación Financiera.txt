@@ -1,0 +1,5 @@
+El archivo del sistema Bantotal describe la estructura de datos relacionada con la gestión de personas en la plataforma bancaria. Incluye campos que permiten almacenar información relevante sobre personas, como su identificación, situación fiscal, y datos relacionados con juicios y embargos. 
+
+Las posibilidades que se admiten incluyen la captura de datos personales, la gestión de información fiscal (como DGI y BPS), y el seguimiento de situaciones legales (juicios y embargos). También se contempla la categorización de las personas según su responsabilidad fiscal (responsable inscripto, no inscripto, consumidor final, etc.) y la retención de impuestos.
+
+No se encontraron configuraciones asociadas, guías, reglas de negocio, programas particulares, tablas, ni otros controles en el archivo proporcionado.

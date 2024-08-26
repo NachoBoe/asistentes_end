@@ -1,0 +1,66 @@
+{
+    "id": 156,
+    "nombre": "ObtenerDetalleOrdinal",
+    "descripcion": "Método para obtener el detalle del ordinal de un movimiento.",
+    "entrada": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento."
+        },
+        "ordinal": {
+            "type": "number",
+            "description": "Ordinal del movimiento."
+        },
+        "subOrdinal": {
+            "type": "number",
+            "description": "Subordinal del movimiento."
+        }
+    },
+    "salida": {
+        "sdtOrdinal": {
+            "type": "object",
+            "description": "Ordinale del movimiento.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "idOperacionBT": {
+                    "type": "string",
+                    "description": "Identificador String Bantotal."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del Producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre del producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel."
+                        }
+                    }
+                },
+                "debeHaber": {
+                    "type": "string",
+                    "description": "Debe/Haber (Crédito: 'C', Débito: 'D')."
+                },
+                "importe": {
+                    "type": "number",
+                    "description": "Importe."
+                }
+            }
+        }
+    },
+    "sistema": "Contabilidad"
+}

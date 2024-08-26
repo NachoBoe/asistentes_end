@@ -1,0 +1,52 @@
+{
+    "id": 206,
+    "nombre": "ObtenerBolsillos",
+    "descripcion": "Método para consulta de cuentas bolsillo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de la operación."
+        }
+    },
+    "salida": {
+        "sdtInformacionBolsillos": {
+            "type": "object",
+            "description": "Listado de la información del bolsillo.",
+            "properties": {
+                "operacionBolsilloUID": {
+                    "type": "number",
+                    "description": "Identificador único de la operación de bolsillo."
+                },
+                "fechaBaja": {
+                    "type": "string",
+                    "description": "Fecha de la baja."
+                },
+                "productoBolsilloId": {
+                    "type": "number",
+                    "description": "Identificador único del producto del bolsillo."
+                },
+                "nombreProducto": {
+                    "type": "string",
+                    "description": "Nombre del producto."
+                },
+                "fechaApertura": {
+                    "type": "string",
+                    "description": "Fecha de apertura."
+                },
+                "saldo": {
+                    "type": "number",
+                    "description": "Saldo."
+                },
+                "estado": {
+                    "type": "number",
+                    "description": "Estado."
+                },
+                "nombreSubcuenta": {
+                    "type": "string",
+                    "description": "Nombre de la subcuenta."
+                }
+            }
+        }
+    },
+    "sistema": "CuentasVista"
+}

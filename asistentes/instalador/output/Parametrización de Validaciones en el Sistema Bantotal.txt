@@ -1,0 +1,18 @@
+La funcionalidad detallada en el archivo permite parametrizar reglas de negocios para realizar validaciones sobre la información ingresada en el sistema Bantotal, devolviendo mensajes de error en caso de incumplimiento. Se pueden validar tanto por programa como por regla de negocios, y se especifican diferentes programas de validación y criterios de parametrización.
+
+**Reglas de negocio:**
+- Para el alta de persona física, se definió la regla de negocios 1110.
+
+**Programas particulares:**
+- HSNGCA01: Alta de persona
+- HSNGCPF1: Alta de persona física.
+- HSNGCPJ1: Alta de persona jurídica.
+- HSNGC21: Detalle de Domicilio
+- HSNGC22: Alta de Domicilios.
+- HSNGC33: Detalle de Teléfono 
+- HSNGC50: Alta de cuenta cliente.
+- HSNGC48A: Integración de cuentas.
+- HSNGCT14: Condición ante impuestos.
+- HSNGCRD2: Documentos adicionales.
+- HSNGCCHD: Cambio de documento de persona.
+- HSNGC47: Mantenimiento de domicilios.

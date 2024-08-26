@@ -1,0 +1,9 @@
+La funcionalidad detallada en el archivo se refiere a la configuración de parámetros dentro del sistema Bantotal, específicamente para la Oficina Registral en el módulo SNGC21. Este módulo permite gestionar ciertos códigos y registros asociados a la operación de la oficina registral, facilitando la identificación y el manejo de datos relevantes para la gestión bancaria.
+
+Los parámetros definidos son:
+
+- **sngc21OfCd**: Tipo N (numérico) con un tamaño de 4.0, que representa el código de la oficina en el sistema.
+- **sngc21Reg**: Tipo C (caracteres) con un tamaño de 30, que representa el registro asociado a la oficina.
+- **sngc21aux**: Tipo C (caracteres) con un tamaño de 50, que puede ser utilizado para información auxiliar relacionada con la oficina registral.
+
+Las posibilidades que se admiten incluyen la configuración de diferentes oficinas registrales y la gestión de sus respectivos códigos y registros, permitiendo una administración más eficiente de la información dentro del sistema.

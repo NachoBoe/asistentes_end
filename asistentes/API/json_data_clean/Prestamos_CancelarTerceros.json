@@ -1,0 +1,30 @@
+{
+    "id": 417,
+    "nombre": "CancelarTerceros",
+    "descripcion": "Método para realizar la cancelación de un préstamo con una cuenta de cobro de terceros.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación simulada."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "operacionCobroUId": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta vista donde se cobrará el préstamo."
+        },
+        "referencia": {
+            "type": "string",
+            "description": "Referencia."
+        }
+    },
+    "salida": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único del movimiento (asiento)."
+        }
+    },
+    "sistema": "Prestamos"
+}

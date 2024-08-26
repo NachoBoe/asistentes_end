@@ -1,0 +1,153 @@
+{
+    "id": 256,
+    "nombre": "ObtenerSucursalesCajas",
+    "descripcion": "Método para obtener porcentajes y listados de sucursales y cajas del sistema.",
+    "entrada": {},
+    "salida": {
+        "totalSucursales": {
+            "type": "integer",
+            "description": "Número total de sucursales."
+        },
+        "sucursalesCerradas": {
+            "type": "integer",
+            "description": "Número de sucursales cerradas."
+        },
+        "sucursalesAbiertas": {
+            "type": "integer",
+            "description": "Número de sucursales abiertas."
+        },
+        "porcentajeSucursalesC": {
+            "type": "integer",
+            "description": "Porcentaje de sucursales cerradas."
+        },
+        "porcentajeSucursalesA": {
+            "type": "integer",
+            "description": "Porcentaje de sucursales abiertas."
+        },
+        "listadoSucursalesC": {
+            "type": "object",
+            "description": "Listado de sucursales cerradas.",
+            "properties": {
+                "identificador": {
+                    "type": "integer",
+                    "description": "Identificador de sucursal."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de la sucursal."
+                },
+                "direccion": {
+                    "type": "string",
+                    "description": "Dirección de la sucursal."
+                },
+                "telefono": {
+                    "type": "string",
+                    "description": "Teléfono de la sucursal."
+                },
+                "latitud": {
+                    "type": "integer",
+                    "description": "Latitud de la sucursal."
+                },
+                "longitud": {
+                    "type": "integer",
+                    "description": "Longitud de la sucursal."
+                }
+            }
+        },
+        "listadoSucursalesA": {
+            "type": "object",
+            "description": "Listado de sucursales abiertas.",
+            "properties": {
+                "identificador": {
+                    "type": "integer",
+                    "description": "Identificador de sucursal."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de la sucursal."
+                },
+                "direccion": {
+                    "type": "string",
+                    "description": "Dirección de la sucursal."
+                },
+                "telefono": {
+                    "type": "string",
+                    "description": "Teléfono de la sucursal."
+                },
+                "latitud": {
+                    "type": "integer",
+                    "description": "Latitud de la sucursal."
+                },
+                "longitud": {
+                    "type": "integer",
+                    "description": "Longitud de la sucursal."
+                }
+            }
+        },
+        "totalCajas": {
+            "type": "integer",
+            "description": "Número total de cajas."
+        },
+        "cajasCerradas": {
+            "type": "integer",
+            "description": "Número de cajas cerradas."
+        },
+        "cajasAbiertas": {
+            "type": "integer",
+            "description": "Número de cajas abiertas."
+        },
+        "porcentajeCajasC": {
+            "type": "integer",
+            "description": "Porcentaje de cajas cerradas."
+        },
+        "porcentajeCajasA": {
+            "type": "integer",
+            "description": "Porcentaje de cajas abiertas."
+        },
+        "listadoCajasC": {
+            "type": "object",
+            "description": "Listado de cajas cerradas.",
+            "properties": {
+                "sucursalId": {
+                    "type": "integer",
+                    "description": "Identificador de la sucursal."
+                },
+                "usuario": {
+                    "type": "string",
+                    "description": "Usuario de la caja."
+                },
+                "indicador": {
+                    "type": "integer",
+                    "description": "Indicador de la caja."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre de la caja."
+                }
+            }
+        },
+        "listadoCajasA": {
+            "type": "object",
+            "description": "Listado de cajas abiertas.",
+            "properties": {
+                "sucursalId": {
+                    "type": "integer",
+                    "description": "Identificador de la sucursal."
+                },
+                "usuario": {
+                    "type": "string",
+                    "description": "Usuario de la caja."
+                },
+                "indicador": {
+                    "type": "integer",
+                    "description": "Indicador de la caja."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre de la caja."
+                }
+            }
+        }
+    },
+    "sistema": "Indicadores"
+}

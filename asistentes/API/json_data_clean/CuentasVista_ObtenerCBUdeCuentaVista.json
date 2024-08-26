@@ -1,0 +1,18 @@
+{
+    "id": 207,
+    "nombre": "ObtenerCBUdeCuentaVista",
+    "descripcion": "Método para obtener el CBU de una cuenta corriente o cuenta de ahorro.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación CC o CA."
+        }
+    },
+    "salida": {
+        "CBU": {
+            "type": "string",
+            "description": "Clave Bancaria Uniforme."
+        }
+    },
+    "sistema": "CuentasVista"
+}

@@ -1,0 +1,23 @@
+{
+    "id": 146,
+    "nombre": "ObtenerTiposDeTexto",
+    "descripcion": "Método para obtener un listado de los tipos de textos ingresados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtTextos": {
+            "type": "object",
+            "description": "Listado de tipos de texto.",
+            "properties": {
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de tipo de texto."
+                },
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de tipo de texto."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

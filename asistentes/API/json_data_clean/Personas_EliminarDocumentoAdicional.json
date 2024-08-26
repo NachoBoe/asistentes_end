@@ -1,0 +1,17 @@
+{
+    "id": 343,
+    "nombre": "EliminarDocumentoAdicional",
+    "descripcion": "Método para eliminar un documento adicional de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "tipoDocumentoId": {
+            "type": "number",
+            "description": "Identificador de tipo de documento."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

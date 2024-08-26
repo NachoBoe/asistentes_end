@@ -1,0 +1,12 @@
+La funcionalidad detallada en el archivo se refiere a la configuración de códigos de vínculo dentro del sistema Bantotal. Estos códigos permiten establecer relaciones entre diferentes entidades, como empresas, y definir características específicas de cada vínculo. Las posibilidades que se admiten incluyen la definición de vínculos unidireccionales o bidireccionales, la integración con empresas, y la clasificación de los vínculos como multilaterales.
+
+**Opciones generales**
+- Vicod: N(2) - Vínculo
+- Vinom: C(30) - Nombre de vínculo
+- Viinte: C(1) - Define integr. Empresas?
+- ViTipo: C(1) - Tipo Vínculo
+- ViBidi: C(1) - Bidireccional
+- ViAux1: N(5) - Aux1
+- ViAux2: N(9) - Aux2
+- ViAux3: C(30) - Aux3
+- ViMult: C(1) - Vínculo Multilateral

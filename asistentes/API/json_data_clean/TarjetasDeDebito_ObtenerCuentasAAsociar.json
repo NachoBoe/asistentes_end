@@ -1,0 +1,54 @@
+{
+    "id": 500,
+    "nombre": "ObtenerCuentasAAsociar",
+    "descripcion": "Método para obtener una lista de las posibles cuentas a asociar para una tarjeta de débito.",
+    "entrada": {
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de tarjeta de débito."
+        }
+    },
+    "salida": {
+        "sdtCuentasAAsociar": {
+            "type": "object",
+            "description": "Lista de cuentas a asociar.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Sucursal de la cuenta."
+                },
+                "subCuenta": {
+                    "type": "string",
+                    "description": "Nombre de la cuenta."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre del producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de la moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo del papel."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "TarjetasDeDebito"
+}

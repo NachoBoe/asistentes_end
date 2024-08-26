@@ -1,0 +1,5 @@
+Descripción general de la funcionalidad: El archivo detalla mensajes de error que se muestran en la plataforma Bantotal en diferentes situaciones relacionadas con la entrada de datos en campos específicos. Estos mensajes ayudan a los usuarios a identificar y corregir errores en la información ingresada, garantizando que los datos sean completos y válidos antes de proceder con el proceso.
+
+Posibilidades que se admiten:
+- Validación de campos obligatorios, como el primer nivel de agrupación, departamento, localidad y barrio.
+- Verificación de duplicados en direcciones basadas en el código de domicilio.

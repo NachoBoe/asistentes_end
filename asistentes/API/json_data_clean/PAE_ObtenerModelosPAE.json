@@ -1,0 +1,27 @@
+{
+    "id": 304,
+    "nombre": "ObtenerModelosPAE",
+    "descripcion": "Método para obtener los modelos PAE.",
+    "entrada": {},
+    "salida": {
+        "sdtModelosPAE": {
+            "type": "object",
+            "description": "Listado de modelos PAE.",
+            "properties": {
+                "modeloID": {
+                    "type": "number",
+                    "description": "Código de modelo."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de modelo."
+                },
+                "tipoModelo": {
+                    "type": "string",
+                    "description": "Tipo de modelo."
+                }
+            }
+        }
+    },
+    "sistema": "PAE"
+}

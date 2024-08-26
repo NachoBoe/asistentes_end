@@ -1,0 +1,106 @@
+{
+    "id": 237,
+    "nombre": "ObtenerInstruccion",
+    "descripcion": "Método para obtener una lista de las instrucciones de un depósito.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "depositoUId": {
+            "type": "number",
+            "description": "Identificador único de operación del depósito."
+        }
+    },
+    "salida": {
+        "instruccionVencimiento": {
+            "type": "object",
+            "description": "Datos de instrucción al vencimiento.",
+            "properties": {
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de la instrucción."
+                },
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "idOperacionFmt": {
+                    "type": "string",
+                    "description": "Identificador String (concatenación de algunos conceptos claves de la operación)."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos de producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre del producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de la moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo del papel."
+                        }
+                    }
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Nombre de la Sucursal de la operación."
+                }
+            }
+        },
+        "instruccionAcreditacion": {
+            "type": "object",
+            "description": "Datos de instrucción de acreditación.",
+            "properties": {
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de la instrucción."
+                },
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "idOperacionFmt": {
+                    "type": "string",
+                    "description": "Identificador String (concatenación de algunos conceptos claves de la operación)."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos de producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre del producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de la moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo del papel."
+                        }
+                    }
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Nombre de la Sucursal de la operación."
+                }
+            }
+        }
+    },
+    "sistema": "DepositosAPlazo"
+}

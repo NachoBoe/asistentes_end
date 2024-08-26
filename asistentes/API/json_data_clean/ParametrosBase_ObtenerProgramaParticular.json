@@ -1,0 +1,44 @@
+{
+    "id": 313,
+    "nombre": "ObtenerProgramaParticular",
+    "descripcion": "Método para obtener el programa particular a ejecutar del programa estándar ingresado.",
+    "entrada": {
+        "empresaId": {
+            "type": "number",
+            "description": "Código de empresa [Hidden]."
+        },
+        "programaStandard": {
+            "type": "string",
+            "description": "Nombre de programa Standard."
+        }
+    },
+    "salida": {
+        "sdtProgramaParticular": {
+            "type": "object",
+            "description": "Datos del programa particular.",
+            "properties": {
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de la opción general de procesos."
+                },
+                "programaParticular": {
+                    "type": "string",
+                    "description": "Nombre de programa particular."
+                },
+                "programaStandard": {
+                    "type": "string",
+                    "description": "Nombre de programa standard."
+                },
+                "valorCaracteres": {
+                    "type": "string",
+                    "description": "Valor caracteres."
+                },
+                "valorNumerico": {
+                    "type": "number",
+                    "description": "Valor numérico."
+                }
+            }
+        }
+    },
+    "sistema": "ParametrosBase"
+}

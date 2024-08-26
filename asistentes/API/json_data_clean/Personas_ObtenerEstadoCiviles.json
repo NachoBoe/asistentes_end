@@ -1,0 +1,23 @@
+{
+    "id": 361,
+    "nombre": "ObtenerEstadoCiviles",
+    "descripcion": "Método para obtener un listado de los estados civiles registrados.",
+    "entrada": {},
+    "salida": {
+        "sdtEstadosCiviles": {
+            "type": "object",
+            "description": "Listado de estados civiles.",
+            "properties": {
+                "identificador": {
+                    "type": "string",
+                    "description": "Identificador de estado civil."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripcion de estado civil."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

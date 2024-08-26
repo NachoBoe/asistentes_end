@@ -1,0 +1,44 @@
+{
+    "id": 356,
+    "nombre": "ObtenerDatosPEP",
+    "descripcion": "Método para obtener los datos de una persona expuesta políticamente.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {
+        "esPEP": {
+            "type": "string",
+            "description": "Es persona políticamente expuesta? (S/N)."
+        },
+        "sdtDatosPEP": {
+            "type": "object",
+            "description": "Datos de la PEP.",
+            "properties": {
+                "entidad": {
+                    "type": "string",
+                    "description": "Entidad."
+                },
+                "cargoRelacion": {
+                    "type": "string",
+                    "description": "Cargo que ocupa."
+                },
+                "observacion": {
+                    "type": "string",
+                    "description": "Observación."
+                },
+                "fechaInicio": {
+                    "type": "string",
+                    "description": "Fecha de inicio."
+                },
+                "fechaSalida": {
+                    "type": "string",
+                    "description": "Fecha de salida."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

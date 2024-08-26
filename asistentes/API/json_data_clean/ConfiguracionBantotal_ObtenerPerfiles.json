@@ -1,0 +1,23 @@
+{
+    "id": 137,
+    "nombre": "ObtenerPerfiles",
+    "descripcion": "Método para obtener un listado de los perfiles registrados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtPerfiles": {
+            "type": "object",
+            "description": "Listado de perfiles.",
+            "properties": {
+                "identificador": {
+                    "type": "string",
+                    "description": "Identificador del perfil."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del perfil."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

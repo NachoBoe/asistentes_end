@@ -1,0 +1,7 @@
+La funcionalidad detallada en el archivo se refiere a la configuración del campo "Valor" en el sistema Bantotal, donde se puede indicar un valor fijo o resolverlo mediante un RNG (Generador de Números Aleatorios). Por defecto, se considera el valor 'Independiente', pero también se pueden seleccionar otras opciones como 'Dependiente', 'Corporativo' y 'Otros'. Si se elige la opción de resolver por RNG, se mostrará un Pop Up que permite seleccionar la misma.
+
+- Opciones generales:
+  - Independiente
+  - Dependiente
+  - Corporativo
+  - Otros

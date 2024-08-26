@@ -1,0 +1,18 @@
+{
+    "id": 245,
+    "nombre": "ConfirmarLista",
+    "descripcion": "Método para confirmar y contabilizar una lista de documentos.",
+    "entrada": {
+        "listaUId": {
+            "type": "number",
+            "description": "Identificador de lista."
+        }
+    },
+    "salida": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento (Asiento)."
+        }
+    },
+    "sistema": "DescuentoDocumentos"
+}

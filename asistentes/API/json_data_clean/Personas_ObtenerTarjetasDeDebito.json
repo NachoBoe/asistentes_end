@@ -1,0 +1,40 @@
+{
+    "id": 380,
+    "nombre": "ObtenerTarjetasDeDebito",
+    "descripcion": "Método para obtener las tarjetas de débito de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {
+        "sdtTarjetas": {
+            "type": "object",
+            "description": "Listado de tarjetas de débito.",
+            "properties": {
+                "tarjetaUId": {
+                    "type": "number",
+                    "description": "Identificador único de tarjeta de débito."
+                },
+                "numeroTarjeta": {
+                    "type": "string",
+                    "description": "Numero de tarjeta."
+                },
+                "tipoTarjeta": {
+                    "type": "string",
+                    "description": "Tipo de tarjeta."
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Sucursal de la tarjeta."
+                },
+                "adicional": {
+                    "type": "string",
+                    "description": "Adicional."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

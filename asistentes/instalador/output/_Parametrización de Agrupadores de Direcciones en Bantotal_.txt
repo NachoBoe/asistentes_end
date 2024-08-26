@@ -1,0 +1,5 @@
+La funcionalidad detallada en el archivo se refiere a la carga del agrupador de direcciones en el sistema Bantotal. Se especifica que en las condiciones de visualización (HSNGC21) se indican los campos parametrizables asociados a este panel. Para definir los niveles de los agrupadores, se utilizan los id. 32 a 37, y los id. 38 a 43 se utilizan para identificar los valores a cargar. Si no están parametrizados, el comportamiento será el mostrado en el ciclo anterior.
+
+- Opciones generales: 
+  - id. 32 a 37: utilizados para definir los niveles de los agrupadores.
+  - id. 38 a 43: utilizados para identificar los valores a cargar.

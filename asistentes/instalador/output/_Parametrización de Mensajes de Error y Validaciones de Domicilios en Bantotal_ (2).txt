@@ -1,0 +1,19 @@
+La funcionalidad detallada en el archivo se centra en la parametrización de mensajes de error y validaciones relacionadas con la información de domicilios ingresada en el sistema Bantotal. Se permite la invocación de reglas de negocio para validar datos de domicilios y restringir la eliminación de ciertos tipos de domicilios. Las variables involucradas en estas validaciones incluyen información sobre el país, tipo de documento, número de documento, y detalles específicos del domicilio, como dirección, referencias, y datos del arrendador.
+
+**Opciones generales**
+- No se encontraron configuraciones asociadas.
+
+**Guías y Guías Especiales de proceso**
+- No se encontraron configuraciones asociadas.
+
+**Reglas de negocio**
+- No se encontraron configuraciones asociadas.
+
+**Programas particulares**
+- No se encontraron configuraciones asociadas.
+
+**Tablas**
+- No se encontraron configuraciones asociadas.
+
+**Otros controles y configuraciones**
+- No se encontraron configuraciones asociadas.

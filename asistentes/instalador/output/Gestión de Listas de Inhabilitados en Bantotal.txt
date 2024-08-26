@@ -1,0 +1,18 @@
+- Opciones generales:
+  - Opción General de Procesos Nro. 434: Activar chequeo contra Listas de Inhabilitados en el alta de personas en el sistema de clientes (valor ‘S’).
+  - Opción General de Procesos Nro. 1044: Activar chequeo contra Listas de Inhabilitados en el programa de integración de cuentas (valor ‘S’).
+
+- Programas particulares:
+  - HRGLN001: Tipos de listas de Inhabilitados.
+  - HRGLN002: Cargas de personas en Listas de Inhabilitados.
+  - HRGLN006: Consultas de Listas de Inhabilitados.
+  - HFST501T: Inserción de datos en la tabla FST501.
+  - HTRD201T: Inserción de datos en la tabla FSD201.
+
+- Tablas:
+  - FST501: Tipos de Listas de Inhabilitados.
+  - FST502: Relación Tipo de Lista – Perfiles.
+  - FSD201: Personas en Listas de Inhabilitados.
+
+Descripción general de la funcionalidad:
+El panel de Listas de Inhabilitados permite registrar y consultar personas que pertenecen a diversas listas de inhabilitados, como lavado de dinero y narcotráfico. Se realizan chequeos por identificación y, si no hay coincidencias, se busca por nombre y apellido. Se pueden realizar consultas utilizando nombres de personas físicas y jurídicas, así como tipos de lista. La funcionalidad incluye la gestión de tipos de listas, la carga de personas en estas listas y la posibilidad de consultar la información registrada. Además, se implementan validaciones al momento de registrar nuevas personas en el sistema, asegurando que no se continúe con el registro si la persona se encuentra en una lista de inhabilitados.

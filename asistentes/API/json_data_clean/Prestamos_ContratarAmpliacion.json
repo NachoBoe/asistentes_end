@@ -1,0 +1,34 @@
+{
+    "id": 419,
+    "nombre": "ContratarAmpliacion",
+    "descripcion": "Método para dar alta de un préstamo ampliado, cancelando las operaciones indicadas en la simulación.",
+    "entrada": {
+        "ampliacionId": {
+            "type": "number",
+            "description": "Identificador de la ampliación simulada."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "accion": {
+            "type": "string",
+            "description": "[Hidden: Valor fijo 'AMPLI' para este método]."
+        },
+        "operacionUId_desembolso": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta vista donde se acreditará el monto solicitado."
+        },
+        "operacionUId_cobro": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta vista de donde se cobrará el préstamo."
+        }
+    },
+    "salida": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único del movimiento [Asiento]."
+        }
+    },
+    "sistema": "Prestamos"
+}

@@ -1,0 +1,23 @@
+{
+    "id": 284,
+    "nombre": "ObtenerTiposAval",
+    "descripcion": "Método para obtener una lista de los tipos de aval.",
+    "entrada": {},
+    "salida": {
+        "sdtTiposAval": {
+            "type": "object",
+            "description": "Listado de tipos de aval.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Identificador de tipo de aval."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de tipo de aval."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

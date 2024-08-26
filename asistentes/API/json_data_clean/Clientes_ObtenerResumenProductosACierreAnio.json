@@ -1,0 +1,160 @@
+{
+    "id": 98,
+    "nombre": "ObtenerResumenProductosACierreAnio",
+    "descripcion": "Método para obtener un resumen de productos de un cliente al cierre del año.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "anioConsulta": {
+            "type": "number",
+            "description": "Año a consultar."
+        }
+    },
+    "salida": {
+        "sdtResumenProductos": {
+            "type": "object",
+            "description": "Listado de productos.",
+            "properties": {
+                "cuentasCorrientes": {
+                    "type": "object",
+                    "description": "Cuentas corrientes.",
+                    "properties": {
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción."
+                        },
+                        "cantidad": {
+                            "type": "number",
+                            "description": "Cantidad de operaciones."
+                        },
+                        "saldoUSD": {
+                            "type": "number",
+                            "description": "Saldo disponible en dólares."
+                        },
+                        "saldoMN": {
+                            "type": "number",
+                            "description": "Saldo disponible en moneda nacional."
+                        }
+                    }
+                },
+                "cajasAhorros": {
+                    "type": "object",
+                    "description": "Cajas de ahorro.",
+                    "properties": {
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción."
+                        },
+                        "cantidad": {
+                            "type": "number",
+                            "description": "Cantidad de operaciones."
+                        },
+                        "saldoUSD": {
+                            "type": "number",
+                            "description": "Saldo disponible en dólares."
+                        },
+                        "saldoMN": {
+                            "type": "number",
+                            "description": "Saldo disponible en moneda nacional."
+                        }
+                    }
+                },
+                "cofresSeguridad": {
+                    "type": "object",
+                    "description": "Cofres de seguridad.",
+                    "properties": {
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción."
+                        },
+                        "cantidad": {
+                            "type": "number",
+                            "description": "Cantidad de operaciones."
+                        },
+                        "saldoUSD": {
+                            "type": "number",
+                            "description": "Saldo disponible en dólares."
+                        },
+                        "saldoMN": {
+                            "type": "number",
+                            "description": "Saldo disponible en moneda nacional."
+                        }
+                    }
+                },
+                "tarjetasDebito": {
+                    "type": "object",
+                    "description": "Tarjetas de débito.",
+                    "properties": {
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción."
+                        },
+                        "cantidad": {
+                            "type": "number",
+                            "description": "Cantidad de operaciones."
+                        },
+                        "saldoUSD": {
+                            "type": "number",
+                            "description": "Saldo disponible en dólares."
+                        },
+                        "saldoMN": {
+                            "type": "number",
+                            "description": "Saldo disponible en moneda nacional."
+                        }
+                    }
+                },
+                "plazosFijos": {
+                    "type": "object",
+                    "description": "Plazos fijos.",
+                    "properties": {
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción."
+                        },
+                        "cantidad": {
+                            "type": "number",
+                            "description": "Cantidad de operaciones."
+                        },
+                        "saldoUSD": {
+                            "type": "number",
+                            "description": "Saldo disponible en dólares."
+                        },
+                        "saldoMN": {
+                            "type": "number",
+                            "description": "Saldo disponible en moneda nacional."
+                        }
+                    }
+                },
+                "prestamos": {
+                    "type": "object",
+                    "description": "Préstamos.",
+                    "properties": {
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción."
+                        },
+                        "cantidad": {
+                            "type": "number",
+                            "description": "Cantidad de operaciones."
+                        },
+                        "saldoUSD": {
+                            "type": "number",
+                            "description": "Saldo disponible en dólares."
+                        },
+                        "saldoMN": {
+                            "type": "number",
+                            "description": "Saldo disponible en moneda nacional."
+                        }
+                    }
+                },
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador único de cliente."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

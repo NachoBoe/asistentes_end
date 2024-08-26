@@ -1,0 +1,25 @@
+{
+    "id": 197,
+    "nombre": "Activar",
+    "descripcion": "Método para activar una cuenta vista.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "nuevoEstado": {
+            "type": "number",
+            "description": "Nuevo estado [Hidden: Valor fijo 0]."
+        },
+        "fechaVencimientoEstado": {
+            "type": "string",
+            "description": "Fecha de vencimiento del estado."
+        },
+        "observaciones": {
+            "type": "string",
+            "description": "Observaciones."
+        }
+    },
+    "salida": {},
+    "sistema": "CuentasVista"
+}

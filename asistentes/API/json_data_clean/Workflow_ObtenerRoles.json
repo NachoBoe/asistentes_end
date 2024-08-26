@@ -1,0 +1,23 @@
+{
+    "id": 528,
+    "nombre": "ObtenerRoles",
+    "descripcion": "Método para obtener los roles de Workflow.",
+    "entrada": {},
+    "salida": {
+        "sdtRoles": {
+            "type": "object",
+            "description": "Listado de roles de Workflow.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código del rol."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del rol."
+                }
+            }
+        }
+    },
+    "sistema": "Workflow"
+}

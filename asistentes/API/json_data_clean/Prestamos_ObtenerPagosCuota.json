@@ -1,0 +1,74 @@
+{
+    "id": 451,
+    "nombre": "ObtenerPagosCuota",
+    "descripcion": "Método para obtener el detalle de pagos de una cuota de préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación del préstamo."
+        },
+        "numeroCuota": {
+            "type": "number",
+            "description": "Número de cuota."
+        }
+    },
+    "salida": {
+        "sdtPagoDeCuota": {
+            "type": "object",
+            "description": "Identificador único de movimiento [Asiento].",
+            "properties": {
+                "fechaUltimoPago": {
+                    "type": "string",
+                    "description": "Fecha de último pago de la cuota."
+                },
+                "importePago": {
+                    "type": "number",
+                    "description": "Importe pagado."
+                },
+                "detalle": {
+                    "type": "object",
+                    "description": "Listado de pagos de una cuota.",
+                    "properties": {
+                        "fechaPago": {
+                            "type": "string",
+                            "description": "Fecha de pago prevista."
+                        },
+                        "capital": {
+                            "type": "number",
+                            "description": "Capital de la cuota."
+                        },
+                        "intereses": {
+                            "type": "number",
+                            "description": "Intereses de la cuota."
+                        },
+                        "comisiones": {
+                            "type": "number",
+                            "description": "Comisiones de la cuota."
+                        },
+                        "seguros": {
+                            "type": "number",
+                            "description": "Seguros de la cuota."
+                        },
+                        "impuestos": {
+                            "type": "number",
+                            "description": "Impuestos de la cuota."
+                        },
+                        "otrosConceptos": {
+                            "type": "number",
+                            "description": "Importe otros conceptos."
+                        },
+                        "detalleConceptos": {
+                            "type": "object",
+                            "description": "Detalle de los conceptos adicionales."
+                        },
+                        "total": {
+                            "type": "number",
+                            "description": "Total de la cuota."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

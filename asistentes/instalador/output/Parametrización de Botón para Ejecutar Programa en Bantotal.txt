@@ -1,0 +1,7 @@
+La funcionalidad detallada en el archivo se refiere a la parametrización de un botón en el panel HTRT010B de la plataforma Bantotal, que permite ejecutar un programa específico al ser pulsado. Este botón es parametrizable y debe recibir como parámetros la Empresa y el código de ejecutivo. La configuración se realiza desde el panel HTRT900, donde se ingresan los datos necesarios para que el botón funcione correctamente.
+
+Opciones generales:
+- Panel de parametrización: HTRT010B
+- Programa Standard: HTRT010BBA
+- Programa a Ejecutar: (programa que se ejecuta al pulsar el botón)
+- Descripción: (nombre del botón)

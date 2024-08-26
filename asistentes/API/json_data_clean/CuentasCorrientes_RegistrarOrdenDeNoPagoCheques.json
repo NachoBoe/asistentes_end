@@ -1,0 +1,55 @@
+{
+    "id": 188,
+    "nombre": "RegistrarOrdenDeNoPagoCheques",
+    "descripcion": "Método para registrar orden de no pago de cheques.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación de subcuenta."
+        },
+        "chequeraId": {
+            "type": "number",
+            "description": "Identificador de solicitud de chequera."
+        },
+        "tipoDenunciante": {
+            "type": "string",
+            "description": "Tipo de denunciante."
+        },
+        "tipoDenuncia": {
+            "type": "string",
+            "description": "Tipo de denuncia."
+        },
+        "motivoDenuncia": {
+            "type": "string",
+            "description": "Motivo de la denuncia."
+        },
+        "sdtCheques": {
+            "type": "object",
+            "description": "Listado de cheques.",
+            "properties": {
+                "numero": {
+                    "type": "number",
+                    "description": "Número de cheque."
+                },
+                "estado": {
+                    "type": "number",
+                    "description": "Estado del cheque."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción."
+                }
+            },
+            "required": [
+                "numero"
+            ]
+        }
+    },
+    "salida": {
+        "numeroDenuncia": {
+            "type": "number",
+            "description": "Identificador de la denuncia."
+        }
+    },
+    "sistema": "CuentasCorrientes"
+}

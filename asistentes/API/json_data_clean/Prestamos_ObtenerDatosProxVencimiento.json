@@ -1,0 +1,78 @@
+{
+    "id": 432,
+    "nombre": "ObtenerDatosProxVencimiento",
+    "descripcion": "Método para retornar los datos de próximo vencimiento de cuota.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de préstamo."
+        },
+        "fechaConsulta": {
+            "type": "string",
+            "description": "Fecha de consulta."
+        },
+        "modoConsulta": {
+            "type": "string",
+            "description": "[Hidden: Valor fijo '' para este método]."
+        }
+    },
+    "salida": {
+        "sdtProxVencimiento": {
+            "type": "object",
+            "description": "Datos del próximo vencimiento del préstamo.",
+            "properties": {
+                "fechaProxVencimiento": {
+                    "type": "string",
+                    "description": "Identificador de información adicional."
+                },
+                "monto": {
+                    "type": "number",
+                    "description": "Valor de información adicional."
+                },
+                "cantCuoPagas": {
+                    "type": "number",
+                    "description": "Cantidad de cuotas pagas."
+                },
+                "cantCuoImpVenc": {
+                    "type": "number",
+                    "description": "Cantidad de cuotas impagas vencidas."
+                },
+                "fechaUltPago": {
+                    "type": "string",
+                    "description": "Fecha de último pago."
+                },
+                "cuotaVigente": {
+                    "type": "number",
+                    "description": "Cuota vigente."
+                },
+                "deudaVencida": {
+                    "type": "number",
+                    "description": "Deuda vencida."
+                },
+                "fechaPrimerIncumplimiento": {
+                    "type": "string",
+                    "description": "Fecha de primer incumplimiento."
+                },
+                "otrosConceptos": {
+                    "type": "object",
+                    "description": "Datos de otros conceptos.",
+                    "properties": {
+                        "concepto": {
+                            "type": "string",
+                            "description": "Concepto."
+                        },
+                        "valor": {
+                            "type": "number",
+                            "description": "Importe."
+                        },
+                        "texto": {
+                            "type": "string",
+                            "description": "Texto."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

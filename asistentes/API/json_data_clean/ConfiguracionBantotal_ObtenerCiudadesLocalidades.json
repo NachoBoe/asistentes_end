@@ -1,0 +1,32 @@
+{
+    "id": 120,
+    "nombre": "ObtenerCiudadesLocalidades",
+    "descripcion": "Método para obtener un listado de las ciudades/localidades ingresadas en Bantotal para un determinado estado de un país.",
+    "entrada": {
+        "pais": {
+            "type": "number",
+            "description": "Identificador de país."
+        },
+        "estado": {
+            "type": "number",
+            "description": "Identificador de estado."
+        }
+    },
+    "salida": {
+        "sdtCiudades": {
+            "type": "object",
+            "description": "Listado de Ciudades.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de Ciudad."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripcion de Ciudad."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

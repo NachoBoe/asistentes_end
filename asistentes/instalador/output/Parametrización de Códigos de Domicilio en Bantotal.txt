@@ -1,0 +1,1 @@
+Se definen por medio de este panel, los distintos tipos de Domicilio que la Institución considere necesarios mediante la definición de un código y Descripción que lo identifique.

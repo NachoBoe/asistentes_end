@@ -1,0 +1,28 @@
+{
+    "id": 87,
+    "nombre": "ObtenerInformacionAdicional",
+    "descripcion": "Método para obtener la información adicional de un cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "sdtInformacionAdicional": {
+            "type": "object",
+            "description": "Información Adicional de datos.",
+            "properties": {
+                "clave": {
+                    "type": "string",
+                    "description": "Identificador de información adicional."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor de información adicional."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

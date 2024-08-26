@@ -1,0 +1,44 @@
+{
+    "id": 122,
+    "nombre": "ObtenerDetalleCalendarioDeSucursal",
+    "descripcion": "Método para obtener el detalle de los días del calendario de una sucursal dada.",
+    "entrada": {
+        "sucursalId": {
+            "type": "integer",
+            "description": "Identificador de la sucursal"
+        },
+        "fechaInicio": {
+            "type": "string",
+            "description": "Fecha inicio de la consulta"
+        },
+        "fechaFin": {
+            "type": "string",
+            "description": "Fecha fin de la consulta"
+        }
+    },
+    "salida": {
+        "calendarioId": {
+            "type": "integer",
+            "description": "Identificador de calendario"
+        },
+        "descripcionCalendario": {
+            "type": "string",
+            "description": "Descripción del calendario"
+        },
+        "sdtDetalleCalendario": {
+            "type": "object",
+            "description": "Detalle de la consulta del calendario.",
+            "properties": {
+                "fecha": {
+                    "type": "string",
+                    "description": "Día del calendario."
+                },
+                "habil": {
+                    "type": "string",
+                    "description": "¿Día hábil? (S/N)"
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

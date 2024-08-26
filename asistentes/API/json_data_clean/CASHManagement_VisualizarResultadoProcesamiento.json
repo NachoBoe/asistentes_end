@@ -1,0 +1,64 @@
+{
+    "id": 50,
+    "nombre": "VisualizarResultadoProcesamiento",
+    "descripcion": "Método para obtener el resultado del procesamiento de un archivo.",
+    "entrada": {
+        "archivoId": {
+            "type": "number",
+            "description": "Identificador de archivo."
+        }
+    },
+    "salida": {
+        "cantidadLineas": {
+            "type": "number",
+            "description": "Cantidad de líneas del archivo."
+        },
+        "moneda": {
+            "type": "number",
+            "description": "Moneda del archivo."
+        },
+        "importe": {
+            "type": "number",
+            "description": "Importe total del pago."
+        },
+        "cantidadProcesadasOK": {
+            "type": "number",
+            "description": "Cantidad de líneas procesadas."
+        },
+        "importePagado": {
+            "type": "number",
+            "description": "Importe total efectivamente pago."
+        },
+        "cantidadLineasError": {
+            "type": "number",
+            "description": "Cantidad de líneas en error."
+        },
+        "cantidadPendientes": {
+            "type": "number",
+            "description": "Cantidad de líneas pendientes de procesar."
+        },
+        "estado": {
+            "type": "string",
+            "description": "Estado del archivo."
+        },
+        "situacionLineas": {
+            "type": "object",
+            "description": "Lista de las líneas con su estado.",
+            "properties": {
+                "linea": {
+                    "type": "string",
+                    "description": "Línea de texto."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Estado de la línea."
+                },
+                "mensajesError": {
+                    "type": "string",
+                    "description": "Lista de mensajes de la línea."
+                }
+            }
+        }
+    },
+    "sistema": "CASHManagement"
+}

@@ -1,0 +1,21 @@
+{
+    "id": 260,
+    "nombre": "AgregarFiador",
+    "descripcion": "Método para agregar un fiador a una solicitud de crédito individual.",
+    "entrada": {
+        "solicitudUId": {
+            "type": "number",
+            "description": "Identificador de instancia Workflow."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único del cliente fiador."
+        },
+        "tipoFiador": {
+            "type": "number",
+            "description": "[Hidden: Identificador del tipo de fiador]."
+        }
+    },
+    "salida": {},
+    "sistema": "Microfinanzas"
+}

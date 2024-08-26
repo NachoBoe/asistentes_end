@@ -1,0 +1,88 @@
+{
+    "id": 501,
+    "nombre": "ObtenerCuentasAsociadasPorTipo",
+    "descripcion": "Método para obtener un listado de las cuentas del tipo ingresado para una tarjeta de débito.",
+    "entrada": {
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de tarjeta."
+        },
+        "tipoDeCuenta": {
+            "type": "number",
+            "description": "Tipo de cuenta."
+        }
+    },
+    "salida": {
+        "sdtCuentasAsociadasTD": {
+            "type": "object",
+            "description": "Listado de cuentas asociadas.",
+            "properties": {
+                "tarjetaUId": {
+                    "type": "number",
+                    "description": "Identificador único de tarjeta."
+                },
+                "cuentas": {
+                    "type": "object",
+                    "description": "Datos cuenta asociada.",
+                    "properties": {
+                        "operacionUId": {
+                            "type": "number",
+                            "description": "Identificador único de Operación."
+                        },
+                        "idOperacionFmt": {
+                            "type": "string",
+                            "description": "Identificador String (concatenación de algunos conceptos claves de la operación)."
+                        },
+                        "producto": {
+                            "type": "object",
+                            "description": "Datos producto.",
+                            "properties": {
+                                "productoUId": {
+                                    "type": "number",
+                                    "description": "Identificador único de producto."
+                                },
+                                "nombre": {
+                                    "type": "string",
+                                    "description": "Nombre del producto."
+                                },
+                                "moneda": {
+                                    "type": "string",
+                                    "description": "Símbolo de la moneda."
+                                },
+                                "papel": {
+                                    "type": "string",
+                                    "description": "Símbolo del papel."
+                                }
+                            }
+                        },
+                        "sucursal": {
+                            "type": "string",
+                            "description": "Sucursal."
+                        },
+                        "simboloMoneda": {
+                            "type": "string",
+                            "description": "Símbolo de la moneda."
+                        },
+                        "subCuenta": {
+                            "type": "string",
+                            "description": "Sub cuenta."
+                        },
+                        "tipoDeCuenta": {
+                            "type": "number",
+                            "description": "Tipo de cuenta."
+                        },
+                        "saldo": {
+                            "type": "number",
+                            "description": "Saldo."
+                        },
+                        "estado": {
+                            "type": "string",
+                            "description": "Estado."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "TarjetasDeDebito"
+}

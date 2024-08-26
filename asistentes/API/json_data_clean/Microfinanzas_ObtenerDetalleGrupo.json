@@ -1,0 +1,80 @@
+{
+    "id": 276,
+    "nombre": "ObtenerDetalleGrupo",
+    "descripcion": "Método para obtener el detalle de un grupo de crédito.",
+    "entrada": {
+        "grupoId": {
+            "type": "integer",
+            "description": "Identificador de grupo."
+        }
+    },
+    "salida": {
+        "sdtDetalleGrupo": {
+            "type": "object",
+            "description": "Datos del grupo.",
+            "properties": {
+                "tipoId": {
+                    "type": "integer",
+                    "description": "Identificador del tipo de grupo."
+                },
+                "tipo": {
+                    "type": "string",
+                    "description": "Tipo de grupo."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre del grupo."
+                },
+                "nombreExtendido": {
+                    "type": "string",
+                    "description": "Nombre extendido del grupo."
+                },
+                "asesorId": {
+                    "type": "integer",
+                    "description": "Identificador del asesor del grupo."
+                },
+                "asesor": {
+                    "type": "string",
+                    "description": "Asesor del grupo."
+                },
+                "fechaAlta": {
+                    "type": "string",
+                    "description": "Fecha de alta del grupo."
+                },
+                "fechaDesde": {
+                    "type": "string",
+                    "description": "Fecha comienzo vigencia."
+                },
+                "fechaHasta": {
+                    "type": "string",
+                    "description": "Fecha fin vigencia."
+                },
+                "usuarioAlta": {
+                    "type": "string",
+                    "description": "Usuario de alta del grupo."
+                },
+                "vigente": {
+                    "type": "string",
+                    "description": "¿Es vigente? (S/N)."
+                },
+                "bloqueado": {
+                    "type": "string",
+                    "description": "¿Está bloqueado? (S/N)."
+                },
+                "nroSecuencia": {
+                    "type": "integer",
+                    "description": "Número de secuencia."
+                },
+                "agenciaId": {
+                    "type": "integer",
+                    "description": "Identificador de agencia."
+                },
+                "agencia": {
+                    "type": "string",
+                    "description": "Agencia."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

@@ -1,0 +1,78 @@
+{
+    "id": 331,
+    "nombre": "AgregarDomicilio",
+    "descripcion": "Método para agregar un domicilio a una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "domicilio": {
+            "type": "object",
+            "description": "Datos de domicilio.",
+            "properties": {
+                "paisDomicilioId": {
+                    "type": "number",
+                    "description": "Identificador del país."
+                },
+                "paisDomicilio": {
+                    "type": "string",
+                    "description": "Nombre del país."
+                },
+                "departamentoId": {
+                    "type": "number",
+                    "description": "Identificador del departamento."
+                },
+                "departamento": {
+                    "type": "string",
+                    "description": "Nombre del departamento."
+                },
+                "localidadId": {
+                    "type": "number",
+                    "description": "Identificador de la localidad."
+                },
+                "localidad": {
+                    "type": "string",
+                    "description": "Nombre de la localidad."
+                },
+                "barrioId": {
+                    "type": "number",
+                    "description": "Identificador del barrio."
+                },
+                "barrio": {
+                    "type": "string",
+                    "description": "Nombre del barrio."
+                },
+                "calle": {
+                    "type": "string",
+                    "description": "Calle del domicilio."
+                },
+                "numeroPuerta": {
+                    "type": "string",
+                    "description": "Número de puerta."
+                },
+                "apartamento": {
+                    "type": "string",
+                    "description": "Número de apartamento."
+                },
+                "codigoPostal": {
+                    "type": "string",
+                    "description": "Código postal."
+                },
+                "tipoDeDomicilioId": {
+                    "type": "number",
+                    "description": "Identificador del tipo de domicilio."
+                },
+                "tipoDeDomicilio": {
+                    "type": "string",
+                    "description": "Nombre del tipo de domicilio."
+                }
+            },
+            "required": [
+                "personaUId"
+            ]
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

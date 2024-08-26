@@ -1,0 +1,30 @@
+{
+    "id": 390,
+    "nombre": "ValidarDocumento",
+    "descripcion": "Método para validar el documento de una persona.",
+    "entrada": {
+        "paisDocumentoId": {
+            "type": "number",
+            "description": "Identificador de país del documento."
+        },
+        "tipoDocumentoId": {
+            "type": "number",
+            "description": "Identificador de tipo de documento."
+        },
+        "nroDocumento": {
+            "type": "string",
+            "description": "Número de documento."
+        }
+    },
+    "salida": {
+        "valido": {
+            "type": "string",
+            "description": "¿Válido? (S/N)."
+        },
+        "mensaje": {
+            "type": "string",
+            "description": "Mensaje de salida cuando el documento no es válido."
+        }
+    },
+    "sistema": "Personas"
+}

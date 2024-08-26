@@ -1,0 +1,12 @@
+La funcionalidad detallada en el archivo se refiere al "5to nivel de Agrupación de Direcciones" dentro del sistema Bantotal, específicamente en el contexto del SNGC05. Este módulo permite la identificación y descripción de diferentes niveles de agrupación, facilitando la organización y gestión de direcciones en el sistema. Se admiten identificadores para cinco niveles de agrupación, así como descripciones y descripciones extendidas para cada uno de ellos.
+
+**Configuración asociada:**
+
+- **Tipo: Parámetros**
+  - **sngc01id**: N (3.0) - Identificador
+  - **sngc02id**: N (3.0) - Identificador Nivel 2
+  - **sngc03id**: N (3.0) - Identificador Nivel 3
+  - **sngc04id**: N (3.0) - Identificador Nivel 4
+  - **sngc05id**: N (3.0) - Identificador Nivel 5
+  - **sngc05Dsc**: C (35) - Descripción
+  - **sngc05DeEx**: C (80) - Desc Extendida

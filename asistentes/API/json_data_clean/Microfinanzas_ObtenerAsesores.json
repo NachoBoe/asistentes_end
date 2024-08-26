@@ -1,0 +1,23 @@
+{
+    "id": 273,
+    "nombre": "ObtenerAsesores",
+    "descripcion": "Método para obtener los usuarios asesores.",
+    "entrada": {},
+    "salida": {
+        "sdtAsesores": {
+            "type": "object",
+            "description": "Listado de asesores.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador del asesor."
+                },
+                "usuario": {
+                    "type": "string",
+                    "description": "Nombre de usuario asesor."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

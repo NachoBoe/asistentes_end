@@ -1,0 +1,7 @@
+La funcionalidad detallada en el archivo se refiere a la configuración del "Código de Segmento para Persona Jurídica" en el sistema Bantotal. Esta configuración permite seleccionar si el segmento será 'Fijo' o 'Según RNG' (Regla de Negocios). Si se elige 'Fijo', se debe indicar un valor que se mostrará de forma no editable en el campo 'HSNGCPJ1'. Si se opta por 'Según RNG', se debe asociar una regla de negocios que recibe varios parámetros relacionados con el país, tipo de documento, tipo de actividad y actividad económica.
+
+- Opciones generales:
+  - Segmento: 'Fijo' o 'Según RNG'
+
+- Reglas de negocio:
+  - Parámetros: país, tipo, nº de documento, tipo de actividad, actividad económica (PEPAIS, PETDOC, PENDOC, TPOACT, ACTECO)

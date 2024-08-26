@@ -1,0 +1,34 @@
+{
+    "id": 14,
+    "nombre": "ObtenerDetalleEjecucion",
+    "descripcion": "Método para obtener el detalle de la ejecución de un proceso de la cadena de cierre.",
+    "entrada": {
+        "identificador": {
+            "type": "integer",
+            "description": "Identificador de proceso batch."
+        },
+        "fecha": {
+            "type": "string",
+            "description": "Fecha de ejecución."
+        }
+    },
+    "salida": {
+        "identificador": {
+            "type": "integer",
+            "description": "Identificador de proceso batch."
+        },
+        "fechaInicio": {
+            "type": "string",
+            "description": "Fecha de inicio de ejecución."
+        },
+        "fechaFin": {
+            "type": "string",
+            "description": "Fecha de fin de ejecución."
+        },
+        "duracion": {
+            "type": "string",
+            "description": "Duración."
+        }
+    },
+    "sistema": "CadenaCierre"
+}

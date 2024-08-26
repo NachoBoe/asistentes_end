@@ -1,0 +1,27 @@
+{
+    "id": 114,
+    "nombre": "ObtenerActividades",
+    "descripcion": "Método para obtener un listado de las actividades ingresadas en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtActividades": {
+            "type": "object",
+            "description": "Listado de actividades.",
+            "properties": {
+                "identificador": {
+                    "type": "integer",
+                    "description": "Identificador de actividad."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de actividad."
+                },
+                "identificadorEntidadReguladora": {
+                    "type": "number",
+                    "description": "Identificador de entidad reguladora."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

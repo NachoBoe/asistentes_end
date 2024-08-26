@@ -1,0 +1,22 @@
+{
+    "id": 402,
+    "nombre": "ObtenerPrecioAFecha",
+    "descripcion": "Método para devolver la cotización en moneda nacional de una especie en la fecha recibida.",
+    "entrada": {
+        "especie": {
+            "type": "number",
+            "description": "Identificador de la especie."
+        },
+        "fecha": {
+            "type": "string",
+            "description": "Fecha a consultar."
+        }
+    },
+    "salida": {
+        "precio": {
+            "type": "number",
+            "description": "Cotización."
+        }
+    },
+    "sistema": "Precios"
+}

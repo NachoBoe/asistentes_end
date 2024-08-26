@@ -1,0 +1,179 @@
+{
+    "id": 340,
+    "nombre": "CrearReducido",
+    "descripcion": "Método para dar de alta de manera reducida a una persona.",
+    "entrada": {
+        "sdtPersona": {
+            "type": "object",
+            "description": "Datos de la persona.",
+            "properties": {
+                "paisDocumentoId": {
+                    "type": "number",
+                    "description": "Identificador del país del documento."
+                },
+                "paisDocumento": {
+                    "type": "string",
+                    "description": "Nombre del país del documento."
+                },
+                "tipoDocumentoId": {
+                    "type": "number",
+                    "description": "Identificador del tipo de documento."
+                },
+                "tipoDocumento": {
+                    "type": "string",
+                    "description": "Nombre del tipo de documento."
+                },
+                "nroDocumento": {
+                    "type": "string",
+                    "description": "Número de documento."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento de documento."
+                },
+                "primerApellido": {
+                    "type": "string",
+                    "description": "Primer apellido."
+                },
+                "segundoApellido": {
+                    "type": "string",
+                    "description": "Segundo apellido."
+                },
+                "primerNombre": {
+                    "type": "string",
+                    "description": "Primer nombre."
+                },
+                "segundoNombre": {
+                    "type": "string",
+                    "description": "Segundo nombre."
+                },
+                "sexo": {
+                    "type": "string",
+                    "description": "Sexo (M/F)."
+                },
+                "fechaNacimiento": {
+                    "type": "string",
+                    "description": "Fecha de nacimiento."
+                },
+                "estadoCivilId": {
+                    "type": "string",
+                    "description": "Identificador de estado civil."
+                },
+                "estadoCivil": {
+                    "type": "string",
+                    "description": "Descripción de estado civil."
+                },
+                "nacionalidadId": {
+                    "type": "number",
+                    "description": "Identificador del país de nacimiento."
+                },
+                "nacionalidad": {
+                    "type": "string",
+                    "description": "Nombre del país de nacimiento."
+                },
+                "ocupacionId": {
+                    "type": "number",
+                    "description": "Identificador de ocupación."
+                },
+                "ocupacion": {
+                    "type": "string",
+                    "description": "Descripción de ocupación."
+                },
+                "actividadLaboralId": {
+                    "type": "number",
+                    "description": "Identificador de actividad laboral."
+                },
+                "actividadLaboral": {
+                    "type": "string",
+                    "description": "Identificador de actividad laboral."
+                },
+                "fechaInicioActividad": {
+                    "type": "string",
+                    "description": "Fecha inicio actividad."
+                },
+                "ingresos": {
+                    "type": "number",
+                    "description": "Ingresos."
+                },
+                "paisDomicilioId": {
+                    "type": "number",
+                    "description": "Identificador del país de domicilio."
+                },
+                "paisDomicilio": {
+                    "type": "string",
+                    "description": "Nombre del país de domicilio."
+                },
+                "departamentoId": {
+                    "type": "number",
+                    "description": "Identificador de departamento."
+                },
+                "departamento": {
+                    "type": "string",
+                    "description": "Nombre de departamento."
+                },
+                "localidadId": {
+                    "type": "number",
+                    "description": "Identificador de localidad."
+                },
+                "localidad": {
+                    "type": "string",
+                    "description": "Nombre de localidad."
+                },
+                "barrioId": {
+                    "type": "number",
+                    "description": "Identificador de barrio."
+                },
+                "barrio": {
+                    "type": "string",
+                    "description": "Nombre de barrio."
+                },
+                "calle": {
+                    "type": "string",
+                    "description": "Calle."
+                },
+                "numeroPuerta": {
+                    "type": "string",
+                    "description": "Número de puerta."
+                },
+                "apartamento": {
+                    "type": "string",
+                    "description": "Apartamento."
+                },
+                "codigoPostal": {
+                    "type": "string",
+                    "description": "Código postal."
+                },
+                "telefonoFijo": {
+                    "type": "string",
+                    "description": "Teléfono fijo."
+                },
+                "telefonoCelular": {
+                    "type": "string",
+                    "description": "Teléfono celular."
+                },
+                "correoElectronico": {
+                    "type": "string",
+                    "description": "Correo electronico."
+                }
+            },
+            "required": [
+                "paisDocumentoId",
+                "tipoDocumentoId",
+                "nroDocumento",
+                "primerApellido",
+                "primerNombre",
+                "fechaNacimiento",
+                "sexo",
+                "estadoCivilId",
+                "ocupacionId"
+            ]
+        }
+    },
+    "salida": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "sistema": "Personas"
+}

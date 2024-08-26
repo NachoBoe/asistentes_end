@@ -1,0 +1,39 @@
+**Descripción general de la funcionalidad:**
+El archivo detalla la configuración y los requisitos para el ingreso de datos de personas físicas en el sistema Bantotal. Incluye campos obligatorios y opcionales, validaciones de datos, y la parametrización necesaria para gestionar la información personal, laboral y de actividad económica de los clientes. Se permite la asociación de cónyuges, la gestión de actividades laborales y secundarias, y la parametrización de segmentos de mercado. Además, se establecen reglas de negocio para la visibilidad y obligatoriedad de ciertos campos, así como la integración con programas externos.
+
+**Opciones generales:**
+- Opción General de Proceso 2060: Permite definir una actividad económica fija por ocupación.
+- Opción General de Proceso 2038: Habilita la visualización del botón "Tipos de Actividad" en la parametrización de Ocupaciones.
+
+**Guías y Guías Especiales de proceso:**
+- Guía de Proceso Nº 1951, Correlativo 1: Parametrización de caracteres especiales válidos para el Nombre de la Persona Física.
+- Guía de Proceso Nº 1941, Correlativo 1: Parametrización para admitir símbolos en el nombre de la persona.
+- Guía de Proceso Nº 5007: Definición del texto ‘Seleccione’ por defecto.
+- Guía de Proceso 2028: Almacena información relativa al tipo de segmento.
+- Guía de Procesos código 2029: Parametrización para grabar la relación de cónyuge con otro código.
+
+**Reglas de negocio:**
+- Regla de negocios 1101: Determina cuáles son los códigos de estado civil que habilitan el campo del cónyuge.
+- Regla de negocios 1102: Determina el código de ocupación que habilita el check de empleado de la institución.
+- Regla de negocios 1105: Determina la etiqueta a visualizar a nivel de la categoría, en función del tipo de segmento.
+- HRNG400: Define la obligatoriedad del ingreso de datos en HSNGCPF1 según los requerimientos de la Institución Financiera.
+
+**Programas particulares:**
+- Programa particular por cliente (HTRT900): Se utiliza para invocar un programa externo al momento de la confirmación en el panel HSNGCPF1, con el programa estándar MANTPERCLI.
+
+**Tablas:**
+- Tabla FST013: Contiene la lista de países.
+- Tabla FST020: Define los vínculos con la empresa.
+- Tabla FST041: Almacena los segmentos de mercado.
+- Tabla FST114: Contiene los niveles educativos.
+- Tabla FST115: Contiene las profesiones.
+- Tabla FST108: Contiene los hobbies.
+- Tabla SNGC07: Define grupos de actividades de clientes.
+- Tabla SNGC08: Muestra valores para la ubicación del establecimiento.
+- Tabla FST752: Define los tipos de actividad económica.
+- Tabla FST750: Filtra actividades específicas según el tipo de actividad.
+
+**Otros controles y configuraciones:**
+- Panel HSNG036L: Para crear literales.
+- Panel HSNG037L: Para crear conceptos.
+- Panel HSNG038: Para crear elementos de programa y definir su visibilidad y comportamiento.

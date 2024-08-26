@@ -1,0 +1,9 @@
+La funcionalidad detallada en el archivo se refiere a la consulta de cuentas dentro del sistema Bantotal. Se han implementado botones que permiten invocar paneles específicos para facilitar el acceso a diferentes tipos de información relacionada con los clientes y sus cuentas. Los botones disponibles son:
+
+- **Visualizar**: Invoca al panel HSNGC50 en modo consulta.
+- **Domicilios**: Invoca al panel HSNGC22 en modo consulta.
+- **Impuestos**: Invoca al panel institucional.
+- **Integrantes**: Invoca al panel institucional.
+- **Textos**: Invoca al panel institucional.
+
+Estas opciones permiten a los usuarios acceder a información detallada sobre las cuentas y sus características, mejorando la experiencia de consulta y gestión de datos en la plataforma.

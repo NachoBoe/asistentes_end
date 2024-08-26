@@ -1,0 +1,36 @@
+{
+    "id": 382,
+    "nombre": "ObtenerTelefonos",
+    "descripcion": "Método para obtener los teléfonos de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {
+        "sdtTelefono": {
+            "type": "object",
+            "description": "Listado de Teléfonos.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador del tipo de teléfono."
+                },
+                "telefono": {
+                    "type": "string",
+                    "description": "Número de teléfono."
+                },
+                "tipoDeDomicilioId": {
+                    "type": "number",
+                    "description": "Identificador del tipo de domicilio."
+                },
+                "tipoDeDomicilio": {
+                    "type": "string",
+                    "description": "Nombre del tipo de domicilio."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

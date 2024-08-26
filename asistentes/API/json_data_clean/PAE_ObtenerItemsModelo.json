@@ -1,0 +1,32 @@
+{
+    "id": 303,
+    "nombre": "ObtenerItemsModelo",
+    "descripcion": "Método para obtener los items de un determinado modelo PAE.",
+    "entrada": {
+        "modeloId": {
+            "type": "number",
+            "description": "Código de modelo."
+        }
+    },
+    "salida": {
+        "sdtItems": {
+            "type": "object",
+            "description": "Listado de items de modelo PAE.",
+            "properties": {
+                "itemId": {
+                    "type": "number",
+                    "description": "Código de item."
+                },
+                "tipoDato": {
+                    "type": "string",
+                    "description": "Descripción de tipo de dato."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre de item."
+                }
+            }
+        }
+    },
+    "sistema": "PAE"
+}

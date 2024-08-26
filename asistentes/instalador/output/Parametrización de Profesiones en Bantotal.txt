@@ -1,0 +1,3 @@
+- Descripción general de la funcionalidad: El panel de parametrización HTRT115 permite a la institución financiera definir las distintas profesiones que se pueden seleccionar al dar de alta un cliente. Esto agiliza el registro de datos al ofrecer una lista desplegable de profesiones.
+
+- Objetivo: Agilizar el registro de datos al brindar la opción de seleccionar la Profesión de una lista desplegable.

@@ -1,0 +1,21 @@
+{
+    "id": 230,
+    "nombre": "ModificarCuentaDestinoVencimiento",
+    "descripcion": "Método para modificar la cuenta de destino de la instrucción al vencimiento de un depósito.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "depositoUId": {
+            "type": "number",
+            "description": "Identificador único de la operación del depósito."
+        },
+        "cuentaUId": {
+            "type": "number",
+            "description": "Identificador único de la operación de cuenta."
+        }
+    },
+    "salida": {},
+    "sistema": "DepositosAPlazo"
+}

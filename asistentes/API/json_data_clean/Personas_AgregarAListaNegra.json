@@ -1,0 +1,21 @@
+{
+    "id": 327,
+    "nombre": "AgregarAListaNegra",
+    "descripcion": "Método para agregar una persona a una lista negra.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "codigoDeLista": {
+            "type": "number",
+            "description": "Identificador de lista negra."
+        },
+        "motivo": {
+            "type": "string",
+            "description": "Motivo por el cual la persona debe estar en la lista."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

@@ -1,0 +1,40 @@
+{
+    "id": 286,
+    "nombre": "ObtenerTiposDeIntegrante",
+    "descripcion": "Método para obtener los tipos de integrante correspondientes a un tipo de grupo de crédito.",
+    "entrada": {
+        "tipoGrupoId": {
+            "type": "number",
+            "description": "Identificador del tipo de grupo."
+        }
+    },
+    "salida": {
+        "sdtTiposIntegrantesGrupo": {
+            "type": "object",
+            "description": "Listado de tipos de integrantes.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Identificador del tipo de integrante."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripcion del tipo de integrante."
+                },
+                "cantidadPermitida": {
+                    "type": "number",
+                    "description": "Cantidad máxima de integrantes de este tipo permitidos."
+                },
+                "coordinador": {
+                    "type": "string",
+                    "description": "Indica si el integrante es coordinador o no (S/N)."
+                },
+                "vigente": {
+                    "type": "string",
+                    "description": "Indica si el tipo de integrante está vigente (S/N)."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

@@ -1,0 +1,8 @@
+La funcionalidad detallada en el archivo se refiere a la "Agrupación de Direcciones" dentro del sistema Bantotal. Esta opción permite realizar el mantenimiento de los niveles de agrupación de direcciones, lo que incluye la posibilidad de agregar nuevos registros, consultar, modificar y eliminar registros existentes. 
+
+Las posibilidades que se admiten son:
+
+- Agregar nuevos niveles de agrupación de direcciones.
+- Consultar registros existentes.
+- Modificar registros existentes.
+- Eliminar registros existentes.

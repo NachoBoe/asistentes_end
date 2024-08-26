@@ -1,0 +1,10 @@
+- **Descripción general de la funcionalidad**: El sistema Bantotal permite registrar textos asociados a cuentas de personas o clientes. Para ello, se debe crear un tipo de texto mediante el programa Ttrt027 - Tipo de Textos. Además, se debe definir una Guía de Procesos específica (Guía 444) que vincule el texto creado con su correspondiente código en la configuración de procesos.
+
+- **Opciones generales**: 
+  - Programa para crear tipos de texto: Ttrt027 - Tipo de Textos (Fst027).
+  - Guía de Procesos a definir: 444.
+
+- **Guías y Guías Especiales de proceso**: 
+  - Código: 444, Valor específico: código de texto (Ttrt098 - Guías de Procesos, Fst098).
+
+Esta funcionalidad permite la flexibilidad de ingresar cualquier tipo de texto que se desee asociar a una cuenta, facilitando la gestión de información relevante para el cliente.

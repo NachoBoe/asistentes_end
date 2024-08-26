@@ -1,0 +1,17 @@
+{
+    "id": 66,
+    "nombre": "EliminarDocumentoDigital",
+    "descripcion": "Método para eliminar un documento digital de una cuenta.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "documentoId": {
+            "type": "number",
+            "description": "Identificador de documento digital."
+        }
+    },
+    "salida": {},
+    "sistema": "Clientes"
+}

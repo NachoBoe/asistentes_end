@@ -1,0 +1,18 @@
+{
+    "id": 111,
+    "nombre": "ValidarExistencia",
+    "descripcion": "Método para validar la existencia de un número de cuenta en Bantotal.",
+    "entrada": {
+        "cuentaBT": {
+            "type": "integer",
+            "description": "Número de cuenta Bantotal."
+        }
+    },
+    "salida": {
+        "existe": {
+            "type": "string",
+            "description": "¿Existe? (S/N)."
+        }
+    },
+    "sistema": "Clientes"
+}

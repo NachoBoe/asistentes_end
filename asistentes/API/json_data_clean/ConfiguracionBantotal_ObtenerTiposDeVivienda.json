@@ -1,0 +1,23 @@
+{
+    "id": 147,
+    "nombre": "ObtenerTiposDeVivienda",
+    "descripcion": "Método para obtener un listado de los tipos de vivienda.",
+    "entrada": {},
+    "salida": {
+        "sdtViviendas": {
+            "type": "object",
+            "description": "Listado de viviendas.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código de vivienda."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de vivienda."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

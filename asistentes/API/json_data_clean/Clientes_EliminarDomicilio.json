@@ -1,0 +1,17 @@
+{
+    "id": 67,
+    "nombre": "EliminarDomicilio",
+    "descripcion": "Método para eliminar los datos del domicilio de una cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "codigoDomicilio": {
+            "type": "number",
+            "description": "Código de domicilio."
+        }
+    },
+    "salida": {},
+    "sistema": "Clientes"
+}

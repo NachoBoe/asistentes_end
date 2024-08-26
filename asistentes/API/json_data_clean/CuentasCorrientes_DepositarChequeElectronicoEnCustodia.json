@@ -1,0 +1,41 @@
+{
+    "id": 172,
+    "nombre": "DepositarChequeElectronicoEnCustodia",
+    "descripcion": "Método para depositar bajo custodia un cheque electrónico.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación de subcuenta."
+        },
+        "importe": {
+            "type": "number",
+            "description": "Importe."
+        },
+        "numeroCheque": {
+            "type": "number",
+            "description": "Número de cheque a emitir."
+        },
+        "bancoLibradorId": {
+            "type": "number",
+            "description": "Identificador de banco librador."
+        },
+        "sucursalLibradoraId": {
+            "type": "number",
+            "description": "Identificador de sucursal del banco librador."
+        },
+        "CUITBeneficiario": {
+            "type": "string",
+            "description": "CUIT beneficiario."
+        },
+        "paisBeneficiarioId": {
+            "type": "number",
+            "description": "Identificador del país del beneficiario."
+        },
+        "tipoDocumentoBeneficiarioId": {
+            "type": "number",
+            "description": "Identificador del tipo de documento del beneficiario."
+        }
+    },
+    "salida": {},
+    "sistema": "CuentasCorrientes"
+}

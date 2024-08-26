@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la gestión de cuentas dentro del sistema Bantotal, donde se registran y administran diversos datos relacionados con las cuentas bancarias de los clientes. Se incluyen campos que permiten identificar la cuenta, su clasificación, el ejecutivo a cargo, y otros aspectos relevantes como la fecha de alta y baja, así como la clasificación de riesgo. Las posibilidades que se admiten incluyen la identificación de cuentas corporativas, la clasificación de clientes, y la gestión de correspondencia, entre otros.
+
+No se encontraron configuraciones asociadas, guías, reglas de negocio, programas particulares, tablas, ni otros controles y configuraciones.

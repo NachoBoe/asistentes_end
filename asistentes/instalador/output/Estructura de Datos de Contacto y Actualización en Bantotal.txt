@@ -1,0 +1,21 @@
+El archivo del sistema Bantotal detalla las tablas y atributos grabados relacionados con teléfonos y datos de contacto de empresas. Se presentan dos conjuntos de datos:
+
+1. **Teléfonos**:
+   - FSR005: Concepto
+   - Doordp: Corr.
+   - Dotelfp: Teléfono
+   - Dofaxp: Fax
+   - Dotlexp: Telex
+
+2. **SNGC99**:
+   - SNGC99: Concepto
+   - SNGC99Emp: Empresa
+   - SNGC99Cta: Cuenta
+   - SNGC99Pais: País
+   - SNGC99TDoc: Tipo Documento
+   - SNGC99NDoc: Número Documento
+   - SNGC99CDom: Código Domicilio
+   - SNGC99Corr: Correlativo
+   - SNGC99FAct: Fecha de Actualización
+
+La funcionalidad general del archivo se centra en la gestión de información de contacto y datos empresariales, permitiendo el registro y actualización de teléfonos, fax, telex, y otros datos relevantes de las empresas. Las posibilidades que se admiten incluyen la grabación de múltiples contactos y la actualización de información asociada a cada empresa.

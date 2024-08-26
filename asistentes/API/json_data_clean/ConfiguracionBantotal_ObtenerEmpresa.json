@@ -1,0 +1,101 @@
+{
+    "id": 126,
+    "nombre": "ObtenerEmpresa",
+    "descripcion": "Método que devuelve información de la empresa.",
+    "entrada": {},
+    "salida": {
+        "sdtEmpresa": {
+            "type": "object",
+            "description": "Datos de la empresa.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de la empresa."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre de la empresa."
+                },
+                "casaCentral": {
+                    "type": "object",
+                    "description": "Datos sobre la sucursal indicada como casa central.",
+                    "properties": {
+                        "identificador": {
+                            "type": "number",
+                            "description": "Identificador de sucursal."
+                        },
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción de sucursal."
+                        },
+                        "direccion": {
+                            "type": "string",
+                            "description": "Dirección de sucursal."
+                        },
+                        "telefono": {
+                            "type": "string",
+                            "description": "Teléfono de sucursal."
+                        },
+                        "latitud": {
+                            "type": "number",
+                            "description": "Latitud de sucursal."
+                        },
+                        "longitud": {
+                            "type": "number",
+                            "description": "Longitud de sucursal."
+                        }
+                    }
+                },
+                "monedaNacional": {
+                    "type": "object",
+                    "description": "Código moneda nacional.",
+                    "properties": {
+                        "identificador": {
+                            "type": "number",
+                            "description": "Identificador de moneda."
+                        },
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción de moneda."
+                        },
+                        "simbolo": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        }
+                    }
+                },
+                "monedaDolar": {
+                    "type": "object",
+                    "description": "Código moneda dolar.",
+                    "properties": {
+                        "identificador": {
+                            "type": "number",
+                            "description": "Identificador de moneda."
+                        },
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción de moneda."
+                        },
+                        "simbolo": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        }
+                    }
+                },
+                "fechaApertura": {
+                    "type": "string",
+                    "description": "Fecha de apertura."
+                },
+                "fechaCierre": {
+                    "type": "string",
+                    "description": "Fecha de cierre."
+                },
+                "fechaBalance": {
+                    "type": "string",
+                    "description": "Fecha de balance."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

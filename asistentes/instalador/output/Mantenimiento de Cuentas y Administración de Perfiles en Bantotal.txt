@@ -1,0 +1,13 @@
+- Opciones generales: 
+  - Filtrar por:
+    - Número de cuenta 
+    - País
+    - Tipo y número de documento del titular representativo de la cuenta cliente
+    - Nombre de la Cuenta
+
+- Programas particulares:
+  - HSNGC38 - Mantenimiento de Cuentas
+  - PTRD001 (para administrar el botón ‘Eliminar’ por perfiles)
+
+Descripción general de la funcionalidad: 
+El programa HSNGC38 - Mantenimiento de Cuentas permite gestionar la información de las cuentas de clientes en la plataforma Bantotal. Ofrece opciones de filtrado para facilitar la búsqueda y administración de cuentas, y permite la gestión de permisos a través del programa PTRD001, que habilita la opción de eliminar cuentas según los perfiles asignados.

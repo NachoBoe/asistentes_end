@@ -1,0 +1,13 @@
+- Opciones generales:
+  - ID 87: Utilizado para el dato de Persona Expuesta Políticamente (PEP) en el Panel HSNGCPF1.
+  - ID 100: Botón "Datos Pep’s" en el panel HSNGCPF1.
+
+- Programas particulares:
+  - HTRT900: Programa que permite invocar el panel HSNGC81 para la carga de datos asociados a los PEP.
+  - HTRT900: PTRD201P permite ingresar a la persona en lista PEP al marcar el check de PEP.
+
+- Tablas:
+  - SNGC11: Almacena el atributo SNGC11cmb2 relacionado con el dato PEP.
+
+Descripción general de la funcionalidad:
+La funcionalidad permite identificar y gestionar a las Personas Expuestas Políticamente (PEP) dentro del sistema Bantotal. Se habilita mediante una configuración específica y permite la edición de la marca PEP a nivel de datos de la persona. Además, se pueden consultar y cargar datos asociados a PEP, así como gestionar excepciones al confirmar el alta de una persona en el sistema. La configuración es parametrizable y se asocia a reglas de negocio para controlar la visibilidad de ciertos botones en función de la selección de PEP.

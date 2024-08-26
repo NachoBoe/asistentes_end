@@ -1,0 +1,31 @@
+{
+    "id": 68,
+    "nombre": "EliminarInformacionAdicional",
+    "descripcion": "Método para eliminar la información adicional de un cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "sdtInformacionAdicional": {
+            "type": "object",
+            "description": "Listado de datos adicionales.",
+            "properties": {
+                "clave": {
+                    "type": "string",
+                    "description": "Identificador de información adicional."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor de información adicional."
+                }
+            }
+        },
+        "modo": {
+            "type": "string",
+            "description": "[Hidden, valor fijo 'DLT' para este método]."
+        }
+    },
+    "salida": {},
+    "sistema": "Clientes"
+}

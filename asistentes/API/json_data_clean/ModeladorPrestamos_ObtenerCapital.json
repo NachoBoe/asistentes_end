@@ -1,0 +1,26 @@
+{
+    "id": 294,
+    "nombre": "ObtenerCapital",
+    "descripcion": "Método para obtener capital mínimo, máximo y promedio de un producto de préstamo.",
+    "entrada": {
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador de producto."
+        }
+    },
+    "salida": {
+        "minimo": {
+            "type": "number",
+            "description": "Capital mínimo posible para el producto."
+        },
+        "maximo": {
+            "type": "number",
+            "description": "Capital máximo posible para el producto."
+        },
+        "valorPorDefecto": {
+            "type": "number",
+            "description": "Capital por defecto para el producto."
+        }
+    },
+    "sistema": "ModeladorPrestamos"
+}

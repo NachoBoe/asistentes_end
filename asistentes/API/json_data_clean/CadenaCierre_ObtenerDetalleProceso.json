@@ -1,0 +1,44 @@
+{
+    "id": 15,
+    "nombre": "ObtenerDetalleProceso",
+    "descripcion": "Método para obtener el detalle de un proceso de la cadena de cierre.",
+    "entrada": {
+        "identificador": {
+            "type": "integer",
+            "description": "Identificador de proceso batch."
+        }
+    },
+    "salida": {
+        "procesosBatch": {
+            "type": "object",
+            "description": "Proceso de cadena de cierre.",
+            "properties": {
+                "identificador": {
+                    "type": "integer",
+                    "description": "Identificador de proceso batch."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre del proceso."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción."
+                },
+                "periodicidad": {
+                    "type": "string",
+                    "description": "Periodicidad."
+                },
+                "parametrosExtendidos": {
+                    "type": "string",
+                    "description": "¿Utiliza parámetros extendidos? (SI / NO)"
+                },
+                "esReprocesable": {
+                    "type": "string",
+                    "description": "Descripción para reprocesamiento."
+                }
+            }
+        }
+    },
+    "sistema": "CadenaCierre"
+}

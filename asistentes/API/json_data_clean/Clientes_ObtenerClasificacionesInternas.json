@@ -1,0 +1,23 @@
+{
+    "id": 75,
+    "nombre": "ObtenerClasificacionesInternas",
+    "descripcion": "Método para obtener un listado de las clasificaciones internas ingresadas en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtClasificacionesInternas": {
+            "type": "object",
+            "description": "Listado de clasificaciones internas.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de clasificacion interna."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de clasificacion interna."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

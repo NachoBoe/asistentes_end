@@ -1,0 +1,17 @@
+{
+    "id": 496,
+    "nombre": "Desbloquear",
+    "descripcion": "Método para realizar el desbloqueo de una tarjeta de débito.",
+    "entrada": {
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de tarjeta."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {},
+    "sistema": "TarjetasDeDebito"
+}

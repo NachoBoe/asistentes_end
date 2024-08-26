@@ -1,0 +1,90 @@
+{
+    "id": 228,
+    "nombre": "ContratarSimulacion",
+    "descripcion": "Método para contratar un depósito a plazo fijo a partir de una simulación existente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "simulacionId": {
+            "type": "number",
+            "description": "Identificador único de la simulación."
+        },
+        "instruccionVTO": {
+            "type": "number",
+            "description": "Identificador de la instrucción al vencimiento"
+        },
+        "cuentaUIdDestinoVTO": {
+            "type": "number",
+            "description": "Identificador único de la operación de la cuenta destino al vencimiento."
+        },
+        "InstruccionPP": {
+            "type": "number",
+            "description": "Identificador de la instrucción de pago periódico."
+        },
+        "cuentaUIdDestinoPP": {
+            "type": "number",
+            "description": "Identificador único de la operación de la cuenta destino del pago periódico."
+        },
+        "cuentaUIdDebito": {
+            "type": "number",
+            "description": "Identificador único de la operación de la cuenta de débito."
+        },
+        "sdtDatosExtendidos": {
+            "type": "object",
+            "description": "Listado de datos complementarios.",
+            "properties": {
+                "clave": {
+                    "type": "string",
+                    "description": "Clave del dato extendido."
+                },
+                "tipo": {
+                    "type": "string",
+                    "description": "Tipo de dato extendido."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor de dato extendido."
+                },
+                "Lista": {
+                    "type": "object",
+                    "description": "Lista de datos."
+                }
+            }
+        }
+    },
+    "salida": {
+        "sdtDatosExtendidos": {
+            "type": "object",
+            "description": "Listado de datos complementarios.",
+            "properties": {
+                "clave": {
+                    "type": "string",
+                    "description": "Clave del dato extendido."
+                },
+                "tipo": {
+                    "type": "string",
+                    "description": "Tipo de dato extendido."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor de dato extendido."
+                },
+                "Lista": {
+                    "type": "object",
+                    "description": "Lista de datos."
+                }
+            }
+        },
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de la operación."
+        },
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento."
+        }
+    },
+    "sistema": "DepositosAPlazo"
+}

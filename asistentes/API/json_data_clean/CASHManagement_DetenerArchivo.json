@@ -1,0 +1,13 @@
+{
+    "id": 39,
+    "nombre": "DetenerArchivo",
+    "descripcion": "Método para detener la realización de pagos o transferencias ya autorizadas.",
+    "entrada": {
+        "archivoId": {
+            "type": "number",
+            "description": "Identificador de archivo."
+        }
+    },
+    "salida": {},
+    "sistema": "CASHManagement"
+}

@@ -1,0 +1,30 @@
+{
+    "id": 336,
+    "nombre": "AgregarTelefono",
+    "descripcion": "Método para agregar el teléfono de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "numeroTelefono": {
+            "type": "string",
+            "description": "Número de teléfono."
+        },
+        "tipoTelefonoId": {
+            "type": "number",
+            "description": "Identificador de tipo de teléfono."
+        },
+        "domicilioId": {
+            "type": "number",
+            "description": "Identificador de tipo de domicilio."
+        }
+    },
+    "salida": {
+        "telefonoId": {
+            "type": "number",
+            "description": "Identificador correlativo de teléfono."
+        }
+    },
+    "sistema": "Personas"
+}

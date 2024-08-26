@@ -1,0 +1,38 @@
+{
+    "id": 415,
+    "nombre": "CancelarAFechaTerceros",
+    "descripcion": "Método para realizar la cancelación de un préstamo a terceros, a una fecha valor dada.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación simulada."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "operacionCobroUId": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta vista donde se cobrará el préstamo."
+        },
+        "referencia": {
+            "type": "string",
+            "description": "Referencia."
+        },
+        "fecha": {
+            "type": "string",
+            "description": "Fecha valor de la cancelación."
+        },
+        "controlaExistenciaOperacionCobro": {
+            "type": "string",
+            "description": "Indica si se controla la existencia de la operación de cobro [Hidden: Valores 'S'/'N']."
+        }
+    },
+    "salida": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único del movimiento."
+        }
+    },
+    "sistema": "Prestamos"
+}

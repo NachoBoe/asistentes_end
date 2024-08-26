@@ -1,0 +1,67 @@
+La funcionalidad detallada en el archivo se centra en la gestión de datos personales y laborales de los usuarios dentro del sistema Bantotal. Se incluyen tablas y atributos que permiten registrar información relevante como nombres, apellidos, estado civil, datos de contacto, información laboral y educativa, así como detalles sobre la actividad económica y horarios de atención. Las posibilidades que se admiten incluyen la captura de datos demográficos, laborales y de contacto, así como la gestión de información auxiliar que puede ser utilizada para diversos fines dentro del sistema.
+
+**Tablas:**
+- **FSD002**
+  - Campos: Pfape1, Pfape2, Pfnom1, Pfnom2, Pfcant, Pfeciv, Pffnac, Pfpnac, Pfcleg, Pfxchij, PfxFPro, Pfebco, Pffibc
+- **SNGC11**
+  - Campos: SNGC11ACas, SNGC11Ugeo, SNGC11Dpto, SNGC11Prov, SNGC11Dist, SNGC11Co1N, SNGC11Txt1, SNGC11Txt2, SNGC11Cmb1, SNGC11Cmb2, SNGC11Dat1, SNGC11Dat2, SNGC11Num1, SNGC11Num2
+- **FSE002**
+  - Campos: País, NinsCod, ProfCod, PfxFPro, HobCod, PexIng
+- **FSE001**
+  - Campos: Paiscon, Vtorgnac, Impfinsc
+- **SNGC60**
+  - Campos: SNGC60Ocup, SNGC60Vcod, SNGC60Rute, SNGC60Rzo, SNGC60Rutp, SNGC60Nome, SNGC60Tipa, SNGC60Acte, SNGC60Ubic, SNGC60Fini, SNGC60Aux1, SNGC60Aux2, SNGC60Aux3
+- **SNGC40**
+  - Campos: SNG40Hdes, SNG40Hhas, SNG40Lun, SNG40Mar, SNG40Mier, SNG40Jue, SNG40Vie, SNG40Sab, SNG40Dom, SNG40Com
+
+**Otros controles y configuraciones:**
+- **Id. 21**: Primer Apellido
+- **Id. 22**: Segundo Apellido
+- **Id. 23**: Primer Nombre
+- **Id. 24**: Segundo Nombre
+- **Id. 25**: Sexo
+- **Id. 26**: Estado Civil
+- **Id. 27**: Apellido de Casada
+- **Id. 29**: Fecha de Nacimiento
+- **Id. 30**: País de Nacimiento
+- **Id. 31**: Ubigeo
+- **Id. 32**: Departamento
+- **Id. 33**: Localidad
+- **Id. 34**: Barrio
+- **Id. 35**: País de Ciudadanía
+- **Id. 36**: Ciudadano Legal
+- **Id. 37**: Nº de hijos
+- **Id. 38**: Nº de dependientes
+- **Id. 39**: Cónyuge
+- **Id. 40**: Fecha Vto. Documento
+- **Id. 41**: Fecha de defunción
+- **Id. 42**: Nivel Educativo
+- **Id. 44**: Profesión
+- **Id. 46**: E-mail
+- **Id. 47**: Hobby
+- **Id. 48**: Numérico(5)
+- **Id. 49**: Ingresos mensuales
+- **Id. 50**: Importe 2
+- **Id. 52**: Ocupación
+- **Id. 54**: Empleado de la Institución
+- **Id. 55**: Fecha de Ingreso
+- **Id. 62**: Vínculo con la empresa
+- **Id. 63**: RUT / NIT Empleador
+- **Id. 64**: Nombre empresa
+- **Id. 66**: RUT / NIT Persona
+- **Id. 68**: Nombre del Establecimiento
+- **Id. 69**: Tipo de Actividad
+- **Id. 70**: Actividad
+- **Id. 71**: Ubicación Establecimiento
+- **Id. 72**: Fecha Inicio Negocio
+- **Id. 84**: Texto auxiliar 1
+- **Id. 85**: Texto auxiliar 2
+- **Id. 86**: Combo Auxiliar 1
+- **Id. 87**: Combo Auxiliar 2
+- **Id. 88**: Fecha Auxiliar 1
+- **Id. 89**: Fecha Auxiliar 2
+- **Id. 90**: Entero Auxiliar 1
+- **Id. 91**: Entero Auxiliar 2
+- **Id. 101**: Texto Auxiliar 1
+- **Id. 102**: Fecha Auxiliar 1
+- **Id. 103**: Entero Auxiliar 1

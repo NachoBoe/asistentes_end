@@ -1,0 +1,76 @@
+{
+    "id": 49,
+    "nombre": "VisualizarOrdenArchivoCuenta",
+    "descripcion": "Método para visualizar las ordenes de un archivo de una cuenta.",
+    "entrada": {
+        "idArchivo": {
+            "type": "number",
+            "description": "Identificador de archivo."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "listaResumenOrdenes": {
+            "type": "object",
+            "description": "Listados de resumen de ordenes.",
+            "properties": {
+                "archivoId": {
+                    "type": "number",
+                    "description": "Identificador de archivo."
+                },
+                "contratoId": {
+                    "type": "number",
+                    "description": "Identificador del contrato CASH."
+                },
+                "servicio": {
+                    "type": "number",
+                    "description": "Servicio CASH."
+                },
+                "ordenId": {
+                    "type": "number",
+                    "description": "Identificador de orden CASH."
+                },
+                "cuentaDebito": {
+                    "type": "number",
+                    "description": "Identificador único de la cuenta débito."
+                },
+                "fechaPago": {
+                    "type": "string",
+                    "description": "Fecha de pago o cobro."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Estado del archivo."
+                },
+                "cantidadLineas": {
+                    "type": "number",
+                    "description": "Cantidad de líneas del archivo."
+                },
+                "moneda": {
+                    "type": "number",
+                    "description": "Moneda."
+                },
+                "importe": {
+                    "type": "number",
+                    "description": "Importe total."
+                },
+                "referencia": {
+                    "type": "string",
+                    "description": "Referencia del pago o cobro."
+                },
+                "nombreArchivo": {
+                    "type": "string",
+                    "description": "Nombre del archivo."
+                },
+                "mensajesError": {
+                    "type": "string",
+                    "description": "Lista de mensajes de la línea."
+                }
+            }
+        }
+    },
+    "sistema": "CASHManagement"
+}

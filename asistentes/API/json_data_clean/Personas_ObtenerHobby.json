@@ -1,0 +1,28 @@
+{
+    "id": 364,
+    "nombre": "ObtenerHobby",
+    "descripcion": "Método para obtener el hobby de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identidicador único de persona."
+        }
+    },
+    "salida": {
+        "sdtHobby": {
+            "type": "object",
+            "description": "Datos del hobby.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código de hobby."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de hobby."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

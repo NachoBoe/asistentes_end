@@ -1,0 +1,15 @@
+- Opciones generales:
+  - Desde el mantenimiento de Países (HFST013) se indica ‘Argentina’ y se selecciona la Opción Provincias.
+  - En el mantenimiento de provincias se debe seleccionar la opción Adicionales para ingresar la letra correspondiente a la Provincia.
+  - Posicionado en la Provincia se debe seleccionar la opción Departamentos e ingresar a nivel de barrio los 4 caracteres correspondientes.
+
+- Guías y Guías Especiales de proceso:
+  - ("Codigo": 1, "Correlativo": 1)
+  - ("Codigo": 1, "Correlativo": 2)
+
+- Tablas:
+  - Tabla FSE071: campo FSE071pos.
+  - Tabla FST166: campo swcod.
+
+Descripción general de la funcionalidad:
+El archivo detalla el proceso para adecuar el código postal a la estructura del Código Postal Argentino, que consta de 8 caracteres. Se especifica cómo se debe conformar el código postal a partir de la provincia, localidad y manzana, así como los pasos para parametrizar los caracteres correspondientes a cada uno. Además, se indica cómo se debe proceder en caso de que el país no sea Argentina, utilizando códigos de país y completando con ceros. Las posibilidades que se admiten incluyen la parametrización de provincias y localidades, así como la conformación del código postal según las normativas establecidas.

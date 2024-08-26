@@ -1,0 +1,7 @@
+La funcionalidad detallada en el archivo se refiere a la configuración de la actividad económica dentro del sistema Bantotal, específicamente en el contexto de la selección de parámetros para segmentos de clientes. Se permite la categorización de clientes en función de su actividad económica, lo que es crucial para la segmentación y el análisis de riesgos en el ámbito bancario.
+
+**Opciones generales**
+- Forma de seleccionar: 2.2.1.6.1
+- Valor para segmento No independiente: 2.2.1.6.2
+- Código de segmento para persona jurídica: 2.2.1.6.3
+- Valor: 2.2.1.6.4

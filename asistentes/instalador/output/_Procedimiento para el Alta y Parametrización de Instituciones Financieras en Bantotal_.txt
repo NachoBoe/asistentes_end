@@ -1,0 +1,43 @@
+El objetivo del presente desarrollo es poder dar de alta una institución financiera y dentro de los datos de alta poder completar País / Tipo de Documento / Número de Documento. Es posible parametrizar si se desea, el tipo de documento a elegir para que al desplegarse el popup nos traiga el o los documentos parametrizados en una Guía de Procesos. Se debe agregar como punto de menú el programa HIF001A (Alta de Instituciones Financieras). 
+
+Se debe parametrizar la FST200, OpgCod = 3107, OpgVal = ‘S’, si se quieren dejar de mostrar algunos campos en pantalla.
+
+Si la Opción está en ‘N’ o no está parametrizada, en el HIF002B se visualizan los siguientes campos.
+
+En caso de marcar ‘Cuenta Nuestra en el Exterior’ en el webpanel anterior, se controla que se ingrese obligatoriamente el código Swift de la institución. Si se desea que no se realice este control, deberá definirse la opción general de procesos No 1919 con valor en ‘N’.
+
+Se debe parametrizar en la FST098, Tpcod = 2099, si se quiere controlar el ingreso obligatorio de los siguientes campos:
+
+Correlativo 	Campo Obligatorio 
+1 	País de Constitución 
+2 	Tipo de Documento 
+3 	Número de Documento 
+4 	Código de Actividad 
+5 	Código de Sector 
+6 	Tipo de Institución financiera 
+7 	Tipo de Cliente de Crédito 
+8 	Para el Control de RUC 
+
+Se debe parametrizar la guía de procesos código 5009, correlativo 1 valor específico 3 correspondiente al código de clasificación interna que se mostrará por defecto en pantalla sin poder ser modificado.
+
+Se debe completar como se observa a continuación:
+
+Empresa	Código	Correlativo	Descripción	Valor Especifico	Importe
+1	5009	1	Clasificación Financiera	3	0
+
+En el caso de que se requiera ocultar el campo Cód. Clasificación Interna, se deberá parametrizar la opción de procesos 10151 en S.
+
+Se debe parametrizar la guía de procesos código 10451 si se quiere cargar un valor por defecto para los siguientes campos:
+
+Empresa	Código	Correlativo	Descripción	Valor Especifico	Importe
+1	10451	21	Ejecutivo de la cuenta	X	0
+1	10451	22	Segmento de mercado	X	0
+1	10541	23	Código de sector	X	0
+1	10541	24	Clasificación interna	X	0
+
+Si se quiere obtener los códigos de actividad económica de ciertos grupos (códigos de actividad económica s/Casa Matriz), se debe definir la guía de procesos código 10451.
+
+Se debe completar como se observa a continuación:
+
+Empresa	Código	Correlativo	Descripción	Valor Especifico	Importe
+1	10451	1	Instituciones Financieras	X	0

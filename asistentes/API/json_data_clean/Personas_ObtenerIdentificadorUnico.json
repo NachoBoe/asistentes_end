@@ -1,0 +1,26 @@
+{
+    "id": 367,
+    "nombre": "ObtenerIdentificadorUnico",
+    "descripcion": "Método para obtener el identifcador único de una persona.",
+    "entrada": {
+        "paisDocumentoId": {
+            "type": "number",
+            "description": "Identificador del país de origen del documento."
+        },
+        "tipoDocumentoId": {
+            "type": "number",
+            "description": "Identificador del tipo de documento."
+        },
+        "numeroDocumento": {
+            "type": "string",
+            "description": "Número de documento de la persona."
+        }
+    },
+    "salida": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "sistema": "Personas"
+}

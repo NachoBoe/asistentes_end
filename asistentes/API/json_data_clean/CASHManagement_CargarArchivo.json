@@ -1,0 +1,34 @@
+{
+    "id": 37,
+    "nombre": "CargarArchivo",
+    "descripcion": "Método para realizar la carga de un archivo.",
+    "entrada": {
+        "contrato": {
+            "type": "integer",
+            "description": "Identificador del contrato CASH del cliente."
+        },
+        "servicio": {
+            "type": "integer",
+            "description": "Servicio CASH."
+        },
+        "archivo": {
+            "type": "string",
+            "description": "Nombre del archivo a subir."
+        }
+    },
+    "salida": {
+        "archivoId": {
+            "type": "integer",
+            "description": "Identificador de archivo."
+        },
+        "estado": {
+            "type": "string",
+            "description": "Estado del archivo."
+        },
+        "cantidadLineas": {
+            "type": "integer",
+            "description": "Cantidad de líneas del archivo."
+        }
+    },
+    "sistema": "CASHManagement"
+}

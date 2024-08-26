@@ -1,0 +1,17 @@
+{
+    "id": 497,
+    "nombre": "EliminarCuentaAsociada",
+    "descripcion": "Método para eliminar una cuenta asociada de una tarjeta de débito dada.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de tarjeta de débito."
+        }
+    },
+    "salida": {},
+    "sistema": "TarjetasDeDebito"
+}

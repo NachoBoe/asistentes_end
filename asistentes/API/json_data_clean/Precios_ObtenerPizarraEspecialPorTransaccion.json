@@ -1,0 +1,42 @@
+{
+    "id": 401,
+    "nombre": "ObtenerPizarraEspecialPorTransaccion",
+    "descripcion": "Método para obtener la pizarra especial para una transacción.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "modulo": {
+            "type": "number",
+            "description": "Código de módulo Bantotal."
+        },
+        "transaccion": {
+            "type": "number",
+            "description": "Código de transacción Bantotal."
+        },
+        "monedaId": {
+            "type": "number",
+            "description": "Identificador de moneda."
+        }
+    },
+    "salida": {
+        "arbitrajeCompra": {
+            "type": "number",
+            "description": "Valor del arbitraje (Compra)."
+        },
+        "arbitrajeVenta": {
+            "type": "number",
+            "description": "Valor del arbitraje (Venta)."
+        },
+        "tipoCambioCompra": {
+            "type": "number",
+            "description": "Valor del tipo de cambio (Compra)."
+        },
+        "tipoCambioVenta": {
+            "type": "number",
+            "description": "Valor del tipo de cambio (Venta)."
+        }
+    },
+    "sistema": "Precios"
+}

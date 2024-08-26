@@ -1,0 +1,5 @@
+La funcionalidad detallada en el archivo se refiere a la extensión de datos de personas en el sistema Bantotal, específicamente para la gestión de información relacionada con documentos, condiciones impositivas, registros y situaciones de clientes. Se admiten diversas configuraciones para capturar y almacenar datos relevantes sobre la situación fiscal y legal de las personas, así como su relación con el banco.
+
+Los campos incluyen información sobre el país, tipo de documento, número de documento, condiciones impositivas, sucursal de origen, calificaciones internas, y datos relacionados con la importación y exportación, entre otros. Esto permite a la entidad bancaria tener un registro completo y actualizado de la situación de sus clientes y cumplir con las normativas fiscales y comerciales.
+
+No se encontraron configuraciones asociadas, guías, reglas de negocio, programas particulares, tablas, ni otros controles y configuraciones.

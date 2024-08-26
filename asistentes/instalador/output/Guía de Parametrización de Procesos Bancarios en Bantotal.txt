@@ -1,0 +1,48 @@
+- Opciones generales
+  - Correlativo 1 - País por defecto en wfs01300, Correlativo 2 - T.Doc por defecto en wfs01300: 
+    - Programa: Wfs0130
+    - Descripción: Si se desea que aparezca por defecto el país de la instalación y el tipo de documento más utilizado en dicho país, deben indicarse en el valor específico del correlativo 1 el país de que se trata y en el valor específico del correlativo 2 el tipo de documento.
+
+- Guías y Guías Especiales de proceso
+  - Código: 1301
+    - Correlativo: RUC de la Empresa- persona es empleada de la institución
+      - Descripción: Para el RUC de la Empresa. El mismo se carga en la descripción y en el valor específico el tipo de doc que pertenece al Ruc. Luego se carga el ruc y nombre de la empresa cuando la persona es empleada de la institución.
+  - Código: 1335
+    - Correlativo: Motivos de baja de cuenta
+      - Descripción: Se debe indicar en el correlativo: el/los códigos de motivo que corresponde con el cierre de cuenta. También se debe parametrizar en dicha guía el correlativo 99 que indica el motivo utilizado para el estado: “Cerrada”.
+  - Código: 50161
+    - Correlativo: País Nacional
+      - Descripción: Permite identificar el país para el cual se consideran los documentos como nacionales. Esta opción permite filtrar los tipos de documentos a mostrar al usuario, luego de seleccionado el país. Se define colocando en el valor específico del correlativo 1 el país del que trata; en caso que esta guía no esté cargada, se toma el valor de la Guía de Procesos No. 307, correlativo 1.
+  - Código: 2094
+    - Correlativo: 
+      - Descripción: En el correlativo se almacena el código de tipo de documento, en el valor específico se almacena ‘1’, refleja que es un documento nacional (es decir, se seleccionó país ‘nacional’), ‘2’ que es un documento extranjero y ‘0’ si se seleccionó ‘No aplica’. En la descripción se almacena el formato: ‘N’ es numérico, ‘A’ es alfanumérico. Si se define el documento como ‘A’ Alfanumérico el control no se realiza.
+  - Código: 2029
+    - Correlativo: Datos específicos para cuentas y personas
+      - Descripción: Correlativo 9: refiere al tipo de documento RUC. Correlativo 980: al tipo de documento en trámite. Correlativo 982: se parametriza en el valor específico el código de cónyuge. Con país / tipo / número de documento los cónyuges y el código correspondiente, genera la relación de personas en la tabla FSR002. Correlativo 100, se almacena en el importe específico el código de vivienda para Domicilio legal. Correlativo 986 se almacenan a nivel del valor específico los códigos de domicilio sobre los cuales se realizarán controles (Laboral, Negocio, Legal; respectivamente).
+  - Código: 19006
+    - Correlativo: Tipos de Documento para Instituciones Financieras
+      - Descripción: Esta guía permite dar de altas Instituciones financieras asignándole en el correlativo el código del tipo de documento, los códigos que no estén dados de alta en ésta guía no van a poder ser dados de alta para las I.F. en el panel HIF002B.
+  - Código: 4090
+    - Correlativo: Regla de negocio para no permitir eliminar ciertos tipos de domicilios
+      - Descripción: Esta guía permite parametrizar en el valor específico un código de regla de negocio en el cual se valida que no se permitan eliminar ciertos tipos de domicilios.
+  - Código: 2099
+    - Correlativo: Campo ‘Cuenta Nuestra en el Exterior’
+      - Programa: HIF001A
+      - Descripción: Si se desea parametrizar el nombre del campo, se debe ingresar la Guía de Proceso Nº 2099 Correlativo = 82, en el campo ‘Descripción’ se ingresa el nombre que se desee poner en dicho campo. De lo contrario el campo trae el nombre por defecto ‘Cuenta Nuestra en el Exterior’.
+  - Código: 12110
+    - Correlativo: Código de Estado Civil que requiere Cónyuge
+      - Descripción: En esta guía se deben parametrizar los códigos de Estado Civil que requieren cónyuge. Se debe parametrizar el correlativo de la guía con el código de Estado Civil que requiera el vínculo con un Cónyuge. Se parametrizarán tantos correlativos como códigos de Estado Civil que quieran Cónyuge.
+  - Código: 9963
+    - Correlativo: Tipo de alta para alta de cónyuge.
+      - Programa: HSNGCA01
+      - Descripción: Correlativo 1: Tipo de alta para alta de cónyuge (valor esp.).
+  - Código: 4164
+    - Correlativo: Código de Actividad económica por defecto para PJ
+      - Programa: HSNGCPJ1
+      - Descripción: Correlativo 1: En el valor específico se debe ingresar el código de actividad (FST750) a cargar por defecto.
+  - Código: 2266
+    - Correlativo: Control en el número de teléfono de la persona
+      - Programa: HSNGC33
+      - Descripción: Correlativo: Indicar el tipo de teléfono a controlar. Descripción: Indicar “S” para controlar que no se ingresen letras en el número de teléfono. Valor específico: Indicar el largo mínimo del número de teléfono. Importe específico: Indicar el largo máximo del número de teléfono.
+
+Descripción general de la funcionalidad: El archivo detalla diversas guías de proceso y configuraciones asociadas a la plataforma Bantotal, que permiten parametrizar aspectos relacionados con la gestión de documentos, cuentas, y datos personales en el sistema bancario. Las configuraciones incluyen la parametrización de tipos de documentos, motivos de cierre de cuentas, reglas de negocio para la gestión de domicilios, y validaciones específicas para datos como el número de teléfono y el estado civil. Las posibilidades que se admiten incluyen la personalización de campos, la validación de datos ingresados, y la gestión de relaciones entre personas y documentos en el sistema.

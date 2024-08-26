@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la parametrización de la Naturaleza Jurídica en el sistema Bantotal. Esta configuración permite definir, mediante un código y una descripción, los distintos tipos de Naturaleza Jurídica existentes en la plaza. Esto es esencial para la correcta clasificación y gestión de las entidades y operaciones dentro del sistema bancario.
+
+No se encontraron configuraciones asociadas, tablas, reglas de negocio, programas particulares ni otros controles.

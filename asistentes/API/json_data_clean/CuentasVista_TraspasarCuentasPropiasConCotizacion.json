@@ -1,0 +1,76 @@
+{
+    "id": 222,
+    "nombre": "TraspasarCuentasPropiasConCotizacion",
+    "descripcion": "Método para registrar en el sistema un traspaso entre cuentas del mismo cliente con cotización.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador de cliente."
+        },
+        "sdtTraspaso": {
+            "type": "object",
+            "description": "Datos del Traspaso.",
+            "properties": {
+                "operacionUIdOrigen": {
+                    "type": "number",
+                    "description": "Identificador de operación de origen del traspaso."
+                },
+                "operacionUIdDestino": {
+                    "type": "number",
+                    "description": "Identificador de operación de destino del traspaso."
+                },
+                "monedaId": {
+                    "type": "number",
+                    "description": "Identificador de Moneda."
+                },
+                "importe": {
+                    "type": "number",
+                    "description": "Importe del Movimiento."
+                },
+                "concepto": {
+                    "type": "string",
+                    "description": "Concepto del Traspaso."
+                }
+            },
+            "required": [
+                "clienteUId",
+                "operacionUIdOrigen",
+                "operacionUIdDestino",
+                "importe"
+            ]
+        },
+        "tipoDeCambio": {
+            "type": "number",
+            "description": "Cotización"
+        }
+    },
+    "salida": {
+        "sdtResultadoTraspaso": {
+            "type": "object",
+            "description": "Resultado del traspaso.",
+            "properties": {
+                "operacionUIdOrigen": {
+                    "type": "number",
+                    "description": "Identificador de operación de origen del traspaso."
+                },
+                "operacionUIdDestino": {
+                    "type": "number",
+                    "description": "Identificador de operación de destino del traspaso."
+                },
+                "saldoOperacionOrigen": {
+                    "type": "number",
+                    "description": "Saldo Actual de operación de origen."
+                },
+                "movimientoUId": {
+                    "type": "number",
+                    "description": "Identificador de Movimiento."
+                },
+                "idMovimiento": {
+                    "type": "string",
+                    "description": "Identificador de Movimiento String."
+                }
+            }
+        }
+    },
+    "sistema": "CuentasVista"
+}

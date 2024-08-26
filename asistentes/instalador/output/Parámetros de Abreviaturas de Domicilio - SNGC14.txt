@@ -1,0 +1,10 @@
+La funcionalidad detallada en el archivo se refiere a las abreviaturas de referencias de domicilio dentro del sistema Bantotal, específicamente en el contexto del SNGC14. Este sistema permite gestionar y almacenar información relacionada con domicilios, utilizando campos específicos para identificar y describir cada entrada.
+
+Los campos definidos son:
+
+- **sngc14Id**: Valor (C, 6) - Identificador único para la referencia de domicilio.
+- **sngc14Dsc**: Descripción (C, 35) - Descripción de la referencia de domicilio.
+- **sngc14Aux**: sngc14 Aux (C, 50) - Campo auxiliar para información adicional.
+- **sngc14Aux1**: sngc14 Aux1 (N, 6.0) - Campo auxiliar numérico para información adicional.
+
+Las posibilidades que se admiten incluyen la creación y gestión de referencias de domicilio, permitiendo a los usuarios almacenar descripciones y valores asociados a cada referencia.

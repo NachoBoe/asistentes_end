@@ -1,0 +1,18 @@
+{
+    "id": 217,
+    "nombre": "ObtenerSaldoBloqueado",
+    "descripcion": "Método para obtener el total de saldo bloqueado de una cuenta vista.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        }
+    },
+    "salida": {
+        "saldoBloqueado": {
+            "type": "number",
+            "description": "Total de saldo bloqueado."
+        }
+    },
+    "sistema": "CuentasVista"
+}

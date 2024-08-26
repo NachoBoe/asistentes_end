@@ -1,0 +1,13 @@
+{
+    "id": 342,
+    "nombre": "EliminarConyuge",
+    "descripcion": "Método para eliminar el cónyuge de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

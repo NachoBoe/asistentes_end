@@ -1,0 +1,22 @@
+{
+    "id": 154,
+    "nombre": "ObtenerCondicionImpositiva",
+    "descripcion": "Método para obtener una condición impositiva de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "codigoImpuesto": {
+            "type": "number",
+            "description": "Código de impuesto."
+        }
+    },
+    "salida": {
+        "codigoCondicion": {
+            "type": "number",
+            "description": "Código de condición."
+        }
+    },
+    "sistema": "Contabilidad"
+}

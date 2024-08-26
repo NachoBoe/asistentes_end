@@ -1,0 +1,40 @@
+{
+    "id": 445,
+    "nombre": "ObtenerDocumentosDigitales",
+    "descripcion": "Método para obtener, dados los datos de un préstamo, una lista de los documentos digitales asociados.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        }
+    },
+    "salida": {
+        "sdtDocumentosDigitales": {
+            "type": "object",
+            "description": "Listado de documentos digitales.",
+            "properties": {
+                "titulo": {
+                    "type": "string",
+                    "description": "Titulo del documento digital."
+                },
+                "FechaActualizacion": {
+                    "type": "string",
+                    "description": "Fecha de actualizacion del documento digital."
+                },
+                "FechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento del documento digital."
+                },
+                "TipoDocumentoDigital": {
+                    "type": "string",
+                    "description": "Tipo del documento digital."
+                },
+                "documentoId": {
+                    "type": "number",
+                    "description": "Identificador del documento digital."
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

@@ -1,0 +1,5 @@
+- Opciones generales:
+  - Opción general 2384: Permite visualizar adicionalmente la columna de fecha de actualización del teléfono en la grilla del panel HSNGC61.
+
+Descripción general de la funcionalidad:
+El panel HSNGC47 - Domicilio de Cuenta permite gestionar los domicilios asociados a cuentas de empresas, aplicando la misma lógica que el panel de domicilios de personas (HSNGC22). Los usuarios pueden agregar o modificar domicilios a través de los botones correspondientes, que redirigen al panel HSNGC21, donde se puede gestionar la información de domicilios con la particularidad de que se accede con empresa y cuenta. Además, se pueden administrar teléfonos y correos electrónicos a través de los paneles HSNGC61 y HSNGC60, respectivamente.

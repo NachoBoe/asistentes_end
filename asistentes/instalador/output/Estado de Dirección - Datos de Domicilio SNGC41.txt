@@ -1,0 +1,16 @@
+El archivo del sistema Bantotal describe el "Estado de Dirección - SNGC41", que se refiere a la gestión de datos relacionados con la dirección de los clientes en el contexto bancario. Este archivo incluye campos que permiten almacenar información sobre la empresa, país, código de domicilio, tipo de vivienda, residencia, ubigeo, dirección y referencia de domicilio. 
+
+Los campos y sus descripciones son los siguientes:
+
+- **sngc41Pgc**: Empresa (N, 3.0)
+- **sngc41Pais**: País (N, 4.0)
+- **sngc41DCod**: Código de Domicilio (N, 2.0)
+- **sngc41CDom**: Check Código de Domicilio (C, 1)
+- **sngc41DomP**: Check Código de País (C, 1)
+- **sngc41TViv**: Check Tpo Vivienda (C, 1)
+- **sngc41RDes**: Check Residencia desde (C, 1)
+- **sngc41UGeo**: Check Ubigeo (C, 1)
+- **sngc41Dir**: Check Dirección (C, 1)
+- **sngc41Ref**: Check Referencia Domicilio (C, 1)
+
+La funcionalidad del archivo permite la validación y verificación de la información de dirección de los clientes, asegurando que los datos ingresados sean correctos y estén completos. Las posibilidades que se admiten incluyen la verificación de la existencia de códigos de domicilio y país, así como la validación de la información relacionada con el tipo de vivienda y la residencia.

@@ -1,0 +1,52 @@
+{
+    "id": 40,
+    "nombre": "IngresarOrdenPago",
+    "descripcion": "Método para ingresar una orden de pago.",
+    "entrada": {
+        "contrato": {
+            "type": "integer",
+            "description": "Identificador del contrato CASH del cliente."
+        },
+        "servicio": {
+            "type": "integer",
+            "description": "Servicio de pago CASH."
+        },
+        "operacionUId_debito": {
+            "type": "integer",
+            "description": "Operación de débito."
+        },
+        "moneda": {
+            "type": "integer",
+            "description": "Identificador de moneda."
+        },
+        "importe": {
+            "type": "number",
+            "description": "Importe total."
+        },
+        "fecha": {
+            "type": "string",
+            "description": "Fecha de pago."
+        },
+        "listaCampoValor": {
+            "type": "object",
+            "description": "Lista de valores de campos CASH.",
+            "properties": {
+                "tag": {
+                    "type": "string",
+                    "description": "Tag del campo CASH."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor del campo CASH."
+                }
+            }
+        }
+    },
+    "salida": {
+        "ordenId": {
+            "type": "integer",
+            "description": "Identificador de orden CASH."
+        }
+    },
+    "sistema": "CASHManagement"
+}

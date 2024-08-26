@@ -1,0 +1,92 @@
+{
+    "id": 41,
+    "nombre": "ObtenerDetalleOrdenCuenta",
+    "descripcion": "Método para obtener la información de las líneas del detalle de pago.",
+    "entrada": {
+        "ordenId": {
+            "type": "number",
+            "description": "Identificador de orden."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "cuentaDebito": {
+            "type": "number",
+            "description": "Operación de débito."
+        },
+        "cantidadLineas": {
+            "type": "number",
+            "description": "Cantidad de líneas del archivo."
+        },
+        "moneda": {
+            "type": "number",
+            "description": "Moneda."
+        },
+        "importe": {
+            "type": "number",
+            "description": "Importe total."
+        },
+        "referencia": {
+            "type": "string",
+            "description": "Referencia del pago o cobro."
+        },
+        "fechaPago": {
+            "type": "string",
+            "description": "Fecha de pago o cobro."
+        },
+        "estado": {
+            "type": "string",
+            "description": "Estado del archivo."
+        },
+        "erroresPago": {
+            "type": "string",
+            "description": "Lista de mensajes del cabezal de pago."
+        },
+        "detallePagos": {
+            "type": "object",
+            "description": "Lista de información del archivo con su estado y mensaje.",
+            "properties": {
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre del Beneficiario de Pago."
+                },
+                "beneficiarioId": {
+                    "type": "string",
+                    "description": "Identificador de Beneficiario."
+                },
+                "beneficiarioCuenta": {
+                    "type": "string",
+                    "description": "Cuenta del Beneficiario."
+                },
+                "beneficiarioBanco": {
+                    "type": "string",
+                    "description": "Banco del Beneficiario."
+                },
+                "fechaPago": {
+                    "type": "string",
+                    "description": "Fecha de Pago o Cobro."
+                },
+                "moneda": {
+                    "type": "number",
+                    "description": "Moneda."
+                },
+                "importe": {
+                    "type": "number",
+                    "description": "Importe."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Estado de la línea."
+                },
+                "mensajesError": {
+                    "type": "string",
+                    "description": "Lista de mensajes de la línea."
+                }
+            }
+        }
+    },
+    "sistema": "CASHManagement"
+}

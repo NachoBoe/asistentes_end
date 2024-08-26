@@ -1,0 +1,3 @@
+Descripción general de la funcionalidad: El archivo del sistema Bantotal describe un mensaje de error que se produce cuando una dirección no corresponde a una estructura válida del tipo x@y.z. Esto sugiere que el sistema está validando direcciones de correo electrónico o similares, asegurándose de que sigan un formato específico.
+
+Posibilidades admitidas: El sistema permite la validación de direcciones, asegurando que cumplan con el formato requerido para su correcto funcionamiento.

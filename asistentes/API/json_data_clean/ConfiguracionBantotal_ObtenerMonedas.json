@@ -1,0 +1,27 @@
+{
+    "id": 134,
+    "nombre": "ObtenerMonedas",
+    "descripcion": "Método para obtener un listado de las monedas en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtMonedas": {
+            "type": "object",
+            "description": "Listado de monedas.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de moneda."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de moneda."
+                },
+                "simbolo": {
+                    "type": "string",
+                    "description": "Símbolo de moneda."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

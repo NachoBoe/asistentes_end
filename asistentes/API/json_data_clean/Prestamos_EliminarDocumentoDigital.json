@@ -1,0 +1,17 @@
+{
+    "id": 424,
+    "nombre": "EliminarDocumentoDigital",
+    "descripcion": "Método para eliminar un documento digital de un préstamo.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "documentoId": {
+            "type": "number",
+            "description": "Identificador del documento asociado."
+        }
+    },
+    "salida": {},
+    "sistema": "Prestamos"
+}

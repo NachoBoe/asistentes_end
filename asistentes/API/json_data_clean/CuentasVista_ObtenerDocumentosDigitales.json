@@ -1,0 +1,40 @@
+{
+    "id": 211,
+    "nombre": "ObtenerDocumentosDigitales",
+    "descripcion": "Método para obtener una lista de los documentos digitales asociados a una cuenta corriente o cuenta de ahorro.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        }
+    },
+    "salida": {
+        "sdtDocumentosDigitales": {
+            "type": "object",
+            "description": "Listado de documentos digitales.",
+            "properties": {
+                "titulo": {
+                    "type": "string",
+                    "description": "Titulo del documento digital."
+                },
+                "FechaActualizacion": {
+                    "type": "string",
+                    "description": "Fecha de actualizacion del documento digital."
+                },
+                "FechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento del documento digital."
+                },
+                "TipoDocumentoDigital": {
+                    "type": "string",
+                    "description": "Tipo del documento digital."
+                },
+                "documentoId": {
+                    "type": "number",
+                    "description": "documentoId del documento digital."
+                }
+            }
+        }
+    },
+    "sistema": "CuentasVista"
+}

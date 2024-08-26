@@ -1,0 +1,38 @@
+{
+    "id": 36,
+    "nombre": "CargarArchivoDato",
+    "descripcion": "Método para cargar un archivo recibido como dato.",
+    "entrada": {
+        "contrato": {
+            "type": "integer",
+            "description": "Identificador del contrato CASH del cliente."
+        },
+        "servicio": {
+            "type": "integer",
+            "description": "Servicio de pago CASH."
+        },
+        "archivo": {
+            "type": "string",
+            "description": "Nombre del archivo a subir."
+        },
+        "archivoDato": {
+            "type": "string",
+            "description": "Archivo recibido como dato comprimido expresado en Base 64."
+        }
+    },
+    "salida": {
+        "archivoId": {
+            "type": "integer",
+            "description": "Identificacion de archivo."
+        },
+        "estado": {
+            "type": "string",
+            "description": "Estado del archivo."
+        },
+        "cantidadLineas": {
+            "type": "integer",
+            "description": "Cantidad de líneas del archivo."
+        }
+    },
+    "sistema": "CASHManagement"
+}

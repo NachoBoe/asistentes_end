@@ -1,0 +1,5 @@
+El panel de carga de direcciones en el sistema Bantotal permite la invocación de un programa específico para gestionar domicilios, dependiendo de un parámetro general que puede definirse como 'Particular'. Si se establece este parámetro, se habilita el ingreso del programa particular a invocar.
+
+El programa estándar para la invocación del panel de domicilios es HSNGC005, que por defecto llama al panel HSNGC22. Si se desea utilizar otro panel, es necesario parametrizarlo como programa particular por cliente (HTRT900), donde el programa estándar es HSNGC005 y se debe ingresar el nombre del programa particular que se desea ejecutar. 
+
+Esta funcionalidad permite una mayor flexibilidad en la gestión de domicilios, adaptándose a las necesidades específicas de cada cliente mediante la posibilidad de definir programas particulares.

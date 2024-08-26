@@ -1,0 +1,13 @@
+{
+    "id": 349,
+    "nombre": "EliminarProfesion",
+    "descripcion": "Método para eliminar la profesión de una persona física.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

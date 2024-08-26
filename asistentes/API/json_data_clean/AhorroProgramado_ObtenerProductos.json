@@ -1,0 +1,31 @@
+{
+    "id": 12,
+    "nombre": "ObtenerProductos",
+    "descripcion": "Método para obtener un listado de productos de ahorro habilitados.",
+    "entrada": {},
+    "salida": {
+        "sdtProductos": {
+            "type": "object",
+            "description": "Listado de los productos habilitados de ahorro programado.",
+            "properties": {
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre del producto."
+                },
+                "moneda": {
+                    "type": "string",
+                    "description": "Símbolo de la moneda."
+                },
+                "papel": {
+                    "type": "string",
+                    "description": "Símbolo del papel."
+                }
+            }
+        }
+    },
+    "sistema": "AhorroProgramado"
+}

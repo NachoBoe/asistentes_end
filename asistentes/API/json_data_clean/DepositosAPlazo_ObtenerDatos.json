@@ -1,0 +1,234 @@
+{
+    "id": 234,
+    "nombre": "ObtenerDatos",
+    "descripcion": "Método para obtener los datos de un producto de depósito a plazo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "expresadoEn": {
+            "type": "string",
+            "description": "[M-Moneda / E-Especie]"
+        }
+    },
+    "salida": {
+        "sdtPlazoFijo": {
+            "type": "object",
+            "description": "Datos del depósito a plazo.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "idOperacionFmt": {
+                    "type": "string",
+                    "description": "Identificador String (concatenación de algunos conceptos claves de la operación)."
+                },
+                "idOperacionBT": {
+                    "type": "string",
+                    "description": "Identificador String Bantotal (concatenación de todos los conceptos claves de la operación)."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre del producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel."
+                        }
+                    }
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Nombre de la sucursal de alta."
+                },
+                "simboloMoneda": {
+                    "type": "string",
+                    "description": "Simbolo moneda."
+                },
+                "cuentaContable": {
+                    "type": "string",
+                    "description": "Nombre de la cuenta contable."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Descripción de estado."
+                },
+                "montoInicial": {
+                    "type": "number",
+                    "description": "Capital inicial del depósito."
+                },
+                "intereses": {
+                    "type": "number",
+                    "description": "Total de intereses del depósito."
+                },
+                "interesesAcreditados": {
+                    "type": "number",
+                    "description": "Intereses acreditados."
+                },
+                "interesesPendientes": {
+                    "type": "number",
+                    "description": "Intereses pendientes."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha de alta."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento."
+                },
+                "diasHastaVencimiento": {
+                    "type": "number",
+                    "description": "Dias restantes hasta el vencimiento."
+                },
+                "saldo": {
+                    "type": "number",
+                    "description": "Saldo Actual."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo en días."
+                },
+                "periodicidad": {
+                    "type": "number",
+                    "description": "Periodicidad de acreditación de intereses."
+                },
+                "fechaProximoVencimiento": {
+                    "type": "string",
+                    "description": "Fecha para proximo vencimiento."
+                },
+                "tasaOriginal": {
+                    "type": "number",
+                    "description": "Tasa original."
+                },
+                "tasaVigente": {
+                    "type": "number",
+                    "description": "Tasa vigente."
+                },
+                "tipoTasa": {
+                    "type": "string",
+                    "description": "Tipo de tasa."
+                },
+                "tasaEfectiva": {
+                    "type": "number",
+                    "description": "Tasa efectiva."
+                },
+                "cantidadRenovaciones": {
+                    "type": "number",
+                    "description": "Cantidad de renovaciones del depósito."
+                },
+                "renovacionAutomatica": {
+                    "type": "string",
+                    "description": "Renovación automatica (S/N)."
+                },
+                "acreditacionPeriodicaIntereses": {
+                    "type": "string",
+                    "description": "Acredita periodicamente intereses (S/N)."
+                },
+                "instruccionVencimiento": {
+                    "type": "object",
+                    "description": "Datos de la instrucción al vencimiento.",
+                    "properties": {
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción de la instrucción."
+                        },
+                        "operacionUId": {
+                            "type": "number",
+                            "description": "Identificador único de operación."
+                        },
+                        "idOperacionFmt": {
+                            "type": "string",
+                            "description": "Identificador String (concatenación de algunos conceptos claves de la operación)."
+                        },
+                        "producto": {
+                            "type": "object",
+                            "description": "Datos de producto.",
+                            "properties": {
+                                "productoUId": {
+                                    "type": "number",
+                                    "description": "Identificador único de producto."
+                                },
+                                "nombre": {
+                                    "type": "string",
+                                    "description": "Nombre del producto."
+                                },
+                                "moneda": {
+                                    "type": "string",
+                                    "description": "Símbolo de moneda."
+                                },
+                                "papel": {
+                                    "type": "string",
+                                    "description": "Símbolo de papel."
+                                }
+                            }
+                        },
+                        "sucursal": {
+                            "type": "string",
+                            "description": "Nombre de la Sucursal de la operación."
+                        }
+                    }
+                },
+                "instruccionAcreditacion": {
+                    "type": "object",
+                    "description": "Datos de la instrucción de acreditación.",
+                    "properties": {
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción de la instrucción."
+                        },
+                        "operacionUId": {
+                            "type": "number",
+                            "description": "Identificador único de operación."
+                        },
+                        "idOperacionFmt": {
+                            "type": "string",
+                            "description": "Identificador String (concatenación de algunos conceptos claves de la operación)."
+                        },
+                        "producto": {
+                            "type": "object",
+                            "description": "Datos de producto.",
+                            "properties": {
+                                "productoUId": {
+                                    "type": "number",
+                                    "description": "Identificador único de producto."
+                                },
+                                "nombre": {
+                                    "type": "string",
+                                    "description": "Nombre del producto."
+                                },
+                                "moneda": {
+                                    "type": "string",
+                                    "description": "Símbolo de moneda."
+                                },
+                                "papel": {
+                                    "type": "string",
+                                    "description": "Símbolo de papel."
+                                }
+                            }
+                        },
+                        "sucursal": {
+                            "type": "string",
+                            "description": "Nombre de la Sucursal de la operación."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "DepositosAPlazo"
+}

@@ -1,0 +1,190 @@
+{
+    "id": 454,
+    "nombre": "ObtenerPrestamosPorRangoMora",
+    "descripcion": "Método para obtener los préstamos que esten dentro del rango de mora ingresado.",
+    "entrada": {
+        "diasMoraDesde": {
+            "type": "integer",
+            "description": "Días de mora desde."
+        },
+        "diasMoraHasta": {
+            "type": "integer",
+            "description": "Días de mora hasta."
+        },
+        "actualiza": {
+            "type": "string",
+            "description": "Habilita la actualización en la tabla SNG912 con los datos del prestamo [Hidden: Valor fijo 'S']."
+        }
+    },
+    "salida": {
+        "sdtDatosPrestamos": {
+            "type": "object",
+            "description": "Listado de los prestamos que estan dentro del rango de dias de mora.",
+            "properties": {
+                "plazo": {
+                    "type": "integer",
+                    "description": "Plazo."
+                },
+                "eventosPosteriores": {
+                    "type": "string",
+                    "description": "Hay eventos posteriores (S/N)."
+                },
+                "deudaTotalVencida": {
+                    "type": "number",
+                    "description": "Monto de la deuda vencida a la fecha."
+                },
+                "periodicidad": {
+                    "type": "integer",
+                    "description": "Período entre cuotas."
+                },
+                "simboloMoneda": {
+                    "type": "string",
+                    "description": "Símbolo monetario."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento del préstamo."
+                },
+                "clienteUId": {
+                    "type": "integer",
+                    "description": "Identificador único del cliente."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Descripción del producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "integer",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre del producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de la moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo del papel."
+                        }
+                    }
+                },
+                "fechaProximoVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento de la próxima cuota."
+                },
+                "tasaVigente": {
+                    "type": "number",
+                    "description": "Tasa vigente."
+                },
+                "fechaPrimerCuotaImpaga": {
+                    "type": "string",
+                    "description": "Fecha de la primera cuota impaga."
+                },
+                "valorCuota": {
+                    "type": "number",
+                    "description": "Valor de la cuota."
+                },
+                "saldoCapital": {
+                    "type": "number",
+                    "description": "Saldo de capital."
+                },
+                "otrosConceptos": {
+                    "type": "object",
+                    "description": "Otros conceptos del prestamo.",
+                    "properties": {
+                        "concepto": {
+                            "type": "string",
+                            "description": "Concepto."
+                        },
+                        "valor": {
+                            "type": "number",
+                            "description": "Importe."
+                        },
+                        "texto": {
+                            "type": "string",
+                            "description": "Texto."
+                        }
+                    }
+                },
+                "cantidadCuotasVencidas": {
+                    "type": "integer",
+                    "description": "Cantidad de cuotas vencidas."
+                },
+                "capitalOriginal": {
+                    "type": "number",
+                    "description": "Capital original del préstamo."
+                },
+                "tir": {
+                    "type": "number",
+                    "description": "Tir."
+                },
+                "deudaCancelacionTotal": {
+                    "type": "number",
+                    "description": "Monto de cancelación total."
+                },
+                "diasMora": {
+                    "type": "integer",
+                    "description": "Días de mora del préstamo."
+                },
+                "operacionUId": {
+                    "type": "integer",
+                    "description": "Identificador único de la operación."
+                },
+                "cantidadCuotasImpagas": {
+                    "type": "integer",
+                    "description": "Cantidad de cuotas impagas."
+                },
+                "cuotasPagasConRetraso": {
+                    "type": "integer",
+                    "description": "Cantidad de cuotas pagas con retraso."
+                },
+                "deudaTotalAFecha": {
+                    "type": "number",
+                    "description": "Monto a pagar para estar al día."
+                },
+                "fechaUltimoPago": {
+                    "type": "string",
+                    "description": "Fecha de último pago de cuota."
+                },
+                "tipoAmortizacion": {
+                    "type": "string",
+                    "description": "Tipo de amortización."
+                },
+                "datosAdicionales": {
+                    "type": "object",
+                    "description": "Listado de datos adicionales.",
+                    "properties": {
+                        "detalle": {
+                            "type": "string",
+                            "description": "Detalle de dato adicional."
+                        }
+                    }
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Estado."
+                },
+                "tasaMoraVigente": {
+                    "type": "number",
+                    "description": "Tasa de mora vigente."
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Sucursal del préstamo."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha de alta del préstamo."
+                },
+                "cantidadCuotas": {
+                    "type": "integer",
+                    "description": "Cantidad de cuotas del préstamo."
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

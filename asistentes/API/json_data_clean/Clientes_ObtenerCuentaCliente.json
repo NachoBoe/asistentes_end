@@ -1,0 +1,22 @@
+{
+    "id": 76,
+    "nombre": "ObtenerCuentaCliente",
+    "descripcion": "Método para obtener la empresa y número de cuenta de un cliente dado el identificador único.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "empresaId": {
+            "type": "number",
+            "description": "Identificador de la empresa del cliente."
+        },
+        "cuentaBT": {
+            "type": "number",
+            "description": "Identificador de la cuenta cliente."
+        }
+    },
+    "sistema": "Clientes"
+}

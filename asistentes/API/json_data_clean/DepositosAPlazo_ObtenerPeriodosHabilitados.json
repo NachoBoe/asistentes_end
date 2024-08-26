@@ -1,0 +1,54 @@
+{
+    "id": 239,
+    "nombre": "ObtenerPeriodosHabilitados",
+    "descripcion": "Servicio que obtiene los periodos habilitados de un deposito a plazo.",
+    "entrada": {
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador único del producto."
+        }
+    },
+    "salida": {
+        "sdtDatosExtendidos": {
+            "type": "object",
+            "description": "Listado de datos complementarios.",
+            "properties": {
+                "clave": {
+                    "type": "string",
+                    "description": "Clave del dato extendido."
+                },
+                "tipo": {
+                    "type": "string",
+                    "description": "Tipo de dato extendido."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor de dato extendido."
+                },
+                "Lista": {
+                    "type": "object",
+                    "description": "Lista de datos."
+                }
+            }
+        },
+        "sdtPeriodos": {
+            "type": "object",
+            "description": "Identificador único del producto.",
+            "properties": {
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción."
+                },
+                "datosExtendidos": {
+                    "type": "object",
+                    "description": "Listado de datos complementarios."
+                },
+                "periodo": {
+                    "type": "number",
+                    "description": "Periodo."
+                }
+            }
+        }
+    },
+    "sistema": "DepositosAPlazo"
+}

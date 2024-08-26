@@ -1,0 +1,26 @@
+{
+    "id": 25,
+    "nombre": "ObtenerFechaHabilAnteriorSucursal",
+    "descripcion": "Método que devuelve la fecha hábil anterior a la fecha ingresada, para la sucursal recibida por parámetro.",
+    "entrada": {
+        "fecha": {
+            "type": "string",
+            "description": "Fecha de consulta."
+        },
+        "sucursalId": {
+            "type": "number",
+            "description": "Identificador de sucursal."
+        },
+        "sentido": {
+            "type": "string",
+            "description": "[Hidden, valor fijo 'D' para este método]."
+        }
+    },
+    "salida": {
+        "fechaHabil": {
+            "type": "string",
+            "description": "Fecha hábil anterior."
+        }
+    },
+    "sistema": "Calendarios"
+}

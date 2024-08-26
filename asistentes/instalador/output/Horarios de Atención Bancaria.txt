@@ -1,0 +1,20 @@
+La funcionalidad detallada en el archivo se refiere a la gestión de horarios de atención en el sistema Bantotal. Este sistema permite registrar y consultar los horarios de atención de diferentes sucursales o puntos de servicio, especificando los días de la semana en los que están disponibles y los horarios de inicio y fin de atención. 
+
+Las posibilidades que se admiten incluyen la configuración de horarios para cada día de la semana, así como la inclusión de comentarios adicionales que puedan ser relevantes para la atención al cliente. 
+
+Los campos que se pueden configurar son:
+
+- sngc40Pais: País
+- sngc40Tdoc: Tipo de Documento
+- sngc40Ndoc: Número de Documento
+- sngc40CoDo: Código de Domicilio
+- sngc40Hdes: Horario Desde
+- sngc40Hhas: Horario Hasta
+- sngc40Lun: Lunes
+- sngc40Mar: Martes
+- sngc40Mier: Miércoles
+- sngc40Jue: Jueves
+- sngc40Vie: Viernes
+- sngc40Sab: Sábado
+- sngc40Dom: Domingo
+- sngc40Com: Comentario

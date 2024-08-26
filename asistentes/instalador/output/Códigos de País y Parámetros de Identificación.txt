@@ -1,0 +1,12 @@
+El archivo del sistema Bantotal describe los códigos de país y sus atributos asociados. La funcionalidad principal es la gestión de información relacionada con los países, incluyendo su identificación y clasificación. 
+
+Los campos definidos son:
+
+- **Pais**: Código numérico de 3 dígitos que representa el país.
+- **Panom**: Nombre del país, con un máximo de 30 caracteres.
+- **Pazona**: Código numérico de 2 dígitos que indica la zona del país.
+- **Pacod1**: Código alfanumérico de 1 carácter.
+- **Pacod2**: Código alfanumérico de 1 carácter.
+- **Pacod3**: Código alfanumérico de 1 carácter.
+
+Las posibilidades que se admiten incluyen la identificación de países, su clasificación por zonas y la asignación de códigos adicionales para fines específicos.

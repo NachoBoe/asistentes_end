@@ -1,0 +1,6 @@
+- Opciones generales:
+  - Opción General de Proceso 443: 'S'
+  - Opción General de Proceso 461: 'N'
+
+Descripción general de la funcionalidad:
+El panel mencionado permite visualizar y modificar la condición impositiva del Titular Representativo de una cuenta. Para habilitar la modificación de la situación impositiva de una persona o cuenta, es necesario que la Opción General de Proceso 443 esté configurada en 'S' y la Opción General de Proceso 461 en 'N'. Esto permite gestionar adecuadamente la información fiscal asociada a las cuentas en la plataforma Bantotal.

@@ -1,0 +1,23 @@
+{
+    "id": 145,
+    "nombre": "ObtenerTiposDeTelefono",
+    "descripcion": "Método para obtener un listado de los tipos de teléfono ingresados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtTiposTelefono": {
+            "type": "object",
+            "description": "Listado de tipos de teléfono.",
+            "properties": {
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de tipo de teléfono."
+                },
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de tipo de teléfono."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

@@ -1,0 +1,35 @@
+{
+    "id": 136,
+    "nombre": "ObtenerPaises",
+    "descripcion": "Método para obtener un listado de los países ingresados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtPaises": {
+            "type": "object",
+            "description": "Listado de paises.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de país."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripcion de moneda."
+                },
+                "paisISO": {
+                    "type": "string",
+                    "description": "Codigo ISO de país."
+                },
+                "paisISO2": {
+                    "type": "string",
+                    "description": "Codigo ISO 2 de país."
+                },
+                "paisUnicode": {
+                    "type": "string",
+                    "description": "Codigo unicode de país."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

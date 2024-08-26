@@ -1,0 +1,34 @@
+{
+    "id": 209,
+    "nombre": "ObtenerDetalleBloqueo",
+    "descripcion": "Método para obtener el detalle de un bloqueo.",
+    "entrada": {
+        "idBloqueo": {
+            "type": "number",
+            "description": "Identificador de bloqueo."
+        }
+    },
+    "salida": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "importe": {
+            "type": "number",
+            "description": "Importe bloqueado."
+        },
+        "fechaVencimiento": {
+            "type": "string",
+            "description": "Fecha vencimiento de bloqueo."
+        },
+        "motivo": {
+            "type": "string",
+            "description": "Motivo del bloqueo."
+        }
+    },
+    "sistema": "CuentasVista"
+}

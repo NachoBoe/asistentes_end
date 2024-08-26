@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la gestión de sucursales dentro del sistema Bantotal. Se especifican los parámetros que se pueden utilizar para identificar y describir cada sucursal, incluyendo su código, nombre, dirección, ciudad, departamento y teléfono. Esto permite a la plataforma bancaria organizar y acceder a la información de las sucursales de manera estructurada.
+
+Las posibilidades que se admiten incluyen la creación, modificación y consulta de los datos de las sucursales, facilitando así la administración de las operaciones bancarias en diferentes ubicaciones.

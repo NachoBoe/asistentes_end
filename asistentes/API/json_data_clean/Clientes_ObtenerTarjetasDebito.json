@@ -1,0 +1,36 @@
+{
+    "id": 106,
+    "nombre": "ObtenerTarjetasDebito",
+    "descripcion": "Método para obtener un listado de las tarjetas de débito de un cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "sdtProductosTarjeta": {
+            "type": "object",
+            "description": "Listado de tarjetas.",
+            "properties": {
+                "tarjetaUId": {
+                    "type": "number",
+                    "description": "Identificador único de tarjeta de débito."
+                },
+                "numeroTarjeta": {
+                    "type": "string",
+                    "description": "Numero de tarjeta."
+                },
+                "tipoTarjeta": {
+                    "type": "string",
+                    "description": "Tipo de tarjeta."
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Sucursal de la tarjeta."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

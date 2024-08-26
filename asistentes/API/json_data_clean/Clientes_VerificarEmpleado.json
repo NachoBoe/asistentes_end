@@ -1,0 +1,18 @@
+{
+    "id": 112,
+    "nombre": "VerificarEmpleado",
+    "descripcion": "Método para obtener si el cliente ingresado es o no empleado de la institución.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "esEmpleado": {
+            "type": "string",
+            "description": "¿Es empleado de la institución? (S/N)"
+        }
+    },
+    "sistema": "Clientes"
+}

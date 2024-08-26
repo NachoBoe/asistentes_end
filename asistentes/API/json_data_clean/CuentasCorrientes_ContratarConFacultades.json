@@ -1,0 +1,30 @@
+{
+    "id": 169,
+    "nombre": "ContratarConFacultades",
+    "descripcion": "Método para contratar una cuenta de ahorro en Bantotal, dando de alta las facultades.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador único de producto."
+        },
+        "nombreSubCuenta": {
+            "type": "string",
+            "description": "Nombre de la cuenta cliente."
+        },
+        "tipoIntegracion": {
+            "type": "string",
+            "description": "Tipo de integración  (B-Indistinta/C-Conjunta)."
+        }
+    },
+    "salida": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        }
+    },
+    "sistema": "CuentasCorrientes"
+}

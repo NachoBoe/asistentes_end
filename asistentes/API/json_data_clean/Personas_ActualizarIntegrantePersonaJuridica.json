@@ -1,0 +1,39 @@
+{
+    "id": 321,
+    "nombre": "ActualizarIntegrantePersonaJuridica",
+    "descripcion": "Método para actualizar un integrante de una persona jurídica.",
+    "entrada": {
+        "personaJuridicaUId": {
+            "type": "number",
+            "description": "Identificador único de persona jurídica."
+        },
+        "sdtIntegranteAlta": {
+            "type": "object",
+            "description": "Datos de la persona física integrante de la persona jurídica indicada.",
+            "properties": {
+                "personaUId": {
+                    "type": "number",
+                    "description": "Identificador único de persona."
+                },
+                "vinculoId": {
+                    "type": "number",
+                    "description": "Identificador de vínculo."
+                },
+                "participacion": {
+                    "type": "number",
+                    "description": "Porcentaje de participación del integrante."
+                }
+            },
+            "required": [
+                "personaUId",
+                "vinculoId"
+            ]
+        },
+        "modo": {
+            "type": "string",
+            "description": "[Hidden: Valor fijo 'UP1' para este método]."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

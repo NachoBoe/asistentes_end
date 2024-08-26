@@ -1,0 +1,118 @@
+{
+    "id": 435,
+    "nombre": "ObtenerDetalleOferta",
+    "descripcion": "Método para obtener el detalle de una oferta de préstamo simulada.",
+    "entrada": {
+        "simulacionUId": {
+            "type": "number",
+            "description": "Identificador único de la simulación."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único del cliente."
+        },
+        "cantidadCuotas": {
+            "type": "integer",
+            "description": "Cantidad de cuotas."
+        },
+        "actividad": {
+            "type": "number",
+            "description": "Destino del crédito."
+        }
+    },
+    "salida": {
+        "sdtOferta": {
+            "type": "object",
+            "description": "Detalle de la oferta de préstamo.",
+            "properties": {
+                "otrosConceptos": {
+                    "type": "object",
+                    "description": "Otros conceptos de la simulación."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha valor."
+                },
+                "capital": {
+                    "type": "number",
+                    "description": "Capital total."
+                },
+                "cronograma": {
+                    "type": "object",
+                    "description": "Cronograma del préstamo."
+                },
+                "tasaEfectiva": {
+                    "type": "number",
+                    "description": "Tasa efectiva."
+                },
+                "intereses": {
+                    "type": "number",
+                    "description": "Intereses totales."
+                },
+                "tasaNominalAnual": {
+                    "type": "number",
+                    "description": "Tasa nominal anual."
+                },
+                "totalPrestamo": {
+                    "type": "number",
+                    "description": "Total del préstamo."
+                },
+                "tasaEfectivaAnual": {
+                    "type": "number",
+                    "description": "Tasa efectiva anual."
+                },
+                "valorCuota": {
+                    "type": "number",
+                    "description": "Valor cuota."
+                },
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de la operación."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa del préstamo."
+                },
+                "fechaPrimerPago": {
+                    "type": "string",
+                    "description": "Fecha primer pago."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha vencimiento."
+                },
+                "idOperacionBT": {
+                    "type": "string",
+                    "description": "Identificador String bantotal (concatenación de todos los conceptos claves de la operación)."
+                },
+                "plazo": {
+                    "type": "integer",
+                    "description": "Plazo del préstamo."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Descripción del producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre de producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

@@ -1,0 +1,23 @@
+{
+    "id": 507,
+    "nombre": "ObtenerMotivosBloqueo",
+    "descripcion": "Método para devolver un listado de los motivos de bloqueo de tarjetas de débito dados de alta en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtMotivosBloqueo": {
+            "type": "object",
+            "description": "Listado de motivos de bloqueo.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción."
+                }
+            }
+        }
+    },
+    "sistema": "TarjetasDeDebito"
+}

@@ -1,0 +1,23 @@
+{
+    "id": 142,
+    "nombre": "ObtenerTiposDeDocumentosDigitales",
+    "descripcion": "Método para obtener un listado de los tipos de documento digital ingresados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtTiposDeDocumentoDigital": {
+            "type": "object",
+            "description": "Listado de tipos de documento digital.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Identificador de tipo de documento digital."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del tipo de documento digital."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

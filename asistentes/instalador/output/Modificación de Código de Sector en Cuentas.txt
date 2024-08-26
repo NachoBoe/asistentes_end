@@ -1,0 +1,1 @@
+Este parámetro permite indicar si será posible o no la modificación del código de sector de una cuenta ya definida. Las posibilidades que se admiten son la habilitación o deshabilitación de esta modificación, lo que afecta la flexibilidad en la gestión de cuentas dentro del sistema Bantotal.

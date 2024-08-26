@@ -1,0 +1,17 @@
+{
+    "id": 72,
+    "nombre": "ModificarEjecutivo",
+    "descripcion": "Método para modificar el ejecutivo de un cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "ejecutivoId": {
+            "type": "number",
+            "description": "Identificador de ejecutivo a modificar."
+        }
+    },
+    "salida": {},
+    "sistema": "Clientes"
+}

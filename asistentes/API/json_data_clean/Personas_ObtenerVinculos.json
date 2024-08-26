@@ -1,0 +1,27 @@
+{
+    "id": 388,
+    "nombre": "ObtenerVinculos",
+    "descripcion": "Método para obtener un listado de los vínculos registrados.",
+    "entrada": {},
+    "salida": {
+        "sdtVinculos": {
+            "type": "object",
+            "description": "Listado de vínculos.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de vínculo."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de vínculo."
+                },
+                "tipo": {
+                    "type": "string",
+                    "description": "Tipo de vínculo."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

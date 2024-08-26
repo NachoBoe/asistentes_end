@@ -1,0 +1,22 @@
+{
+    "id": 27,
+    "nombre": "ObtenerFechaHabilSucursal",
+    "descripcion": "Método que devuelve si una fecha es hábil en la sucursal ingresada.",
+    "entrada": {
+        "fecha": {
+            "type": "Date",
+            "description": "Fecha a consultar."
+        },
+        "sucursalId": {
+            "type": "number",
+            "description": "Identificador de Sucursal a consultar."
+        }
+    },
+    "salida": {
+        "fechaHabil": {
+            "type": "string",
+            "description": "¿Es hábil? (S/N)"
+        }
+    },
+    "sistema": "Calendarios"
+}

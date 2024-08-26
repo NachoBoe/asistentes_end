@@ -1,0 +1,21 @@
+Descripción general de la funcionalidad: El archivo detalla guías especiales de proceso en el sistema Bantotal, que permiten controlar diferentes aspectos relacionados con la validación de documentos, referencias por tipo de persona y modificaciones de teléfonos. Estas configuraciones permiten establecer reglas específicas para la gestión de datos en la plataforma bancaria.
+
+- Guías y Guías Especiales de proceso:
+  - Código: 1196
+    - Correlativo 1: 1
+    - Descripción: Permite controlar el rango de un tipo de documento y su validez según el sexo de la persona. Para ello se debe cargar en el correlativo 1 el tipo de documento y en la descripción para qué sexo es válido M (masculino) F (femenino) o vacío si es válido para ambos. Para controlar el rango se debe ingresar el mínimo en el Importe específico 1 y el máximo en el importe específico 2.
+  
+  - Código: 20001
+    - Correlativo 1: 1
+    - Correlativo 2: 1600
+    - Correlativo 3: 20
+    - Descripción: Controla cantidad de referencias por tipo de persona.
+    - Valor Especifico 1: (cantidad para persona física)
+    - Valor Especifico 2: (cantidad para persona jurídica)
+
+  - Código: 38
+    - Correlativo 1: 570
+    - Correlativo 2: 0
+    - Correlativo 3: 0
+    - Descripción: Control Dual Modif Teléfonos
+    - Valor Especifico 1: 1

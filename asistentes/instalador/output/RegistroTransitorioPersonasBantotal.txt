@@ -1,0 +1,8 @@
+La funcionalidad detallada en el archivo se refiere al almacenamiento de información transitoria de personas en el sistema Bantotal. Este sistema permite gestionar datos relacionados con la identificación de personas, incluyendo su país, tipo de documento, número de documento y una descripción adicional. Los campos definidos son:
+
+- sngc10pais: Código numérico de 3 dígitos que representa el país.
+- sngc10Tdoc: Código numérico de 2 dígitos que representa el tipo de documento.
+- sngc10Ndoc: Cadena de caracteres de 12 posiciones que representa el número de documento.
+- sngc10Sdt: Cadena de caracteres de hasta 5000 posiciones que permite almacenar información adicional o descripciones relacionadas.
+
+Las posibilidades que se admiten incluyen la captura y almacenamiento de datos de identificación de personas, lo que puede ser útil para procesos de validación, registro y gestión de información en el ámbito bancario.

@@ -1,0 +1,44 @@
+{
+    "id": 441,
+    "nombre": "ObtenerDeudaPrestamoCastigado",
+    "descripcion": "Método para obtener la deuda de un préstamo castigado.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación simulada."
+        }
+    },
+    "salida": {
+        "sdtPrestamoCastigado": {
+            "type": "object",
+            "description": "Datos del préstamo.",
+            "properties": {
+                "interes": {
+                    "type": "number",
+                    "description": "Interés generado."
+                },
+                "interesSuspenso": {
+                    "type": "number",
+                    "description": "Interés suspenso."
+                },
+                "mora": {
+                    "type": "number",
+                    "description": "Mora generada."
+                },
+                "moraSuspenso": {
+                    "type": "number",
+                    "description": "Mora suspenso."
+                },
+                "seguros": {
+                    "type": "number",
+                    "description": "Seguros."
+                },
+                "saldoCapital": {
+                    "type": "number",
+                    "description": "Saldo capital del préstamo."
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

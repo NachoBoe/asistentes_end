@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la gestión del campo Ubigeo en la plaza peruana dentro del sistema Bantotal. Al habilitar el campo Ubigeo, los campos Departamento, Provincia y Distrito se vuelven no editables y su contenido se selecciona mediante un prompt. Este comportamiento se activa simplemente al habilitar la visualización del campo Ubigeo (HSNG038), sin depender de un parámetro específico del país.
+
+No se encontraron configuraciones asociadas, guías, reglas de negocio, programas particulares, tablas ni otros controles.

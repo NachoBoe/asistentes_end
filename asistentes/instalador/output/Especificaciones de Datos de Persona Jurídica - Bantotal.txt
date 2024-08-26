@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la gestión de datos de personas jurídicas dentro del sistema Bantotal. Se especifican los campos necesarios para registrar y mantener información relevante sobre estas entidades, incluyendo datos como el país, tipo de documento, razón social, fechas de constitución y expiración, entre otros. Las posibilidades que se admiten incluyen la captura de información básica y financiera de las personas jurídicas, así como el control de su situación legal y operativa.
+
+No se encontraron configuraciones asociadas, guías, reglas de negocio, programas particulares, tablas ni otros controles.

@@ -1,0 +1,34 @@
+{
+    "id": 162,
+    "nombre": "ObtenerIdentificadorUnicoProducto",
+    "descripcion": "Método para obtener el identificador único de un producto.",
+    "entrada": {
+        "empresaId": {
+            "type": "number",
+            "description": "Identificador de empresa."
+        },
+        "moduloId": {
+            "type": "number",
+            "description": "Módulo Bantotal."
+        },
+        "tipoOperacionBT": {
+            "type": "number",
+            "description": "Tipo de operación Bantotal."
+        },
+        "monedaId": {
+            "type": "number",
+            "description": "Identificador de moneda."
+        },
+        "papelId": {
+            "type": "number",
+            "description": "Identificador de papel."
+        }
+    },
+    "salida": {
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador único de producto."
+        }
+    },
+    "sistema": "Contabilidad"
+}

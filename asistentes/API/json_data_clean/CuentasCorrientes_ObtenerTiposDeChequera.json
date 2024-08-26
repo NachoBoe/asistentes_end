@@ -1,0 +1,23 @@
+{
+    "id": 186,
+    "nombre": "ObtenerTiposDeChequera",
+    "descripcion": "Método para obtener un listado de los tipos de chequeras.",
+    "entrada": {},
+    "salida": {
+        "sdtTiposChequera": {
+            "type": "object",
+            "description": "Lista de tipos de chequera.",
+            "properties": {
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del tipo de chequera."
+                },
+                "identificador": {
+                    "type": "integer",
+                    "description": "Identificador del tipo de chequera."
+                }
+            }
+        }
+    },
+    "sistema": "CuentasCorrientes"
+}

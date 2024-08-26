@@ -1,0 +1,27 @@
+{
+    "id": 254,
+    "nombre": "ObtenerMonedasIndices",
+    "descripcion": "Método para obtener las monedas e índices en funcionamiento.",
+    "entrada": {},
+    "salida": {
+        "sdtMonedas": {
+            "type": "object",
+            "description": "Listado de monedas en uso contable.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código identificador de moneda."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre de moneda."
+                },
+                "tipoCambio": {
+                    "type": "string",
+                    "description": "Tipo Cambio."
+                }
+            }
+        }
+    },
+    "sistema": "Indicadores"
+}

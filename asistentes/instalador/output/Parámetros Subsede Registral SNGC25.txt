@@ -1,0 +1,9 @@
+La funcionalidad detallada en el archivo se refiere a la configuración de parámetros para la Subsede Registral en el sistema Bantotal. Se definen campos específicos que permiten identificar y gestionar registros dentro de la plataforma bancaria. Los campos incluyen códigos y descripciones que facilitan la organización y el acceso a la información relacionada con la subsede registral.
+
+Los campos definidos son:
+
+- **sngc21OfCd**: Tipo N (4.0) - sngc N21 Of Cod
+- **sngc25SubC**: Tipo N (4.0) - sngc25 Su BCod
+- **sngc25Reg**: Tipo C (30) - sngc25 Reg
+
+Estos parámetros permiten la identificación y clasificación de registros dentro del sistema, asegurando que la información se maneje de manera estructurada y eficiente.

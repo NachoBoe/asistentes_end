@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere al mantenimiento de tipos de establecimientos dentro de la plataforma Bantotal. A través de esta opción, los usuarios pueden definir y gestionar los diferentes tipos de establecimientos que existen en el sistema, permitiendo una adecuada clasificación y organización de los mismos. Esto es esencial para el correcto funcionamiento de las operaciones bancarias y la gestión de clientes.
+
+No se encontraron configuraciones asociadas, reglas de negocio, programas particulares, tablas, ni otros controles y configuraciones.

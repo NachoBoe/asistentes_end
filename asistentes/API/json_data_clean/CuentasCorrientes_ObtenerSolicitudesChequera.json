@@ -1,0 +1,70 @@
+{
+    "id": 184,
+    "nombre": "ObtenerSolicitudesChequera",
+    "descripcion": "Método para obtener todas las chequeras y solicitudes de chequeras asociadas a una operación.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador de la operación."
+        }
+    },
+    "salida": {
+        "sdtSolicitudesChequeras": {
+            "type": "object",
+            "description": "Listado de chequeras.",
+            "properties": {
+                "sBTDatosChequera": {
+                    "type": "object",
+                    "description": "Listado de chequeras.",
+                    "properties": {
+                        "totalCheques": {
+                            "type": "number",
+                            "description": "Cantidad de cheques de la chequera."
+                        },
+                        "estado": {
+                            "type": "string",
+                            "description": "Estado actual de la solicitud de la chequera."
+                        },
+                        "chequeInicial": {
+                            "type": "number",
+                            "description": "Cheque inicial."
+                        },
+                        "titular": {
+                            "type": "string",
+                            "description": "Titular de la cuenta."
+                        },
+                        "cantidadLibretas": {
+                            "type": "number",
+                            "description": "Cantidad de libretas."
+                        },
+                        "operacionUId": {
+                            "type": "number",
+                            "description": "Identificador de la operación de la subcuenta."
+                        },
+                        "empresa": {
+                            "type": "number",
+                            "description": "Empresa de la emisión de la chequera."
+                        },
+                        "tipoId": {
+                            "type": "number",
+                            "description": "Identificador de tipo de chequera."
+                        },
+                        "tipo": {
+                            "type": "string",
+                            "description": "Tipo de chequera."
+                        },
+                        "solicitud": {
+                            "type": "number",
+                            "description": "Identificador de la solicitud de chequera."
+                        },
+                        "estadoId": {
+                            "type": "number",
+                            "description": "Identificador de estado actual de la solicitud de la chequera."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "CuentasCorrientes"
+}

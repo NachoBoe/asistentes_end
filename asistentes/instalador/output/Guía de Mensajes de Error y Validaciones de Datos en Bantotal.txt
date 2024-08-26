@@ -1,0 +1,11 @@
+- Guías y Guías Especiales de proceso:
+  - Código: 20001
+    - Correlativo1: 1
+    - Correlativo2: 1600
+    - Correlativo3: 20
+  - Código: 20001
+    - Correlativo1: 1
+    - Correlativo2: 1700
+    - Correlativo3: 20
+
+Descripción general de la funcionalidad: El archivo detalla la gestión de errores en la plataforma Bantotal, específicamente al intentar definir un mismo correlativo dos veces. Además, establece la necesidad de definir una guía de procesos especial (código 20001) cuando se requiere un largo mínimo de caracteres para el domicilio y el teléfono, especificando los valores mínimos que deben ingresarse para cada uno. Las posibilidades admitidas incluyen la configuración de diferentes largos mínimos para el domicilio y el teléfono a través de los correlativos asociados al código 20001.

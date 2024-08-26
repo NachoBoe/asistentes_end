@@ -1,0 +1,32 @@
+{
+    "id": 124,
+    "nombre": "ObtenerDolarUSA",
+    "descripcion": "Método para obtener los datos del dólar estadounidense.",
+    "entrada": {
+        "tipoMoneda": {
+            "type": "string",
+            "description": "[Hidden: Valor fijo 'USD' para este método]."
+        }
+    },
+    "salida": {
+        "sdtMoneda": {
+            "type": "object",
+            "description": "Datos de la moneda.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de moneda."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de moneda."
+                },
+                "simbolo": {
+                    "type": "string",
+                    "description": "Símbolo de moneda."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

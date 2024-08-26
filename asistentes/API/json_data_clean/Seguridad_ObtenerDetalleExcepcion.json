@@ -1,0 +1,108 @@
+{
+    "id": 485,
+    "nombre": "ObtenerDetalleExcepcion",
+    "descripcion": "Método para obtener el detalle de la excepción.",
+    "entrada": {
+        "idExcepcion": {
+            "type": "integer",
+            "description": "Identificador de excepción."
+        }
+    },
+    "salida": {
+        "excepciones": {
+            "type": "object",
+            "description": "Datos detallados de la excepción.",
+            "properties": {
+                "sdtExcepcion": {
+                    "type": "object",
+                    "description": "Datos de la excepción.",
+                    "properties": {
+                        "identificador": {
+                            "type": "integer",
+                            "description": "Identificador de excepción."
+                        },
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción de la excepción."
+                        },
+                        "usuario": {
+                            "type": "string",
+                            "description": "Usuario."
+                        },
+                        "nombreUsuario": {
+                            "type": "string",
+                            "description": "Nombre del usuario."
+                        },
+                        "movimientoUId": {
+                            "type": "integer",
+                            "description": "Identificador único de movimiento."
+                        },
+                        "descripcionMovimiento": {
+                            "type": "string",
+                            "description": "Descripción del movimiento."
+                        },
+                        "nombreSucursal": {
+                            "type": "string",
+                            "description": "Nombre de la sucursal."
+                        },
+                        "ligada": {
+                            "type": "string",
+                            "description": "Ligada (S/N)."
+                        }
+                    }
+                },
+                "operacionUId": {
+                    "type": "integer",
+                    "description": "Identificador único de operación."
+                },
+                "saldo": {
+                    "type": "number",
+                    "description": "Saldo de operación."
+                },
+                "importeMovimiento": {
+                    "type": "number",
+                    "description": "Importe del movimiento."
+                },
+                "simboloMoneda": {
+                    "type": "string",
+                    "description": "Simbolo de moneda."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Estado."
+                },
+                "descripcionEstado": {
+                    "type": "string",
+                    "description": "Descripción del estado."
+                },
+                "solicitaPassword": {
+                    "type": "string",
+                    "description": "Solicita contraseña (S/N)."
+                },
+                "puedeAutorizar": {
+                    "type": "string",
+                    "description": "Puede autorizar (S/N)."
+                },
+                "metadata": {
+                    "type": "object",
+                    "description": "Listado de MetaData.",
+                    "properties": {
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción de la MetaData."
+                        },
+                        "valor": {
+                            "type": "string",
+                            "description": "Valor de la MetaData."
+                        },
+                        "esImporte": {
+                            "type": "string",
+                            "description": "Es Importe (S/N)."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "Seguridad"
+}

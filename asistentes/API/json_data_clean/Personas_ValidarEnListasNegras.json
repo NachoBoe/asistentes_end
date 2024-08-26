@@ -1,0 +1,64 @@
+{
+    "id": 391,
+    "nombre": "ValidarEnListasNegras",
+    "descripcion": "Método para validar si una persona pertenece a alguna lista negra. En caso de que sí, muestra en cuál.",
+    "entrada": {
+        "paisDocumentoId": {
+            "type": "number",
+            "description": "Identificador de país."
+        },
+        "tipoDocumentoId": {
+            "type": "number",
+            "description": "Identificador de tipo de documento."
+        },
+        "numeroDocumento": {
+            "type": "string",
+            "description": "Número de documento."
+        },
+        "primerNombre": {
+            "type": "string",
+            "description": "Primer nombre."
+        },
+        "segundoNombre": {
+            "type": "string",
+            "description": "Segundo nombre."
+        },
+        "primerApellido": {
+            "type": "string",
+            "description": "Primer apellido."
+        },
+        "segundoApellido": {
+            "type": "string",
+            "description": "Segundo apellido."
+        },
+        "nombreEmpresa": {
+            "type": "string",
+            "description": "Nombre de empresa."
+        }
+    },
+    "salida": {
+        "existeEnLista": {
+            "type": "string",
+            "description": "¿Existe en lista? (S/N)."
+        },
+        "sdtListasInhabilitados": {
+            "type": "object",
+            "description": "Listado de listas negras.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Identificador de lista negra."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de lista negra."
+                },
+                "bloqueante": {
+                    "type": "string",
+                    "description": "¿Es bloqueante? (S/N)."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

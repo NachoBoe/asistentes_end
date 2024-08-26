@@ -1,0 +1,19 @@
+La funcionalidad detallada en el archivo se centra en la gestión de los tipos de Instituciones Financieras dentro del sistema Bantotal. Permite ingresar y modificar los distintos tipos de Instituciones Financieras junto con sus códigos de relación en la tabla de Códigos de Tipo de Institución Financiera. Esto es esencial para asociar correctamente el tipo de institución a las cuentas identificadas como tales. El proceso implica el uso del programa HTRT018 para cargar los códigos, y se realiza un análisis transaccional que relaciona el código de tipo de institución financiera con el código contable correspondiente a partir del rubro en el esquema contable.
+
+Opciones generales:
+- No se especifican opciones generales en el texto.
+
+Guías y Guías Especiales de proceso:
+- No se especifican guías o guías especiales en el texto.
+
+Reglas de negocio:
+- No se especifican reglas de negocio en el texto.
+
+Programas particulares:
+- HTRT018: Programa utilizado para cargar los códigos de tipo de institución financiera.
+
+Tablas:
+- Fst018: Tabla donde se relaciona el código de tipo de institución financiera con el código de relación de rubros.
+
+Otros controles y configuraciones:
+- No se especifican otros controles o configuraciones en el texto.

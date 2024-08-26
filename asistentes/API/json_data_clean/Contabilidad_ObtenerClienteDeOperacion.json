@@ -1,0 +1,18 @@
+{
+    "id": 153,
+    "nombre": "ObtenerClienteDeOperacion",
+    "descripcion": "Método para obtener el cliente asociado a una operación.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de la operación"
+        }
+    },
+    "salida": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "sistema": "Contabilidad"
+}

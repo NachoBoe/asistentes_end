@@ -1,0 +1,46 @@
+{
+    "id": 244,
+    "nombre": "Simular",
+    "descripcion": "Método para simular el alta de un depósito a plazo.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "monto": {
+            "type": "number",
+            "description": "Monto del depósito."
+        },
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador único de producto."
+        },
+        "plazo": {
+            "type": "number",
+            "description": "Plazo del DPF."
+        }
+    },
+    "salida": {
+        "fechaAlta": {
+            "type": "string",
+            "description": "Fecha de alta."
+        },
+        "fechaVencimiento": {
+            "type": "string",
+            "description": "Fecha en que vencería el DPF."
+        },
+        "intereses": {
+            "type": "number",
+            "description": "Intereses."
+        },
+        "tasa": {
+            "type": "number",
+            "description": "Tasa."
+        },
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación de la simulación."
+        }
+    },
+    "sistema": "DepositosAPlazo"
+}

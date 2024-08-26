@@ -1,0 +1,1 @@
+El archivo menciona que se invoca al panel HSTD006A para la carga de información de la cuenta en el sistema Bantotal, pero indica que este panel se encuentra discontinuado. No se proporciona información adicional sobre opciones generales, guías, reglas de negocio, programas particulares, tablas o controles y configuraciones.

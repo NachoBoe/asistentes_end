@@ -1,0 +1,52 @@
+{
+    "id": 486,
+    "nombre": "ObtenerExcepciones",
+    "descripcion": "Método para obtener un listado de las excepciones por usuario.",
+    "entrada": {
+        "usuario": {
+            "type": "string",
+            "description": "Usuario."
+        }
+    },
+    "salida": {
+        "excepciones": {
+            "type": "object",
+            "description": "Listado de excepciones.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de excepción."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de la excepción."
+                },
+                "usuario": {
+                    "type": "string",
+                    "description": "Usuario."
+                },
+                "nombreUsuario": {
+                    "type": "string",
+                    "description": "Nombre del usuario."
+                },
+                "movimientoUId": {
+                    "type": "number",
+                    "description": "Identificador único de movimiento."
+                },
+                "descripcionMovimiento": {
+                    "type": "string",
+                    "description": "Descripción del movimiento."
+                },
+                "nombreSucursal": {
+                    "type": "string",
+                    "description": "Nombre de la sucursal."
+                },
+                "ligada": {
+                    "type": "string",
+                    "description": "Ligada (S/N)."
+                }
+            }
+        }
+    },
+    "sistema": "Seguridad"
+}

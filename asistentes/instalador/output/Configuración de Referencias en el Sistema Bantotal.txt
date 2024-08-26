@@ -1,0 +1,17 @@
+- Opciones generales:
+  - Correlativo: es de ingreso obligatorio. No puede ser 0. Se debe ingresar uno por referencia. El mismo es utilizado para ingresar más de una referencia.
+  - Tipo: Refiere al tipo de referencia, dicha información es extraída de la tabla FSE200.
+  - Relación: Dato Obligatorio. Debe seleccionarse de la lista cargada en la Fst020.
+  - Nombre/Dirección/Teléfono: Si bien no son datos de carácter obligatorio, se deberá ingresar si se desea ingresar una referencia.
+
+- Guías y Guías Especiales de proceso:
+  - Código: 20001
+    - Correlativo 1: 1 
+    - Correlativo 2: 1600
+    - Correlativo 3: 20
+    - Descripción: Referencias Genéricas
+    - Valor Especifico 1: 2 (cantidad para persona física)
+    - Valor Especifico 2: 2 (cantidad para persona jurídica)
+
+Descripción general de la funcionalidad:
+El panel de referencias permite agregar información sobre referencias de personas, ya sea físicas o jurídicas, en el flujo de alta de persona. Se requiere ingresar un correlativo único para cada referencia y seleccionar el tipo de referencia de una tabla predefinida. Aunque algunos campos son opcionales, se recomienda completarlos para facilitar la identificación de las referencias. Además, se puede parametrizar el tipo de referencia y establecer cantidades obligatorias según el tipo de persona.

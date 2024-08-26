@@ -1,0 +1,82 @@
+{
+    "id": 523,
+    "nombre": "Obtener",
+    "descripcion": "Método para obtener los datos de un usuario.",
+    "entrada": {
+        "usuario": {
+            "type": "string",
+            "description": "Usuario a consultar."
+        }
+    },
+    "salida": {
+        "sdtDatosUsuario": {
+            "type": "object",
+            "description": "Datos del usuario.",
+            "properties": {
+                "usuario": {
+                    "type": "string",
+                    "description": "Identificador del usuario."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre del usuario."
+                },
+                "email": {
+                    "type": "string",
+                    "description": "Email del usuario."
+                },
+                "telefono": {
+                    "type": "string",
+                    "description": "Teléfono del usuario."
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Sucursal donde se encuentra el usuario."
+                },
+                "programaInicial": {
+                    "type": "string",
+                    "description": "Nombre de programa incial que se invoca al acceder a Bantotal."
+                },
+                "espaciosDeTrabajo": {
+                    "type": "integer",
+                    "description": "Cantidad máxima de espacios de trabajos que puede tener abierta el usuario."
+                },
+                "cantidadSesionesAbiertas": {
+                    "type": "integer",
+                    "description": "Cantidad máxima de sesiones que puede tener abiertas un mismo usuario Bantotal."
+                },
+                "cajero": {
+                    "type": "string",
+                    "description": "Es cajero? (S/N)."
+                },
+                "numeroCaja": {
+                    "type": "integer",
+                    "description": "Número de caja del usuario."
+                },
+                "nivel": {
+                    "type": "integer",
+                    "description": "Nivel del usuario."
+                },
+                "perfiles": {
+                    "type": "object",
+                    "description": "Perfiles asociados al usuario.",
+                    "properties": {
+                        "Perfil": {
+                            "type": "string",
+                            "description": "Identificador de perfil Bantotal."
+                        },
+                        "FechaAlta": {
+                            "type": "string",
+                            "description": "Fecha a partir de la cual el usuario se encuentra habilitado para operar con el perfil."
+                        },
+                        "FechaVencimiento": {
+                            "type": "string",
+                            "description": "Fecha de vencimiento del perfil para el usuario."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "Usuarios"
+}

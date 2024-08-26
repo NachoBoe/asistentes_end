@@ -1,0 +1,31 @@
+{
+    "id": 346,
+    "nombre": "EliminarInformacionAdicional",
+    "descripcion": "Método para eliminar la información adicional de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "sdtInformacionAdicional": {
+            "type": "object",
+            "description": "Listado de datos.",
+            "properties": {
+                "clave": {
+                    "type": "string",
+                    "description": "Identificador de información adicional."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor de información adicional."
+                }
+            }
+        },
+        "modo": {
+            "type": "string",
+            "description": "[Hidden, valor fijo 'DLT' para este método]."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

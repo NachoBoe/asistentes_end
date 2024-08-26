@@ -1,0 +1,3 @@
+- Opción General de Procesos No. 1016: 'S'
+
+Descripción general de la funcionalidad: El archivo describe el panel de "Relaciones entre Personas (Consanguinidad)" en el sistema Bantotal, el cual se accede mediante la selección de una persona y el botón ‘Rel. Consan.’ en el ‘Mantenimiento de Personas’. Permite agregar relaciones de consanguinidad entre personas físicas, y se menciona que se puede controlar la aplicación de estas relaciones mediante la opción general de procesos mencionada.

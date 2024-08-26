@@ -1,0 +1,8 @@
+La funcionalidad detallada en el archivo se refiere al almacenamiento de información transitoria de cuentas en el sistema Bantotal, específicamente en el contexto del módulo SNGC19. Este módulo permite gestionar datos temporales relacionados con cuentas, facilitando el manejo de información que puede ser relevante para procesos transitorios dentro de la plataforma bancaria.
+
+Los campos definidos son:
+
+- **sngc19 Cta**: Tipo N (9.0) - Este campo se utiliza para almacenar el número de cuenta.
+- **sngc19 Sdt**: Tipo L (2500) - Este campo se utiliza para almacenar información adicional o transitoria relacionada con la cuenta, permitiendo un máximo de 2500 caracteres.
+
+Las posibilidades que se admiten incluyen la gestión de datos temporales que pueden ser utilizados en diferentes procesos dentro del sistema, asegurando que la información relevante esté disponible cuando sea necesaria.

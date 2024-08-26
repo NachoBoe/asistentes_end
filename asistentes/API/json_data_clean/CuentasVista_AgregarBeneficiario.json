@@ -1,0 +1,43 @@
+{
+    "id": 200,
+    "nombre": "AgregarBeneficiario",
+    "descripcion": "Método para agregar un beneficiario a una Cuenta Vista.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de la operación."
+        },
+        "sdtBeneficiarios": {
+            "type": "object",
+            "description": "Listado de beneficiarios a agregar.",
+            "properties": {
+                "correlativo": {
+                    "type": "number",
+                    "description": "Correlativo del beneficiario."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre beneficiario."
+                },
+                "parentescoId": {
+                    "type": "number",
+                    "description": "Identificador del parentesco."
+                },
+                "parentesco": {
+                    "type": "string",
+                    "description": "Parentesco."
+                },
+                "participacion": {
+                    "type": "number",
+                    "description": "Porcentaje de participación."
+                }
+            },
+            "required": [
+                "operacionUId",
+                "sdtBeneficiarios"
+            ]
+        }
+    },
+    "salida": {},
+    "sistema": "CuentasVista"
+}

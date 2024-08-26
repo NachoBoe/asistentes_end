@@ -1,0 +1,44 @@
+{
+    "id": 529,
+    "nombre": "ObtenerTareasDeProceso",
+    "descripcion": "Método para obtener las tareas de un determinado proceso de Workflow.",
+    "entrada": {
+        "procesoId": {
+            "type": "integer",
+            "description": "Identificador de proceso Workflow."
+        }
+    },
+    "salida": {
+        "sdtTareas": {
+            "type": "object",
+            "description": "Listado de tareas Workflow.",
+            "properties": {
+                "tareaId": {
+                    "type": "integer",
+                    "description": "Identificador de tarea Workflow."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre de la tarea."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de la tarea."
+                },
+                "warning": {
+                    "type": "number",
+                    "description": "Tiempo de warning."
+                },
+                "deadline": {
+                    "type": "number",
+                    "description": "Tiempo de deadline."
+                },
+                "programaPostcondicional": {
+                    "type": "string",
+                    "description": "Programa postcondicional."
+                }
+            }
+        }
+    },
+    "sistema": "Workflow"
+}

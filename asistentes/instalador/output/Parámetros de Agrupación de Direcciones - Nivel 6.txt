@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere al "6to nivel de Agrupación de Direcciones" dentro del sistema Bantotal, específicamente en el contexto del SNGC06. Este sistema permite la identificación y clasificación de direcciones a través de varios niveles jerárquicos, desde el nivel 1 hasta el nivel 6, facilitando la organización y gestión de información relacionada con direcciones en el ámbito bancario.
+
+Las posibilidades que se admiten incluyen la asignación de identificadores únicos para cada nivel de agrupación, así como descripciones y descripciones extendidas que permiten una mejor comprensión de cada agrupación de direcciones. Esto es útil para la categorización y el manejo de datos en el sistema.

@@ -1,0 +1,48 @@
+{
+    "id": 358,
+    "nombre": "ObtenerDocumentosAdicionales",
+    "descripcion": "Método para obtener un listado de los documentos adicionales de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {
+        "sdtDocumentosAdicionales": {
+            "type": "object",
+            "description": "Listado de documentos adicionales.",
+            "properties": {
+                "paisDocumento": {
+                    "type": "number",
+                    "description": "Identificador de país del documento."
+                },
+                "paisDocumentoDsc": {
+                    "type": "string",
+                    "description": "Nombre del país del documento."
+                },
+                "tipoDocumento": {
+                    "type": "number",
+                    "description": "Identificador de tipo de documento."
+                },
+                "tipoDocumentoDsc": {
+                    "type": "string",
+                    "description": "Nombre del tipo de documento."
+                },
+                "nroDocumento": {
+                    "type": "string",
+                    "description": "Número de documento."
+                },
+                "fechaEmision": {
+                    "type": "string",
+                    "description": "Fecha de emisión del documento."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento del documento."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

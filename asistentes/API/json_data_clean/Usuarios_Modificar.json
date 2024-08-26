@@ -1,0 +1,73 @@
+{
+    "id": 519,
+    "nombre": "Modificar",
+    "descripcion": "Método para modificar un usuario.",
+    "entrada": {
+        "sdtUsuario": {
+            "type": "object",
+            "description": "Datos de usuario Bantotal.",
+            "properties": {
+                "Usuario": {
+                    "type": "string",
+                    "description": "Identificador del usuario."
+                },
+                "Nombre": {
+                    "type": "string",
+                    "description": "Nombre del usuario."
+                },
+                "Email": {
+                    "type": "string",
+                    "description": "Email del usuario."
+                },
+                "Telefono": {
+                    "type": "string",
+                    "description": "Teléfono del usuario."
+                },
+                "Sucursal": {
+                    "type": "integer",
+                    "description": "Identificador de sucursal."
+                },
+                "ProgramaInicial": {
+                    "type": "string",
+                    "description": "Nombre de programa incial que se invoca al acceder a Bantotal."
+                },
+                "EspaciosTrabajo": {
+                    "type": "integer",
+                    "description": "Cantidad máxima de espacios de trabajos que puede tener abierta el usuario (0 - Para indicar que no tiene limites)."
+                },
+                "CantidadSesionesAbiertas": {
+                    "type": "integer",
+                    "description": "Cantidad máxima de sesiones que puede tener abiertas un mismo usuario Bantotal."
+                },
+                "Cajero": {
+                    "type": "string",
+                    "description": "Indica si el usuario es cajero (S/N)."
+                },
+                "NumeroCaja": {
+                    "type": "integer",
+                    "description": "Número de caja que utiliza el cajero."
+                },
+                "Nivel": {
+                    "type": "integer",
+                    "description": "Nivel del usuario."
+                }
+            },
+            "required": [
+                "Usuario",
+                "Nombre",
+                "Email",
+                "NumeroCaja",
+                "CantidadSesionesAbiertas",
+                "Nivel",
+                "ProgramaInicial",
+                "Sucursal"
+            ]
+        },
+        "modo": {
+            "type": "string",
+            "description": "[Hidden: Valor fijo 'UPD' para este método]."
+        }
+    },
+    "salida": {},
+    "sistema": "Usuarios"
+}

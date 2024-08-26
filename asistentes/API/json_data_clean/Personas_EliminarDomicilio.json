@@ -1,0 +1,17 @@
+{
+    "id": 345,
+    "nombre": "EliminarDomicilio",
+    "descripcion": "Método para eliminar los datos del domicilio de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "codigoDomicilio": {
+            "type": "number",
+            "description": "Código de domicilio."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

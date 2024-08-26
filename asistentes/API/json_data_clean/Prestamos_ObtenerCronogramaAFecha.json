@@ -1,0 +1,100 @@
+{
+    "id": 426,
+    "nombre": "ObtenerCronogramaAFecha",
+    "descripcion": "Dada una operación, devuelve el cronograma de la misma respecto a una fecha dada.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador de la operación."
+        },
+        "fecha": {
+            "type": "string",
+            "description": "Fecha a consultar."
+        }
+    },
+    "salida": {
+        "sdtCuotaPrestamo": {
+            "type": "object",
+            "description": "Cronograma del préstamo.",
+            "properties": {
+                "nroCuota": {
+                    "type": "number",
+                    "description": "Número de cuota."
+                },
+                "fechaPago": {
+                    "type": "string",
+                    "description": "Fecha de pago prevista."
+                },
+                "tipoCuota": {
+                    "type": "string",
+                    "description": "Tipo de cuota (Capital - K / Interés - I / Capital-Interés - M / Pago Mínimo - T / Cuota Fija - F)."
+                },
+                "concepto": {
+                    "type": "string",
+                    "description": "(Capital / Interés / Capital-Interés / Pago Mínimo / Cuota Fija)."
+                },
+                "impuestos": {
+                    "type": "number",
+                    "description": "Impuestos de la cuota."
+                },
+                "subsidios": {
+                    "type": "number",
+                    "description": "Subsidios de la cuota."
+                },
+                "capital": {
+                    "type": "number",
+                    "description": "Capital de la cuota."
+                },
+                "intereses": {
+                    "type": "number",
+                    "description": "Intereses de la cuota."
+                },
+                "comisiones": {
+                    "type": "number",
+                    "description": "Comisiones de la cuota."
+                },
+                "seguros": {
+                    "type": "number",
+                    "description": "Seguros de la cuota."
+                },
+                "interesMora": {
+                    "type": "number",
+                    "description": "Intereses de mora de la cuota."
+                },
+                "otrosConceptos": {
+                    "type": "number",
+                    "description": "Importe otros conceptos."
+                },
+                "detalleConceptos": {
+                    "type": "object",
+                    "description": "Detalle de los conceptos adicionales."
+                },
+                "total": {
+                    "type": "number",
+                    "description": "Total de la cuota."
+                },
+                "diasMora": {
+                    "type": "number",
+                    "description": "Días de mora de la cuota."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Estado de la cuota."
+                },
+                "estadoDsc": {
+                    "type": "string",
+                    "description": "Descripción del estado de la cuota."
+                },
+                "fechaUltimoPago": {
+                    "type": "string",
+                    "description": "Fecha de último pago de la cuota."
+                },
+                "importePago": {
+                    "type": "number",
+                    "description": "Importe pagado."
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

@@ -1,0 +1,9 @@
+El archivo del sistema Bantotal describe un primer nivel de agrupación de direcciones en el módulo SNGC01. La funcionalidad principal se centra en la gestión de parámetros relacionados con identificadores y descripciones de agrupaciones. 
+
+Los campos definidos son:
+
+- **sngc01id**: Identificador numérico de 3 dígitos.
+- **sngc01dsc**: Descripción corta de 35 caracteres.
+- **sngc01DeEx**: Descripción extendida de 80 caracteres.
+
+No se encontraron configuraciones asociadas, guías, reglas de negocio, programas particulares, tablas, ni otros controles y configuraciones en el contenido proporcionado.

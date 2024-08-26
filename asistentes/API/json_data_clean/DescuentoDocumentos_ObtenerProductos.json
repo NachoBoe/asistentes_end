@@ -1,0 +1,31 @@
+{
+    "id": 248,
+    "nombre": "ObtenerProductos",
+    "descripcion": "Método para obtener un listado de los productos de descuento de documentos.",
+    "entrada": {},
+    "salida": {
+        "sdtProductos": {
+            "type": "object",
+            "description": "Listado de productos.",
+            "properties": {
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre de producto."
+                },
+                "moneda": {
+                    "type": "string",
+                    "description": "Símbolo de moneda."
+                },
+                "papel": {
+                    "type": "string",
+                    "description": "Símbolo de papel."
+                }
+            }
+        }
+    },
+    "sistema": "DescuentoDocumentos"
+}

@@ -1,0 +1,10 @@
+El archivo del sistema Bantotal describe una tabla con los siguientes atributos:
+
+- **FSX008**
+  - **Tipo de Texto**: Txcod
+  - **Renglón**: Ctxren
+  - **Texto**: Ctxtxt
+  - **Usuario**: Ctxusu
+  - **Fecha**: Ctxfch
+
+La funcionalidad detallada en el archivo se refiere a la gestión de textos dentro del sistema, donde se registran diferentes tipos de textos asociados a un código, junto con información adicional como el renglón, el usuario que lo creó y la fecha de creación. Esto permite una organización y seguimiento de los textos utilizados en el sistema, facilitando su consulta y administración. Las posibilidades que se admiten incluyen la creación, modificación y consulta de estos textos, lo que es esencial para la personalización y adaptación del sistema a las necesidades de los usuarios.

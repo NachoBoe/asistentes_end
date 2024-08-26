@@ -1,0 +1,28 @@
+{
+    "id": 216,
+    "nombre": "ObtenerPeriodoDeAcreditacion",
+    "descripcion": "Método para obtener el período de acreditación de una operación.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador de Subcuenta con acreditación."
+        }
+    },
+    "salida": {
+        "sdtPeriodoAcreditacion": {
+            "type": "object",
+            "description": "Datos de la acreditación de la subcuenta.",
+            "properties": {
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripcion del periodo."
+                },
+                "valor": {
+                    "type": "number",
+                    "description": "Valor del periodo."
+                }
+            }
+        }
+    },
+    "sistema": "CuentasVista"
+}

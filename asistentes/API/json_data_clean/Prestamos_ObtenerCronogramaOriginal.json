@@ -1,0 +1,176 @@
+{
+    "id": 429,
+    "nombre": "ObtenerCronogramaOriginal",
+    "descripcion": "Método que devuelve el cronograma original de un préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador de la operación."
+        }
+    },
+    "salida": {
+        "sdtPrestamoOriginal": {
+            "type": "object",
+            "description": "Información del préstamo original.",
+            "properties": {
+                "producto": {
+                    "type": "object",
+                    "description": "Información del producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre del producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de la moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo del papel."
+                        }
+                    }
+                },
+                "sucursalId": {
+                    "type": "integer",
+                    "description": "Identificador de sucursal."
+                },
+                "sucursalNombre": {
+                    "type": "string",
+                    "description": "Nombre de la sucursal."
+                },
+                "especie": {
+                    "type": "string",
+                    "description": "Especie del préstamo."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha valor."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa."
+                },
+                "modalidad": {
+                    "type": "string",
+                    "description": "Modalidad."
+                },
+                "monedaId": {
+                    "type": "integer",
+                    "description": "Identificador de moneda."
+                },
+                "simboloMoneda": {
+                    "type": "string",
+                    "description": "Símbolo de moneda."
+                },
+                "precio": {
+                    "type": "number",
+                    "description": "Precio."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha vencimiento."
+                },
+                "totalCapital": {
+                    "type": "number",
+                    "description": "Capital total."
+                },
+                "totalIntereses": {
+                    "type": "number",
+                    "description": "Total de intereses."
+                },
+                "totalMora": {
+                    "type": "number",
+                    "description": "Total de mora."
+                },
+                "totalComisiones": {
+                    "type": "number",
+                    "description": "Total comisiones."
+                },
+                "totalImpuestos": {
+                    "type": "number",
+                    "description": "Total de impuestos."
+                },
+                "totalSeguros": {
+                    "type": "number",
+                    "description": "Total de seguros."
+                },
+                "totalPagar": {
+                    "type": "number",
+                    "description": "Total a pagar."
+                },
+                "planDePagos": {
+                    "type": "object",
+                    "description": "Plan de pagos original.",
+                    "properties": {
+                        "nroCuota": {
+                            "type": "integer",
+                            "description": "Número de cuota."
+                        },
+                        "fechaDesde": {
+                            "type": "string",
+                            "description": "Fecha desde."
+                        },
+                        "fechaHasta": {
+                            "type": "string",
+                            "description": "Fecha hasta."
+                        },
+                        "plazo": {
+                            "type": "integer",
+                            "description": "Plazo."
+                        },
+                        "saldoCapital": {
+                            "type": "number",
+                            "description": "Saldo capital."
+                        },
+                        "capital": {
+                            "type": "number",
+                            "description": "Capital."
+                        },
+                        "intereses": {
+                            "type": "number",
+                            "description": "Intereses."
+                        },
+                        "impuestos": {
+                            "type": "number",
+                            "description": "Impuestos."
+                        },
+                        "seguros": {
+                            "type": "number",
+                            "description": "Seguros."
+                        },
+                        "comisiones": {
+                            "type": "number",
+                            "description": "Comisiones."
+                        },
+                        "total": {
+                            "type": "number",
+                            "description": "Total de la cuota."
+                        },
+                        "situacion": {
+                            "type": "string",
+                            "description": "Situación."
+                        }
+                    }
+                },
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador de la operación."
+                },
+                "idOperacionBT": {
+                    "type": "string",
+                    "description": "Identificador String bantotal (concatenación de todos los conceptos claves de la operación)."
+                },
+                "cantidadCuotas": {
+                    "type": "integer",
+                    "description": "Cantidad de cuotas."
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

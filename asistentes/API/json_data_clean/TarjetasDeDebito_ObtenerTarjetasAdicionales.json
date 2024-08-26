@@ -1,0 +1,50 @@
+{
+    "id": 511,
+    "nombre": "ObtenerTarjetasAdicionales",
+    "descripcion": "Método para obtener las tarjetas adicionales que están asociadas a una tarjeta de débito.",
+    "entrada": {
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de tarjeta."
+        }
+    },
+    "salida": {
+        "sdtTarjetaDebitoAdicionales": {
+            "type": "object",
+            "description": "Datos de la tarjeta de débito.",
+            "properties": {
+                "tarjetaUId": {
+                    "type": "number",
+                    "description": "Identificador único de tarjeta."
+                },
+                "adicionales": {
+                    "type": "object",
+                    "description": "Listado de tarjetas de débito adicionales.",
+                    "properties": {
+                        "tarjetaUId": {
+                            "type": "number",
+                            "description": "Identificador único de tarjeta."
+                        },
+                        "numeroTarjeta": {
+                            "type": "string",
+                            "description": "Número de tarjeta."
+                        },
+                        "nombreTarjeta": {
+                            "type": "string",
+                            "description": "Nombre de tarjeta."
+                        },
+                        "fechaVencimiento": {
+                            "type": "string",
+                            "description": "Fecha de vencimiento."
+                        },
+                        "estado": {
+                            "type": "string",
+                            "description": "Descripción de estado."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "TarjetasDeDebito"
+}

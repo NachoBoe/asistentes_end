@@ -1,0 +1,30 @@
+{
+    "id": 418,
+    "nombre": "Cancelar",
+    "descripcion": "Método para realizar la cancelación de un préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación simulada."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "operacionUId_cobro": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta vista donde se cobrará el préstamo."
+        },
+        "referencia": {
+            "type": "string",
+            "description": "Referencia."
+        }
+    },
+    "salida": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único del movimiento [Asiento]."
+        }
+    },
+    "sistema": "Prestamos"
+}

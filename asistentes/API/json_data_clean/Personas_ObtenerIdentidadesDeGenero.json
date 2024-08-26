@@ -1,0 +1,23 @@
+{
+    "id": 366,
+    "nombre": "ObtenerIdentidadesDeGenero",
+    "descripcion": "Método para obtener un listado de las identidades de género ingresadas en el sistema.",
+    "entrada": {},
+    "salida": {
+        "sdtIdentidadesDeGenero": {
+            "type": "object",
+            "description": "Listado de identidades de género.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código de identidad de género."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de identidad de género."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

@@ -1,0 +1,17 @@
+{
+    "id": 517,
+    "nombre": "HabilitarUsuario",
+    "descripcion": "Método para habilitar un usuario que se encuentra inhabilitado.",
+    "entrada": {
+        "usuario": {
+            "type": "string",
+            "description": "Identificador del usuario."
+        },
+        "fechaDesde": {
+            "type": "string",
+            "description": "Fecha desde la que se encuentra inhabilitado."
+        }
+    },
+    "salida": {},
+    "sistema": "Usuarios"
+}

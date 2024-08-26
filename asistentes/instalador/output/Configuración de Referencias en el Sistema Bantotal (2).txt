@@ -1,0 +1,17 @@
+- Opciones generales:
+  - Correlativo: es de ingreso obligatorio. No puede ser 0. Se debe ingresar uno por referencia. El mismo es utilizado para ingresar más de una referencia.
+  - Tipo: Refiere al tipo de referencia, dicha información es extraída de la tabla FSE200.
+  - Relación: Dato Obligatorio. Debe seleccionarse de la lista cargada en la Fst020.
+  - Nombre/Dirección/Teléfono: Si bien no son datos de carácter obligatorio, se deberá ingresar si se desea ingresar una referencia.
+
+- Guías y Guías Especiales de proceso:
+  - Código: 20001
+    - Correlativo 1: 1 
+    - Correlativo 2: 1600
+    - Correlativo 3: 20
+    - Descripción: Referencias Genéricas
+    - Valor Especifico 1: 2 (cantidad para persona física)
+    - Valor Especifico 2: 2 (cantidad para persona jurídica)
+
+Descripción general de la funcionalidad:
+El archivo detalla un panel del sistema Bantotal que permite agregar referencias en el flujo de alta de persona. Se deben ingresar datos obligatorios como el correlativo y la relación, mientras que otros datos como nombre, dirección y teléfono son opcionales. Además, se menciona la posibilidad de parametrizar el tipo de referencia y establecer cantidades obligatorias según el tipo de persona (física o jurídica).

@@ -1,0 +1,36 @@
+{
+    "id": 38,
+    "nombre": "CargarServiciosDisponibles",
+    "descripcion": "Método para obtener los servicios disponibles para el cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "sdtServicios": {
+            "type": "object",
+            "description": "Lista de servicios del contrato.",
+            "properties": {
+                "idContrato": {
+                    "type": "number",
+                    "description": "Identificador del contrato CASH."
+                },
+                "servicio": {
+                    "type": "number",
+                    "description": "Servicio CASH."
+                },
+                "descServicio": {
+                    "type": "string",
+                    "description": "Descripción de servicios."
+                },
+                "tipoServicio": {
+                    "type": "string",
+                    "description": "Tipo de servicio."
+                }
+            }
+        }
+    },
+    "sistema": "CASHManagement"
+}

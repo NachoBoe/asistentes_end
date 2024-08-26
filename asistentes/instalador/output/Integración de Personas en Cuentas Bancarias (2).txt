@@ -1,0 +1,21 @@
+**Descripción general de la funcionalidad:**
+
+El panel "HFS01301 - Integración de Cuentas" permite consultar la integración de cuentas de clientes en la plataforma Bantotal. Se divide en dos categorías: "Cuenta", donde se visualiza el número y nombre de la cuenta, y "Integración", que permite gestionar la vinculación de personas físicas a la cuenta. Se pueden agregar, modificar y eliminar personas que integran la cuenta, así como dar de alta a personas físicas que no estén registradas en Bantotal.
+
+**Opciones generales:**
+- Proceso 2123: Controla la visibilidad del botón "Agr. Integrante".
+
+**Guías y Guías Especiales de proceso:**
+- No se encontraron configuraciones asociadas.
+
+**Reglas de negocio:**
+- No se encontraron configuraciones asociadas.
+
+**Programas particulares:**
+- No se encontraron configuraciones asociadas.
+
+**Tablas:**
+- Tabla FST020: Define los vínculos que se pueden seleccionar al agregar personas.
+
+**Otros controles y configuraciones:**
+- No se encontraron configuraciones asociadas.

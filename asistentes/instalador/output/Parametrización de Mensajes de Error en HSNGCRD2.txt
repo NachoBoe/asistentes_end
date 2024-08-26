@@ -1,0 +1,12 @@
+La funcionalidad detallada en el archivo se refiere a la parametrización de mensajes de error en el panel HSNGCRD2 del sistema Bantotal, permitiendo establecer controles de carga a través de una regla de negocios. Las variables que se pueden parametrizar incluyen información relacionada con documentos adicionales y divisiones administrativas, así como fechas relevantes.
+
+Las variables a parametrizar son las siguientes:
+
+- PAIS_DOC_ADIC: País del documento adicional
+- TIPO_DOC_ADIC: Tipo del documento adicional
+- NUM_DOC_ADIC: Número del documento adicional
+- DEPCOD: Código de primera división administrativa
+- LOCCOD: Código de segunda división administrativa
+- DOCFCHEMI: Fecha de emisión del documento
+- DOCFCHVTO: Fecha de vencimiento del documento
+- PEXTXT: Texto

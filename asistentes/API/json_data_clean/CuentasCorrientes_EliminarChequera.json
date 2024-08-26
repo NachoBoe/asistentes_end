@@ -1,0 +1,13 @@
+{
+    "id": 173,
+    "nombre": "EliminarChequera",
+    "descripcion": "Método para eliminar una chequera.",
+    "entrada": {
+        "chequeraId": {
+            "type": "number",
+            "description": "Identificador de la solicitud de chequera."
+        }
+    },
+    "salida": {},
+    "sistema": "CuentasCorrientes"
+}

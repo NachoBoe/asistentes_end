@@ -1,0 +1,66 @@
+{
+    "id": 97,
+    "nombre": "ObtenerPrestamos",
+    "descripcion": "Método para obtener un listado de los productos de préstamo de un cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "sdtProductosPrestamos": {
+            "type": "object",
+            "description": "Listado de préstamos.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "idOperacionFmt": {
+                    "type": "string",
+                    "description": "Identificador String (concatenación de algunos conceptos claves de la operación)."
+                },
+                "idOperacionBT": {
+                    "type": "string",
+                    "description": "Identificador String Bantotal (concatenación de todos los conceptos claves de la operación)."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre de producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel."
+                        }
+                    }
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Nombre de la sucursal."
+                },
+                "saldo": {
+                    "type": "number",
+                    "description": "Capital."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Descripción de estado."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

@@ -1,0 +1,6 @@
+- Opciones generales
+- Guías y Guías Especiales de proceso
+  - "Código": 2902, "Correlativo": 1, "Descripción": "Si se desea que los campos obligatorios aparezcan en rojo se debe dar de alta esta guía."
+  - "Código": 2902, "Correlativo": 150, "Descripción": "Se debe dar de alta esta guía y en tpnro ingresar un número que corresponde a la cantidad de días previos a la fecha de la tarea del ejecutivo/asesor con que se disparará la alerta al mismo. Si no está dada de alta, la alerta se muestra un día antes de la fecha de la tarea."
+
+Descripción general de la funcionalidad: El archivo detalla guías de proceso que permiten configurar aspectos visuales y de alerta en la plataforma Bantotal. Se pueden establecer campos obligatorios que se muestren en rojo y configurar alertas que notifiquen a los ejecutivos/asesores con un número específico de días de anticipación antes de la fecha de una tarea. Las configuraciones son opcionales y permiten personalizar la experiencia del usuario en la plataforma.

@@ -1,0 +1,40 @@
+{
+    "id": 509,
+    "nombre": "ObtenerTarjetaHabiente",
+    "descripcion": "Método para obtener el habiente de una tarjeta.",
+    "entrada": {
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de tarjeta de débito."
+        }
+    },
+    "salida": {
+        "sdtTarjetaHabiente": {
+            "type": "object",
+            "description": "Datos del titular de la tarjeta.",
+            "properties": {
+                "personaUId": {
+                    "type": "number",
+                    "description": "Identificador único de la persona."
+                },
+                "paisDocumento": {
+                    "type": "string",
+                    "description": "País del documento."
+                },
+                "tipoDocumento": {
+                    "type": "string",
+                    "description": "Tipo de documento."
+                },
+                "numeroDocumento": {
+                    "type": "string",
+                    "description": "Número de documento."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre de la persona."
+                }
+            }
+        }
+    },
+    "sistema": "TarjetasDeDebito"
+}

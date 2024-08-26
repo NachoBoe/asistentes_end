@@ -1,0 +1,17 @@
+{
+    "id": 515,
+    "nombre": "EliminarPerfil",
+    "descripcion": "Método para eliminar un perfil asociado a un usuario.",
+    "entrada": {
+        "usuario": {
+            "type": "string",
+            "description": "Identificador de usuario."
+        },
+        "perfil": {
+            "type": "string",
+            "description": "Identificador de perfil."
+        }
+    },
+    "salida": {},
+    "sistema": "Usuarios"
+}

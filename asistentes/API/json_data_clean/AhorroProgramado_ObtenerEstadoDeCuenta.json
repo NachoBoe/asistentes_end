@@ -1,0 +1,122 @@
+{
+    "id": 9,
+    "nombre": "ObtenerEstadoDeCuenta",
+    "descripcion": "Método para obtener el estado de cuenta del ahorro.",
+    "entrada": {
+        "ahorroUId": {
+            "type": "number",
+            "description": "Identificador único del ahorro."
+        },
+        "fechaDesde": {
+            "type": "string",
+            "description": "Fecha desde la cual se emite el estado de cuenta"
+        },
+        "fechaHasta": {
+            "type": "string",
+            "description": "Fecha hasta la cual se emite el estado de cuenta"
+        }
+    },
+    "salida": {
+        "sdtEstadoCuentaAhorro": {
+            "type": "object",
+            "description": "Estado de cuenta del ahorro.",
+            "properties": {
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador único del cliente."
+                },
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto."
+                },
+                "ahorroUId": {
+                    "type": "number",
+                    "description": "Identificador único del ahorro."
+                },
+                "fechaPróximoVencimiento": {
+                    "type": "string",
+                    "description": "Fecha del próximo vencimiento del ahorro."
+                },
+                "periodicidad": {
+                    "type": "number",
+                    "description": "Periodicidad del ahorro en días."
+                },
+                "díaIncremento": {
+                    "type": "number",
+                    "description": "Día en que se da el incremento."
+                },
+                "abonoActual": {
+                    "type": "number",
+                    "description": "Abono actual."
+                },
+                "intentosIncremento": {
+                    "type": "number",
+                    "description": "Intentos de incremento permitidos."
+                },
+                "periodosGraciaUtilizados": {
+                    "type": "number",
+                    "description": "Períodos de gracia utilizados."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Estado del ahorro."
+                },
+                "renueva": {
+                    "type": "string",
+                    "description": "¿Renueva? (S/N)."
+                },
+                "observacion": {
+                    "type": "string",
+                    "description": "Observación."
+                },
+                "operacionUIdOrigen": {
+                    "type": "number",
+                    "description": "Identificador único de la operación de origen."
+                },
+                "operacionUIdDestino": {
+                    "type": "number",
+                    "description": "Identificador único de la operación de destino."
+                },
+                "movimientos": {
+                    "type": "object",
+                    "description": "Listado de movimientos del ahorro.",
+                    "properties": {
+                        "saldoAhorro": {
+                            "type": "number",
+                            "description": "Saldo del ahorro."
+                        },
+                        "fecha": {
+                            "type": "string",
+                            "description": "Fecha de movimiento."
+                        },
+                        "intereses": {
+                            "type": "number",
+                            "description": "Intereses del movimiento."
+                        },
+                        "capital": {
+                            "type": "number",
+                            "description": "Capital de movimiento."
+                        },
+                        "concepto": {
+                            "type": "string",
+                            "description": "Concepto de movimiento."
+                        }
+                    }
+                },
+                "totalDepositado": {
+                    "type": "number",
+                    "description": "Saldo total depositado."
+                },
+                "totalInteresesAcreditados": {
+                    "type": "number",
+                    "description": "Total de intereses acreditados."
+                },
+                "totalInteresesGenerados": {
+                    "type": "number",
+                    "description": "Total de intereses generados."
+                }
+            }
+        }
+    },
+    "sistema": "AhorroProgramado"
+}

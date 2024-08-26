@@ -1,0 +1,9 @@
+La funcionalidad detallada en el archivo se refiere a la configuración de tipos de teléfonos dentro del sistema Bantotal. Esta configuración permite definir diferentes tipos de teléfonos que pueden ser utilizados en la plataforma, especificando características como el nombre del tipo, su descripción, estado y campos auxiliares.
+
+Los campos definidos son:
+
+- sngc16TTel: Tipo numérico (3.0) que representa el tipo de teléfono.
+- sngc16Dsc: Campo de texto (35) que proporciona una descripción del tipo de teléfono.
+- sngc16Est: Campo de texto (1) que indica el estado del tipo de teléfono.
+- sngc16Aux: Campo numérico (6.0) para información auxiliar.
+- sngc16Aux1: Campo de texto (60) para información auxiliar adicional.

@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la parametrización de las fuentes de ingreso en el sistema Bantotal. Este panel permite definir las diferentes fuentes de ingreso que se pueden seleccionar al momento del alta de un cliente, categorizando el tipo de persona y determinando si es aplicable a cada caso. Esto facilita la gestión de ingresos y la clasificación de los mismos según las características del cliente.
+
+No se encontraron configuraciones asociadas, tablas, reglas de negocio, programas particulares ni otros controles y configuraciones.

@@ -1,0 +1,146 @@
+{
+    "id": 291,
+    "nombre": "SimularPlazoFijo",
+    "descripcion": "Método para simular el alta de un préstamo plazo fijo para un crédito individual.",
+    "entrada": {
+        "sBTSimulacionPlazoFijo": {
+            "type": "object",
+            "description": "Datos de la simulación.",
+            "properties": {
+                "solicitudUId": {
+                    "type": "number",
+                    "description": "Identificador de instancia Workflow."
+                },
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador único de cliente."
+                },
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de Vencimiento (Obligatorio si no se carga plazo)."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo (Obligatorio si no se carga Fecha de Vencimiento)."
+                },
+                "monto": {
+                    "type": "number",
+                    "description": "Capital solicitado."
+                },
+                "pizarra": {
+                    "type": "number",
+                    "description": "Tipo de pizzarra. Si no se indica toma la preseteada para el producto."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa. Si no se indica toma la correspondiente al tipo de pizarra."
+                },
+                "destinoCredito": {
+                    "type": "number",
+                    "description": "Código de destino del crédito."
+                },
+                "datosAdicionales": {
+                    "type": "object",
+                    "description": "Importe otros conceptos.",
+                    "properties": {
+                        "concepto": {
+                            "type": "string",
+                            "description": "Concepto."
+                        },
+                        "valor": {
+                            "type": "number",
+                            "description": "Importe."
+                        },
+                        "texto": {
+                            "type": "string",
+                            "description": "Texto."
+                        }
+                    }
+                }
+            },
+            "required": [
+                "solicitudUId",
+                "clienteUId",
+                "productoUId",
+                "monto"
+            ]
+        }
+    },
+    "salida": {
+        "sdtSimulacion": {
+            "type": "object",
+            "description": "Datos del préstamo simulado.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del producto."
+                },
+                "capital": {
+                    "type": "number",
+                    "description": "Capital del préstamo."
+                },
+                "valorCuota": {
+                    "type": "number",
+                    "description": "Valor cuota."
+                },
+                "intereses": {
+                    "type": "number",
+                    "description": "Intereses."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa."
+                },
+                "tasaEfectiva": {
+                    "type": "number",
+                    "description": "Tasa efectiva."
+                },
+                "tasaEfectivaAnual": {
+                    "type": "number",
+                    "description": "Tasa efectiva anual."
+                },
+                "tasaNominalAnual": {
+                    "type": "number",
+                    "description": "Tasa nominal anual."
+                },
+                "totalPrestamo": {
+                    "type": "number",
+                    "description": "Total a pagar."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha valor."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento."
+                },
+                "fechaPrimerPago": {
+                    "type": "string",
+                    "description": "Fecha de primer pago."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo."
+                },
+                "otrosConceptos": {
+                    "type": "object",
+                    "description": "Importe otros conceptos."
+                },
+                "cronograma": {
+                    "type": "object",
+                    "description": "Cronograma del préstamo."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

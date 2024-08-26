@@ -1,0 +1,19 @@
+La funcionalidad detallada en el archivo se refiere a la parametrización de domicilios inhabilitados en el sistema Bantotal. Esta configuración permite que, al cargar ciertos parámetros desde el panel de 'Mantenimiento de Programas Particulares por Cliente', se habilite la visualización del campo ‘¿Habilitado?’ en el panel de 'Mantenimiento de Domicilios'. Esto facilita la gestión y control de domicilios y teléfonos asociados a los clientes, permitiendo identificar cuáles están habilitados o inhabilitados.
+
+**Opciones generales**
+- No se especifican opciones generales en el texto proporcionado.
+
+**Guías y Guías Especiales de proceso**
+- No se especifican guías o guías especiales en el texto proporcionado.
+
+**Reglas de negocio**
+- No se especifican reglas de negocio en el texto proporcionado.
+
+**Programas particulares**
+- No se especifican programas particulares en el texto proporcionado.
+
+**Tablas**
+- No se especifican tablas en el texto proporcionado.
+
+**Otros controles y configuraciones**
+- No se especifican otros controles o configuraciones en el texto proporcionado.

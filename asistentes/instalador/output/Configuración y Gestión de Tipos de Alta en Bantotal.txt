@@ -1,0 +1,15 @@
+- Opciones generales: 
+  - Tipos de Alta válidos: Normal y Reducida.
+
+- Guías y Guías Especiales de proceso:
+  - ("Codigo": 2029 , "Correlativo": 983)
+
+- Reglas de negocio:
+  - Regla de Negocio 500: Condiciona la visualización de la categoría 'Actividad Laboral' para el tipo de alta "Reducida".
+
+- Otros controles y configuraciones:
+  - La variable TIPO_ALTA se utiliza para definir el comportamiento de la visualización de campos, donde el Valor 2 corresponde a tipo de alta “Reducida”.
+  - Se condiciona la inhabilitación del panel de FATCA en el Alta Reducida.
+
+Descripción general de la funcionalidad:
+El archivo detalla la gestión de los tipos de alta en la plataforma Bantotal, permitiendo la administración de altas normales y reducidas. La configuración de los campos a visualizar para el alta reducida se realiza mediante Reglas de Negocio, que permiten ocultar o mostrar información específica según el tipo de alta seleccionado. Además, se menciona que el tipo de alta no afecta la cantidad de paneles solicitados.

@@ -1,0 +1,50 @@
+{
+    "id": 264,
+    "nombre": "BuscarCliente",
+    "descripcion": "Método para buscar una persona y sus cuentas cliente.",
+    "entrada": {
+        "paisDocumentoId": {
+            "type": "number",
+            "description": "Identificador del país de origen del documento."
+        },
+        "tipoDocumentoId": {
+            "type": "number",
+            "description": "Identificador del tipo de documento."
+        },
+        "numeroDocumento": {
+            "type": "string",
+            "description": "Número de documento de la persona."
+        }
+    },
+    "salida": {
+        "sdtCuentas": {
+            "type": "object",
+            "description": "Listado de cuentas de la persona.",
+            "properties": {
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador único de cuenta."
+                },
+                "titularidad": {
+                    "type": "object",
+                    "description": "Tipo de integrante.",
+                    "properties": {
+                        "identificador": {
+                            "type": "number",
+                            "description": "Identificador del integrante."
+                        },
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción del integrante."
+                        }
+                    }
+                },
+                "representativo": {
+                    "type": "string",
+                    "description": "Indica si es titular representativo (S/N)."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

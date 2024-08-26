@@ -1,0 +1,48 @@
+{
+    "id": 167,
+    "nombre": "AsignarIdChequeElectronico",
+    "descripcion": "Método para asignar Id a un cheque electrónico.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación de subcuenta."
+        },
+        "numeroCheque": {
+            "type": "number",
+            "description": "Numero de cheque electrónico."
+        },
+        "chequeElectronicoId": {
+            "type": "string",
+            "description": "Identificador de cheque electrónico."
+        }
+    },
+    "salida": {
+        "listaCheques": {
+            "type": "object",
+            "description": "Lista de cheques.",
+            "properties": {
+                "numeroChequera": {
+                    "type": "number",
+                    "description": "Numero de chequera electrónica."
+                },
+                "numeroCheque": {
+                    "type": "number",
+                    "description": "Numero de cheque electrónico."
+                },
+                "importe": {
+                    "type": "number",
+                    "description": "Importe."
+                },
+                "beneficiario": {
+                    "type": "string",
+                    "description": "Nombre del beneficiario."
+                },
+                "CMC7": {
+                    "type": "number",
+                    "description": "Identificador CMC7 de cheque electrónico."
+                }
+            }
+        }
+    },
+    "sistema": "CuentasCorrientes"
+}

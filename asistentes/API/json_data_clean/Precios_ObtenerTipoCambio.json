@@ -1,0 +1,38 @@
+{
+    "id": 407,
+    "nombre": "ObtenerTipoCambio",
+    "descripcion": "Método que toma un monto en una determinada moneda origen y lo convierte a una moneda destino, devolviendo los tipos de cambio de ambas monedas.",
+    "entrada": {
+        "monedaOrigen": {
+            "type": "number",
+            "description": "Identificador de moneda origen."
+        },
+        "monedaDestino": {
+            "type": "number",
+            "description": "Identificador de moneda destino."
+        },
+        "montoOrigen": {
+            "type": "number",
+            "description": "Monto a convertir."
+        },
+        "tipoCotizacion": {
+            "type": "string",
+            "description": "Tipo de cotización ('C': Compra, 'V': Venta)."
+        }
+    },
+    "salida": {
+        "precioOrigen": {
+            "type": "number",
+            "description": "Tipo de cambio de la moneda origen respecto a moneda nacional."
+        },
+        "precioDestino": {
+            "type": "number",
+            "description": "Tipo de cambio de la moneda destino respecto a moneda nacional."
+        },
+        "montoDestino": {
+            "type": "number",
+            "description": "Monto origen convertido a moneda destino."
+        }
+    },
+    "sistema": "Precios"
+}

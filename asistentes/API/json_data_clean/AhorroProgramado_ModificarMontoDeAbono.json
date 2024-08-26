@@ -1,0 +1,21 @@
+{
+    "id": 5,
+    "nombre": "ModificarMontoDeAbono",
+    "descripcion": "Método para modificar el monto del abono para el ahorro.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "ahorroUId": {
+            "type": "number",
+            "description": "Identificador único de operación de ahorro."
+        },
+        "montoAbono": {
+            "type": "number",
+            "description": "Nuevo monto de abono para el ahorro."
+        }
+    },
+    "salida": {},
+    "sistema": "AhorroProgramado"
+}

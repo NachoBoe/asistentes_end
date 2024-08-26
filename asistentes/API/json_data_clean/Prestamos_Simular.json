@@ -1,0 +1,170 @@
+{
+    "id": 479,
+    "nombre": "Simular",
+    "descripcion": "Método para simular el alta de un préstamo amortizable.",
+    "entrada": {
+        "sdtPrestamo": {
+            "type": "object",
+            "description": "Datos de la simulación.",
+            "properties": {
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador único de cliente."
+                },
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto."
+                },
+                "fechaPrimerPago": {
+                    "type": "string",
+                    "description": "Fecha de primer pago."
+                },
+                "cantidadCuotas": {
+                    "type": "number",
+                    "description": "Cantidad de cuotas."
+                },
+                "periodoCuotas": {
+                    "type": "number",
+                    "description": "Periodo entre las cuotas."
+                },
+                "monto": {
+                    "type": "number",
+                    "description": "Capital solicitado."
+                },
+                "pizarra": {
+                    "type": "number",
+                    "description": "Tipo de pizzarra."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa."
+                },
+                "actividad": {
+                    "type": "number",
+                    "description": "Código de actividad (Destino del crédito)."
+                }
+            },
+            "required": [
+                "clienteUId",
+                "productoUId",
+                "cantidadCuotas",
+                "monto"
+            ]
+        }
+    },
+    "salida": {
+        "sdtSimulacion": {
+            "type": "object",
+            "description": "Datos del préstamo simulado.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre de producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel."
+                        }
+                    }
+                },
+                "capital": {
+                    "type": "number",
+                    "description": "Capital del préstamo."
+                },
+                "valorCuota": {
+                    "type": "number",
+                    "description": "Valor cuota."
+                },
+                "intereses": {
+                    "type": "number",
+                    "description": "Intereses."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa."
+                },
+                "tasaEfectiva": {
+                    "type": "number",
+                    "description": "Tasa efectiva."
+                },
+                "tasaEfectivaAnual": {
+                    "type": "number",
+                    "description": "Tasa efectiva anual."
+                },
+                "tasaNominalAnual": {
+                    "type": "number",
+                    "description": "Tasa nominal anual."
+                },
+                "totalPrestamo": {
+                    "type": "number",
+                    "description": "Total a pagar."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha valor."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento."
+                },
+                "fechaPrimerPago": {
+                    "type": "string",
+                    "description": "Fecha de primer pago."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo del préstamo."
+                },
+                "otrosConceptos": {
+                    "type": "object",
+                    "description": "Otros conceptos.",
+                    "properties": {
+                        "concepto": {
+                            "type": "string",
+                            "description": "Concepto."
+                        },
+                        "valor": {
+                            "type": "number",
+                            "description": "Importe."
+                        },
+                        "texto": {
+                            "type": "string",
+                            "description": "Texto."
+                        }
+                    }
+                },
+                "cronograma": {
+                    "type": "object",
+                    "description": "Cronograma del préstamo.",
+                    "properties": {
+                        "fechaPago": {
+                            "type": "string",
+                            "description": "Fecha de pago de la cuota."
+                        },
+                        "importe": {
+                            "type": "number",
+                            "description": "Importe de la cuota."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

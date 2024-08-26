@@ -1,0 +1,44 @@
+{
+    "id": 213,
+    "nombre": "ObtenerFacultades",
+    "descripcion": "Método para obtener una lista de las facultades de una cuenta vista.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        }
+    },
+    "salida": {
+        "sdtFacultades": {
+            "type": "object",
+            "description": "Listado de datos de facultades.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción."
+                },
+                "tipo": {
+                    "type": "string",
+                    "description": "Tipo."
+                },
+                "grupos": {
+                    "type": "object",
+                    "description": "Listado de grupos de la facultad."
+                },
+                "firmantes": {
+                    "type": "object",
+                    "description": "Listado de firmantes de la facultad."
+                }
+            }
+        },
+        "sdtFirmantes": {
+            "type": "object",
+            "description": "Listado de datos de firmantes."
+        }
+    },
+    "sistema": "CuentasVista"
+}

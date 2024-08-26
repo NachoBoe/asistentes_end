@@ -1,0 +1,46 @@
+{
+    "id": 404,
+    "nombre": "ObtenerTasaOperacion",
+    "descripcion": "Método que devuelve la tasa de la operación junto con la fecha de vigencia.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador de operación."
+        },
+        "fecha": {
+            "type": "string",
+            "description": "Fecha de consulta."
+        },
+        "importe": {
+            "type": "number",
+            "description": "Importe."
+        },
+        "plazo": {
+            "type": "number",
+            "description": "Plazo."
+        }
+    },
+    "salida": {
+        "tipoTasa": {
+            "type": "string",
+            "description": "Tipo de tasa."
+        },
+        "tasa": {
+            "type": "number",
+            "description": "Tasa."
+        },
+        "tasaMinima": {
+            "type": "number",
+            "description": "Tasa mínima."
+        },
+        "tasaMaxima": {
+            "type": "number",
+            "description": "Tasa máxima."
+        },
+        "fechaVigencia": {
+            "type": "string",
+            "description": "Fecha de vigencia"
+        }
+    },
+    "sistema": "Precios"
+}

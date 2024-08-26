@@ -1,0 +1,17 @@
+{
+    "id": 495,
+    "nombre": "Denunciar",
+    "descripcion": "Método para denunciar una tarjeta de débito y darla de baja.",
+    "entrada": {
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de tarjeta."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {},
+    "sistema": "TarjetasDeDebito"
+}

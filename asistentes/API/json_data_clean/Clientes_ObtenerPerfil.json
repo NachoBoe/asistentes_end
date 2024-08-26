@@ -1,0 +1,164 @@
+{
+    "id": 90,
+    "nombre": "ObtenerPerfil",
+    "descripcion": "Método para obtener los datos de la persona titular de una cuenta cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "sCTPersona": {
+            "type": "object",
+            "description": "Datos de cliente.",
+            "properties": {
+                "profesion": {
+                    "type": "string",
+                    "description": "Profesión."
+                },
+                "estadoCivil": {
+                    "type": "string",
+                    "description": "Estado civil."
+                },
+                "domicilio": {
+                    "type": "object",
+                    "description": "Datos de domicilio.",
+                    "properties": {
+                        "localidad": {
+                            "type": "string",
+                            "description": "Localidad del domicilio."
+                        },
+                        "departamento": {
+                            "type": "string",
+                            "description": "Departamento del domicilio."
+                        },
+                        "direccion": {
+                            "type": "string",
+                            "description": "Dirección."
+                        },
+                        "pais": {
+                            "type": "string",
+                            "description": "País del domicilio."
+                        },
+                        "barrio": {
+                            "type": "string",
+                            "description": "Barrio."
+                        },
+                        "propietario": {
+                            "type": "string",
+                            "description": "Propietario del domicilio."
+                        },
+                        "longitud": {
+                            "type": "number",
+                            "description": "Longitud del domicilio."
+                        },
+                        "zona": {
+                            "type": "string",
+                            "description": "Zona del domicilio."
+                        },
+                        "codPostal": {
+                            "type": "string",
+                            "description": "Código postal."
+                        },
+                        "latitud": {
+                            "type": "number",
+                            "description": "Latitud del domicilio."
+                        }
+                    }
+                },
+                "fechaNacimiento": {
+                    "type": "string",
+                    "description": "Fecha de nacimiento."
+                },
+                "apellidos": {
+                    "type": "string",
+                    "description": "Apellidos."
+                },
+                "personaUId": {
+                    "type": "number",
+                    "description": "Identificador único de persona."
+                },
+                "sexo": {
+                    "type": "string",
+                    "description": "Sexo (M/F)."
+                },
+                "actividad": {
+                    "type": "string",
+                    "description": "Actividad laboral."
+                },
+                "telefono": {
+                    "type": "string",
+                    "description": "Teléfono."
+                },
+                "ingresoMensual": {
+                    "type": "number",
+                    "description": "Ingreso mensual."
+                },
+                "email": {
+                    "type": "string",
+                    "description": "Correo electrónico."
+                },
+                "ocupacion": {
+                    "type": "string",
+                    "description": "Ocupación de la persona."
+                },
+                "hijos": {
+                    "type": "number",
+                    "description": "Cantidad de hijos."
+                },
+                "documento": {
+                    "type": "object",
+                    "description": "Datos del documento.",
+                    "properties": {
+                        "tipoDocumento": {
+                            "type": "string",
+                            "description": "Tipo del documento."
+                        },
+                        "fechaVencimiento": {
+                            "type": "string",
+                            "description": "Fecha de vencimiento del documento."
+                        },
+                        "nombreTipoDocumento": {
+                            "type": "string",
+                            "description": "Nombre del tipo de documento."
+                        },
+                        "nroDocumento": {
+                            "type": "string",
+                            "description": "Número de documento."
+                        },
+                        "pais": {
+                            "type": "string",
+                            "description": "País del documento."
+                        }
+                    }
+                },
+                "nacionalidad": {
+                    "type": "string",
+                    "description": "Nacionalidad."
+                },
+                "celular": {
+                    "type": "string",
+                    "description": "Celular."
+                },
+                "antiguedadLaboral": {
+                    "type": "number",
+                    "description": "Antigüedad laboral."
+                },
+                "nivelEducativo": {
+                    "type": "string",
+                    "description": "Nivel de educación."
+                },
+                "nombres": {
+                    "type": "string",
+                    "description": "Nombres."
+                },
+                "otrosIngresos": {
+                    "type": "number",
+                    "description": "Otros ingresos."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

@@ -1,0 +1,9 @@
+La funcionalidad detallada en el archivo se refiere al almacenamiento de correos y comentarios asociados en el sistema Bantotal. Se especifica que se utilizan los siguientes campos:
+
+- **Correlativo (Pexren)**: Identificador único para cada entrada.
+- **Correo (Pextxt)**: Campo donde se almacena el correo electrónico.
+- **Comentario (Pextxt)**: Campo donde se almacena un comentario relacionado con el correo.
+
+Se aclara que ambos, el correo y el comentario, se almacenan en el mismo campo (Pextxt) con el código de texto 0. Esto sugiere que el sistema permite la asociación de un comentario a un correo, facilitando la gestión de la información relacionada con la comunicación.
+
+Las posibilidades que se admiten incluyen el almacenamiento de múltiples correos y comentarios, lo que permite una gestión más eficiente de la información en el contexto bancario.

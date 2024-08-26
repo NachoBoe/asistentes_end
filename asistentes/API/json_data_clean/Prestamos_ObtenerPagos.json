@@ -1,0 +1,44 @@
+{
+    "id": 452,
+    "nombre": "ObtenerPagos",
+    "descripcion": "Método para obtener el detalle de pagos de una cuota de préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación del préstamo."
+        },
+        "fechaHasta": {
+            "type": "string",
+            "description": "Fecha hasta la cual buscar pagos."
+        },
+        "fechaDesde": {
+            "type": "string",
+            "description": "Fecha desde la cual buscar pagos."
+        }
+    },
+    "salida": {
+        "sdtPagos": {
+            "type": "object",
+            "description": "Listado de pagos del préstamo.",
+            "properties": {
+                "fecha": {
+                    "type": "string",
+                    "description": "Fecha de pago."
+                },
+                "importe": {
+                    "type": "number",
+                    "description": "Importe pagado."
+                },
+                "operacionUIdCobro": {
+                    "type": "number",
+                    "description": "Identificador único de la operación de cobro."
+                },
+                "movimientoUId": {
+                    "type": "number",
+                    "description": "Identificador único del movimiento."
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

@@ -1,0 +1,33 @@
+{
+    "id": 198,
+    "nombre": "ActualizarDocumentoDigital",
+    "descripcion": "Método para actualizar un documento digital de la operación recibida.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "documentoId": {
+            "type": "number",
+            "description": "Identificador del documento digital."
+        },
+        "nombre": {
+            "type": "string",
+            "description": "Nombre del documento."
+        },
+        "archivoCodificado": {
+            "type": "string",
+            "description": "Archivo a asociar codificado en Base 64."
+        },
+        "fechaEmision": {
+            "type": "string",
+            "description": "Fecha de emisión del documento (en caso que corresponda)."
+        },
+        "fechaVencimiento": {
+            "type": "string",
+            "description": "Fecha de emisión del documento (en caso que corresponda)."
+        }
+    },
+    "salida": {},
+    "sistema": "CuentasVista"
+}

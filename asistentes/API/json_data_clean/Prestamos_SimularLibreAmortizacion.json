@@ -1,0 +1,228 @@
+{
+    "id": 474,
+    "nombre": "SimularLibreAmortizacion",
+    "descripcion": "Método para simular el alta de un préstamo libre amortizacion.",
+    "entrada": {
+        "sdtPrestamo": {
+            "type": "object",
+            "description": "Datos de la simulación.",
+            "properties": {
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador único de cliente."
+                },
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto."
+                },
+                "cantidadCuotas": {
+                    "type": "number",
+                    "description": "Cantidad de cuotas del préstamo."
+                },
+                "periodoCuotas": {
+                    "type": "number",
+                    "description": "Período entre vencimiento de cada cuota."
+                },
+                "monto": {
+                    "type": "number",
+                    "description": "Capital solicitado."
+                },
+                "pizarra": {
+                    "type": "number",
+                    "description": "Tipo de pizzarra."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa."
+                },
+                "actividad": {
+                    "type": "number",
+                    "description": "Código de actividad (Destino del crédito)."
+                },
+                "cuotasCapital": {
+                    "type": "object",
+                    "description": "Cuotas de capital.",
+                    "properties": {
+                        "fechaPago": {
+                            "type": "string",
+                            "description": "Fecha de pago de la cuota"
+                        },
+                        "importe": {
+                            "type": "number",
+                            "description": "Importe de la cuota"
+                        }
+                    }
+                },
+                "cuotasInteres": {
+                    "type": "object",
+                    "description": "Cuotas de intereses.",
+                    "properties": {
+                        "fechaPago": {
+                            "type": "string",
+                            "description": "Fecha de pago de la cuota"
+                        },
+                        "importe": {
+                            "type": "number",
+                            "description": "Importe de la cuota"
+                        }
+                    }
+                }
+            },
+            "required": [
+                "clienteUId",
+                "productoUId"
+            ]
+        },
+        "generaCuotaInteres": {
+            "type": "string",
+            "description": "Indica si se generan cuotas de intereses. [Hidden: Valores 'S'/'N']."
+        }
+    },
+    "salida": {
+        "sdtSimulacion": {
+            "type": "object",
+            "description": "Datos del préstamo simulado.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto"
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre de producto"
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda"
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel"
+                        }
+                    }
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha valor."
+                },
+                "fechaPrimerPago": {
+                    "type": "string",
+                    "description": "Fecha de primer pago."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento."
+                },
+                "capital": {
+                    "type": "number",
+                    "description": "Capital del préstamo."
+                },
+                "intereses": {
+                    "type": "number",
+                    "description": "Intereses."
+                },
+                "impuestos": {
+                    "type": "number",
+                    "description": "Impuestos."
+                },
+                "comisiones": {
+                    "type": "number",
+                    "description": "Comisiones."
+                },
+                "totalPrestamo": {
+                    "type": "number",
+                    "description": "Total a pagar."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa."
+                },
+                "tasaEfectiva": {
+                    "type": "number",
+                    "description": "Tasa efectiva."
+                },
+                "tasaEfectivaAnual": {
+                    "type": "number",
+                    "description": "Tasa efectiva anual."
+                },
+                "tasaNominalAnual": {
+                    "type": "number",
+                    "description": "Tasa nominal anual."
+                },
+                "otrosConceptos": {
+                    "type": "object",
+                    "description": "Importe otros conceptos.",
+                    "properties": {
+                        "concepto": {
+                            "type": "string",
+                            "description": "Concepto."
+                        },
+                        "valor": {
+                            "type": "number",
+                            "description": "Importe."
+                        },
+                        "texto": {
+                            "type": "string",
+                            "description": "Texto."
+                        }
+                    }
+                },
+                "cronograma": {
+                    "type": "object",
+                    "description": "Cronograma del préstamo.",
+                    "properties": {
+                        "fechaPago": {
+                            "type": "string",
+                            "description": "Fecha de pago."
+                        },
+                        "tipoCuota": {
+                            "type": "string",
+                            "description": "Tipo de la cuota (Capital/Interés)."
+                        },
+                        "concepto": {
+                            "type": "string",
+                            "description": "Concepto."
+                        },
+                        "capital": {
+                            "type": "number",
+                            "description": "Monto de capital en la cuota."
+                        },
+                        "interes": {
+                            "type": "number",
+                            "description": "Monto de intereses en la cuota."
+                        },
+                        "seguros": {
+                            "type": "number",
+                            "description": "Monto de seguros en la cuota."
+                        },
+                        "impuestos": {
+                            "type": "number",
+                            "description": "Monto de impuestos en la cuota."
+                        },
+                        "otrosConceptos": {
+                            "type": "number",
+                            "description": "Importe correspondiente a otros conceptos."
+                        },
+                        "cuota": {
+                            "type": "number",
+                            "description": "Importe total de la cuota."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

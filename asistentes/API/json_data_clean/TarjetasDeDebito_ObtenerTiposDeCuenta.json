@@ -1,0 +1,23 @@
+{
+    "id": 512,
+    "nombre": "ObtenerTiposDeCuenta",
+    "descripcion": "Método para obtener los tipos de cuenta de tarjetas de débito ingresados en el sistema.",
+    "entrada": {},
+    "salida": {
+        "sdtTiposDeCuenta": {
+            "type": "object",
+            "description": "Listado de tipos de cuenta.",
+            "properties": {
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripcion del tipo de cuenta."
+                },
+                "codigo": {
+                    "type": "integer",
+                    "description": "Código del tipo de cuenta."
+                }
+            }
+        }
+    },
+    "sistema": "TarjetasDeDebito"
+}

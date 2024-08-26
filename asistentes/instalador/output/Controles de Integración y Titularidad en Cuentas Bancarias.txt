@@ -1,0 +1,13 @@
+- Opciones generales:
+  - Código: 99992, Valor: 'S' - Controla que las personas que van a integrar una cuenta cliente tengan definida una condición impositiva.
+  - Código: 1254, Valor: 'S' - Controla que las personas que van a integrar una cuenta cliente tengan asociado un domicilio legal al momento de asociarlo a la cuenta.
+  - Código: 1044, Valor: 'S' - Controla que las personas que van a integrar una cuenta cliente no se encuentren en lista de inhabilitados.
+  - Código: 434, Valor: 'S' - Debe estar definido para el control de inhabilitados.
+  - Código: 601, Valor: 'S' - Controla que las personas que van a integrar una cuenta cliente no se encuentren en lista de control de Banco Central (CHU010).
+
+- Guías y Guías Especiales de proceso:
+  - Código: 8692, Correlativo: 1, Valor: 1 - Define el código de impuesto a considerar para el control.
+  - Código: 2029, Correlativo: 986 - Obtiene el código de domicilio legal.
+
+Descripción general de la funcionalidad:
+El archivo detalla los controles y configuraciones del sistema Bantotal para la generación de cuentas en la plataforma bancaria. Se establece que, por defecto, no se puede generar más de una cuenta con la misma integración, aunque existe la posibilidad de obviar este control mediante un programa particular. Además, se especifican diversas validaciones que deben cumplirse al integrar personas a una cuenta cliente, como la definición de condiciones impositivas, la asociación de un domicilio legal, la verificación de listas de inhabilitados y el control de listas del Banco Central.

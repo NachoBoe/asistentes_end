@@ -1,0 +1,23 @@
+{
+    "id": 125,
+    "nombre": "ObtenerEjecutivos",
+    "descripcion": "Método para obtener un listado de los ejecutivos ingresados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtEjecutivos": {
+            "type": "object",
+            "description": "Listado de ejecutivos.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador del ejecutivo."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Descripcion de ejecutivo."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

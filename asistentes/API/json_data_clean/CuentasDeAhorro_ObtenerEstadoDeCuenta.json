@@ -1,0 +1,112 @@
+{
+    "id": 194,
+    "nombre": "ObtenerEstadoDeCuenta",
+    "descripcion": "Método para obtener el estado de cuenta de un producto cuenta de ahorro.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "cantidadDias": {
+            "type": "number",
+            "description": "Cantidad de días para atrás."
+        },
+        "cantidadMovimientos": {
+            "type": "number",
+            "description": "Cantidad de movimientos."
+        }
+    },
+    "salida": {
+        "sdtEstadoDeCuenta": {
+            "type": "object",
+            "description": "Datos de estado de cuenta.",
+            "properties": {
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto."
+                },
+                "fechaDesde": {
+                    "type": "string",
+                    "description": "Fecha desde la cual se emite el estado de cuenta."
+                },
+                "fechaHasta": {
+                    "type": "string",
+                    "description": "Fecha hasta la cual se emite el estado de cuenta."
+                },
+                "saldoPartida": {
+                    "type": "number",
+                    "description": "Saldo inicial."
+                },
+                "movimientos": {
+                    "type": "object",
+                    "description": "Datos de movimiento.",
+                    "properties": {
+                        "movimientoUId": {
+                            "type": "number",
+                            "description": "Identificador único de movimiento."
+                        },
+                        "fecha": {
+                            "type": "string",
+                            "description": "Fecha de movimiento."
+                        },
+                        "hora": {
+                            "type": "string",
+                            "description": "Hora de movimiento."
+                        },
+                        "concepto": {
+                            "type": "string",
+                            "description": "Concepto de movimiento."
+                        },
+                        "referencia": {
+                            "type": "string",
+                            "description": "Referencia."
+                        },
+                        "numeroCheque": {
+                            "type": "number",
+                            "description": "Número de cheque."
+                        },
+                        "debitoCredito": {
+                            "type": "string",
+                            "description": "Débito o Crédito (D/C)."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        },
+                        "importe": {
+                            "type": "number",
+                            "description": "Importe de movimiento."
+                        },
+                        "tipoCambio": {
+                            "type": "number",
+                            "description": "Tipo de cambio de moneda."
+                        },
+                        "arbitraje": {
+                            "type": "number",
+                            "description": "Arbitraje de moneda."
+                        },
+                        "saldo": {
+                            "type": "number",
+                            "description": "Saldo de cuenta vista."
+                        },
+                        "datosAdicionales": {
+                            "type": "object",
+                            "description": "Listado de datos adicionales.",
+                            "properties": {
+                                "detalle": {
+                                    "type": "string",
+                                    "description": "Detalle de dato adicional."
+                                }
+                            }
+                        },
+                        "ordinal": {
+                            "type": "number",
+                            "description": "Número de ordinal."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "CuentasDeAhorro"
+}

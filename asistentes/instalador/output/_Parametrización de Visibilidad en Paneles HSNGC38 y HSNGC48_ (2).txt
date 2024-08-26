@@ -1,0 +1,20 @@
+La funcionalidad detallada en el archivo se refiere a la parametrización de los paneles HSNGC38 y HSNGC48 en la plataforma Bantotal, permitiendo la configuración de la visibilidad de campos y descripciones a mostrar. Los elementos de la interfaz, como botones y campos, pueden ser ajustados según reglas de negocio o perfiles específicos, lo que proporciona flexibilidad en la presentación de la información.
+
+Opciones generales:
+- Panel HSNGC38: Acceso para seleccionar el programa de referencia y parametrizar la visibilidad de los campos.
+- Panel HSNGC48: Configuración de campos y botones relacionados con la integración de cuentas.
+
+Guías y Guías Especiales de proceso:
+(No se encontraron configuraciones asociadas)
+
+Reglas de negocio:
+(No se encontraron configuraciones asociadas)
+
+Programas particulares:
+(No se encontraron configuraciones asociadas)
+
+Tablas:
+(No se encontraron tablas asociadas)
+
+Otros controles y configuraciones:
+(No se encontraron configuraciones asociadas)

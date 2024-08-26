@@ -1,0 +1,38 @@
+{
+    "id": 458,
+    "nombre": "PagarCuotaAFecha",
+    "descripcion": "Método para realizar el pago de cuota de un préstamo a una fecha valor.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación simulada."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "importe": {
+            "type": "number",
+            "description": "Importe a pagar."
+        },
+        "operacionUId_cobro": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta vista de donde se cobrará el préstamo."
+        },
+        "referencia": {
+            "type": "string",
+            "description": "Referencia."
+        },
+        "fecha": {
+            "type": "string",
+            "description": "Fecha Valor del pago."
+        }
+    },
+    "salida": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento [Asiento]."
+        }
+    },
+    "sistema": "Prestamos"
+}

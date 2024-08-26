@@ -1,0 +1,22 @@
+{
+    "id": 151,
+    "nombre": "AnularMovimiento",
+    "descripcion": "Método para anular un movimiento.",
+    "entrada": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento."
+        },
+        "fecha": {
+            "type": "string",
+            "description": "Fecha de anulacion."
+        }
+    },
+    "salida": {
+        "movimientoUIdAnulacion": {
+            "type": "number",
+            "description": "Identificador único de la anulación de movimiento."
+        }
+    },
+    "sistema": "Contabilidad"
+}

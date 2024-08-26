@@ -1,0 +1,7 @@
+La funcionalidad detallada en el archivo se refiere a la configuración de tipos de documentos dentro del sistema Bantotal. Se especifican los parámetros que definen cada tipo de documento, incluyendo su código, nombre, validez y si está destinado a instituciones financieras. Las posibilidades que se admiten incluyen la definición de diferentes tipos de documentos que pueden ser utilizados en el sistema, permitiendo así una gestión adecuada de la documentación bancaria.
+
+- Opciones generales:
+  - Tdocum: N(2) - T/docum.
+  - Tdnom: C(20) - Nombre Tip. Doc.
+  - Tdtval: C(1) - Tipo valido
+  - Tdifi: C(1) - Es para inst financiera?

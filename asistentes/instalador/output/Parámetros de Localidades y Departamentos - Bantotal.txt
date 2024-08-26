@@ -1,0 +1,9 @@
+La funcionalidad detallada en el archivo se refiere a la gestión de localidades dentro del sistema Bantotal, específicamente en la segunda división administrativa. Este archivo permite almacenar y gestionar información relacionada con las localidades de un país, incluyendo su código, nombre, características telefónicas y códigos postales. Las posibilidades que se admiten incluyen la identificación y clasificación de localidades por país y departamento, facilitando así la organización y acceso a datos geográficos relevantes para la operación bancaria.
+
+**Descripción de los campos:**
+- **País**: Código del país (N, 3.0)
+- **DepCod**: Código del departamento (N, 5.0)
+- **LocCod**: Código de la localidad (N, 5.0)
+- **LocNom**: Nombre de la localidad (C, 30)
+- **LocTel**: Característica telefónica (N, 9.0)
+- **LocPos**: Característica del código postal (C, 10)

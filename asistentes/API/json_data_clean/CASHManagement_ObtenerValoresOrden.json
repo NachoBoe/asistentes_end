@@ -1,0 +1,46 @@
+{
+    "id": 44,
+    "nombre": "ObtenerValoresOrden",
+    "descripcion": "Método para obtener los valores de los campos Cash recibidos como parametros, si la coleccion se ingresa vacia entonces se devuelven todos los valores.",
+    "entrada": {
+        "ordenId": {
+            "type": "number",
+            "description": "Identificador de orden CASH."
+        },
+        "numeroLineaOrden": {
+            "type": "number",
+            "description": "Numero de línea de orden CASH."
+        },
+        "camposCash": {
+            "type": "object",
+            "description": "Lista de campos CASH a devolver valor.",
+            "properties": {
+                "tag": {
+                    "type": "string",
+                    "description": "Tag del campo CASH."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor del campo CASH."
+                }
+            }
+        }
+    },
+    "salida": {
+        "valoresCamposCash": {
+            "type": "object",
+            "description": "Lista de valores de campos CASH.",
+            "properties": {
+                "tag": {
+                    "type": "string",
+                    "description": "Tag del campo CASH."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor del campo CASH."
+                }
+            }
+        }
+    },
+    "sistema": "CASHManagement"
+}

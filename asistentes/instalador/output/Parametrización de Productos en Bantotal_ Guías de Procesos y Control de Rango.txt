@@ -1,0 +1,14 @@
+La funcionalidad detallada en el archivo permite administrar la parametrización original del producto en el sistema Bantotal. A través de un panel de detalle, se pueden modificar registros específicos, donde se pueden establecer parámetros como el país de aplicación del documento, largo mínimo y máximo, formato (numérico o alfanumérico) y control de rango (mínimo y máximo). 
+
+- Opciones generales:
+  - País: indica si el documento aplica o no para el país de origen. Actualiza FST014.
+  - Largo mínimo / máximo.
+  - Formato: Numérico / alfanumérico.
+  - Control de rango: Mínimo / máximo.
+
+- Guías y Guías Especiales de proceso:
+  - Guía de Procesos Nº 2094
+  - Guía Especial de Procesos Nº 1196
+
+- Reglas de negocio:
+  - El control de rango no se realiza si se define en la Guía de Procesos 2094 el tipo de documento como alfanumérico.

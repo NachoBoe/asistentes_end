@@ -1,0 +1,27 @@
+{
+    "id": 141,
+    "nombre": "ObtenerTiposDeActividad",
+    "descripcion": "Método para obtener tipos de actividad.",
+    "entrada": {},
+    "salida": {
+        "sdtActividades": {
+            "type": "object",
+            "description": "Listado de actividades.",
+            "properties": {
+                "identificador": {
+                    "type": "integer",
+                    "description": "Identificador de actividad."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de actividad."
+                },
+                "identificadorEntidadReguladora": {
+                    "type": "number",
+                    "description": "Identificador de entidad reguladora."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

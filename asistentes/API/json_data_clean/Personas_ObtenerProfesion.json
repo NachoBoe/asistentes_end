@@ -1,0 +1,32 @@
+{
+    "id": 378,
+    "nombre": "ObtenerProfesion",
+    "descripcion": "Método para obtener la profesión de una persona física.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {
+        "sdtProfesion": {
+            "type": "object",
+            "description": "Datos de la profesión.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de profesión."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de profesión."
+                }
+            }
+        },
+        "fechaInicioProfesion": {
+            "type": "string",
+            "description": "Fecha de inicio de la profesión."
+        }
+    },
+    "sistema": "Personas"
+}

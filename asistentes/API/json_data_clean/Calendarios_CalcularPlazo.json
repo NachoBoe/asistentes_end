@@ -1,0 +1,34 @@
+{
+    "id": 24,
+    "nombre": "CalcularPlazo",
+    "descripcion": "Método que calcula el plazo entre una fecha de inicio y fecha de fin ingresadas.",
+    "entrada": {
+        "sucursalId": {
+            "type": "integer",
+            "description": "Identificador de sucursal."
+        },
+        "fechaInicio": {
+            "type": "string",
+            "description": "Fecha de inicio del plazo."
+        },
+        "fechaFin": {
+            "type": "string",
+            "description": "Fecha de fin del plazo."
+        },
+        "tipoDia": {
+            "type": "integer",
+            "description": "[Hidden, valor fijo 1 para este método]."
+        },
+        "tipoVencimiento": {
+            "type": "string",
+            "description": "Tipo de ajuste al vencimiento ('A': Hábil anterior, 'P': Hábil posterior, 'N': No ajusta)."
+        }
+    },
+    "salida": {
+        "plazo": {
+            "type": "integer",
+            "description": "Plazo."
+        }
+    },
+    "sistema": "Calendarios"
+}

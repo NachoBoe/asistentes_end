@@ -1,0 +1,42 @@
+{
+    "id": 195,
+    "nombre": "ObtenerEvolucionDeSaldos",
+    "descripcion": "Método para obtener la evolución del saldo de un producto cuenta de ahorro en Bantotal",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        }
+    },
+    "salida": {
+        "sdtEvolucionSaldo": {
+            "type": "object",
+            "description": "Datos de la evolución de saldos.",
+            "properties": {
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto."
+                },
+                "saldos": {
+                    "type": "object",
+                    "description": "Listado de saldo mensual.",
+                    "properties": {
+                        "anio": {
+                            "type": "number",
+                            "description": "Año."
+                        },
+                        "mes": {
+                            "type": "number",
+                            "description": "Mes."
+                        },
+                        "saldo": {
+                            "type": "number",
+                            "description": "Saldo mensual."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "CuentasDeAhorro"
+}

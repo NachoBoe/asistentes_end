@@ -1,0 +1,22 @@
+{
+    "id": 448,
+    "nombre": "ObtenerFechasPago",
+    "descripcion": "Método para obtener fechas de pago de un préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación de préstamo."
+        }
+    },
+    "salida": {
+        "fecha_incumplimiento": {
+            "type": "string",
+            "description": "Fecha de primer incumplimiento."
+        },
+        "fecha_ultimo_pago": {
+            "type": "string",
+            "description": "Fecha de ultimo pago."
+        }
+    },
+    "sistema": "Prestamos"
+}

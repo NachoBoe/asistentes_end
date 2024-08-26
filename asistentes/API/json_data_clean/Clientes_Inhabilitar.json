@@ -1,0 +1,21 @@
+{
+    "id": 71,
+    "nombre": "Inhabilitar",
+    "descripcion": "Método para inhabilitar una cuenta que se encuentra habilitada.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "motivo": {
+            "type": "number",
+            "description": "Código de motivo de inhabilitación."
+        },
+        "justificacion": {
+            "type": "string",
+            "description": "Justificación de la inhabilitación."
+        }
+    },
+    "salida": {},
+    "sistema": "Clientes"
+}

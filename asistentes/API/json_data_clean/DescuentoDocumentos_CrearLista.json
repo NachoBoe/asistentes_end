@@ -1,0 +1,85 @@
+{
+    "id": 247,
+    "nombre": "CrearLista",
+    "descripcion": "Método para crear una lista de documentos a descontar.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador único de producto."
+        },
+        "sdtListaDocumentos": {
+            "type": "object",
+            "description": "Lista de documentos.",
+            "properties": {
+                "identificacion": {
+                    "type": "string",
+                    "description": "Identificador del documento."
+                },
+                "fechaEmision": {
+                    "type": "string",
+                    "description": "Fecha de emisión del documento."
+                },
+                "fechaVto": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento del documento."
+                },
+                "monto": {
+                    "type": "number",
+                    "description": "Monto del documento."
+                },
+                "personaUId": {
+                    "type": "number",
+                    "description": "Identificador único de persona titular del documento."
+                },
+                "ciudad": {
+                    "type": "string",
+                    "description": "Ciudad."
+                },
+                "domicilio": {
+                    "type": "string",
+                    "description": "Domicilio."
+                },
+                "telefono": {
+                    "type": "string",
+                    "description": "Teléfono."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa a aplicar al documento."
+                }
+            },
+            "required": [
+                "clienteUId",
+                "productoUId",
+                "sdtListaDocumentos"
+            ]
+        },
+        "montoADescontar": {
+            "type": "number",
+            "description": "Monto total a descontar."
+        },
+        "tasa": {
+            "type": "number",
+            "description": "Tasa para aplicar."
+        },
+        "porcentajeAforo": {
+            "type": "number",
+            "description": "Porcentaje de aforo."
+        },
+        "fechaValor": {
+            "type": "string",
+            "description": "Fecha valor."
+        }
+    },
+    "salida": {
+        "listaUId": {
+            "type": "number",
+            "description": "Identificador de lista."
+        }
+    },
+    "sistema": "DescuentoDocumentos"
+}

@@ -1,0 +1,52 @@
+{
+    "id": 292,
+    "nombre": "ValidarPoliticas",
+    "descripcion": "Método para validar las políticas crediticias de una determinada etapa del procesos de otorgamiento de créditos.",
+    "entrada": {
+        "solicitudUId": {
+            "type": "number",
+            "description": "Identificador de instancia Workflow."
+        }
+    },
+    "salida": {
+        "controlOK": {
+            "type": "string",
+            "description": "Devuelve 'N' si existen políticas que no permiten continuar. 'S' en caso contrario."
+        },
+        "sdtValidacionesPoliticas": {
+            "type": "object",
+            "description": "Listado de validación de políticas.",
+            "properties": {
+                "politicaId": {
+                    "type": "number",
+                    "description": "Identificador de política."
+                },
+                "politica": {
+                    "type": "string",
+                    "description": "Descripción de la política."
+                },
+                "restriccion": {
+                    "type": "string",
+                    "description": "Tipo de restricción de la política."
+                },
+                "restriccionDsc": {
+                    "type": "string",
+                    "description": "Descripción de la restricción."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Estado."
+                },
+                "estadoDsc": {
+                    "type": "string",
+                    "description": "Descripción del estado."
+                },
+                "observacion": {
+                    "type": "string",
+                    "description": "Observación que aplique para una política. Por ejemplo, que haya sido autorizada en una etapa previa."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

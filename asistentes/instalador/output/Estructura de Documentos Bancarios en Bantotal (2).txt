@@ -1,0 +1,3 @@
+El archivo del sistema Bantotal describe la estructura de datos relacionada con documentos, incluyendo atributos como el tipo de documento, país emisor, provincia/departamento, localidad, número de documento, fecha de vencimiento y quien lo expidió. 
+
+Las posibilidades que se admiten incluyen la gestión y registro de documentos en el sistema, permitiendo la identificación y clasificación de los mismos a través de los atributos mencionados. Esto facilita el manejo de información relevante para procesos bancarios y administrativos.

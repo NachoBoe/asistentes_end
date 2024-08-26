@@ -1,0 +1,86 @@
+{
+    "id": 6,
+    "nombre": "ObtenerCuentasDestinoHabilitadas",
+    "descripcion": "Método para obtener un listado de cuentas habilitadas para acreditar el ahorro.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "clienteDestinoUId": {
+            "type": "number",
+            "description": "Identificador único de cliente destino de fondos de ahorro."
+        },
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador único de producto."
+        },
+        "cuentaOrigenUId": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta origen (seleccionada previamente invocando al servicio BTAhorroProgramado.ObtenerCuentasOrigenHabilitadas)."
+        }
+    },
+    "salida": {
+        "sdtCuentas": {
+            "type": "object",
+            "description": "Listado de cuentas habilitadas para origen del ahorro.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "idOperacionFmt": {
+                    "type": "string",
+                    "description": "Identificador String (concatenación de algunos conceptos claves de la operación)."
+                },
+                "idOperacionBT": {
+                    "type": "string",
+                    "description": "Identificador String Bantotal (concatenación de todos los conceptos claves de la operación)."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del Producto pasivo.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre del producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de la moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo del papel."
+                        }
+                    }
+                },
+                "tipoProducto": {
+                    "type": "string",
+                    "description": "Tipo de producto pasivo (Cuenta Corriente: 'CC', Caja de Ahorro: 'CA')."
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Nombre de la sucursal de origen de la operación."
+                },
+                "subcuenta": {
+                    "type": "string",
+                    "description": "Nombre de la cuenta vista."
+                },
+                "saldo": {
+                    "type": "number",
+                    "description": "Saldo."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Descripción de estado."
+                }
+            }
+        }
+    },
+    "sistema": "AhorroProgramado"
+}

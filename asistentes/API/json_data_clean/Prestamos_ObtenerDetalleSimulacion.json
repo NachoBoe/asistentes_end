@@ -1,0 +1,178 @@
+{
+    "id": 439,
+    "nombre": "ObtenerDetalleSimulacion",
+    "descripcion": "Método para obtener el detalle de la simulación de un prestamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operaión."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "sdtDetalleSimulacion": {
+            "type": "object",
+            "description": "Detalles de la simulación.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operaión."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del Producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre del producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de la moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo del papel."
+                        }
+                    }
+                },
+                "capital": {
+                    "type": "number",
+                    "description": "Capital."
+                },
+                "valorCuota": {
+                    "type": "number",
+                    "description": "Valor de cuota."
+                },
+                "intereses": {
+                    "type": "number",
+                    "description": "Intereses."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa."
+                },
+                "tasaEfectiva": {
+                    "type": "number",
+                    "description": "Tasa efectiva."
+                },
+                "tasaEfectivaAnual": {
+                    "type": "number",
+                    "description": "Tasa efectiva anual."
+                },
+                "tasaNominalAnual": {
+                    "type": "number",
+                    "description": "Tasa nominal anual."
+                },
+                "totalPrestamo": {
+                    "type": "number",
+                    "description": "Total del prestamo."
+                },
+                "montoDesembolso": {
+                    "type": "number",
+                    "description": "Monto de desembolso."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha de valor."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento."
+                },
+                "fechaPrimerPago": {
+                    "type": "string",
+                    "description": "Fecha de primer pago."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo."
+                },
+                "otrosConceptos": {
+                    "type": "object",
+                    "description": "Datos de otros conceptos.",
+                    "properties": {
+                        "concepto": {
+                            "type": "string",
+                            "description": "Concepto."
+                        },
+                        "valor": {
+                            "type": "number",
+                            "description": "Importe."
+                        },
+                        "texto": {
+                            "type": "string",
+                            "description": "Texto."
+                        }
+                    }
+                },
+                "cronograma": {
+                    "type": "object",
+                    "description": "Cronograma del préstamo.",
+                    "properties": {
+                        "fechaPago": {
+                            "type": "string",
+                            "description": "Fecha de pago."
+                        },
+                        "tipoCuota": {
+                            "type": "string",
+                            "description": "Tipo de la cuota (Capital/Interés)."
+                        },
+                        "concepto": {
+                            "type": "string",
+                            "description": "Concepto."
+                        },
+                        "capital": {
+                            "type": "number",
+                            "description": "Monto de capital en la cuota."
+                        },
+                        "interes": {
+                            "type": "number",
+                            "description": "Monto de intereses en la cuota."
+                        },
+                        "seguros": {
+                            "type": "number",
+                            "description": "Monto de seguros en la cuota."
+                        },
+                        "impuestos": {
+                            "type": "number",
+                            "description": "Monto de impuestos en la cuota."
+                        },
+                        "otrosConceptos": {
+                            "type": "number",
+                            "description": "Importe correspondiente a otros conceptos."
+                        },
+                        "cuota": {
+                            "type": "number",
+                            "description": "Importe total de la cuota."
+                        }
+                    }
+                },
+                "impuestos": {
+                    "type": "number",
+                    "description": "Impuestos."
+                },
+                "seguros": {
+                    "type": "number",
+                    "description": "Seguros."
+                },
+                "comisiones": {
+                    "type": "number",
+                    "description": "Comisiones."
+                },
+                "cft": {
+                    "type": "number",
+                    "description": "Costo financiero total."
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

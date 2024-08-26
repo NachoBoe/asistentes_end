@@ -1,0 +1,40 @@
+La funcionalidad detallada en el archivo se centra en la parametrización de mensajes de error dentro del sistema Bantotal, permitiendo la personalización de las reglas de negocio mediante variables específicas. Estas variables abarcan información relevante como datos de apertura del sistema, detalles de la empresa, tipo de documento, información sobre la persona, y campos auxiliares que pueden ser utilizados para controlar y gestionar la información de manera más efectiva. Las posibilidades que se admiten incluyen la modificación de datos de alta, la inclusión de información auxiliar y la gestión de diferentes tipos de entidades y actividades económicas.
+
+**Tablas y Atributos Grabados**
+
+Id.	Concepto	FSD002	FSD003	FSD704	SNGC11	FSR003	FSE001
+10	Razón Social		Pjrazs				
+11	Nombre Reducido				SNGC11Aux		
+12	Tipo de Nat. Jurídica		Pjfluc				
+13	Naturaleza Jurídica		Njcod				
+14	Objeto Social Parte 1			DcpjObSoc1			
+15	Objeto Social Parte 2			DcpjObSoc2			
+16	Fecha de Constitución		Pjfcon				
+17	Fecha de Expiración		Pjfexp				
+18	Oficina Registral						
+19	Subsede Registral						
+20	Tipo de Inscripción				SNGC11Acas		
+21	No. Registro				SNGC11nreg		
+22	Folio / Nº Notaría				SNGC11Dist		
+23	Capital Social				SNGC11Caps		
+24	Institución Financiera	Pesn02					
+25	Presenta Balance		Pjpbal				
+26	Fecha de Balance		Pjfbal				
+35	Tipo de Actividad				sngc11TpA2		
+36	Actividad Principal						Expnins
+38	Exportador						Exporta
+39	Importador						Importa
+40	Segmento de Mercado		Pjsegmento				
+42	País					Pfpai1	
+43	T. Documento					Pftdo1	
+44	Documento					Pfndo1	
+46	Cod.de Vínculo					Vicod	
+64	Auxiliar País		Pjcd03				
+65	Texto auxiliar 1				SNGC11Txt1		
+66	Texto auxiliar 2				SNGC11Txt2		
+67	Combo Auxiliar 1				SNGC11Cmb1		
+68	Combo Auxiliar 2				SNGC11Cmb2		
+69	Fecha Auxiliar 1				SNGC11Dat1		
+70	Fecha Auxiliar 2				SNGC11Dat2		
+71	Entero Auxiliar 1				SNGC11Num1		
+72	Entero Auxiliar 2				SNGC11Num2

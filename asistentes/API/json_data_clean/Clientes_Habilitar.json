@@ -1,0 +1,13 @@
+{
+    "id": 70,
+    "nombre": "Habilitar",
+    "descripcion": "Método para habilitar una cuenta que se encuentra inhabilitada.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {},
+    "sistema": "Clientes"
+}

@@ -1,0 +1,25 @@
+{
+    "id": 232,
+    "nombre": "ModificarInstruccion",
+    "descripcion": "Método para modificación la instrucción al vencimiento de un depósito a plazo.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "depositoUId": {
+            "type": "number",
+            "description": "Identificador único de la operación del depósito."
+        },
+        "cuentaUId": {
+            "type": "number",
+            "description": "Identificador único de la operación de la cuenta."
+        },
+        "accion": {
+            "type": "number",
+            "description": "Especifica la nueva acción que tomará el depósito al vencimiento."
+        }
+    },
+    "salida": {},
+    "sistema": "DepositosAPlazo"
+}

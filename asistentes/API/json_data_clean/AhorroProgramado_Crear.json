@@ -1,0 +1,90 @@
+{
+    "id": 0,
+    "nombre": "Crear",
+    "descripcion": "Método para dar de alta un ahorro programado.",
+    "entrada": {
+        "sdtAhorroProgramado": {
+            "type": "object",
+            "description": "Datos de la solicitud de ahorro programado.",
+            "properties": {
+                "abono": {
+                    "type": "number",
+                    "description": "Monto de abono periódico."
+                },
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto."
+                },
+                "fechaMetaAhorro": {
+                    "type": "string",
+                    "description": "Fecha máxima para el cumplimiento del ahorro."
+                },
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador único de cliente."
+                },
+                "personaUId": {
+                    "type": "number",
+                    "description": "Identificador único de persona."
+                },
+                "diaIncremento": {
+                    "type": "number",
+                    "description": "Día del mes en el cual se realizará el incremento [1-31]."
+                },
+                "depositoInicial": {
+                    "type": "number",
+                    "description": "Depósito inicial del ahorro."
+                },
+                "montoMetaAhorro": {
+                    "type": "number",
+                    "description": "Monto de la meta de ahorro."
+                },
+                "cuentaOrigenUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación de la cuenta origen del ahorro."
+                },
+                "cuentaDestinoUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación de la cuenta destino del ahorro."
+                },
+                "motivoAhorro": {
+                    "type": "string",
+                    "description": "Motivo por el cual se desea ahorrar."
+                },
+                "fechaInicioAhorro": {
+                    "type": "string",
+                    "description": "Fecha de inicio del ahorro."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo para la acreditación de interes del ahorro en días."
+                },
+                "periodicidadIncremento": {
+                    "type": "number",
+                    "description": "Periodicidad del incremento en meses."
+                }
+            },
+            "required": [
+                "personaUId",
+                "clienteUId",
+                "productoUId",
+                "cuentaOrigenUId",
+                "cuentaDestinoUId",
+                "abono",
+                "diaIncremento",
+                "depositoInicial",
+                "montoMetaAhorro",
+                "fechaInicioAhorro",
+                "plazo",
+                "periodicidadIncremento"
+            ]
+        }
+    },
+    "salida": {
+        "ahorroUId": {
+            "type": "number",
+            "description": "Identificador único de operación del ahorro programado."
+        }
+    },
+    "sistema": "AhorroProgramado"
+}

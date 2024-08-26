@@ -1,0 +1,11 @@
+- Opciones generales:
+  - Opción general: 2384
+
+- Guías y Guías Especiales de proceso:
+  - "Código": 38, "Correlativo": 570, "Valor específico 1": 1
+
+- Programas particulares:
+  - Programa estándar: ‘CTDUALTELF’
+
+Descripción general de la funcionalidad:
+El archivo detalla el acceso al registro de domicilios asociados a una persona en la plataforma Bantotal. Al seleccionar un registro de domicilios, se puede acceder a un panel que muestra los teléfonos registrados. Si la opción general 2384 está habilitada, se añade la columna de fecha de actualización del teléfono. Además, si la guía especial de procesos 38 está parametrizada, se mostrarán columnas adicionales de Estado y Acción en la grilla. También se menciona la posibilidad de habilitar un Control Dual de Teléfonos bajo ciertas condiciones, permitiendo el llamado a un proceso particular mediante el programa estándar ‘CTDUALTELF’.

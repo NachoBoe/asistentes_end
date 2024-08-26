@@ -1,0 +1,24 @@
+{
+    "id": 431,
+    "nombre": "ObtenerCuentaDeCobro",
+    "descripcion": "Método para obtener un listado de las cuentas de cobro de un préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación de préstamo."
+        }
+    },
+    "salida": {
+        "sdtIdOperaciones": {
+            "type": "object",
+            "description": "Listado de identificadores únicos de operación.",
+            "properties": {
+                "IdOperacion": {
+                    "type": "number",
+                    "description": "Identificador único de operación de préstamo."
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

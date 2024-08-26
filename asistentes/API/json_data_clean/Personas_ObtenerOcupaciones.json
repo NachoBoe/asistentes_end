@@ -1,0 +1,23 @@
+{
+    "id": 372,
+    "nombre": "ObtenerOcupaciones",
+    "descripcion": "Método para obtener un listado de las ocupaciones registradas.",
+    "entrada": {},
+    "salida": {
+        "sdtOcupaciones": {
+            "type": "object",
+            "description": "Listado de ocupaciones.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de ocupación."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de ocupación."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

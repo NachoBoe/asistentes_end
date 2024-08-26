@@ -1,0 +1,48 @@
+{
+    "id": 278,
+    "nombre": "ObtenerIntegrantesGrupo",
+    "descripcion": "Método para obtener los integrantes de un grupo de crédito.",
+    "entrada": {
+        "grupoId": {
+            "type": "integer",
+            "description": "Código de grupo"
+        }
+    },
+    "salida": {
+        "sdtIntegrantesGrupo": {
+            "type": "object",
+            "description": "Listado de integrantes.",
+            "properties": {
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador único del cliente."
+                },
+                "cuenta": {
+                    "type": "string",
+                    "description": "Nombre de la cuenta."
+                },
+                "tipoIntegranteId": {
+                    "type": "integer",
+                    "description": "Tipo de integrante a ser agregado."
+                },
+                "tipoIntegrante": {
+                    "type": "string",
+                    "description": "Descripción del tipo de integrante."
+                },
+                "fechaAlta": {
+                    "type": "string",
+                    "description": "Fecha de alta del integrante."
+                },
+                "fechaBaja": {
+                    "type": "string",
+                    "description": "Fecha de baja del integrante."
+                },
+                "identificacionAlternativa": {
+                    "type": "string",
+                    "description": "Identificación alternativa del integrante."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

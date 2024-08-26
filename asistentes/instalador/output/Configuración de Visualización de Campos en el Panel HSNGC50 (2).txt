@@ -1,0 +1,5 @@
+El archivo del sistema Bantotal describe la configuración del panel HSNGC50, que es parametrizable en cuanto a la visibilidad de los campos y la descripción a mostrar. Este panel permite gestionar la visualización de información relacionada con cuentas bancarias, incluyendo datos como la cuenta, nombre, sucursal, y otros aspectos relevantes. 
+
+Las posibilidades que se admiten incluyen la personalización de la visibilidad de campos específicos, permitiendo que ciertos datos sean visibles o no según las necesidades del usuario o de la institución. Además, se pueden modificar y gestionar diferentes elementos a través de botones y campos de entrada, facilitando la interacción con la información de las cuentas.
+
+No se encontraron configuraciones asociadas, guías, reglas de negocio, programas particulares, tablas, ni otros controles y configuraciones en el contenido proporcionado.

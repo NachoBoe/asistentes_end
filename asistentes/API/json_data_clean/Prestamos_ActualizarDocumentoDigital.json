@@ -1,0 +1,33 @@
+{
+    "id": 409,
+    "nombre": "ActualizarDocumentoDigital",
+    "descripcion": "Método para actualizar el documento digital de un préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación del préstamo."
+        },
+        "documentoId": {
+            "type": "number",
+            "description": "Identificador del documento."
+        },
+        "nombre": {
+            "type": "string",
+            "description": "Nombre del documento."
+        },
+        "archivoCodificado": {
+            "type": "string",
+            "description": "Archivo codificado a asociar."
+        },
+        "fechaVencimiento": {
+            "type": "string",
+            "description": "Fecha de emisión del documento (en caso que corresponda)."
+        },
+        "fechaEmision": {
+            "type": "string",
+            "description": "Fecha de emisión del documento (en caso que corresponda)."
+        }
+    },
+    "salida": {},
+    "sistema": "Prestamos"
+}

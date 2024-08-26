@@ -1,0 +1,39 @@
+{
+    "id": 19,
+    "nombre": "ObtenerProcesosMensuales",
+    "descripcion": "Método para obtener un listado de los procesos mensuales de la cadena de cierre.",
+    "entrada": {},
+    "salida": {
+        "sdtProcesosBatch": {
+            "type": "object",
+            "description": "Colección de procesos de cadena de cierre.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de proceso batch."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre del proceso."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción."
+                },
+                "periodicidad": {
+                    "type": "string",
+                    "description": "Periodicidad."
+                },
+                "parametrosExtendidos": {
+                    "type": "string",
+                    "description": "¿Utiliza parámetros extendidos? (SI / NO)"
+                },
+                "esReprocesable": {
+                    "type": "string",
+                    "description": "Descripción para reprocesamiento."
+                }
+            }
+        }
+    },
+    "sistema": "CadenaCierre"
+}

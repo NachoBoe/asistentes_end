@@ -1,0 +1,5 @@
+El archivo del sistema Bantotal detalla una serie de programas relacionados con la gestión de tareas y productos de interés en una plataforma bancaria. Los programas listados permiten a los usuarios gestionar agendas, listas de tareas, y consultar productos de interés, tanto de manera integral como específica. 
+
+Las funcionalidades incluyen la creación y gestión de tareas, la consulta de productos de interés, y la generación de alertas, lo que sugiere un enfoque en la organización y seguimiento de actividades dentro del entorno bancario. 
+
+Las posibilidades que se admiten incluyen la grabación de datos relacionados con las tareas y productos, así como la consulta de información relevante para la toma de decisiones.

@@ -1,0 +1,40 @@
+{
+    "id": 359,
+    "nombre": "ObtenerDocumentosDigitales",
+    "descripcion": "Método para obtener un listado de los documentos digitales de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {
+        "sdtDocumentosDigitales": {
+            "type": "object",
+            "description": "Listado de Documentos Digitales.",
+            "properties": {
+                "DocumentoId": {
+                    "type": "number",
+                    "description": "Identificador del documento digital."
+                },
+                "Titulo": {
+                    "type": "string",
+                    "description": "Titulo del documento digital."
+                },
+                "FechaActualizacion": {
+                    "type": "string",
+                    "description": "Fecha de actualizacion del documento digital."
+                },
+                "FechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento del documento digital."
+                },
+                "TipoDocumentoDigital": {
+                    "type": "string",
+                    "description": "Tipo del documento digital."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

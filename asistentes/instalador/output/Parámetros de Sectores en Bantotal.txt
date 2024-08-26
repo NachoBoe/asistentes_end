@@ -1,0 +1,8 @@
+El archivo del sistema Bantotal describe la configuración de sectores dentro de la plataforma bancaria. La funcionalidad principal se centra en la gestión de sectores, donde cada sector se identifica mediante un código y un nombre. Además, se relaciona con un código de rubros que se utilizará en la configuración.
+
+**Descripción de la funcionalidad:**
+- Permite definir y gestionar sectores dentro del sistema, facilitando la organización y clasificación de diferentes áreas o categorías dentro de la plataforma bancaria.
+
+**Posibilidades admitidas:**
+- Se pueden crear múltiples sectores, cada uno con un código único y un nombre descriptivo.
+- Cada sector puede estar asociado a un código de relación de rubros, lo que permite una mayor flexibilidad en la configuración y uso de los mismos en procesos bancarios.

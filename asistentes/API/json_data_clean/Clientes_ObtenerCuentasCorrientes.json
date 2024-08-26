@@ -1,0 +1,74 @@
+{
+    "id": 77,
+    "nombre": "ObtenerCuentasCorrientes",
+    "descripcion": "Método para obtener las cuentas corrientes de un cliente junto con el saldo contable de cada una.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "sdtProductosPasivos": {
+            "type": "object",
+            "description": "Listado de cuentas corrientes.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "idOperacionFmt": {
+                    "type": "string",
+                    "description": "Identificador String (concatenación de algunos conceptos claves de la operación)."
+                },
+                "idOperacionBT": {
+                    "type": "string",
+                    "description": "Identificador String Bantotal (concatenación de todos los conceptos claves de la operación)."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre de producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel."
+                        }
+                    }
+                },
+                "tipoProducto": {
+                    "type": "string",
+                    "description": "Tipo de producto."
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Nombre de la sucursal."
+                },
+                "subCuenta": {
+                    "type": "string",
+                    "description": "Nombre de la subcuenta."
+                },
+                "saldo": {
+                    "type": "number",
+                    "description": "Saldo contable de la CC."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Descripción de estado."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

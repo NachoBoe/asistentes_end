@@ -1,0 +1,23 @@
+{
+    "id": 281,
+    "nombre": "ObtenerOrigenesCaptacion",
+    "descripcion": "Método para obtener los orígenes de captación.",
+    "entrada": {},
+    "salida": {
+        "sdtOrigenesCaptacion": {
+            "type": "object",
+            "description": "Listado de orígenes de captación.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de orígen de captación."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de orígen de captación."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

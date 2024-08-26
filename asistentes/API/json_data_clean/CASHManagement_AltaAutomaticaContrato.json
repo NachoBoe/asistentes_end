@@ -1,0 +1,22 @@
+{
+    "id": 33,
+    "nombre": "AltaAutomaticaContrato",
+    "descripcion": "Método para dar de alta contrato para el cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador de la Cuenta Cliente."
+        },
+        "servicioId": {
+            "type": "number",
+            "description": "Codigo de Servicio CASH."
+        }
+    },
+    "salida": {
+        "contratoId": {
+            "type": "number",
+            "description": "Identificador del Contrato CASH del Cliente."
+        }
+    },
+    "sistema": "CASHManagement"
+}

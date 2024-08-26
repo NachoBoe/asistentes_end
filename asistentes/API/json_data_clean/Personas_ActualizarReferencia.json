@@ -1,0 +1,68 @@
+{
+    "id": 324,
+    "nombre": "ActualizarReferencia",
+    "descripcion": "Método para actualizar una referencia de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "sdtReferencia": {
+            "type": "object",
+            "description": "Datos de referencia de la persona.",
+            "properties": {
+                "correlativo": {
+                    "type": "number",
+                    "description": "Correlativo."
+                },
+                "vinculoId": {
+                    "type": "number",
+                    "description": "Identificador de vínculo."
+                },
+                "vinculo": {
+                    "type": "string",
+                    "description": "Vínculo."
+                },
+                "domicilio1": {
+                    "type": "string",
+                    "description": "Domicilio 1."
+                },
+                "domicilio2": {
+                    "type": "string",
+                    "description": "Domicilio 2."
+                },
+                "domicilio3": {
+                    "type": "string",
+                    "description": "Domicilio 3."
+                },
+                "tipoId": {
+                    "type": "string",
+                    "description": "Identificador de tipo de referencia."
+                },
+                "tipo": {
+                    "type": "string",
+                    "description": "Descripción del tipo de referencia"
+                },
+                "telefono": {
+                    "type": "string",
+                    "description": "Número de teléfono."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre completo de la referencia."
+                }
+            },
+            "required": [
+                "personaUId",
+                "correlativo",
+                "tipoId",
+                "vinculoId",
+                "nombre",
+                "domicilio1",
+                "telefono"
+            ]
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

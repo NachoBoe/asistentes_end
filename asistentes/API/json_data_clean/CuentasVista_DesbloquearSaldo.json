@@ -1,0 +1,17 @@
+{
+    "id": 204,
+    "nombre": "DesbloquearSaldo",
+    "descripcion": "Método para realizar la baja de un bloqueo de saldo.",
+    "entrada": {
+        "idBloqueo": {
+            "type": "number",
+            "description": "Identificador de bloqueo."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {},
+    "sistema": "CuentasVista"
+}

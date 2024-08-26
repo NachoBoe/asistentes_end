@@ -1,0 +1,44 @@
+{
+    "id": 299,
+    "nombre": "ObtenerPeriodoEntreCuotas",
+    "descripcion": "Método para obtener los periodos entre cuotas parametrizados de un producto de préstamo.",
+    "entrada": {
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador de producto."
+        },
+        "parametro": {
+            "type": "number",
+            "description": "[Hidden: Valor 401 definido por defecto]."
+        }
+    },
+    "salida": {
+        "minimo": {
+            "type": "number",
+            "description": "Valor mínimo de período de cuotas."
+        },
+        "maximo": {
+            "type": "number",
+            "description": "Valor máximo de período de cuotas."
+        },
+        "valorPorDefecto": {
+            "type": "number",
+            "description": "Valor por defecto de período de cuotas."
+        },
+        "tipo": {
+            "type": "number",
+            "description": "Tipo de cuotas."
+        },
+        "sdtListaValores": {
+            "type": "object",
+            "description": "Listado de valores posibles.",
+            "properties": {
+                "valor": {
+                    "type": "number",
+                    "description": "Valor de período de cuotas."
+                }
+            }
+        }
+    },
+    "sistema": "ModeladorPrestamos"
+}

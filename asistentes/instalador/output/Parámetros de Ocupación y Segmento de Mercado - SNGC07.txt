@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo "10.2.7 Ocupación y Segmento de mercado - SNGC07" se refiere a la configuración de parámetros relacionados con la ocupación y el segmento de mercado dentro del sistema Bantotal. Este archivo permite definir códigos y descripciones que identifican diferentes segmentos de mercado, así como auxiliares que pueden ser utilizados para fines específicos dentro del sistema.
+
+Las posibilidades que se admiten incluyen la asignación de códigos únicos para cada segmento, descripciones asociadas a esos códigos, y el uso de campos auxiliares que pueden contener información adicional relevante para la gestión de los segmentos de mercado.

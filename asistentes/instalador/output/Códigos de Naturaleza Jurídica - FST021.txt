@@ -1,0 +1,5 @@
+El archivo del sistema Bantotal describe los códigos de naturaleza jurídica, que son parámetros utilizados para clasificar diferentes tipos de entidades o situaciones legales dentro de la plataforma bancaria. 
+
+La funcionalidad detallada en el archivo permite la identificación y gestión de las naturalezas jurídicas mediante un código y un nombre asociado. Esto facilita la organización y el manejo de información relacionada con las entidades que interactúan con el sistema, permitiendo una mejor categorización y acceso a datos relevantes.
+
+Las posibilidades que se admiten incluyen la asignación de códigos únicos a diferentes naturalezas jurídicas, así como la posibilidad de tener nombres descriptivos que acompañen a cada código, lo que contribuye a una mejor comprensión y uso de la información en el sistema.

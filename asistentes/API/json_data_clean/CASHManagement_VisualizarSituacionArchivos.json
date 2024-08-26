@@ -1,0 +1,80 @@
+{
+    "id": 52,
+    "nombre": "VisualizarSituacionArchivos",
+    "descripcion": "Método para obtener la situación/resumen de los archivos subidos por el cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "contratoF": {
+            "type": "number",
+            "description": "Lista de identificadores de contratos CASH del cliente."
+        },
+        "servicioF": {
+            "type": "number",
+            "description": "Servicio CASH."
+        },
+        "estadoF": {
+            "type": "string",
+            "description": "Estado del archivo."
+        },
+        "fechaDesdeF": {
+            "type": "string",
+            "description": "Fecha de pago o cobro, desde."
+        },
+        "fechaHastaF": {
+            "type": "string",
+            "description": "Fecha de pago o cobro, hasta."
+        }
+    },
+    "salida": {
+        "listaArchivos": {
+            "type": "object",
+            "description": "Lista de archivos solicitado.",
+            "properties": {
+                "archivoId": {
+                    "type": "number",
+                    "description": "Identificador de archivo."
+                },
+                "contratoId": {
+                    "type": "number",
+                    "description": "Identificador del contrato CASH."
+                },
+                "servicio": {
+                    "type": "number",
+                    "description": "Servicio CASH."
+                },
+                "fechaPago": {
+                    "type": "string",
+                    "description": "Fecha de pago o cobro."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Estado del archivo."
+                },
+                "cantidadLineas": {
+                    "type": "number",
+                    "description": "Cantidad de líneas del archivo."
+                },
+                "moneda": {
+                    "type": "number",
+                    "description": "Moneda."
+                },
+                "importe": {
+                    "type": "number",
+                    "description": "Importe total."
+                },
+                "referencia": {
+                    "type": "string",
+                    "description": "Referencia del pago o cobro."
+                },
+                "nomArchivo": {
+                    "type": "string",
+                    "description": "Nombre del archivo."
+                }
+            }
+        }
+    },
+    "sistema": "CASHManagement"
+}

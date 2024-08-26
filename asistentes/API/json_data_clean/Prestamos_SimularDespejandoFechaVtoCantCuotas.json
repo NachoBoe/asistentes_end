@@ -1,0 +1,138 @@
+{
+    "id": 466,
+    "nombre": "SimularDespejandoFechaVtoCantCuotas",
+    "descripcion": "Método para simular un préstamo despejando fecha de vencimiento y cantidad de cuotas.",
+    "entrada": {
+        "sdtPrestamoAlta": {
+            "type": "object",
+            "description": "Datos del préstamo a dar de alta.",
+            "properties": {
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador del cliente."
+                },
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador del producto."
+                },
+                "fechaPrimerPago": {
+                    "type": "string",
+                    "description": "Fecha primer pago."
+                },
+                "cantidadCuotas": {
+                    "type": "number",
+                    "description": "Cantidad de cuotas."
+                },
+                "periodoCuotas": {
+                    "type": "number",
+                    "description": "Período entre cuotas."
+                },
+                "plazoTotal": {
+                    "type": "number",
+                    "description": "Plazo total."
+                },
+                "valorCuota": {
+                    "type": "number",
+                    "description": "Valor cuota."
+                },
+                "monto": {
+                    "type": "number",
+                    "description": "Monto del préstamo."
+                },
+                "pizarra": {
+                    "type": "number",
+                    "description": "Código de pizarra."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa."
+                },
+                "actividad": {
+                    "type": "number",
+                    "description": "Código de actividad."
+                }
+            },
+            "required": [
+                "clienteUId",
+                "productoUId"
+            ]
+        },
+        "modoDespeje": {
+            "type": "number",
+            "description": "[Hidden: Valor fijo 4 para este método.]"
+        }
+    },
+    "salida": {
+        "sdtSimulacionPrestamo": {
+            "type": "object",
+            "description": "Datos de la simulación.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del producto."
+                },
+                "capital": {
+                    "type": "number",
+                    "description": "Capital del préstamo."
+                },
+                "valorCuota": {
+                    "type": "number",
+                    "description": "Valor cuota."
+                },
+                "intereses": {
+                    "type": "number",
+                    "description": "Intereses."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa."
+                },
+                "tasaEfectiva": {
+                    "type": "number",
+                    "description": "Tasa efectiva."
+                },
+                "tasaEfectivaAnual": {
+                    "type": "number",
+                    "description": "Tasa efectiva anual."
+                },
+                "tasaNominalAnual": {
+                    "type": "number",
+                    "description": "Tasa nominal anual."
+                },
+                "totalPrestamo": {
+                    "type": "number",
+                    "description": "Total a pagar."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha valor."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento."
+                },
+                "fechaPrimerPago": {
+                    "type": "string",
+                    "description": "Fecha de primer pago."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo."
+                },
+                "otrosConceptos": {
+                    "type": "object",
+                    "description": "Importe otros conceptos."
+                },
+                "cronograma": {
+                    "type": "object",
+                    "description": "Cronograma del préstamo."
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

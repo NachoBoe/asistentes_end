@@ -1,0 +1,27 @@
+{
+    "id": 128,
+    "nombre": "ObtenerEstados",
+    "descripcion": "Método para obtener todos los estados de productos.",
+    "entrada": {},
+    "salida": {
+        "sdtEstados": {
+            "type": "object",
+            "description": "Listado de estados.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código del estado."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del estado."
+                },
+                "permiteOperar": {
+                    "type": "string",
+                    "description": "¿Permite Operar?"
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

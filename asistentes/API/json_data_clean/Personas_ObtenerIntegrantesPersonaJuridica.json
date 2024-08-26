@@ -1,0 +1,60 @@
+{
+    "id": 369,
+    "nombre": "ObtenerIntegrantesPersonaJuridica",
+    "descripcion": "Método para obtener un listado de los integrantes de una persona jurídica.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {
+        "sdtIntegrantesJuridicos": {
+            "type": "object",
+            "description": "Listado de integrantes jurídicos.",
+            "properties": {
+                "personaUId": {
+                    "type": "number",
+                    "description": "Identificador único de persona."
+                },
+                "paisId": {
+                    "type": "number",
+                    "description": "Identificador del país."
+                },
+                "pais": {
+                    "type": "string",
+                    "description": "Nombre del país."
+                },
+                "tipoDocumentoId": {
+                    "type": "number",
+                    "description": "Identificador del tipo de documento."
+                },
+                "tipoDocumento": {
+                    "type": "string",
+                    "description": "Nombre del tipo de documento."
+                },
+                "nroDocumento": {
+                    "type": "string",
+                    "description": "Número de documento."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre de la persona."
+                },
+                "vinculoId": {
+                    "type": "number",
+                    "description": "Identificador de vínculo."
+                },
+                "vinculo": {
+                    "type": "string",
+                    "description": "Descripción del vínculo."
+                },
+                "participacion": {
+                    "type": "number",
+                    "description": "Porcentaje de participación del integrante."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

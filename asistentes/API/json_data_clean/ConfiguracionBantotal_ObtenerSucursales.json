@@ -1,0 +1,39 @@
+{
+    "id": 140,
+    "nombre": "ObtenerSucursales",
+    "descripcion": "Método para obtener un listado de las sucursales registradas en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtSucursales": {
+            "type": "object",
+            "description": "Listado de sucursales.",
+            "properties": {
+                "identificador": {
+                    "type": "integer",
+                    "description": "Identificador de sucursal."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de sucursal."
+                },
+                "direccion": {
+                    "type": "string",
+                    "description": "Dirección de sucursal."
+                },
+                "telefono": {
+                    "type": "string",
+                    "description": "Teléfono de sucursal."
+                },
+                "latitud": {
+                    "type": "integer",
+                    "description": "Latitud de sucursal."
+                },
+                "longitud": {
+                    "type": "integer",
+                    "description": "Longitud de sucursal."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

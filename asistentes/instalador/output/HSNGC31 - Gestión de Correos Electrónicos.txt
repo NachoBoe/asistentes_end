@@ -1,0 +1,7 @@
+La funcionalidad detallada en el archivo se refiere al mantenimiento de domicilios en la plataforma Bantotal, específicamente en la categoría de 'Correos Electrónicos'. En este panel, se permite realizar el ABM (Alta, Baja, Modificación) de correos electrónicos asociados a una persona. Se controla que la estructura del correo electrónico ingresado sea correcta y se permite agregar un comentario adicional.
+
+Posibilidades admitidas:
+- Agregar un nuevo correo electrónico.
+- Modificar un correo electrónico existente.
+- Eliminar un correo electrónico.
+- Validar la estructura del correo electrónico ingresado.

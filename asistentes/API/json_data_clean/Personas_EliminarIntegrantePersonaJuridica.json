@@ -1,0 +1,17 @@
+{
+    "id": 347,
+    "nombre": "EliminarIntegrantePersonaJuridica",
+    "descripcion": "Método para eliminar un integrante de una persona jurídica.",
+    "entrada": {
+        "personaJuridicaUId": {
+            "type": "number",
+            "description": "Identificador único de persona jurídica."
+        },
+        "personaIntegranteUId": {
+            "type": "number",
+            "description": "Identificador único de persona física."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

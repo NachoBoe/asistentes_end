@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la configuración de actividades económicas dentro del sistema Bantotal, específicamente en la plataforma París. Se define un campo para identificar la actividad económica mediante un código y su respectiva descripción. 
+
+Las posibilidades que se admiten incluyen la asignación de un código de actividad económica (ActCod3) y una descripción asociada (ActNom3), permitiendo así la categorización y gestión de diferentes actividades económicas en el sistema.

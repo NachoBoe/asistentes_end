@@ -1,0 +1,9 @@
+- Guías y Guías Especiales de proceso:
+  - ("Código": 2029, "Correlativo": 100)
+
+- Tablas:
+  - SNGC12: Contiene los valores para el tipo de vivienda/local.
+  - SNGC01, SNGC02, SNGC03, SNGC04, SNGC05, SNGC06: Almacenan la agrupación de direcciones en hasta 6 niveles.
+
+Descripción general de la funcionalidad:
+El archivo detalla el proceso de agregar domicilios en la plataforma Bantotal, donde se requiere ingresar un código de domicilio obligatorio y se permite la selección de tipos de vivienda o local. Se contempla la posibilidad de estandarizar direcciones mediante una estructura jerárquica de hasta 6 niveles, facilitando el ingreso de datos. Además, se permite la consulta sobre la coincidencia de domicilios entre casa y negocio, y se incluyen campos opcionales para arrendadores en caso de ser inquilino.

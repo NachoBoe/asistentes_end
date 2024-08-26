@@ -1,0 +1,32 @@
+{
+    "id": 118,
+    "nombre": "ObtenerCalendarioDeSucursal",
+    "descripcion": "Método para obtener el calendario de una sucursal.",
+    "entrada": {
+        "sucursalId": {
+            "type": "integer",
+            "description": "Identificador de sucursal."
+        }
+    },
+    "salida": {
+        "descripcionSucursal": {
+            "type": "string",
+            "description": "Descripción de la sucursal."
+        },
+        "sdtCalendario": {
+            "type": "object",
+            "description": "Calendario de la sucursal.",
+            "properties": {
+                "identificador": {
+                    "type": "integer",
+                    "description": "Código del calendario."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del calendario."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

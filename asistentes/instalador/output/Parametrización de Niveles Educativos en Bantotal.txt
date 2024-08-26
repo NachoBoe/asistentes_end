@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la parametrización de los distintos Niveles Educativos dentro del sistema Bantotal. Este panel permite definir y gestionar los niveles educativos que se almacenan en la Tabla FST114, lo que sugiere que se pueden agregar, modificar o eliminar niveles educativos según las necesidades del sistema.
+
+No se encontraron configuraciones asociadas, guías, reglas de negocio, programas particulares, tablas, ni otros controles y configuraciones.

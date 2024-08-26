@@ -1,0 +1,36 @@
+{
+    "id": 164,
+    "nombre": "ObtenerTextosMovimiento",
+    "descripcion": "Método para obtener un listado de los textos asociados al movimiento.",
+    "entrada": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento."
+        }
+    },
+    "salida": {
+        "sdtTextosMovimiento": {
+            "type": "object",
+            "description": "Listado de textos del movimiento.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código del texto."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del tipo de texto."
+                },
+                "renglon": {
+                    "type": "number",
+                    "description": "Renglón."
+                },
+                "texto": {
+                    "type": "string",
+                    "description": "Texto asociado."
+                }
+            }
+        }
+    },
+    "sistema": "Contabilidad"
+}

@@ -1,0 +1,40 @@
+{
+    "id": 480,
+    "nombre": "EvaluarReglaNegocio",
+    "descripcion": "Método para evaluar una determinada regla de negocio.",
+    "entrada": {
+        "reglaId": {
+            "type": "number",
+            "description": "Código de regla de negocio."
+        },
+        "sdtVariables": {
+            "type": "object",
+            "description": "Listado de variables.",
+            "properties": {
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre de variable."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor de variable."
+                }
+            },
+            "required": [
+                "nombre",
+                "valor"
+            ]
+        }
+    },
+    "salida": {
+        "resultado": {
+            "type": "string",
+            "description": "Resultado de la evaluación."
+        },
+        "retorno": {
+            "type": "string",
+            "description": "Retorno de la evaluación."
+        }
+    },
+    "sistema": "ReglasNegocio"
+}

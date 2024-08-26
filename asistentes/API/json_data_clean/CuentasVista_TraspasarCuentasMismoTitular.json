@@ -1,0 +1,72 @@
+{
+    "id": 219,
+    "nombre": "TraspasarCuentasMismoTitular",
+    "descripcion": "Método para realizar un traspaso entre cuentas cuyo titular sea la misma persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "sdtTraspaso": {
+            "type": "object",
+            "description": "Datos del traspaso.",
+            "properties": {
+                "operacionUIdOrigen": {
+                    "type": "number",
+                    "description": "Identificador de operación de origen del traspaso."
+                },
+                "operacionUIdDestino": {
+                    "type": "number",
+                    "description": "Identificador de operación de destino del traspaso."
+                },
+                "monedaId": {
+                    "type": "number",
+                    "description": "Identificador de moneda."
+                },
+                "importe": {
+                    "type": "number",
+                    "description": "Importe del movimiento."
+                },
+                "concepto": {
+                    "type": "string",
+                    "description": "Concepto del traspaso."
+                }
+            },
+            "required": [
+                "personaUId",
+                "operacionUIdOrigen",
+                "operacionUIdDestino",
+                "importe"
+            ]
+        }
+    },
+    "salida": {
+        "sdtResultadoTraspaso": {
+            "type": "object",
+            "description": "Datos resultado del traspaso.",
+            "properties": {
+                "operacionUIdOrigen": {
+                    "type": "number",
+                    "description": "Identificador de operación de origen del traspaso."
+                },
+                "operacionUIdDestino": {
+                    "type": "number",
+                    "description": "Identificador de operación de destino del traspaso."
+                },
+                "saldoOperacionOrigen": {
+                    "type": "number",
+                    "description": "Saldo Actual de operación de origen."
+                },
+                "movimientoUId": {
+                    "type": "number",
+                    "description": "Identificador de movimiento."
+                },
+                "idMovimiento": {
+                    "type": "string",
+                    "description": "Identificador de movimiento String."
+                }
+            }
+        }
+    },
+    "sistema": "CuentasVista"
+}

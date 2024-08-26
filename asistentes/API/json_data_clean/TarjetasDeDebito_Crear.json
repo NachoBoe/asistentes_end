@@ -1,0 +1,42 @@
+{
+    "id": 494,
+    "nombre": "Crear",
+    "descripcion": "Método para dar de alta una tarjeta de débito para un cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "tipoTarjeta": {
+            "type": "string",
+            "description": "Tipo de tarjeta."
+        },
+        "nombreTarjeta": {
+            "type": "string",
+            "description": "Nombre de tarjeta."
+        }
+    },
+    "salida": {
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de tarjeta."
+        },
+        "numeroTarjeta": {
+            "type": "string",
+            "description": "Número de tarjeta."
+        },
+        "fechaExpiracion": {
+            "type": "string",
+            "description": "Fecha de vencimiento."
+        },
+        "estadoTarjeta": {
+            "type": "string",
+            "description": "Estado de la tarjeta."
+        },
+        "estadoPlastico": {
+            "type": "string",
+            "description": "Estado del plastico."
+        }
+    },
+    "sistema": "TarjetasDeDebito"
+}

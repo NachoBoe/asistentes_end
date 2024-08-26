@@ -1,0 +1,44 @@
+{
+    "id": 8,
+    "nombre": "ObtenerDocumentosDigitales",
+    "descripcion": "Método para obtener una lista de los documentos digitales asociados a una operación de ahorro programado.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "codigoSistema": {
+            "type": "number",
+            "description": "[Hidden: Valor fijo '3' para este método]."
+        }
+    },
+    "salida": {
+        "sdtDocumentosDigitales": {
+            "type": "object",
+            "description": "Listado de documentos digitales.",
+            "properties": {
+                "titulo": {
+                    "type": "string",
+                    "description": "Titulo del documento digital."
+                },
+                "FechaActualizacion": {
+                    "type": "string",
+                    "description": "Fecha de actualizacion del documento digital."
+                },
+                "FechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento del documento digital."
+                },
+                "TipoDocumentoDigital": {
+                    "type": "string",
+                    "description": "Tipo del documento digital."
+                },
+                "documentoId": {
+                    "type": "number",
+                    "description": "Identificador del documento digital."
+                }
+            }
+        }
+    },
+    "sistema": "AhorroProgramado"
+}

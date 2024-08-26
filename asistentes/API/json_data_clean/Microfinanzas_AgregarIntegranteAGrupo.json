@@ -1,0 +1,52 @@
+{
+    "id": 262,
+    "nombre": "AgregarIntegranteAGrupo",
+    "descripcion": "Método para agregar un integrante a un grupo de crédito.",
+    "entrada": {
+        "grupoId": {
+            "type": "number",
+            "description": "Código de grupo."
+        },
+        "sdtIntegranteGrupo": {
+            "type": "object",
+            "description": "Datos del integrante.",
+            "properties": {
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador único del cliente."
+                },
+                "cuenta": {
+                    "type": "string",
+                    "description": "Nombre de la cuenta."
+                },
+                "tipoIntegranteId": {
+                    "type": "number",
+                    "description": "Tipo de integrante a ser agregado."
+                },
+                "tipoIntegrante": {
+                    "type": "string",
+                    "description": "Descripción del tipo de integrante."
+                },
+                "fechaAlta": {
+                    "type": "string",
+                    "description": "Fecha de alta del integrante."
+                },
+                "fechaBaja": {
+                    "type": "string",
+                    "description": "Fecha de baja del integrante."
+                },
+                "identificacionAlternativa": {
+                    "type": "string",
+                    "description": "Identificación alternativa del integrante."
+                }
+            },
+            "required": [
+                "clienteUId",
+                "cuenta",
+                "tipoIntegranteId"
+            ]
+        }
+    },
+    "salida": {},
+    "sistema": "Microfinanzas"
+}

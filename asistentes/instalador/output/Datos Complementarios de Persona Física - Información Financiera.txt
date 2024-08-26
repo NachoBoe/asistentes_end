@@ -1,0 +1,18 @@
+La funcionalidad detallada en el archivo se refiere a la recopilación de datos complementarios de personas físicas en el sistema Bantotal. Este registro incluye información relevante sobre la situación personal y económica del individuo, lo que permite a la entidad financiera evaluar su perfil y situación financiera. Las posibilidades que se admiten incluyen la captura de datos como el país de residencia, tipo y número de documento, situación laboral, ingresos anuales, patrimonio, fecha de inicio de actividades, y otros aspectos que pueden influir en la relación del cliente con la entidad bancaria. 
+
+Los campos que se detallan en el archivo son:
+
+- DcpfPais: País
+- DcpfTdoc: Tipo de documento
+- DcpfNdoc: Número de documento
+- DcpfDnAl: Dueño / alquila
+- DcpfTrDpAu: Trab. en Rel.depend. / Autónom
+- DcpfTingAn: Total de ingresos anuales
+- DcpfSgPatr: Signo del patrimonio
+- DcpfPatr: Patrimonio
+- DcpfFchInA: Fecha de inicio de actividades
+- DcpfSect: Sector
+- DcpfPGrEc: Pertenece grupo económico
+- DcpfVinc: Vinculado?
+- DcpfTEndEx: Titular de endeu. Con el ext
+- DcpfPisoDR: Piso domicilio real

@@ -1,0 +1,5 @@
+La funcionalidad detallada en el archivo permite crear y gestionar relaciones de afinidad entre personas dentro del sistema Bantotal. A través del panel de ‘Mantenimiento de Personas’, se puede agregar o eliminar vínculos de personas, seleccionando una persona existente y el tipo de vínculo de relación entre ellas. Se establece que las relaciones pueden ser controladas para aplicarse únicamente a personas físicas mediante la configuración de una opción general. Además, se especifica que el vínculo "cónyuge" no puede ser utilizado en operaciones de ABM, ya que está restringido al Mantenimiento de Personas.
+
+- Opción General de Procesos No. 1016: 'S' (controlar que las relaciones apliquen únicamente para personas físicas).
+
+- Código de vínculos: se define para cada uno el tipo de relación, donde la relación de afinidad debe ser marcada como Afinidad.

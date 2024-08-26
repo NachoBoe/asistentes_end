@@ -1,0 +1,5 @@
+El archivo del sistema Bantotal describe la configuración del panel HSNGCPJ1, que es parametrizable en cuanto a la visibilidad de los campos y la descripción a mostrar. Este panel se accede a través del panel HSNG038 y permite gestionar información relacionada con personas y entidades jurídicas, así como datos de instituciones financieras y negocios.
+
+La funcionalidad del panel incluye la visualización y edición de datos como el país, tipo de documento, número de documento, razón social, capital social, y otros aspectos relevantes para la gestión de información bancaria. Se permite la integración de personas jurídicas, así como la adición y eliminación de vínculos entre personas y entidades.
+
+Las posibilidades que se admiten incluyen la parametrización de campos para que sean visibles o editables, así como la interacción a través de botones para agregar, eliminar o confirmar información. Además, se contemplan campos auxiliares y opciones de configuración que permiten una mayor flexibilidad en la gestión de datos.

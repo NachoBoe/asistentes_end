@@ -1,0 +1,144 @@
+{
+    "id": 436,
+    "nombre": "ObtenerDetallePrestamoCancelado",
+    "descripcion": "Devuelve el detalle del préstamo cancelado indicado.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de la operación."
+        }
+    },
+    "salida": {
+        "sdtPrestamo": {
+            "type": "object",
+            "description": "Datos del préstamo cancelado.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de la operación simulada."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del Producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre de producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel."
+                        }
+                    }
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Sucursal del préstamo."
+                },
+                "plus": {
+                    "type": "number",
+                    "description": "Tasa plus."
+                },
+                "tasaOriginal": {
+                    "type": "number",
+                    "description": "Tasa original."
+                },
+                "idOperacionFmt": {
+                    "type": "string",
+                    "description": "Identificador String (concatenación de algunos conceptos claves de la operación)."
+                },
+                "idOperacionBT": {
+                    "type": "string",
+                    "description": "Identificador texto de operación."
+                },
+                "cantidadCuotas": {
+                    "type": "integer",
+                    "description": "Cantidad de cuotas del préstamo."
+                },
+                "capitalOriginal": {
+                    "type": "number",
+                    "description": "Capital original del préstamo."
+                },
+                "tipoDia": {
+                    "type": "string",
+                    "description": "Tipo de día del préstamo."
+                },
+                "claseTasa": {
+                    "type": "string",
+                    "description": "Clase de tasa."
+                },
+                "tipoAmortizacion": {
+                    "type": "string",
+                    "description": "Tipo de amortización."
+                },
+                "simboloMoneda": {
+                    "type": "string",
+                    "description": "Símbolo monetario."
+                },
+                "plazo": {
+                    "type": "integer",
+                    "description": "Plazo del préstamo."
+                },
+                "tipoTasa": {
+                    "type": "string",
+                    "description": "Tipo de tasa."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha de alta del préstamo."
+                },
+                "tasaEfectiva": {
+                    "type": "number",
+                    "description": "Tasa efectiva anual."
+                },
+                "periodicidad": {
+                    "type": "integer",
+                    "description": "Período entre cuotas."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento del préstamo."
+                },
+                "tipoAno": {
+                    "type": "string",
+                    "description": "Tipo de año."
+                },
+                "tipoProducto": {
+                    "type": "string",
+                    "description": "Tipo de producto (Amortizable/Plan de pagos)."
+                },
+                "fechaCancelacion": {
+                    "type": "string",
+                    "description": "Fecha de cancelación del préstamo."
+                },
+                "cronograma": {
+                    "type": "object",
+                    "description": "Cronograma de pagos del préstamo.",
+                    "properties": {
+                        "fechaPago": {
+                            "type": "string",
+                            "description": "Fecha de pago."
+                        },
+                        "importePago": {
+                            "type": "number",
+                            "description": "Importe total pago de la cuota."
+                        },
+                        "diasMora": {
+                            "type": "integer",
+                            "description": "Días de mora con los que se pago la cuota."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

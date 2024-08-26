@@ -1,0 +1,3 @@
+No se encontró información adicional sobre configuraciones, reglas de negocio, programas particulares, tablas o controles asociados en el archivo proporcionado.
+
+La funcionalidad detallada en el archivo se refiere al acceso a un panel específico dentro del sistema Bantotal, que permite gestionar la información relacionada con los impuestos de una persona. Para acceder a esta funcionalidad, se debe pulsar el botón ‘Impuestos’ en el ‘Mantenimiento de Personas’. Se sugiere consultar el ‘Manual de Sistema de Impuestos’ para obtener más información sobre el tema.

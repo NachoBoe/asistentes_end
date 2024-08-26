@@ -1,0 +1,284 @@
+{
+    "id": 440,
+    "nombre": "ObtenerDetalle",
+    "descripcion": "Método para obtener los datos de un préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación simulada."
+        }
+    },
+    "salida": {
+        "sdtPrestamo": {
+            "type": "object",
+            "description": "Datos del préstamo.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de la operación simulada."
+                },
+                "idOperacionFmt": {
+                    "type": "string",
+                    "description": "Identificador String (concatenación de algunos conceptos claves de la operación)."
+                },
+                "idOperacionBT": {
+                    "type": "string",
+                    "description": "Identificador texto de operación."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto"
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre de producto"
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda"
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel"
+                        }
+                    }
+                },
+                "tipoProducto": {
+                    "type": "string",
+                    "description": "Tipo de producto (Amortizable / Plan de pagos)."
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Sucursal del préstamo."
+                },
+                "simboloMoneda": {
+                    "type": "string",
+                    "description": "Símbolo monetario."
+                },
+                "tipoAmortizacion": {
+                    "type": "string",
+                    "description": "Tipo de amortización."
+                },
+                "cuentaContable": {
+                    "type": "string",
+                    "description": "Descripción del rubro."
+                },
+                "actividad": {
+                    "type": "string",
+                    "description": "Actividad."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Esta del préstamo."
+                },
+                "precioOriginal": {
+                    "type": "number",
+                    "description": "Precio original del papel."
+                },
+                "precioActual": {
+                    "type": "number",
+                    "description": "Precio del papel actual."
+                },
+                "coeficienteIVA": {
+                    "type": "number",
+                    "description": "Coeficiente de IVA."
+                },
+                "capitalOriginal": {
+                    "type": "number",
+                    "description": "Capital original del préstamo."
+                },
+                "saldoCapital": {
+                    "type": "number",
+                    "description": "Saldo de capital."
+                },
+                "valorCuota": {
+                    "type": "number",
+                    "description": "Valor de la cuota."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha de alta del préstamo."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento del préstamo."
+                },
+                "interesDevengado": {
+                    "type": "number",
+                    "description": "Intereses devengados."
+                },
+                "interesMoraDevengado": {
+                    "type": "number",
+                    "description": "Intereses de mora devengados."
+                },
+                "resultadoInteresNormalDevengado": {
+                    "type": "number",
+                    "description": "Resultado de intereses normal devengados."
+                },
+                "interesSuspenso": {
+                    "type": "number",
+                    "description": "Intereses en suspenso."
+                },
+                "saldosPendiente": {
+                    "type": "object",
+                    "description": "Saldos pendientes.",
+                    "properties": {
+                        "concepto": {
+                            "type": "string",
+                            "description": "Concepto."
+                        },
+                        "valor": {
+                            "type": "number",
+                            "description": "Importe."
+                        },
+                        "texto": {
+                            "type": "string",
+                            "description": "Texto."
+                        }
+                    }
+                },
+                "totalSaldosPendiente": {
+                    "type": "number",
+                    "description": "Total saldos pendiente."
+                },
+                "deudaCancelacionTotal": {
+                    "type": "number",
+                    "description": "Monto de cancelación total."
+                },
+                "deudaTotalAFecha": {
+                    "type": "number",
+                    "description": "Monto a pagar para estar al día."
+                },
+                "cantidadCuotasVencidas": {
+                    "type": "number",
+                    "description": "Cantidad de cuotas vencidas."
+                },
+                "deudaTotalVencida": {
+                    "type": "number",
+                    "description": "Monto de la deuda vencida a la fecha."
+                },
+                "interesVigente": {
+                    "type": "number",
+                    "description": "Monto de interés vigente."
+                },
+                "interesMora": {
+                    "type": "number",
+                    "description": "Intereses de mora."
+                },
+                "interesPunitorio": {
+                    "type": "number",
+                    "description": "Intereses punitorios."
+                },
+                "totalImpuestos": {
+                    "type": "number",
+                    "description": "Total de impuestos."
+                },
+                "periodicidad": {
+                    "type": "number",
+                    "description": "Período entre cuotas."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo del préstamo."
+                },
+                "diasMora": {
+                    "type": "number",
+                    "description": "Días de mora del préstamo."
+                },
+                "diasMoraPromedio": {
+                    "type": "number",
+                    "description": "Días de mora promedio."
+                },
+                "cantidadCuotas": {
+                    "type": "number",
+                    "description": "Cantidad de cuotas del préstamo."
+                },
+                "cantidadCuotasImpagas": {
+                    "type": "number",
+                    "description": "Cantidad de cuotas impagas."
+                },
+                "cuotasPagasConRetaso": {
+                    "type": "number",
+                    "description": "Cantidad de cuotas pagas con atraso."
+                },
+                "fechaPrimerPago": {
+                    "type": "string",
+                    "description": "Fecha de primer pago."
+                },
+                "fechaProximoVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento de la próxima cuota."
+                },
+                "fechaPrimerCuotaImpaga": {
+                    "type": "string",
+                    "description": "Fecha de la primera cuota impaga."
+                },
+                "fechaUltimoPago": {
+                    "type": "string",
+                    "description": "Fecha de último pago de cuota."
+                },
+                "claseTasa": {
+                    "type": "string",
+                    "description": "Clase de tasa."
+                },
+                "tipoTasa": {
+                    "type": "string",
+                    "description": "Tipo de tasa."
+                },
+                "tipoDia": {
+                    "type": "string",
+                    "description": "Tipo de día del préstamo."
+                },
+                "tipoAno": {
+                    "type": "string",
+                    "description": "Tipo de año."
+                },
+                "tasaOriginal": {
+                    "type": "number",
+                    "description": "Tasa original."
+                },
+                "tasaVigente": {
+                    "type": "number",
+                    "description": "Tasa vigente."
+                },
+                "plus": {
+                    "type": "number",
+                    "description": "Tasa plus."
+                },
+                "tasaEfectiva": {
+                    "type": "number",
+                    "description": "Tasa efectiva anual."
+                },
+                "diasRevision": {
+                    "type": "number",
+                    "description": "Días de revisión (Tasa variable)."
+                },
+                "tipoTasaMora": {
+                    "type": "string",
+                    "description": "Tipo de tasa de mora."
+                },
+                "tasaMoraOriginal": {
+                    "type": "number",
+                    "description": "Tasa de mora original."
+                },
+                "tasaMoraVigente": {
+                    "type": "number",
+                    "description": "Tasa de mora vigente."
+                },
+                "tasaPunitorios": {
+                    "type": "number",
+                    "description": "Tasa punitorios."
+                },
+                "costoFinancieroTotal": {
+                    "type": "number",
+                    "description": "Costo financiero total (Argentina)."
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

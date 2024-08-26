@@ -1,0 +1,40 @@
+{
+    "id": 83,
+    "nombre": "ObtenerDocumentosDigitales",
+    "descripcion": "Dados los datos del cliente el método devolverá un listado de los documento digitales asociados al mismo.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "sdtDocumentosDigitales": {
+            "type": "object",
+            "description": "Listado de documentos digitales.",
+            "properties": {
+                "Titulo": {
+                    "type": "string",
+                    "description": "Titulo del documento digital."
+                },
+                "FechaActualizacion": {
+                    "type": "string",
+                    "description": "Fecha de actualizacion del documento digital."
+                },
+                "FechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento del documento digital."
+                },
+                "TipoDocumentoDigital": {
+                    "type": "string",
+                    "description": "Tipo del documento digital."
+                },
+                "Instancia": {
+                    "type": "number",
+                    "description": "Instancia del documento digital."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

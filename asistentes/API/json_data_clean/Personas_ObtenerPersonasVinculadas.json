@@ -1,0 +1,46 @@
+{
+    "id": 375,
+    "nombre": "ObtenerPersonasVinculadas",
+    "descripcion": "Método para obtener una lista de los vínculos de la persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {
+        "sdtPersonasVinculadas": {
+            "type": "object",
+            "description": "Datos de la persona vinculada.",
+            "properties": {
+                "personaUId": {
+                    "type": "number",
+                    "description": "Identificador único de persona."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre de la persona."
+                },
+                "vinculo": {
+                    "type": "object",
+                    "description": "Datos del vínculo.",
+                    "properties": {
+                        "identificador": {
+                            "type": "number",
+                            "description": "Identificador de vínculo."
+                        },
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción de vínculo."
+                        },
+                        "tipo": {
+                            "type": "string",
+                            "description": "Tipo de vínculo."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

@@ -1,0 +1,22 @@
+{
+    "id": 28,
+    "nombre": "ObtenerFechaHabil",
+    "descripcion": "Método que devuelve si la fecha indicada es una fecha hábil. Si no se recibe identificador de calendario, devuelve para el calendario de la sucursal central.",
+    "entrada": {
+        "calendarioId": {
+            "type": "number",
+            "description": "Identificador de calendario."
+        },
+        "fecha": {
+            "type": "string",
+            "description": "Fecha a consultar."
+        }
+    },
+    "salida": {
+        "fechaHabil": {
+            "type": "string",
+            "description": "¿Es hábil? (S/N)"
+        }
+    },
+    "sistema": "Calendarios"
+}

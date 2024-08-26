@@ -1,0 +1,21 @@
+{
+    "id": 1,
+    "nombre": "ModificarCuentaDestino",
+    "descripcion": "Método para modificar la cuenta destino donde se acreditarán los ahorros al vencimiento.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "ahorroUId": {
+            "type": "number",
+            "description": "Identificador de operación de ahorro."
+        },
+        "cuentaUId": {
+            "type": "number",
+            "description": "Identificador único de la operación de cuenta vista destino."
+        }
+    },
+    "salida": {},
+    "sistema": "AhorroProgramado"
+}

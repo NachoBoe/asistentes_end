@@ -1,0 +1,17 @@
+{
+    "id": 489,
+    "nombre": "Activar",
+    "descripcion": "Método para activar una tarjeta de débito física.",
+    "entrada": {
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de tarjeta."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {},
+    "sistema": "TarjetasDeDebito"
+}

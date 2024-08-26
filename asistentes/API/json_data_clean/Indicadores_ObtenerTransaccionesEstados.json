@@ -1,0 +1,79 @@
+{
+    "id": 257,
+    "nombre": "ObtenerTransaccionesEstados",
+    "descripcion": "Método para obtener las transacciones por estados ingresadas en el sistema.",
+    "entrada": {},
+    "salida": {
+        "sdtTransaccionesEstados": {
+            "type": "object",
+            "description": "Listado de trasacciones.",
+            "properties": {
+                "exito": {
+                    "type": "number",
+                    "description": "Transacciones contabilizadas con exito."
+                },
+                "error": {
+                    "type": "number",
+                    "description": "Transacciones contabilizadas con error."
+                },
+                "otros": {
+                    "type": "number",
+                    "description": "Otros tipos de contabilización."
+                },
+                "transaccionA": {
+                    "type": "number",
+                    "description": "Movimiento autorizado sin contabilizar."
+                },
+                "transaccionB": {
+                    "type": "number",
+                    "description": "Movimiento de ingreso batch no contabilizado."
+                },
+                "transaccionE": {
+                    "type": "number",
+                    "description": "Movimiento con errores."
+                },
+                "transaccionH": {
+                    "type": "number",
+                    "description": "Movimiento contabilizado y pasado al histórico."
+                },
+                "transaccionL": {
+                    "type": "number",
+                    "description": "Movimiento de ingreso libre no contabilizado."
+                },
+                "transaccionM": {
+                    "type": "number",
+                    "description": "Movimiento con autorizaciones pendientes."
+                },
+                "transaccionN": {
+                    "type": "number",
+                    "description": "Movimiento ingresado por el transaccional no contabilizado."
+                },
+                "transaccionP": {
+                    "type": "number",
+                    "description": "Movimiento contabilizado, pasado al histórico, con archivos de saldos históricos actualizados."
+                },
+                "transaccionR": {
+                    "type": "number",
+                    "description": "Movimiento con autorizaciones denegadas."
+                },
+                "transaccionS": {
+                    "type": "number",
+                    "description": "Movimiento contabilizado sin pasar al histórico."
+                },
+                "transaccionX": {
+                    "type": "number",
+                    "description": "Movimiento con autoriz. p/tipo cambio ingresado, para ser retomado."
+                },
+                "transaccionSP": {
+                    "type": "number",
+                    "description": "Movimiento sin especificar."
+                },
+                "sucursalParametros": {
+                    "type": "number",
+                    "description": "Parámetros de sucursal."
+                }
+            }
+        }
+    },
+    "sistema": "Indicadores"
+}

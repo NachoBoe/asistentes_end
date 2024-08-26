@@ -1,0 +1,36 @@
+{
+    "id": 107,
+    "nombre": "ObtenerTelefonos",
+    "descripcion": "Método para obtener los teléfonos de un cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "sdtTelefonos": {
+            "type": "object",
+            "description": "Listado de teléfonos.",
+            "properties": {
+                "telefono": {
+                    "type": "string",
+                    "description": "Número de teléfono"
+                },
+                "tipoDeDomicilioId": {
+                    "type": "number",
+                    "description": "Identificador de tipo de domicilio del teléfono."
+                },
+                "tipoDeDomicilio": {
+                    "type": "string",
+                    "description": "Descripción de tipo de domicilio del teléfono."
+                },
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador correlativo de teléfono."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

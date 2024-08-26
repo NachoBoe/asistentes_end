@@ -1,0 +1,9 @@
+La funcionalidad detallada en el archivo se refiere a la gestión de titulares representativos en cuentas clientes dentro del sistema Bantotal. Se describen diversas situaciones que pueden generar mensajes de error al intentar modificar, eliminar o asignar titulares representativos, así como la necesidad de mantener la correcta integración de la cuenta. Las posibilidades que se admiten incluyen la adición de nuevos titulares representativos y la modificación de direcciones asociadas a la cuenta.
+
+- Mensajes de Error:
+  - Descripción: se está tratando de modificar el titular representativo, corriendo el riesgo de distorsionar la integración de la cuenta. Primero debe adicionarse el nuevo titular representativo, para hacer la reasignación de la titularidad.
+  - Descripción: se está tratando de eliminar el titular representativo, dejando así distorsionada la integración de la cuenta.
+  - Descripción: no se ingresó titular representativo para la cuenta cliente.
+  - Descripción: existe otra cuenta cliente que tiene exactamente la misma integración que la cuenta que se está dando de alta.
+  - Descripción: no se ingresó titular representativo para la cuenta cliente.
+  - Descripción: se está ingresando un segundo titular representativo en la integración de la cuenta, por lo que se está eliminando el primero de ellos como representativo. Por tal motivo, se alerta al usuario que tenga presente que debe modificar las direcciones de la cuenta, en caso de corresponder.

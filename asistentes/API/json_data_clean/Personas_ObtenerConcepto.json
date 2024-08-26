@@ -1,0 +1,32 @@
+{
+    "id": 351,
+    "nombre": "ObtenerConcepto",
+    "descripcion": "Método para obtener los conceptos de los programas de personas.",
+    "entrada": {
+        "programa": {
+            "type": "string",
+            "description": "Nombre del programa."
+        },
+        "conceptoId": {
+            "type": "number",
+            "description": "Identificador del concepto."
+        }
+    },
+    "salida": {
+        "sdtValorCampo": {
+            "type": "object",
+            "description": "Coleccion de conceptos del programa.",
+            "properties": {
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción."
+                },
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

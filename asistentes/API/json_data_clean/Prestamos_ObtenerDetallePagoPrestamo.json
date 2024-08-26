@@ -1,0 +1,88 @@
+{
+    "id": 437,
+    "nombre": "ObtenerDetallePagoPrestamo",
+    "descripcion": "Método de obtención de detalle de un pago de prestamo a partir del movimiento.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento."
+        }
+    },
+    "salida": {
+        "sdtDetallePagoPrestamo": {
+            "type": "object",
+            "description": "Detalle del pago del prestamo.",
+            "properties": {
+                "fechaPago": {
+                    "type": "string",
+                    "description": "Fecha de pago prevista."
+                },
+                "detalle": {
+                    "type": "object",
+                    "description": "Detalle pago de la cuota.",
+                    "properties": {
+                        "fechaPago": {
+                            "type": "string",
+                            "description": "Fecha de pago prevista."
+                        },
+                        "capital": {
+                            "type": "number",
+                            "description": "Capital de la cuota."
+                        },
+                        "intereses": {
+                            "type": "number",
+                            "description": "Intereses de la cuota."
+                        },
+                        "comisiones": {
+                            "type": "number",
+                            "description": "Comisiones de la cuota."
+                        },
+                        "seguros": {
+                            "type": "number",
+                            "description": "Seguros de la cuota."
+                        },
+                        "impuestos": {
+                            "type": "number",
+                            "description": "Impuestos de la cuota."
+                        },
+                        "otrosConceptos": {
+                            "type": "number",
+                            "description": "Importe otros conceptos."
+                        },
+                        "redondeos": {
+                            "type": "number",
+                            "description": "Redondeos."
+                        },
+                        "total": {
+                            "type": "number",
+                            "description": "Total de la cuota."
+                        },
+                        "detalleConceptos": {
+                            "type": "object",
+                            "description": "Detalle de los conceptos adicionales.",
+                            "properties": {
+                                "concepto": {
+                                    "type": "string",
+                                    "description": "Concepto."
+                                },
+                                "valor": {
+                                    "type": "number",
+                                    "description": "Importe."
+                                },
+                                "texto": {
+                                    "type": "string",
+                                    "description": "Texto."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "Prestamos"
+}

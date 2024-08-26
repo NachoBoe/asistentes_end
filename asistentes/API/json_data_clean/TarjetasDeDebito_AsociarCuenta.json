@@ -1,0 +1,21 @@
+{
+    "id": 491,
+    "nombre": "AsociarCuenta",
+    "descripcion": "Método para asociar una cuenta vista a una tarjeta de débito dada.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "tipoDeCuenta": {
+            "type": "number",
+            "description": "Tipo de la cuenta a asociar."
+        },
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de tarjeta de débito."
+        }
+    },
+    "salida": {},
+    "sistema": "TarjetasDeDebito"
+}

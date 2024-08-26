@@ -1,0 +1,75 @@
+{
+    "id": 255,
+    "nombre": "ObtenerRubrosBolsas",
+    "descripcion": "Método para obtener posibles rubros de bolsa ingresados en el sistema.",
+    "entrada": {},
+    "salida": {
+        "sdtRubrosBolsa": {
+            "type": "object",
+            "description": "Listado de rubros de bolsa.",
+            "properties": {
+                "empresa": {
+                    "type": "number",
+                    "description": "Identificador de empresa."
+                },
+                "sucursal": {
+                    "type": "number",
+                    "description": "Identificador de sucursal."
+                },
+                "rubro": {
+                    "type": "number",
+                    "description": "Número de rubro."
+                },
+                "moneda": {
+                    "type": "number",
+                    "description": "Identificador de moneda."
+                },
+                "papel": {
+                    "type": "number",
+                    "description": "Identificador de papel."
+                },
+                "cuentaCliente": {
+                    "type": "number",
+                    "description": "Cuenta cliente."
+                },
+                "operacion": {
+                    "type": "number",
+                    "description": "Identificador de operación."
+                },
+                "subOperacion": {
+                    "type": "number",
+                    "description": "Identificador de sub operación."
+                },
+                "tipoOperacion": {
+                    "type": "number",
+                    "description": "Identificador de tipo de operación."
+                },
+                "signoMoneda": {
+                    "type": "string",
+                    "description": "Signo de la moneda."
+                },
+                "nombreEmpresa": {
+                    "type": "string",
+                    "description": "Nombre de la empresa."
+                },
+                "nombreSucursal": {
+                    "type": "string",
+                    "description": "Nombre de la sucursal."
+                },
+                "nombrePapel": {
+                    "type": "string",
+                    "description": "Nombre del papel."
+                },
+                "ocurrencias": {
+                    "type": "number",
+                    "description": "Ocurrencias."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Nombre del rubro."
+                }
+            }
+        }
+    },
+    "sistema": "Indicadores"
+}

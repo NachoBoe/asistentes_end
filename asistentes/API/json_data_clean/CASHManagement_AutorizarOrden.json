@@ -1,0 +1,13 @@
+{
+    "id": 35,
+    "nombre": "AutorizarOrden",
+    "descripcion": "Método para autorizar una orden determinada.",
+    "entrada": {
+        "ordenId": {
+            "type": "number",
+            "description": "Identificador de orden."
+        }
+    },
+    "salida": {},
+    "sistema": "CASHManagement"
+}

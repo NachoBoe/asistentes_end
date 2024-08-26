@@ -1,0 +1,6 @@
+La funcionalidad detallada en el archivo se refiere a la configuración de sucursales y su relación con el ubigeo dentro del sistema Bantotal. Se especifican los campos necesarios para identificar una empresa, su sucursal y el código de ubigeo correspondiente. Esto permite gestionar y organizar la información de las sucursales de manera eficiente, facilitando la identificación geográfica y administrativa de cada una.
+
+**Campos:**
+- sngc18PgCd: Empresa (N, 3.0)
+- sngc18Sucu: Sucursal (N, 3.0)
+- sngc18UGeo: Ubigeo (C, 6)

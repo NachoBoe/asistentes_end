@@ -1,0 +1,38 @@
+{
+    "id": 414,
+    "nombre": "AsociarDocumentoDigital",
+    "descripcion": "Método para asociar documento digital a un préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de la operación."
+        },
+        "tipoDocumentoId": {
+            "type": "number",
+            "description": "Identificador del tipo de documento."
+        },
+        "nombre": {
+            "type": "string",
+            "description": "Nombre del documento."
+        },
+        "archivoCodificado": {
+            "type": "string",
+            "description": "Archivo a asociar codificado."
+        },
+        "fechaEmision": {
+            "type": "string",
+            "description": "Fecha de emisión del documento (en caso que corresponda)."
+        },
+        "fechaVencimiento": {
+            "type": "string",
+            "description": "Fecha de emisión del documento (en caso que corresponda)."
+        }
+    },
+    "salida": {
+        "documentoId": {
+            "type": "number",
+            "description": "Identificador del documento asociado."
+        }
+    },
+    "sistema": "Prestamos"
+}

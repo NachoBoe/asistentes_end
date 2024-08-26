@@ -1,0 +1,11 @@
+- Guías y Guías Especiales de proceso:
+  - Código: 20001
+    - Correlativo1: 1
+    - Correlativo2: 1600
+    - Correlativo3: 20
+  - Código: 20001
+    - Correlativo1: 1
+    - Correlativo2: 1700
+    - Correlativo3: 20
+
+Descripción general de la funcionalidad: Se muestra un mensaje de error al intentar definir un mismo correlativo dos veces. Además, se establece la guía de procesos especial con el código 20001 para definir un largo mínimo de caracteres obligatorio para el domicilio y el teléfono. Se especifica el largo mínimo de caracteres que se debe ingresar para cada uno de estos campos.

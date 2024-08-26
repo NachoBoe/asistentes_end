@@ -1,0 +1,30 @@
+{
+    "id": 192,
+    "nombre": "ContratarProducto",
+    "descripcion": "Método para contratar una cuenta de ahorro en Bantotal.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador único de producto."
+        },
+        "nombreSubCuenta": {
+            "type": "string",
+            "description": "Nombre de la cuenta de ahorro."
+        },
+        "sucursalId": {
+            "type": "number",
+            "description": "Identificador de sucursal."
+        }
+    },
+    "salida": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        }
+    },
+    "sistema": "CuentasDeAhorro"
+}

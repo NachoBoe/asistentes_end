@@ -1,0 +1,3 @@
+El archivo detalla la configuración del panel ‘HSNGCPF1’ en la plataforma Bantotal, que permite la parametrización de la visibilidad de los campos y la descripción a mostrar. Los campos pueden ser fijos o tener un aspecto parametrizable, lo que permite definir si son visibles, no visibles, editables o no editables, y pueden estar condicionados por perfil de autorización, programa o regla de negocios. 
+
+La funcionalidad principal es la gestión de datos de personas, incluyendo información personal, laboral y de contacto, así como horarios de atención y datos del negocio. Se permite la personalización de la visualización de estos datos según las necesidades del usuario o del contexto en el que se utilice el sistema.

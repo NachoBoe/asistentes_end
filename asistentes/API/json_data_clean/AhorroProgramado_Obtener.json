@@ -1,0 +1,136 @@
+{
+    "id": 13,
+    "nombre": "Obtener",
+    "descripcion": "Método para obtener los datos del ahorro.",
+    "entrada": {
+        "ahorroUId": {
+            "type": "number",
+            "description": "Identificador único del ahorro."
+        }
+    },
+    "salida": {
+        "sdtDetalleAhorro": {
+            "type": "object",
+            "description": "Datos del ahorro.",
+            "properties": {
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador único del cliente."
+                },
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto."
+                },
+                "ahorroUId": {
+                    "type": "number",
+                    "description": "Identificador único del ahorro."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha del vencimiento del ahorro."
+                },
+                "periodicidad": {
+                    "type": "number",
+                    "description": "Periodicidad (en días) del ahorro."
+                },
+                "díaDeIncremento": {
+                    "type": "number",
+                    "description": "Día en que se da el incremento."
+                },
+                "abono": {
+                    "type": "number",
+                    "description": "Abono."
+                },
+                "intentosDeIncrementoHabilitados": {
+                    "type": "number",
+                    "description": "Intentos de incremento habilitados."
+                },
+                "intentosDeIncrementoUtilizados": {
+                    "type": "number",
+                    "description": "Intentos de incremento utilizados."
+                },
+                "periodosDeGraciaUtilizados": {
+                    "type": "number",
+                    "description": "Períodos de gracia utilizados."
+                },
+                "periodosDeGraciaHabilitados": {
+                    "type": "number",
+                    "description": "Períodos de gracia habilitados."
+                },
+                "tasaOriginal": {
+                    "type": "number",
+                    "description": "Tasa original."
+                },
+                "tasaActual": {
+                    "type": "number",
+                    "description": "Tasa actual."
+                },
+                "tipoTasa": {
+                    "type": "string",
+                    "description": "Tipo de tasa."
+                },
+                "saldoActual": {
+                    "type": "number",
+                    "description": "Saldo actual del ahorro."
+                },
+                "fechaProximoIncremento": {
+                    "type": "string",
+                    "description": "Fecha del próximo incremento."
+                },
+                "fechaProximaRenovacion": {
+                    "type": "string",
+                    "description": "Fecha del próximo incremento."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Estado del ahorro."
+                },
+                "renueva": {
+                    "type": "string",
+                    "description": "¿Renueva? (S/N)."
+                },
+                "observacion": {
+                    "type": "string",
+                    "description": "Observación."
+                },
+                "tipoDeDia": {
+                    "type": "string",
+                    "description": "Tipo de día utilizado."
+                },
+                "operacionUIdOrigen": {
+                    "type": "number",
+                    "description": "Identificador único de la operación de orígen."
+                },
+                "operacionUIdDestino": {
+                    "type": "number",
+                    "description": "Identificador único de la operación de destino."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo para el ahorro."
+                },
+                "fechaAltaSolicitud": {
+                    "type": "string",
+                    "description": "Fecha de alta de la solicitud."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha valor del ahorro."
+                },
+                "montoMeta": {
+                    "type": "number",
+                    "description": "Monto meta del ahorro."
+                },
+                "fechaMeta": {
+                    "type": "string",
+                    "description": "Fecha meta del ahorro."
+                },
+                "motivoMeta": {
+                    "type": "string",
+                    "description": "Motivo de la meta."
+                }
+            }
+        }
+    },
+    "sistema": "AhorroProgramado"
+}

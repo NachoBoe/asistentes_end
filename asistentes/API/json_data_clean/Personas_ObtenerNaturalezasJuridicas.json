@@ -1,0 +1,23 @@
+{
+    "id": 370,
+    "nombre": "ObtenerNaturalezasJuridicas",
+    "descripcion": "Método para obtener un listado de las naturalezas juridicas ingresadas.",
+    "entrada": {},
+    "salida": {
+        "sdtNaturalezas": {
+            "type": "object",
+            "description": "Listado de naturalezas jurídicas.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de naturaleza jurídica."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de naturaleza jurídica."
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la gestión de datos de personas físicas dentro del sistema Bantotal. Este incluye la captura y almacenamiento de información personal relevante, como nombres, apellidos, datos de nacimiento, estado civil, y otros aspectos legales y patrimoniales. Las posibilidades que se admiten incluyen la identificación de la persona, su estado legal, y la relación con el banco.
+
+No se encontraron configuraciones asociadas, guías, reglas de negocio, programas particulares, tablas, ni otros controles y configuraciones.

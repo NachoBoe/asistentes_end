@@ -1,0 +1,22 @@
+{
+    "id": 443,
+    "nombre": "ObtenerDeuda",
+    "descripcion": "Método para obtener la deuda de un préstamo a una determinada fecha.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación simulada."
+        },
+        "fechaCalculo": {
+            "type": "string",
+            "description": "Fecha a la que se calcula la deuda."
+        }
+    },
+    "salida": {
+        "deuda": {
+            "type": "number",
+            "description": "Deuda a la fecha."
+        }
+    },
+    "sistema": "Prestamos"
+}

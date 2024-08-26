@@ -1,0 +1,4 @@
+La funcionalidad detallada en el archivo se refiere a la parametrización de la invocación a un panel particular desde el panel ‘Per. Fis. - Horarios de Atención de Negocio (HSNGCPF5)’. A través de la FST900 de nombre HSNGCPF5, se verifica la existencia del programa particular parametrizado y, en caso de existir, se invoca una acción definida en el panel a llamar sin opción de retorno. Esto permite una mayor flexibilidad y personalización en la gestión de horarios de atención en el sistema Bantotal.
+
+**Parametrización:**
+Entrar al panel de Mantenimiento de programas particulares (HTRT900) y parametrizar el siguiente programa particular:

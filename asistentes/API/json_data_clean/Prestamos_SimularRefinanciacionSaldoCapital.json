@@ -1,0 +1,161 @@
+{
+    "id": 478,
+    "nombre": "SimularRefinanciacionSaldoCapital",
+    "descripcion": "Método para simular una refinanciación uno o más prestamos, siendo el capital del nuevo préstamo la suma de los saldos capitales de los seleccionados.",
+    "entrada": {
+        "sdtRefinanciacion": {
+            "type": "object",
+            "description": "Datos de simulación.",
+            "properties": {
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador único de cliente."
+                },
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto."
+                },
+                "fechaPrimerPago": {
+                    "type": "string",
+                    "description": "Fecha de primer pago."
+                },
+                "cantidadCuotas": {
+                    "type": "number",
+                    "description": "Cantidad de cuotas."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo de la operación."
+                },
+                "pizarra": {
+                    "type": "number",
+                    "description": "Tipo de pizzarra. Si no se indica toma la preseteada para el producto."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa. Si no se indica toma la correspondiente al tipo de pizarra."
+                },
+                "actividad": {
+                    "type": "number",
+                    "description": "Código de actividad (Destino del crédito)."
+                },
+                "operaciones": {
+                    "type": "number",
+                    "description": "Lista de idententificares de operaciones a cancelar."
+                }
+            },
+            "required": [
+                "clienteUId",
+                "productoUId",
+                "cantidadCuotas"
+            ]
+        },
+        "accion": {
+            "type": "string",
+            "description": "[Hidden: Valor fijo 'REFIS' para este método]."
+        }
+    },
+    "salida": {
+        "refinanciacionId": {
+            "type": "number",
+            "description": "Identificador de refinanciación."
+        },
+        "sdtSimulacion": {
+            "type": "object",
+            "description": "Datos del préstamo simulado.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de la operación."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto"
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre de producto"
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda"
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel"
+                        }
+                    }
+                },
+                "capital": {
+                    "type": "number",
+                    "description": "Capital del préstamo."
+                },
+                "intereses": {
+                    "type": "number",
+                    "description": "Intereses."
+                },
+                "valorCuota": {
+                    "type": "number",
+                    "description": "Valor cuota."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa."
+                },
+                "tasaEfectiva": {
+                    "type": "number",
+                    "description": "Tasa efectiva."
+                },
+                "tasaEfectivaAnual": {
+                    "type": "number",
+                    "description": "Tasa efectiva anual."
+                },
+                "tasaNominalAnual": {
+                    "type": "number",
+                    "description": "Tasa nominal anual."
+                },
+                "totalPrestamo": {
+                    "type": "number",
+                    "description": "Total a pagar."
+                },
+                "fechaPrimerPago": {
+                    "type": "string",
+                    "description": "Fecha de primer pago."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha valor."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo."
+                },
+                "otrosConceptos": {
+                    "type": "object",
+                    "description": "Otros conceptos."
+                },
+                "cronograma": {
+                    "type": "object",
+                    "description": "Cronograma del préstamo."
+                }
+            }
+        },
+        "saldoCapitalCancelacion": {
+            "type": "number",
+            "description": "Saldo de capital total de los préstamos a consolidar."
+        },
+        "deudaTotalCancelacion": {
+            "type": "number",
+            "description": "Monto de cancelación total de los préstamos a consolidar."
+        }
+    },
+    "sistema": "Prestamos"
+}

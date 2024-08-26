@@ -1,0 +1,20 @@
+La funcionalidad detallada en el archivo se refiere al "3er Nivel de Agrupación de Direcciones" dentro del sistema Bantotal. Este nivel permite organizar y clasificar direcciones en un sistema jerárquico, facilitando la gestión y el acceso a la información relacionada con las direcciones en el contexto bancario.
+
+Las posibilidades que se admiten incluyen la identificación de cada nivel de agrupación mediante identificadores únicos, así como la descripción de cada nivel, lo que permite una mejor comprensión y uso de la información en el sistema.
+
+- Tipo: Parámetros
+- Nombre del Campo: sngc01id
+  - Tipo: N (3.0)
+  - Descripción: Identificador
+- Nombre del Campo: sngc02id
+  - Tipo: N (3.0)
+  - Descripción: Identificador Nivel 2
+- Nombre del Campo: sngc03id
+  - Tipo: N (3.0)
+  - Descripción: Identificador Nivel 3
+- Nombre del Campo: sngc03Dsc
+  - Tipo: C (35)
+  - Descripción: Descripción
+- Nombre del Campo: sngc03DeEx
+  - Tipo: C (80)
+  - Descripción: Descripción Extendida

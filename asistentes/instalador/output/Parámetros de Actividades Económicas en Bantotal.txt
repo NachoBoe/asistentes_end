@@ -1,0 +1,14 @@
+El archivo del sistema Bantotal detalla los parámetros relacionados con la actividad económica, incluyendo códigos y descripciones que permiten clasificar y gestionar la información de los deudores según diferentes normativas y regulaciones. 
+
+Las posibilidades que se admiten incluyen la identificación de actividades económicas a través de varios códigos, lo que permite una clasificación más precisa y adaptada a diferentes contextos normativos, como las normas tributarias, la superintendencia, y regulaciones específicas de países como Italia. 
+
+Los campos definidos en el archivo son:
+
+- ActCod1: Código de actividad según normas tributarias (N(9))
+- ActNom1: Descripción de la actividad (C(60))
+- ActCod2: Actividad económica según superintendencia (N(5))
+- ActCod3: Actividad económica según París (N(5))
+- ActCod4: Actividad económica según Italia (C(5))
+- Act0705: Código de categoría deudor (N(2))
+- Act0706: Código de composición institucional (N(3))
+- Act0707: Código de agente económico según Italia (N(5))

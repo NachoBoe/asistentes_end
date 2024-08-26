@@ -1,0 +1,23 @@
+{
+    "id": 481,
+    "nombre": "ObtenerReglasNegocio",
+    "descripcion": "Método para obtener un listado de las reglas de negocio.",
+    "entrada": {},
+    "salida": {
+        "sdtReglasNegocio": {
+            "type": "object",
+            "description": "Listado de reglas de negocio.",
+            "properties": {
+                "reglaId": {
+                    "type": "number",
+                    "description": "Código de regla de negocio."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de regla de negocio."
+                }
+            }
+        }
+    },
+    "sistema": "ReglasNegocio"
+}

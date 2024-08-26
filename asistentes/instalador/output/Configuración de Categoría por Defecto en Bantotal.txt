@@ -1,0 +1,7 @@
+**Descripción general de la funcionalidad:**
+La funcionalidad permite identificar un valor por defecto en el sistema Bantotal, específicamente en la categoría de Comercial o Consumo. Esto se logra a través de un parámetro que se almacena en la Opción General de Procesos No. 471, donde se puede seleccionar entre dos opciones: 'S' para comercial y 'N' para consumo.
+
+**Opciones generales:**
+- Opción General de Procesos No. 471: 
+  - 'S': comercial
+  - 'N': consumo

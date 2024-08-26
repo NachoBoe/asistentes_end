@@ -1,0 +1,17 @@
+{
+    "id": 314,
+    "nombre": "ActualizarCelular",
+    "descripcion": "Método para actualizar el celular de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de la persona."
+        },
+        "celular": {
+            "type": "string",
+            "description": "Número de celular."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

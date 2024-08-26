@@ -1,0 +1,18 @@
+{
+    "id": 403,
+    "nombre": "ObtenerPrecioEspecie",
+    "descripcion": "Método para devolver la cotización de una especie en moneda nacional.",
+    "entrada": {
+        "especie": {
+            "type": "number",
+            "description": "Identificador de la especie."
+        }
+    },
+    "salida": {
+        "precio": {
+            "type": "number",
+            "description": "Cotización."
+        }
+    },
+    "sistema": "Precios"
+}

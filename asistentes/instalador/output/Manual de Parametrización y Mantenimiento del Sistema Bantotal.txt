@@ -1,0 +1,13 @@
+- Opciones Generales de Procesos: 
+  - 1.1 Opciones Generales de Procesos	7
+
+- Guías de Proceso:
+  - 1.2.1 Guías de Proceso (FST098)	9
+  - 1.2.2 Guías Especiales de Proceso (FST198)	11
+
+- Programas particulares:
+  - 2.3.1 Programa particular Siesa (Contactar)	12
+  - 2.3.2 Programa particular HSNGCPF5 (Santander Perú)	13
+
+Descripción general de la funcionalidad:
+El documento detalla la parametrización y mantenimiento de personas y cuentas en la plataforma Bantotal, incluyendo opciones generales de procesos, guías de procesos, programas particulares, y mantenimiento de tablas y atributos relacionados. Se abordan aspectos como la gestión de datos de personas, cuentas, domicilios, y otros elementos necesarios para la operación de la plataforma bancaria, permitiendo una adecuada administración y control de la información.

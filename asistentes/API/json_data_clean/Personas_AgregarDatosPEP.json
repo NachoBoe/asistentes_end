@@ -1,0 +1,48 @@
+{
+    "id": 329,
+    "nombre": "AgregarDatosPEP",
+    "descripcion": "Método para agregar los datos de una persona expuesta políticamente.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "esPEP": {
+            "type": "string",
+            "description": "Es persona políticamente expuesta? (S/N)."
+        },
+        "sdtDatosPEP": {
+            "type": "object",
+            "description": "Datos de la PEP.",
+            "properties": {
+                "entidad": {
+                    "type": "string",
+                    "description": "Entidad."
+                },
+                "cargoRelacion": {
+                    "type": "string",
+                    "description": "Cargo que ocupa."
+                },
+                "observacion": {
+                    "type": "string",
+                    "description": "Observación."
+                },
+                "fechaInicio": {
+                    "type": "string",
+                    "description": "Fecha de inicio."
+                },
+                "fechaSalida": {
+                    "type": "string",
+                    "description": "Fecha de salida."
+                }
+            },
+            "required": [
+                "entidad",
+                "cargoRelacion",
+                "fechaInicio"
+            ]
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

@@ -1,0 +1,38 @@
+{
+    "id": 408,
+    "nombre": "AbonarACuenta",
+    "descripcion": "Método para recibir un pago a un préstamo en el que por alguna condicion no se puediere operar en ese momento. El pago se realiza a un pasivo transitorio u otro rubro a definir, el cual luego debera ser volcado al prestamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación simulada."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "importe": {
+            "type": "number",
+            "description": "Importe a pagar."
+        },
+        "recibeOperacionCobro": {
+            "type": "string",
+            "description": "[Hidden: Recibe o no operación de cobro (S/N)]."
+        },
+        "operacionUId_cobro": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta vista de donde se cobrará el préstamo."
+        },
+        "referencia": {
+            "type": "string",
+            "description": "Referencia."
+        }
+    },
+    "salida": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento [Asiento]."
+        }
+    },
+    "sistema": "Prestamos"
+}

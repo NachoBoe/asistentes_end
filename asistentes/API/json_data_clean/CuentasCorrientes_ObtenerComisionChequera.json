@@ -1,0 +1,34 @@
+{
+    "id": 178,
+    "nombre": "ObtenerComisionChequera",
+    "descripcion": "Método para devolver el importe de comisión que se cobrará, dada una cuenta y un tipo de chequera.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "tipoChequeraId": {
+            "type": "number",
+            "description": "Identificador de tipo de chequera."
+        },
+        "cantidadChequeras": {
+            "type": "number",
+            "description": "Cantidad de chequeras."
+        }
+    },
+    "salida": {
+        "moneda": {
+            "type": "string",
+            "description": "Moneda de la cuenta."
+        },
+        "comision": {
+            "type": "number",
+            "description": "Importe de comisión a cobrar."
+        },
+        "impuestos": {
+            "type": "number",
+            "description": "Importe de impuestos a cobrar."
+        }
+    },
+    "sistema": "CuentasCorrientes"
+}

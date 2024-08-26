@@ -1,0 +1,7 @@
+El panel de Mantenimiento de Parámetros HSNGP001, código de parámetro 15 ‘Cuentas y Personas’, permite la administración de conceptos relacionados con la identificación y gestión de documentos en el sistema bancario. Los conceptos que se pueden gestionar incluyen:
+
+1. País de Documento
+2. País y tipo de documento por default
+3. País identificador de documentos nacionales
+
+La funcionalidad del panel se centra en la configuración de los parámetros que determinan cómo se manejan los documentos de identificación en el sistema, permitiendo a los usuarios establecer valores predeterminados y gestionar la identificación de documentos según el país. Esto facilita la correcta administración de cuentas y personas dentro de la plataforma, asegurando que se cumplan las normativas y requisitos específicos de cada país en relación con la documentación.

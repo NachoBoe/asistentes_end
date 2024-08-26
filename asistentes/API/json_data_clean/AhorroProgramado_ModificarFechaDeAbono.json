@@ -1,0 +1,21 @@
+{
+    "id": 3,
+    "nombre": "ModificarFechaDeAbono",
+    "descripcion": "Método para modificar la fecha del abono para el ahorro.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "ahorroUId": {
+            "type": "number",
+            "description": "Identificador único de operación de ahorro."
+        },
+        "diaIncremento": {
+            "type": "number",
+            "description": "Nuevo día de incremento."
+        }
+    },
+    "salida": {},
+    "sistema": "AhorroProgramado"
+}

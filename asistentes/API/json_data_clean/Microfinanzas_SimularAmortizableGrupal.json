@@ -1,0 +1,109 @@
+{
+    "id": 289,
+    "nombre": "SimularAmortizableGrupal",
+    "descripcion": "Método para simular la solicitud de un préstamo amortizable grupal.",
+    "entrada": {
+        "sdtSimulacionAmortizableGrupal": {
+            "type": "object",
+            "description": "Datos de la simulación grupal.",
+            "properties": {
+                "solicitudUId": {
+                    "type": "number",
+                    "description": "Identificador de instancia Workflow."
+                },
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto."
+                },
+                "fechaPrimerPago": {
+                    "type": "string",
+                    "description": "Fecha de primer pago."
+                },
+                "cantidadCuotas": {
+                    "type": "number",
+                    "description": "Cantidad de cuotas."
+                },
+                "periodoCuotas": {
+                    "type": "number",
+                    "description": "Período entre vencimiento de cada cuota."
+                },
+                "pizarra": {
+                    "type": "number",
+                    "description": "Tipo de pizzarra. Si no se indica toma la preseteada para el producto."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa. Si no se indica toma la correspondiente al tipo de pizarra."
+                },
+                "integrantesGrupo": {
+                    "type": "object",
+                    "description": "Datos de los integrantes del grupo.",
+                    "properties": {
+                        "empresa": {
+                            "type": "number",
+                            "description": "Identificador de empresa."
+                        },
+                        "clienteUId": {
+                            "type": "number",
+                            "description": "Identificador único de cliente."
+                        },
+                        "cuenta": {
+                            "type": "string",
+                            "description": "Cuenta del cliente."
+                        },
+                        "monto": {
+                            "type": "number",
+                            "description": "Monto solicitado por el cliente."
+                        },
+                        "destinoCredito": {
+                            "type": "number",
+                            "description": "Identificador del destino del crédito."
+                        },
+                        "destinoCreditoDesc": {
+                            "type": "string",
+                            "description": "Nombre del destino del crédito."
+                        },
+                        "valorCuota": {
+                            "type": "number",
+                            "description": "Valor de la cuota."
+                        }
+                    }
+                },
+                "datosAdicionales": {
+                    "type": "object",
+                    "description": "Importe otros conceptos.",
+                    "properties": {
+                        "concepto": {
+                            "type": "string",
+                            "description": "Concepto."
+                        },
+                        "valor": {
+                            "type": "number",
+                            "description": "Importe."
+                        },
+                        "texto": {
+                            "type": "string",
+                            "description": "Texto."
+                        }
+                    }
+                }
+            },
+            "required": [
+                "solicitudUId",
+                "productoUId",
+                "integrantesGrupo"
+            ]
+        }
+    },
+    "salida": {
+        "sdtSimulacionPrestamo": {
+            "type": "object",
+            "description": "Datos del préstamo simulado."
+        },
+        "sdtIntegrantesGrupo": {
+            "type": "object",
+            "description": "Datos de los integrantes del grupo."
+        }
+    },
+    "sistema": "Microfinanzas"
+}

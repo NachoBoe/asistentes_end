@@ -1,0 +1,26 @@
+{
+    "id": 26,
+    "nombre": "ObtenerFechaHabilAnterior",
+    "descripcion": "Método que devuelve la fecha hábil anterior a la fecha ingresada. Si no se recibe identificador de calendario, devuelve para el calendario de la sucursal central.",
+    "entrada": {
+        "calendarioId": {
+            "type": "number",
+            "description": "Identificador de calendario."
+        },
+        "fecha": {
+            "type": "string",
+            "description": "Fecha de consulta."
+        },
+        "sentido": {
+            "type": "string",
+            "description": "[Hidden, valor fijo 'D' para este método]."
+        }
+    },
+    "salida": {
+        "fechaHabil": {
+            "type": "string",
+            "description": "Fecha hábil anterior."
+        }
+    },
+    "sistema": "Calendarios"
+}

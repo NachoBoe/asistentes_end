@@ -1,0 +1,28 @@
+{
+    "id": 277,
+    "nombre": "ObtenerGrupos",
+    "descripcion": "Método para obtener los grupos de crédito existentes.",
+    "entrada": {
+        "tipoGrupoId": {
+            "type": "number",
+            "description": "Tipo de grupos."
+        }
+    },
+    "salida": {
+        "sdtGrupos": {
+            "type": "object",
+            "description": "Listado de grupos.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código del grupo."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Descripción del grupo."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

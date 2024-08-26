@@ -1,0 +1,40 @@
+{
+    "id": 398,
+    "nombre": "ObtenerCotizacionAFecha",
+    "descripcion": "Método para obtener un listado de las cotizaciones de las monedas ingresadas.",
+    "entrada": {
+        "monedaId": {
+            "type": "number",
+            "description": "Identificador de moneda. [Si es vacío devuelve las cotizaciones de todas las monedas]."
+        },
+        "fecha": {
+            "type": "string",
+            "description": "Fecha de cotización. [Si es vacía devuelve cotización al día de hoy]."
+        }
+    },
+    "salida": {
+        "sdtCotizacion": {
+            "type": "object",
+            "description": "Listado de cotizaciones.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de moneda."
+                },
+                "monedaISO": {
+                    "type": "string",
+                    "description": "Código ISO de la moneda."
+                },
+                "compra": {
+                    "type": "number",
+                    "description": "Cotización Compra."
+                },
+                "venta": {
+                    "type": "number",
+                    "description": "Cotización Venta."
+                }
+            }
+        }
+    },
+    "sistema": "Precios"
+}

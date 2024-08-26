@@ -1,0 +1,42 @@
+{
+    "id": 354,
+    "nombre": "ObtenerCuentasCliente",
+    "descripcion": "Método para obtener un listado de las cuentas de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {
+        "sdtCuentasCliente": {
+            "type": "object",
+            "description": "Listado de cuentas cliente.",
+            "properties": {
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador único de cuenta."
+                },
+                "representativo": {
+                    "type": "string",
+                    "description": "Indica si es titular representativo (S/N)."
+                },
+                "titularidad": {
+                    "type": "object",
+                    "description": "Datos de tipo de integrante.",
+                    "properties": {
+                        "identificador": {
+                            "type": "number",
+                            "description": "Identificador del integrante."
+                        },
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción del integrante."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

@@ -1,0 +1,50 @@
+{
+    "id": 405,
+    "nombre": "ObtenerTasaCliente",
+    "descripcion": "Método que devuelve la tasa parametrizada al cliente para el producto indicado junto con la fecha de vigencia.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador del cliente."
+        },
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador del producto."
+        },
+        "fecha": {
+            "type": "string",
+            "description": "Fecha del consulta."
+        },
+        "importe": {
+            "type": "number",
+            "description": "Importe a calcular."
+        },
+        "plazo": {
+            "type": "number",
+            "description": "Plazo."
+        }
+    },
+    "salida": {
+        "tipoTasa": {
+            "type": "string",
+            "description": "Tipo de tasa."
+        },
+        "tasa": {
+            "type": "number",
+            "description": "Tasa."
+        },
+        "tasaMinima": {
+            "type": "number",
+            "description": "Tasa mínima."
+        },
+        "tasaMaxima": {
+            "type": "number",
+            "description": "Tasa máxima."
+        },
+        "fechaVigencia": {
+            "type": "string",
+            "description": "Fecha de vigencia"
+        }
+    },
+    "sistema": "Precios"
+}

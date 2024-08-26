@@ -1,0 +1,14 @@
+La funcionalidad detallada en el archivo "10.3.7 Relaciones Pendientes - FSR002" se refiere a la gestión de relaciones pendientes en el sistema Bantotal, específicamente en el contexto de documentos relacionados con países y tipos de documentos. Se permite registrar información sobre documentos pendientes, así como datos relacionados con cónyuges y sus respectivos documentos.
+
+Los campos que se manejan son:
+
+- Pepais: País del documento (N(3))
+- Petdoc: Tipo de documento (N(2))
+- Pendoc: Documento (C(12))
+- Rpccyg: Código del cónyuge (N(2))
+- Rppais: País (N(3))
+- Rptdoc: Tipo de documento (N(2))
+- Rpndoc: Documento (C(12))
+- Rprpat: Rprpat (N(3))
+
+Las posibilidades que se admiten incluyen la identificación y gestión de documentos pendientes, así como la vinculación de información relacionada con cónyuges y sus documentos.

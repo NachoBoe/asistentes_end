@@ -1,0 +1,68 @@
+{
+    "id": 240,
+    "nombre": "ObtenerProductosHabilitados",
+    "descripcion": "Método para obtener un listado de los productos de deposito a plazo habilitados.",
+    "entrada": {
+        "tipoDeProducto": {
+            "type": "string",
+            "description": "Tipo de producto (VTO: Vencimiento, PP: Pago periódico)."
+        }
+    },
+    "salida": {
+        "sdtProductosDepositoAPlazo": {
+            "type": "object",
+            "description": "Listado de productos habilitados.",
+            "properties": {
+                "producto": {
+                    "type": "object",
+                    "description": "Producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre del producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de la moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo del papel."
+                        }
+                    }
+                },
+                "tipoDeDeposito": {
+                    "type": "string",
+                    "description": "Tipo de depósito. (VTO: Vencimiento, PP: Pago periódico)."
+                },
+                "datosExtendidos": {
+                    "type": "object",
+                    "description": "Listado de datos complementarios.",
+                    "properties": {
+                        "clave": {
+                            "type": "string",
+                            "description": "Clave del dato extendido."
+                        },
+                        "tipo": {
+                            "type": "string",
+                            "description": "Tipo de dato extendido."
+                        },
+                        "valor": {
+                            "type": "string",
+                            "description": "Valor de dato extendido."
+                        },
+                        "Lista": {
+                            "type": "object",
+                            "description": "Lista de datos"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "DepositosAPlazo"
+}

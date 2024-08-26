@@ -1,0 +1,17 @@
+{
+    "id": 272,
+    "nombre": "InhabilitarIntegranteGrupo",
+    "descripcion": "Método para inhabilitar un integrante de un grupo de crédito.",
+    "entrada": {
+        "grupoId": {
+            "type": "integer",
+            "description": "Identificador de grupo."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único del cliente."
+        }
+    },
+    "salida": {},
+    "sistema": "Microfinanzas"
+}

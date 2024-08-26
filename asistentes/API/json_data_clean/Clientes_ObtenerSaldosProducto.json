@@ -1,0 +1,86 @@
+{
+    "id": 103,
+    "nombre": "ObtenerSaldosProducto",
+    "descripcion": "Método para devuelve los saldos de productos de un cliente, según parametrización Backend.",
+    "entrada": {
+        "cuentaUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "correlativo": {
+            "type": "number",
+            "description": "Correlativo 2 de la guía especial."
+        }
+    },
+    "salida": {
+        "sdtSaldosProducto": {
+            "type": "object",
+            "description": "Listado de productos.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "idOperacionFmt": {
+                    "type": "string",
+                    "description": "Identificador String (concatenación de algunos conceptos claves de la operación)."
+                },
+                "idOperacionBT": {
+                    "type": "string",
+                    "description": "Identificador String Bantotal (concatenación de todos los conceptos claves de la operación)."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre de producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel."
+                        }
+                    }
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Nombre de la sucursal."
+                },
+                "saldo": {
+                    "type": "number",
+                    "description": "Capital."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha de alta del saldo."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo."
+                },
+                "estado": {
+                    "type": "string",
+                    "description": "Descripción de estado."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

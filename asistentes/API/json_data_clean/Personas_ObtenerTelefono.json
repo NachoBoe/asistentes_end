@@ -1,0 +1,18 @@
+{
+    "id": 381,
+    "nombre": "ObtenerTelefono",
+    "descripcion": "Método para obtener el teléfono de una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {
+        "numeroTelefono": {
+            "type": "string",
+            "description": "Número de teléfono."
+        }
+    },
+    "sistema": "Personas"
+}

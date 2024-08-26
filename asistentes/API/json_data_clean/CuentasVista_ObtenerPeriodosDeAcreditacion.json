@@ -1,0 +1,23 @@
+{
+    "id": 215,
+    "nombre": "ObtenerPeriodosDeAcreditacion",
+    "descripcion": "Método para obtener los periodos de acreditacion cargados en el sistema.",
+    "entrada": {},
+    "salida": {
+        "sdtPeriodosDeAcreditacion": {
+            "type": "object",
+            "description": "Listado de períodos de acreditación.",
+            "properties": {
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripcion del período."
+                },
+                "valor": {
+                    "type": "number",
+                    "description": "Valor del período."
+                }
+            }
+        }
+    },
+    "sistema": "CuentasVista"
+}

@@ -1,0 +1,14 @@
+La funcionalidad detallada en el archivo se refiere a la integración de datos de personas jurídicas en el sistema Bantotal, específicamente en el módulo SNGC23. Este módulo permite gestionar información relacionada con la identificación y vinculación de personas jurídicas, incluyendo datos como el país, tipo de documento, número de documento, y otros campos auxiliares que pueden ser utilizados para la vinculación de registros.
+
+Los campos que se admiten en esta integración son:
+
+- sngc23pais: Código del país (N, 3.0)
+- sngc23tdoc: Tipo de documento (N, 2.0)
+- sngc23ndoc: Número de documento (C, 12)
+- sngc23PVin: Código de persona vinculada (N, 3.0)
+- sngc23TVin: Tipo de vinculación (N, 2.0)
+- sngc23NVin: Número de vinculación (C, 12)
+- sngc23Vinc: Código de vinculación (N, 2.0)
+- sngc23Aux1: Campo auxiliar 1 (N, 9.0)
+- sngc23A2ux: Campo auxiliar 2 (N, 4.0)
+- sngc23A3ux: Campo auxiliar 3 (N, 4.0)

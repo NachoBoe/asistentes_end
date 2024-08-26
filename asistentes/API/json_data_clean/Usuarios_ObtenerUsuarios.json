@@ -1,0 +1,31 @@
+{
+    "id": 522,
+    "nombre": "ObtenerUsuarios",
+    "descripcion": "Método para obtener la lista de usuarios ingresados en el sistema.",
+    "entrada": {},
+    "salida": {
+        "sdtUsuarios": {
+            "type": "object",
+            "description": "Listado de usuarios.",
+            "properties": {
+                "empresa": {
+                    "type": "string",
+                    "description": "Nombre de la empresa."
+                },
+                "usuario": {
+                    "type": "string",
+                    "description": "Código del usuario."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre del usuario."
+                },
+                "ultimoAvisoActividad": {
+                    "type": "string",
+                    "description": "Último aviso de actividad del usuario."
+                }
+            }
+        }
+    },
+    "sistema": "Usuarios"
+}

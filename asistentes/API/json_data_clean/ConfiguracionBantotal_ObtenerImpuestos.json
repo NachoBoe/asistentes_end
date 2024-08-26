@@ -1,0 +1,41 @@
+{
+    "id": 130,
+    "nombre": "ObtenerImpuestos",
+    "descripcion": "Método para obtener un listado de los impuestos ingresados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtImpuestos": {
+            "type": "object",
+            "description": "Colección de datos de impuestos.",
+            "properties": {
+                "codigo": {
+                    "type": "number",
+                    "description": "Código de impuesto."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del impuesto."
+                },
+                "condiciones": {
+                    "type": "object",
+                    "description": "Colección de condiciones del impuesto.",
+                    "properties": {
+                        "codigo": {
+                            "type": "number",
+                            "description": "Código de condición."
+                        },
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción de condición."
+                        },
+                        "tipo": {
+                            "type": "string",
+                            "description": "Tipo de condición."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

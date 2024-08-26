@@ -1,0 +1,28 @@
+{
+    "id": 127,
+    "nombre": "ObtenerEstadosProvinciasDepartamentos",
+    "descripcion": "Método para obtener un listado de los estados/provincias/departamentos ingresados en Bantotal para un determinado país.",
+    "entrada": {
+        "pais": {
+            "type": "number",
+            "description": "Identificador de país."
+        }
+    },
+    "salida": {
+        "sdtEstados": {
+            "type": "object",
+            "description": "Listado de estados.",
+            "properties": {
+                "identificador": {
+                    "type": "number",
+                    "description": "Identificador de estado."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripcion de estado."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

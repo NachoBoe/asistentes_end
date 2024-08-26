@@ -1,0 +1,42 @@
+{
+    "id": 202,
+    "nombre": "BloquearSaldo",
+    "descripcion": "Método para realizar un bloqueo de saldo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "importe": {
+            "type": "number",
+            "description": "Importe a bloquear."
+        },
+        "fechaVencimiento": {
+            "type": "string",
+            "description": "Fecha vencimiento de bloqueo."
+        },
+        "motivo": {
+            "type": "string",
+            "description": "Motivo del bloqueo."
+        }
+    },
+    "salida": {
+        "idBloqueo": {
+            "type": "number",
+            "description": "Identificador de bloqueo."
+        },
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento."
+        },
+        "saldo": {
+            "type": "number",
+            "description": "Saldo disponioble de la operación."
+        }
+    },
+    "sistema": "CuentasVista"
+}

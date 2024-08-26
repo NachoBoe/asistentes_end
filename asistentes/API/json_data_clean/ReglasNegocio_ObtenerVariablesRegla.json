@@ -1,0 +1,36 @@
+{
+    "id": 482,
+    "nombre": "ObtenerVariablesRegla",
+    "descripcion": "Método para obtener las variables de una determinada regla de negocio.",
+    "entrada": {
+        "reglaId": {
+            "type": "number",
+            "description": "Código de regla de negocio."
+        }
+    },
+    "salida": {
+        "sdtVariablesRegla": {
+            "type": "object",
+            "description": "Listado de variables.",
+            "properties": {
+                "variableId": {
+                    "type": "number",
+                    "description": "Código de variable."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Descripción de variable."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de variable."
+                },
+                "tipoDato": {
+                    "type": "string",
+                    "description": "Tipo de dato."
+                }
+            }
+        }
+    },
+    "sistema": "ReglasNegocio"
+}

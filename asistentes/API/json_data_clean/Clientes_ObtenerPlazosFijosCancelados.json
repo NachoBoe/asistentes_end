@@ -1,0 +1,102 @@
+{
+    "id": 91,
+    "nombre": "ObtenerPlazosFijosCancelados",
+    "descripcion": "Método para devolver el listado de los productos de depósito a plazo fijo cancelados de un cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "sdtProductosPlazoFijoCancelados": {
+            "type": "object",
+            "description": "Listado de plazos fijos cancelados.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "idOperacionFmt": {
+                    "type": "string",
+                    "description": "Identificador String (concatenación de algunos conceptos claves de la operación)."
+                },
+                "idOperacionBT": {
+                    "type": "string",
+                    "description": "Identificador String Bantotal (concatenación de todos los conceptos claves de la operación)."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del producto.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre de producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel."
+                        }
+                    }
+                },
+                "sucursal": {
+                    "type": "string",
+                    "description": "Nombre de la sucursal."
+                },
+                "fechaAlta": {
+                    "type": "string",
+                    "description": "Fecha de alta del depósito."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento del depósito."
+                },
+                "capital": {
+                    "type": "number",
+                    "description": "Capital del depósito."
+                },
+                "intereses": {
+                    "type": "number",
+                    "description": "Intereses del depósito."
+                },
+                "impuestos": {
+                    "type": "number",
+                    "description": "Impuestos del depósito."
+                },
+                "instruccion": {
+                    "type": "string",
+                    "description": "Descripción de la instrucción del depósito."
+                },
+                "instruccionCod": {
+                    "type": "number",
+                    "description": "Código de instrucción."
+                },
+                "tasaOriginal": {
+                    "type": "number",
+                    "description": "Tasa original del depósito."
+                },
+                "tasaFinal": {
+                    "type": "number",
+                    "description": "Tasa final del depósito."
+                },
+                "tipoTasa": {
+                    "type": "string",
+                    "description": "Descripción del tipo de tasa."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo del depósito."
+                }
+            }
+        }
+    },
+    "sistema": "Clientes"
+}

@@ -1,0 +1,13 @@
+{
+    "id": 34,
+    "nombre": "AutorizarArchivo",
+    "descripcion": "Método para autorizar ordenes del archivo indicado.",
+    "entrada": {
+        "archivoId": {
+            "type": "number",
+            "description": "Identificador de archivo."
+        }
+    },
+    "salida": {},
+    "sistema": "CASHManagement"
+}

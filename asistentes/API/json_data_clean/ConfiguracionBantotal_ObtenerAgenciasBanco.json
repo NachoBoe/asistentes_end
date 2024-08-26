@@ -1,0 +1,36 @@
+{
+    "id": 115,
+    "nombre": "ObtenerAgenciasBanco",
+    "descripcion": "Método para obtener un listado de las agencias de un banco.",
+    "entrada": {
+        "bancoId": {
+            "type": "number",
+            "description": "Identificador de Banco."
+        }
+    },
+    "salida": {
+        "sdtAgencias": {
+            "type": "object",
+            "description": "Listado de las agencias.",
+            "properties": {
+                "banco": {
+                    "type": "number",
+                    "description": "Identificador de banco."
+                },
+                "sucursal": {
+                    "type": "number",
+                    "description": "Identificador de sucursal."
+                },
+                "nombre": {
+                    "type": "string",
+                    "description": "Nombre de la sucursal."
+                },
+                "codPostal": {
+                    "type": "string",
+                    "description": "Codigo postal."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

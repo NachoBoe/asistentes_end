@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se centra en el mantenimiento y gestión de prospectos dentro de la plataforma Bantotal. Incluye programas para la creación, actualización y consulta de información relacionada con prospectos, así como el manejo de datos de contacto y productos de interés. Las posibilidades que se admiten incluyen la gestión de direcciones, teléfonos, y la generación de alertas, así como la validación de datos como país y correo electrónico.
+
+No se encontraron configuraciones asociadas, reglas de negocio, programas particulares, tablas, ni otros controles y configuraciones.

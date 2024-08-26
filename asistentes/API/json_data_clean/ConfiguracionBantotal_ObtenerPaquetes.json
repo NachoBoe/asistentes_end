@@ -1,0 +1,53 @@
+{
+    "id": 135,
+    "nombre": "ObtenerPaquetes",
+    "descripcion": "Método para obtener un listado de los paquetes ingresados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtPaquetes": {
+            "type": "object",
+            "description": "Listado de paquetes.",
+            "properties": {
+                "codigo": {
+                    "type": "integer",
+                    "description": "Código de paquete."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción de paquete."
+                },
+                "vigente": {
+                    "type": "string",
+                    "description": "Indica si está vigente el paquete (S/N)."
+                },
+                "productos": {
+                    "type": "object",
+                    "description": "Listado de productos incluidos en el paquete.",
+                    "properties": {
+                        "productoUId": {
+                            "type": "number",
+                            "description": "Identificador único de producto."
+                        },
+                        "nombre": {
+                            "type": "string",
+                            "description": "Nombre de producto."
+                        },
+                        "moneda": {
+                            "type": "string",
+                            "description": "Símbolo de moneda."
+                        },
+                        "papel": {
+                            "type": "string",
+                            "description": "Símbolo de papel."
+                        },
+                        "cantidad": {
+                            "type": "integer",
+                            "description": "Cantidad de productos de este tipo incluidos en el paquete."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

@@ -1,0 +1,17 @@
+{
+    "id": 205,
+    "nombre": "EliminarDocumentoDigital",
+    "descripcion": "Método para eliminar un documento digital de la operación recibida.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "documentoId": {
+            "type": "number",
+            "description": "Identificador del documento digital."
+        }
+    },
+    "salida": {},
+    "sistema": "CuentasVista"
+}

@@ -1,0 +1,42 @@
+{
+    "id": 457,
+    "nombre": "PagarCuotaAFechaTerceros",
+    "descripcion": "Método para realizar el pago de cuota de un préstamo a terceros, a una fecha valor.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación simulada."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "importe": {
+            "type": "number",
+            "description": "Importe a pagar."
+        },
+        "operacionCobroUId": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta vista de donde se cobrará el préstamo."
+        },
+        "referencia": {
+            "type": "string",
+            "description": "Referencia."
+        },
+        "fecha": {
+            "type": "string",
+            "description": "Fecha Valor del pago."
+        },
+        "controlaExistenciaOperacionCobro": {
+            "type": "string",
+            "description": "Indica si se controla la existencia de la operación de cobro [Hidden: Valores 'S'/'N']."
+        }
+    },
+    "salida": {
+        "movimientoUId": {
+            "type": "number",
+            "description": "Identificador único de movimiento [Asiento]."
+        }
+    },
+    "sistema": "Prestamos"
+}

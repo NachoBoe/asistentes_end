@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se refiere a la gestión de titulares representativos en cuentas clientes dentro del sistema Bantotal. Se describen diversas situaciones que pueden generar mensajes de error al intentar modificar, eliminar o asignar titulares representativos, así como la necesidad de mantener la correcta integración de la cuenta. Las posibilidades que se admiten incluyen la adición de nuevos titulares representativos y la modificación de direcciones asociadas a la cuenta.
+
+No se encontraron configuraciones asociadas, reglas de negocio, programas particulares, tablas ni otros controles y configuraciones.

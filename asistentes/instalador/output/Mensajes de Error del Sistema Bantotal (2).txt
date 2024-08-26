@@ -1,0 +1,3 @@
+La funcionalidad detallada en el archivo se centra en la gestión de errores y validaciones dentro del sistema Bantotal, específicamente en el contexto de la creación y manejo de personas jurídicas. Se describen diversas situaciones que pueden generar mensajes de error, como campos vacíos, selección de datos incorrectos o inconsistencias en la información ingresada. Las posibilidades que se admiten incluyen la validación de campos obligatorios, control de fechas y verificación de la integridad de los datos ingresados.
+
+No se encontraron configuraciones asociadas, reglas de negocio, programas particulares, tablas ni otros controles y configuraciones.

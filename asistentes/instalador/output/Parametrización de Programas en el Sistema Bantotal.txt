@@ -1,0 +1,25 @@
+- Opciones generales:
+  - Posibles valores para el programa parametrizable: 
+    - Panel
+    - Procedimiento
+    - Reporte
+    - Regla de negocios (RNG)
+    - Terminar la cadena (TERMINAR)
+
+- Guías y Guías Especiales de proceso:
+  - No se encontraron configuraciones asociadas.
+
+- Reglas de negocio:
+  - Código de regla de negocio a ejecutar se ingresa en el campo ‘PgmCd1’ de la FST900.
+
+- Programas particulares:
+  - No se encontraron configuraciones asociadas.
+
+- Tablas:
+  - FST900: Tabla donde se cargan los registros para parametrizar la ejecución de programas.
+
+- Otros controles y configuraciones:
+  - No se encontraron configuraciones asociadas.
+
+Descripción general de la funcionalidad:
+El archivo detalla un programa genérico (HSNGCAC1) que permite la parametrización de un ciclo de ejecución de programas en una plataforma bancaria. Se pueden agregar paneles, procedimientos, reportes, y reglas de negocio a la cadena de llamados, así como también finalizar la cadena de ejecución. La parametrización se realiza a través de la tabla FST900, donde se definen los programas desde los cuales se invocan otros programas o se terminan las ejecuciones. Se permite la inclusión de condiciones mediante reglas de negocio que determinan si continuar o finalizar el ciclo.

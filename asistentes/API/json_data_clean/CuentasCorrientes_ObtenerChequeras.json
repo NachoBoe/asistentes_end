@@ -1,0 +1,58 @@
+{
+    "id": 176,
+    "nombre": "ObtenerChequeras",
+    "descripcion": "Método para obtener una lista de las chequeras activas de una cuenta corriente.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        }
+    },
+    "salida": {
+        "sdtChequeras": {
+            "type": "object",
+            "description": "Listado de chequeras.",
+            "properties": {
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto."
+                },
+                "cantidad": {
+                    "type": "integer",
+                    "description": "Cantidad de chequeras."
+                },
+                "chequera": {
+                    "type": "object",
+                    "description": "Datos de Chequera.",
+                    "properties": {
+                        "chequeInicial": {
+                            "type": "integer",
+                            "description": "Número de cheque en el cual inicia la chequera."
+                        },
+                        "cantidadCheques": {
+                            "type": "integer",
+                            "description": "Cantidad de cheques."
+                        },
+                        "fechaAlta": {
+                            "type": "string",
+                            "description": "Fecha de alta."
+                        },
+                        "chequesDisponibles": {
+                            "type": "integer",
+                            "description": "Cantidad de cheques disponibles."
+                        },
+                        "tipo": {
+                            "type": "string",
+                            "description": "Tipo de chequera."
+                        },
+                        "estado": {
+                            "type": "string",
+                            "description": "Estado de chequera."
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "CuentasCorrientes"
+}

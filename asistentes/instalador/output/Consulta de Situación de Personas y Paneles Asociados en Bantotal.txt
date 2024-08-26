@@ -1,0 +1,11 @@
+La funcionalidad detallada en el archivo se refiere a la consulta de situación de personas en el sistema Bantotal. Esta consulta permite acceder a diferentes paneles a través de botones específicos, cada uno de los cuales invoca un panel institucional o un programa particular. Se han establecido configuraciones para algunos botones que permiten definir programas alternativos a invocar, lo que proporciona flexibilidad en la gestión de la información de las personas.
+
+- Opciones generales:
+  - Vínculos: Se invoca al panel institucional.
+  - Domicilios: Por defecto se invoca al panel institucional. Es posible definir otro programa a llamar mediante la FST900 con nombre de programa Standard = HSNGC22cli.
+  - Act Base Datos: Botón parametrizable. Es posible definir otro programa a llamar mediante la FST900 con nombre de programa Standard = HFS01300B.
+  - Observaciones: Se invoca al panel institucional.
+  - Cuentas: Se invoca al panel institucional.
+  - Integrac. P.J.: Se invoca al panel institucional.
+  - P.J. que integra: Se invoca al panel institucional.
+  - Instancias WF: Se invoca al panel institucional.

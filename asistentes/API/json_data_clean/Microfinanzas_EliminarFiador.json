@@ -1,0 +1,17 @@
+{
+    "id": 270,
+    "nombre": "EliminarFiador",
+    "descripcion": "Método para eliminar un fiador de una solicitud de crédito individual.",
+    "entrada": {
+        "solicitudUId": {
+            "type": "number",
+            "description": "Identificador de instancia Workflow."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único del cliente fiador."
+        }
+    },
+    "salida": {},
+    "sistema": "Microfinanzas"
+}

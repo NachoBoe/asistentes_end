@@ -1,0 +1,40 @@
+{
+    "id": 283,
+    "nombre": "ObtenerSolicitudesCliente",
+    "descripcion": "Método para obtener una lista de las solicitudes activas de préstamos de un cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "sdtDatosInstancias": {
+            "type": "object",
+            "description": "Listado de solicitudes.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "instancia": {
+                    "type": "number",
+                    "description": "Número de instancia WorkFlow."
+                },
+                "capital": {
+                    "type": "number",
+                    "description": "Importe capital del crédito."
+                },
+                "asesor": {
+                    "type": "string",
+                    "description": "Usuario asesor del crédito."
+                },
+                "tarea": {
+                    "type": "string",
+                    "description": "Tarea en la que se encuentra la instancia."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

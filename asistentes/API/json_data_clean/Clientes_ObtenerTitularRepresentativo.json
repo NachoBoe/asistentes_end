@@ -1,0 +1,18 @@
+{
+    "id": 109,
+    "nombre": "ObtenerTitularRepresentativo",
+    "descripcion": "Método para obtener el identificador del titular representativo de una cuenta cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de la persona titular representativa."
+        }
+    },
+    "sistema": "Clientes"
+}

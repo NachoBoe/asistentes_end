@@ -1,0 +1,13 @@
+{
+    "id": 47,
+    "nombre": "RechazarOrden",
+    "descripcion": "Método para rechazar una orden determinada.",
+    "entrada": {
+        "ordenId": {
+            "type": "number",
+            "description": "Identificador de la orden."
+        }
+    },
+    "salida": {},
+    "sistema": "CASHManagement"
+}

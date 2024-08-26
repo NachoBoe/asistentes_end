@@ -1,0 +1,166 @@
+{
+    "id": 288,
+    "nombre": "SimularLibreAmortizacion",
+    "descripcion": "Método para simular el alta de un préstamo libre amortizacion para un crédito individual.",
+    "entrada": {
+        "sBTSimulacionLibreAmortizacion": {
+            "type": "object",
+            "description": "Datos de la simulación.",
+            "properties": {
+                "solicitudUId": {
+                    "type": "number",
+                    "description": "Identificador de instancia Workflow."
+                },
+                "clienteUId": {
+                    "type": "number",
+                    "description": "Identificador único de cliente."
+                },
+                "productoUId": {
+                    "type": "number",
+                    "description": "Identificador único de producto."
+                },
+                "cantidadCuotas": {
+                    "type": "number",
+                    "description": "Cantidad de cuotas del préstamo."
+                },
+                "periodoCuotas": {
+                    "type": "number",
+                    "description": "Período entre vencimiento de cada cuota."
+                },
+                "monto": {
+                    "type": "number",
+                    "description": "Capital solicitado."
+                },
+                "pizarra": {
+                    "type": "number",
+                    "description": "Tipo de pizzarra."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa."
+                },
+                "destinoCredito": {
+                    "type": "number",
+                    "description": "Código de actividad."
+                },
+                "cuotasCapital": {
+                    "type": "object",
+                    "description": "Cuotas de capital.",
+                    "properties": {
+                        "fechaPago": {
+                            "type": "string",
+                            "description": "Fecha de pago de la cuota."
+                        },
+                        "importe": {
+                            "type": "number",
+                            "description": "Importe de la cuota."
+                        }
+                    }
+                },
+                "cuotasInteres": {
+                    "type": "object",
+                    "description": "Cuotas de intereses.",
+                    "properties": {
+                        "fechaPago": {
+                            "type": "string",
+                            "description": "Fecha de pago de la cuota."
+                        },
+                        "importe": {
+                            "type": "number",
+                            "description": "Importe de la cuota."
+                        }
+                    }
+                }
+            },
+            "required": [
+                "solicitudUId",
+                "clienteUId",
+                "productoUId",
+                "monto",
+                "cuotasCapital",
+                "cuotasInteres"
+            ]
+        },
+        "generaCuotaInteres": {
+            "type": "string",
+            "description": "[Hidden: Valores 'S'/'N' Indica si se generan cuotas de intereses]."
+        }
+    },
+    "salida": {
+        "sdtSimulacion": {
+            "type": "object",
+            "description": "Datos del préstamo simulado.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "producto": {
+                    "type": "object",
+                    "description": "Datos del producto."
+                },
+                "capital": {
+                    "type": "number",
+                    "description": "Capital del préstamo."
+                },
+                "intereses": {
+                    "type": "number",
+                    "description": "Intereses."
+                },
+                "tasa": {
+                    "type": "number",
+                    "description": "Tasa."
+                },
+                "tasaEfectiva": {
+                    "type": "number",
+                    "description": "Tasa efectiva."
+                },
+                "tasaEfectivaAnual": {
+                    "type": "number",
+                    "description": "Tasa efectiva anual."
+                },
+                "tasaNominalAnual": {
+                    "type": "number",
+                    "description": "Tasa nominal anual."
+                },
+                "totalPrestamo": {
+                    "type": "number",
+                    "description": "Total a pagar."
+                },
+                "fechaPrimerPago": {
+                    "type": "string",
+                    "description": "Fecha de primer pago."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha valor."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento."
+                },
+                "impuestos": {
+                    "type": "number",
+                    "description": "Impuestos."
+                },
+                "comisiones": {
+                    "type": "number",
+                    "description": "Comisiones."
+                },
+                "plazo": {
+                    "type": "number",
+                    "description": "Plazo."
+                },
+                "otrosConceptos": {
+                    "type": "object",
+                    "description": "Importe otros conceptos."
+                },
+                "cronograma": {
+                    "type": "object",
+                    "description": "Cronograma del préstamo."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

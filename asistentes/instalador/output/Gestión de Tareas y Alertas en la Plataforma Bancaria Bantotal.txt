@@ -1,0 +1,19 @@
+La funcionalidad del sistema Bantotal descrita en el archivo se centra en la gestión de tareas y alertas para ejecutivos y asesores a través de un web panel. Permite a los usuarios seleccionar un año y un mes para visualizar las tareas asignadas en un calendario, con la posibilidad de filtrar por días y modificar el estado de las tareas. Los ejecutivos pueden ver solo sus tareas asignadas, mientras que otros usuarios pueden asignar tareas a ejecutivos sin poder visualizarlas. Además, se generan alertas para los ejecutivos al iniciar sesión, informándoles sobre las tareas pendientes.
+
+**Opciones generales:**
+- No se especifican opciones generales en el texto.
+
+**Guías y Guías Especiales de proceso:**
+- No se especifican guías o guías especiales de proceso en el texto.
+
+**Reglas de negocio:**
+- No se especifican reglas de negocio en el texto.
+
+**Programas particulares:**
+- No se especifican programas particulares en el texto.
+
+**Tablas:**
+- FST146: Tabla donde se da de alta a los ejecutivos.
+
+**Otros controles y configuraciones:**
+- No se especifican otros controles o configuraciones en el texto.

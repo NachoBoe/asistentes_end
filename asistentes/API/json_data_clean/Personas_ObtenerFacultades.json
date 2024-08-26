@@ -1,0 +1,178 @@
+{
+    "id": 362,
+    "nombre": "ObtenerFacultades",
+    "descripcion": "Método para obtener un listado de las facultades de una persona.",
+    "entrada": {
+        "personasUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        }
+    },
+    "salida": {
+        "sdtFacultades": {
+            "type": "object",
+            "description": "Listado de datos de facultades.",
+            "properties": {
+                "sBTFacultadesCliente": {
+                    "type": "object",
+                    "description": "Listado de datos de cliente.",
+                    "properties": {
+                        "clienteUId": {
+                            "type": "number",
+                            "description": "Identificador único del cliente."
+                        },
+                        "codigo": {
+                            "type": "number",
+                            "description": "Código."
+                        },
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción."
+                        },
+                        "tipo": {
+                            "type": "string",
+                            "description": "Tipo."
+                        },
+                        "categoria": {
+                            "type": "string",
+                            "description": "Categoría."
+                        },
+                        "potestad": {
+                            "type": "string",
+                            "description": "Potestad."
+                        },
+                        "grupo": {
+                            "type": "object",
+                            "description": "Listado de grupos de la facultad.",
+                            "properties": {
+                                "numero": {
+                                    "type": "number",
+                                    "description": "Número de grupo."
+                                },
+                                "vigenciaDesde": {
+                                    "type": "string",
+                                    "description": "Fecha de vigencia desde."
+                                },
+                                "vigenciaHasta": {
+                                    "type": "string",
+                                    "description": "Fecha de vigencia hasta."
+                                },
+                                "monto": {
+                                    "type": "number",
+                                    "description": "Monto."
+                                },
+                                "codigoMoneda": {
+                                    "type": "number",
+                                    "description": "Código de moneda."
+                                },
+                                "moneda": {
+                                    "type": "string",
+                                    "description": "Moneda."
+                                },
+                                "codigoPapel": {
+                                    "type": "number",
+                                    "description": "Código de papel."
+                                },
+                                "papel": {
+                                    "type": "string",
+                                    "description": "Papel."
+                                }
+                            }
+                        }
+                    }
+                },
+                "sBTFacultadesOperacion": {
+                    "type": "object",
+                    "description": "Listado de datos de operación.",
+                    "properties": {
+                        "operacionUId": {
+                            "type": "number",
+                            "description": "Identificador único de la operación."
+                        },
+                        "producto": {
+                            "type": "object",
+                            "description": "Datos de producto.",
+                            "properties": {
+                                "productoUId": {
+                                    "type": "number",
+                                    "description": "Identificador único de producto."
+                                },
+                                "nombre": {
+                                    "type": "string",
+                                    "description": "Nombre del producto."
+                                },
+                                "moneda": {
+                                    "type": "string",
+                                    "description": "Símbolo de la moneda."
+                                },
+                                "papel": {
+                                    "type": "string",
+                                    "description": "Símbolo del papel."
+                                }
+                            }
+                        },
+                        "codigo": {
+                            "type": "number",
+                            "description": "Código."
+                        },
+                        "descripcion": {
+                            "type": "string",
+                            "description": "Descripción."
+                        },
+                        "tipo": {
+                            "type": "string",
+                            "description": "Tipo."
+                        },
+                        "categoria": {
+                            "type": "string",
+                            "description": "Categoría."
+                        },
+                        "potestad": {
+                            "type": "string",
+                            "description": "Potestad."
+                        },
+                        "grupo": {
+                            "type": "object",
+                            "description": "Listado de grupos de la facultad.",
+                            "properties": {
+                                "numero": {
+                                    "type": "number",
+                                    "description": "Número de grupo."
+                                },
+                                "vigenciaDesde": {
+                                    "type": "string",
+                                    "description": "Fecha de vigencia desde."
+                                },
+                                "vigenciaHasta": {
+                                    "type": "string",
+                                    "description": "Fecha de vigencia hasta."
+                                },
+                                "monto": {
+                                    "type": "number",
+                                    "description": "Monto."
+                                },
+                                "codigoMoneda": {
+                                    "type": "number",
+                                    "description": "Código de moneda."
+                                },
+                                "moneda": {
+                                    "type": "string",
+                                    "description": "Moneda."
+                                },
+                                "codigoPapel": {
+                                    "type": "number",
+                                    "description": "Código de papel."
+                                },
+                                "papel": {
+                                    "type": "string",
+                                    "description": "Papel."
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

@@ -1,0 +1,18 @@
+{
+    "id": 102,
+    "nombre": "ObtenerRiesgoCredito",
+    "descripcion": "Método para obtener la categoría de riesgo del cliente indicado según la clasificación banco centralista.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        }
+    },
+    "salida": {
+        "categoria": {
+            "type": "string",
+            "description": "Categoria."
+        }
+    },
+    "sistema": "Clientes"
+}

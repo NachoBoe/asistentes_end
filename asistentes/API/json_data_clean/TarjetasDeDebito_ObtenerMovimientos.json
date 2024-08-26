@@ -1,0 +1,77 @@
+{
+    "id": 508,
+    "nombre": "ObtenerMovimientos",
+    "descripcion": "Método para obtener los movimientos de una tarjeta de débito.",
+    "entrada": {
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de la tarjeta."
+        },
+        "fechaDesde": {
+            "type": "string",
+            "description": "Fecha desde la cual se emite el estado de cuenta."
+        },
+        "fechaHasta": {
+            "type": "string",
+            "description": "Fecha hasta la cual se emite el estado de cuenta."
+        }
+    },
+    "salida": {
+        "sdtEstadoDeCuenta": {
+            "type": "object",
+            "description": "Datos del estado de cuenta de la tarjeta de débito.",
+            "properties": {
+                "movimientos": {
+                    "type": "array",
+                    "description": "Listado de movimientos",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "fecha": {
+                                "type": "string",
+                                "description": "Fecha del movimiento."
+                            },
+                            "hora": {
+                                "type": "string",
+                                "description": "Hora de movimiento."
+                            },
+                            "red": {
+                                "type": "string",
+                                "description": "Red por donde se realizó el movimiento."
+                            },
+                            "banco": {
+                                "type": "string",
+                                "description": "Nombre del banco."
+                            },
+                            "codigoMovimiento": {
+                                "type": "string",
+                                "description": "Código de movimiento."
+                            },
+                            "concepto": {
+                                "type": "string",
+                                "description": "Concepto del movimiento."
+                            },
+                            "referencia": {
+                                "type": "string",
+                                "description": "Referencia."
+                            },
+                            "debitoOCredito": {
+                                "type": "string",
+                                "description": "Débito o crédito (D/C)."
+                            },
+                            "moneda": {
+                                "type": "string",
+                                "description": "Moneda del movimiento."
+                            },
+                            "importe": {
+                                "type": "number",
+                                "description": "Importe."
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "sistema": "TarjetasDeDebito"
+}

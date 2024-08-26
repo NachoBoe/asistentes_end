@@ -1,0 +1,44 @@
+{
+    "id": 355,
+    "nombre": "ObtenerConyuge",
+    "descripcion": "Método para obtener los datos del cónyuge de una persona física.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador de persona"
+        }
+    },
+    "salida": {
+        "apellidoMatrimonio": {
+            "type": "string",
+            "description": "Apellido de matrimonio"
+        },
+        "sdtDatosConyuge": {
+            "type": "object",
+            "description": "Datos del cónyuge",
+            "properties": {
+                "personaUId": {
+                    "type": "number",
+                    "description": "Identificador del cónyuge"
+                },
+                "primerNombre": {
+                    "type": "string",
+                    "description": "Primer nombre del cónyuge"
+                },
+                "segundoNombre": {
+                    "type": "string",
+                    "description": "Segundo nombre del cónyuge"
+                },
+                "primerApellido": {
+                    "type": "string",
+                    "description": "Primer apellido del cónyuge"
+                },
+                "segundoApellido": {
+                    "type": "string",
+                    "description": "Segundo apellido del cónyuge"
+                }
+            }
+        }
+    },
+    "sistema": "Personas"
+}

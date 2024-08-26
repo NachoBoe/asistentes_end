@@ -1,0 +1,23 @@
+{
+    "id": 132,
+    "nombre": "ObtenerMenues",
+    "descripcion": "Método para obtener un listado de los menús registrados en Bantotal.",
+    "entrada": {},
+    "salida": {
+        "sdtMenus": {
+            "type": "object",
+            "description": "Listado de menús.",
+            "properties": {
+                "identificador": {
+                    "type": "string",
+                    "description": "Identificador de menú."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripcion de menú."
+                }
+            }
+        }
+    },
+    "sistema": "ConfiguracionBantotal"
+}

@@ -1,0 +1,17 @@
+{
+    "id": 423,
+    "nombre": "EliminarCuentaDeCobro",
+    "descripcion": "Método para eliminar una cuenta de cobro de un préstamo.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación de préstamo."
+        },
+        "operacionUId_cobro": {
+            "type": "number",
+            "description": "Identificador único de operación de la cuenta de cobro."
+        }
+    },
+    "salida": {},
+    "sistema": "Prestamos"
+}

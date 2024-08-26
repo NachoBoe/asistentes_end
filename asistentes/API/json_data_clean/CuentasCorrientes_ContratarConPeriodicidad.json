@@ -1,0 +1,34 @@
+{
+    "id": 168,
+    "nombre": "ContratarConPeriodicidad",
+    "descripcion": "Método para contratar una cuenta corriente, ingresando un período de acreditación.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador de Cliente."
+        },
+        "productoUId": {
+            "type": "number",
+            "description": "Identificador de Producto."
+        },
+        "nombreSubcuenta": {
+            "type": "string",
+            "description": "Nombre de la Subcuenta."
+        },
+        "periodoAcreditacion": {
+            "type": "number",
+            "description": "Período de Acreditación de Intereses."
+        },
+        "producto": {
+            "type": "string",
+            "description": "[Hidden: Valor CC por defecto]."
+        }
+    },
+    "salida": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador de la subcuenta contratada."
+        }
+    },
+    "sistema": "CuentasCorrientes"
+}

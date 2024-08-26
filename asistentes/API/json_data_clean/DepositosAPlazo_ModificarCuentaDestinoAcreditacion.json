@@ -1,0 +1,21 @@
+{
+    "id": 231,
+    "nombre": "ModificarCuentaDestinoAcreditacion",
+    "descripcion": "Método para modificar la cuenta de destino de la instrucción de acreditación de un depósito con pago periódico de intereses.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "depositoUId": {
+            "type": "number",
+            "description": "Identificador único de la operación de depósito."
+        },
+        "cuentaUId": {
+            "type": "number",
+            "description": "Identificador único de la operación de cuenta."
+        }
+    },
+    "salida": {},
+    "sistema": "DepositosAPlazo"
+}

@@ -1,0 +1,3 @@
+El archivo detalla las tablas y atributos grabados en el sistema Bantotal, específicamente relacionados con la información de domicilios. Incluye campos como código de domicilio, dirección, teléfono, fax, y otros datos relevantes para la identificación y localización de un domicilio. 
+
+Las posibilidades que se admiten incluyen la captura de información detallada sobre la ubicación de un cliente, así como datos adicionales que pueden ser utilizados para la gestión de arrendamientos y agrupaciones de información. Se contemplan múltiples agrupadores que permiten clasificar y describir la información de manera más específica.

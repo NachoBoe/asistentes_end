@@ -1,0 +1,11 @@
+El archivo del sistema Bantotal describe la configuración de los tipos de establecimiento en la plataforma bancaria. Los campos definidos incluyen un código único para cada tipo de establecimiento, una descripción del mismo, su estado (habilitado o inhabilitado), y dos campos auxiliares que pueden ser utilizados para información adicional.
+
+Los valores numéricos y descripciones son los siguientes:
+
+- sngc08Cod: N (6.0) - Código
+- sngc08Dsc: C (50) - Descripción
+- sngc08est: C (19) - Estado (hab/inhab)
+- sngc08aux: N (9.0) - sngc08aux
+- sngc08aux1: C (50) - sngc08aux1
+
+La funcionalidad detallada en el archivo permite gestionar y clasificar los diferentes tipos de establecimientos dentro del sistema, facilitando la identificación y el manejo de los mismos en el contexto de las operaciones bancarias. Se admite la posibilidad de habilitar o inhabilitar un tipo de establecimiento, así como la inclusión de información adicional a través de los campos auxiliares.

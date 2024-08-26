@@ -1,0 +1,38 @@
+{
+    "id": 201,
+    "nombre": "AsociarDocumentoDigital",
+    "descripcion": "Método para asociar documento digital a la operación recibida.",
+    "entrada": {
+        "operacionUId": {
+            "type": "number",
+            "description": "Identificador único de operación."
+        },
+        "tipoDocumentoId": {
+            "type": "number",
+            "description": "Identificador del tipo de documento digital."
+        },
+        "nombre": {
+            "type": "string",
+            "description": "Nombre del documento."
+        },
+        "archivoCodificado": {
+            "type": "string",
+            "description": "Archivo a asociar codificado en Base 64."
+        },
+        "fechaEmision": {
+            "type": "string",
+            "description": "Fecha de emisión del documento (en caso que corresponda)."
+        },
+        "fechaVencimiento": {
+            "type": "string",
+            "description": "Fecha de emisión del documento (en caso que corresponda)."
+        }
+    },
+    "salida": {
+        "documentoId": {
+            "type": "number",
+            "description": "Identificador del documento asociado."
+        }
+    },
+    "sistema": "CuentasVista"
+}

@@ -1,0 +1,35 @@
+{
+    "id": 56,
+    "nombre": "ActualizarInformacionAdicional",
+    "descripcion": "Método para actualizar la información adicional de un cliente.",
+    "entrada": {
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "sdtInformacionAdicional": {
+            "type": "object",
+            "description": "Listado de datos adicionales.",
+            "properties": {
+                "clave": {
+                    "type": "string",
+                    "description": "Identificador de información adicional."
+                },
+                "valor": {
+                    "type": "string",
+                    "description": "Valor de información adicional."
+                }
+            },
+            "required": [
+                "clave",
+                "valor"
+            ]
+        },
+        "modo": {
+            "type": "string",
+            "description": "[Hidden, valor fijo 'UPD' para este método]."
+        }
+    },
+    "salida": {},
+    "sistema": "Clientes"
+}

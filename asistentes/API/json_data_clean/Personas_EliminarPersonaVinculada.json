@@ -1,0 +1,21 @@
+{
+    "id": 348,
+    "nombre": "EliminarPersonaVinculada",
+    "descripcion": "Método para eliminar un vínculo de consanguinidad a una persona.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "personaVinculadaUId": {
+            "type": "number",
+            "description": "Identificador único del vínculo de la persona."
+        },
+        "vinculoId": {
+            "type": "number",
+            "description": "Identificador del vínculo de consanguinidad."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

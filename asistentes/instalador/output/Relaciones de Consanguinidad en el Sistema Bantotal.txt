@@ -1,0 +1,4 @@
+La funcionalidad detallada en el archivo se refiere al manejo de relaciones de consanguinidad entre personas dentro del sistema Bantotal. Se accede a esta funcionalidad seleccionando una persona y utilizando el botón ‘Rel. Consan.’ en el ‘Mantenimiento de Personas’. Al pulsar ‘Agregar’, se despliega una interfaz que permite gestionar estas relaciones, siguiendo una lógica similar a la de las relaciones por afinidad. Además, se menciona que si se desea restringir las relaciones únicamente a personas físicas, se debe definir la Opción General de Procesos No. 1016 en ‘S’. 
+
+- Opciones generales:
+  - Opción General de Procesos No. 1016: 'S' (controla que las relaciones apliquen únicamente para personas físicas).

@@ -1,0 +1,32 @@
+{
+    "id": 527,
+    "nombre": "ObtenerRolesDeTarea",
+    "descripcion": "Método para obtener los roles de una determinada tarea de Workflow.",
+    "entrada": {
+        "procesoId": {
+            "type": "integer",
+            "description": "Identificador de proceso Workflow."
+        },
+        "tareaId": {
+            "type": "integer",
+            "description": "Identificador de tarea Workflow."
+        }
+    },
+    "salida": {
+        "sdtRoles": {
+            "type": "object",
+            "description": "Listado de roles de Workflow.",
+            "properties": {
+                "codigo": {
+                    "type": "integer",
+                    "description": "Código del rol."
+                },
+                "descripcion": {
+                    "type": "string",
+                    "description": "Descripción del rol."
+                }
+            }
+        }
+    },
+    "sistema": "Workflow"
+}

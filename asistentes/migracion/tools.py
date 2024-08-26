@@ -74,12 +74,12 @@ def remover_tildes(input_str):
 ## TOOL 1: Obtener registros a partir de una descripción
 
 class desc_campo(BaseModel):
-    information: str = Field(description="Information that wants to be stored in a record.")
-    system = str = Field(description="Filter the search to a particular system. The possible systems are: ['Cuentas Vistas', 'Cuentas y Personas', 'Chequeras', 'Depósitos', 'Microfinanzas', 'Saldos Iniciales', 'Facultades', 'Líneas de Crédito','Garantías', 'Préstamos', 'Acuerdos de Sobregiro', 'Tarjetas de Débito', 'Descuentos', 'all']", default="all")
+    information: str = Field(description="Information that needs to be stored in a records.")
+    system = str = Field(description="Filter the search to a particular system.", default="all")
 
 @tool("retrieve_records_from_description",args_schema=desc_campo)
 def retrieve_records_from_description(information:str, system:str="all"):
-    """Migrating to Bantotal requieres the user to fill in a lot of records. This tool helps you find the records that are related to the information you have."""
+    """Retrieves a list of records that are relevant to store the information provided. """
     embedding = embeddings.embed_query(information)
     vector_query = VectorizedQuery(vector=embedding, k_nearest_neighbors=20, fields="content_vector", exhaustive=True)
 
@@ -111,13 +111,11 @@ def retrieve_records_from_description(information:str, system:str="all"):
 
 # TOOL 2: Obtener información de un sistema en particular
 class system_retriever_input(BaseModel):
-    system: str = Field(description="System to retrieve information from. The possible systems are: ['Cuentas Vistas', 'Cuentas y Personas', 'Chequeras', 'Depósitos', 'Microfinanzas', 'Saldos Iniciales', 'Facultades', 'Líneas de Crédito','Garantías', 'Préstamos', 'Acuerdos de Sobregiro', 'Tarjetas de Débito', 'Descuentos']")
-
-
+    system: str = Field(description="System to retrieve information from.")
 
 @tool("retrieve_sistem_migration_information",args_schema=system_retriever_input)
 def retrieve_sistem_migration_information(system:str):
-    """ Retrieves content relevant to the migration of a particular sistem. The content details about elements such as the trays (without the fields), the control and dump programs, the transactions, previous requierements, code errors. It also provides a conceptual guide on how to migrate the system, but not how to actually execute it in Bantotal. """
+    """ Retrieves content relevant to the migration of a particular sistem. The content details about elements such as the trays (without specifics on the records), the control and dump programs, the transactions, previous requierements, code errors. It also provides a conceptual guide on how to migrate the system, but not how to execute it in Bantotal. """
     total_token = 0
     content = ""
     print(remover_tildes(system.lower()))
@@ -144,14 +142,14 @@ def retrieve_sistem_migration_information(system:str):
 # TOOL 3: Obtener información del proceso de migración
 class general_retriever_input(BaseModel):
     retrieve_sec_1: bool = Field(description="Retrieve an overview of how the migration process works. ", default=False)
-    retrieve_sec_2: bool = Field(description="Retrieve a detailed guide on how to execute the migration for a sistem. , such as create trays, execute control/dump programs, paralelize or use sql sentences, among other.", default=False)
-    retrieve_sec_3: bool = Field(description="Retrieve detailed information of the parameters that customize the migration process.", default=False)
-
+    retrieve_sec_2: bool = Field(description="Retrieve a detailed guide on how to execute the migration in Bantotal system, such as create trays, execute control/dump programs, paralelize or use sql sentences, among other.", default=False)
+    retrieve_sec_3: bool = Field(description="Retrieve information of the internal tables that Bantotal uses to parametrize the migration process.", default=False)
+    retrieve_sec_4: bool = Field(description="Retrieve information about the default trays in each system.", default=False)
 
 
 @tool("retrieve_migration_process_information",args_schema=general_retriever_input)
-def retrieve_migration_process_information(retrieve_sec_1: bool = False, retrieve_sec_2: bool = False, retrieve_sec_3: bool = False):
-    """Retrieves information relevant to the migration process and the execution of the migration for a sistem. The informations is grouped in three setions.  """
+def retrieve_migration_process_information(retrieve_sec_1: bool = False, retrieve_sec_2: bool = False, retrieve_sec_3: bool = False, retrieve_sec_4: bool = False):
+    """Retrieves information relevant to the migration process and the execution of the migration in Bantotal system. Information is grouped in four setions.  """
     total_token = 0
     content = ""
 
@@ -163,7 +161,8 @@ def retrieve_migration_process_information(retrieve_sec_1: bool = False, retriev
         retrieved_secs_filt.append("2")
     if retrieve_sec_3:
         retrieved_secs_filt.append("4")
-
+    if retrieve_sec_4:
+        retrieved_secs_filt.append("5")
     for s in retrieved_secs_filt:
         new_sect = manual_general.get_section(s)
         token = len(encoding.encode(new_sect))
@@ -181,14 +180,14 @@ def retrieve_migration_process_information(retrieve_sec_1: bool = False, retriev
 # TOOL 4: Obtener campos de una bandeja
 class tray_retriever_input(BaseModel):
     tray: str = Field(description="Tray that wants to be retrieved the fields from.")
-    system: str = Field(description="System the tray belongs to. The possible systems are: ['Cuentas Vistas', 'Cuentas y Personas', 'Chequeras', 'Depósitos', 'Microfinanzas', 'Saldos Iniciales', 'Facultades', 'Líneas de Crédito','Garantías', 'Préstamos', 'Acuerdos de Sobregiro', 'Tarjetas de Débito', 'Descuentos']", default="all")
+    system: str = Field(description="System the tray belongs to.", default="all")
 
 
 
 @tool("retrieve_fields_from_tray",args_schema=tray_retriever_input)
 def retrieve_fields_from_tray(tray:str, system:str="all"):
     """Retrieves the fields from a tray with a brief description of each."""
-    total_token = 0
+
     content = ""
     tray = tray.upper()
     if system != "all":

@@ -1,0 +1,17 @@
+{
+    "id": 498,
+    "nombre": "ModificarLimite",
+    "descripcion": "Método para modificar el límite de una tarjeta de débito.",
+    "entrada": {
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador de la tarjeta de débito."
+        },
+        "codigoDeLimiteId": {
+            "type": "number",
+            "description": "Código de límite."
+        }
+    },
+    "salida": {},
+    "sistema": "TarjetasDeDebito"
+}

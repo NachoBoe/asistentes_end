@@ -1,0 +1,21 @@
+{
+    "id": 323,
+    "nombre": "ActualizarProfesion",
+    "descripcion": "Método para actualizar la profesión de una persona física.",
+    "entrada": {
+        "personaUId": {
+            "type": "number",
+            "description": "Identificador único de persona."
+        },
+        "profesionId": {
+            "type": "number",
+            "description": "Identificador de profesión."
+        },
+        "fechaInicioProfesion": {
+            "type": "string",
+            "description": "Fecha de inicio de la profesión."
+        }
+    },
+    "salida": {},
+    "sistema": "Personas"
+}

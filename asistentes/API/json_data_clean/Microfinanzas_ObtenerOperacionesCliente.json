@@ -1,0 +1,52 @@
+{
+    "id": 280,
+    "nombre": "ObtenerOperacionesCliente",
+    "descripcion": "Método para obtener las operaciones elegibles a cancelar para una solicitud de créditos.",
+    "entrada": {
+        "solicitudUId": {
+            "type": "number",
+            "description": "Identificador de instancia Workflow."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único del cliente."
+        }
+    },
+    "salida": {
+        "sdtOperaciones": {
+            "type": "object",
+            "description": "Listado de operaciones.",
+            "properties": {
+                "operacionUId": {
+                    "type": "number",
+                    "description": "Identificador único de operación."
+                },
+                "fechaValor": {
+                    "type": "string",
+                    "description": "Fecha valor de la operación."
+                },
+                "fechaVencimiento": {
+                    "type": "string",
+                    "description": "Fecha de vencimiento de la operación."
+                },
+                "fechaUltimoPago": {
+                    "type": "string",
+                    "description": "Fecha de último pago de la operación."
+                },
+                "saldo": {
+                    "type": "number",
+                    "description": "Saldo de la operación."
+                },
+                "diasMora": {
+                    "type": "number",
+                    "description": "Días de mora de la operación."
+                },
+                "montoCancelacion": {
+                    "type": "number",
+                    "description": "Monto de cancelación de la operación."
+                }
+            }
+        }
+    },
+    "sistema": "Microfinanzas"
+}

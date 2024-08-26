@@ -1,0 +1,21 @@
+{
+    "id": 493,
+    "nombre": "Bloquear",
+    "descripcion": "Método para realizar bloqueo de tarjeta de débito.",
+    "entrada": {
+        "tarjetaUId": {
+            "type": "number",
+            "description": "Identificador único de tarjeta."
+        },
+        "clienteUId": {
+            "type": "number",
+            "description": "Identificador único de cliente."
+        },
+        "motivoBloqueoId": {
+            "type": "number",
+            "description": "Identificador de motivo de bloqueo"
+        }
+    },
+    "salida": {},
+    "sistema": "TarjetasDeDebito"
+}
