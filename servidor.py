@@ -21,7 +21,7 @@ from fastapi import FastAPI
 
 from fastapi.middleware.cors import CORSMiddleware
 
-from asistentes.asistentes import asistente_api, asistente_core, asistente_migracion, asistente_capacitacion
+from asistentes.asistentes import asistente_api, asistente_core, asistente_migracion, asistente_capacitacion, asistente_pseudoCode
 
 from azure.identity import DefaultAzureCredential
 from azure.storage.blob import BlobServiceClient
@@ -30,9 +30,10 @@ import json
 import datetime
 import os
 # VARIABLES DE ENTORNO
-dotenv_path = here() / ".env"
+dotenv_path = "./.env"
+load_dotenv(dotenv_path=dotenv_path)
 
-
+print(os.environ["LOCAL"])
 # LANGSMITH
 client = Client()
 
@@ -162,6 +163,14 @@ add_routes(
         {"run_name": "agent"}
     ),
     path="/capacitacion"
+)
+
+add_routes(
+    app,
+    asistente_pseudoCode.with_types(input_type=Input, output_type=Output).with_config(
+        {"run_name": "agent"}
+    ),
+    path="/pseudoCode"
 )
 
 if __name__ == "__main__":

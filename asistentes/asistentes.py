@@ -38,3 +38,11 @@ openai_capacitacion = ChatOpenAI(model="gpt-4o-mini",temperature=0.0,streaming=T
 agent_capacitacion = create_openai_tools_agent(openai_capacitacion, t_capacitacion.tools, p_capacitacion.chat_template)
 asistente_capacitacion = AgentExecutor(agent=agent_capacitacion, tools=t_capacitacion.tools, verbose=False)
 
+# pseudoCode
+import asistentes.pseudoCode.tools as t_pseudoCode
+import asistentes.pseudoCode.prompts as p_pseudoCode
+
+openai_pseudoCode = ChatOpenAI(model="gpt-4o-mini",temperature=0.0,streaming=True)
+agent_pseudoCode = create_openai_tools_agent(openai_pseudoCode, t_pseudoCode.tools, p_pseudoCode.chat_template)
+asistente_pseudoCode = AgentExecutor(agent=agent_pseudoCode, tools=t_pseudoCode.tools, verbose=False)
+
