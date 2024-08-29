@@ -1,0 +1,922 @@
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 1 de 3 
+ 
+Documento Privado 
+ 
+ 
+Clasificación del documento: 
+Público:              ☐ 
+Privado:              ☒ 
+Confidencial:    ☐ La información contenida en este documento es proporcionada con el único fin de presentar en la institución receptora, 
+prohibiendo expresamente la publicación, divulgación y utilización de su  contenido a terceros. 
+ 
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 2 de 3 
+ 
+Documento Privado 
+ 
+ 
+ 
+Documento de Especificación de Requerimientos 
+ 
+Nro. requerimiento 
+OT - 661 
+ 
+Nombre 
+Producto Carta Fianza 
+ 
+ 
+ 
+ 
+Solicitante 
+Lena Bello García 
+Responsable 
+Funcional DLYA 
+Marcos Vedovatti 
+Responsable 
+Técnico DLYA 
+Paola Campana 
+Referente Centro 
+de Desarrollo DLYA 
+No aplica 
+ 
+Nro. Minuta 
+<Número de requerimiento de la minuta en XPM> 
+¿Existen Precedencias? 
+SI 
+256 – 257 – 303 – 432 – 698 
+ 
+¿Requerimiento Institucional? 
+NO 
+ 
+¿Requerimiento Normativo? 
+NO 
+ 
+Norma del organismo de 
+contralor externo  
+No aplica 
+ 
+ 
+Requerimiento del negocio 
+Objetivo del 
+requerimiento  
+Realizar el alta del producto Carta Fianza a través del flujo de créditos de BT y las operativas post venta. 
+ 
+ 
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 3 de 3 
+ 
+Documento Privado 
+ 
+Descripción 
+del 
+requerimiento 
+1. 
+ALTA DE PRODUCTO CARTA FIANZA 
+A continuación, se detalla cómo se realizará el alta del producto Carta Fianza en el flujo de créditos de BT: 
+A. 
+Solicitud 
+Se generará la solicitud como en el resto de los productos donde, al seleccionar el cliente titular de la carta fianza, 
+se debe seleccionar en tipo de solicitud que es el alta de una carta fianza. 
+ 
+Al continuar, se realizan las mismas validaciones que para el resto de los productos y se llega a la pantalla en la cual 
+se ingresan los datos del producto a generar. 
+ 
+ 
+Se puede elegir la moneda: Soles o dólares. Seleccionamos carta fianza 
+ 
+Dentro del sistema se tendrán que definir 2 productos de Cartas Fianzas: 
+ 
+1. 
+Cartas fianzas (genéricas): cuyo tratamiento se encuentra descrito en el presente documento (flujos de 
+solicitud, evaluación, Evaluación/ propuesta, aprobación, desembolso) y procesos post venta: renovación, 
+devolución, cancelación, Ejecución honramiento). Aplica para PN/PJ 
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 4 de 3 
+ 
+Documento Privado 
+ 
+2. 
+Cartas fianzas – Fondo mi vivienda: cuya única diferenciación con las Cartas fianzas genéricas son la 
+asociación de garantías y los porcentajes de comisión. Las demás etapas del flujo como operaciones post 
+venta son similares a las cartas fianzas genéricas, así como la generación de impresos. Aplica para PN/PJ 
+ 
+Nota: La definición de ambos productos es la misma que se indica en la OT 191 para el producto carta fianza 
+ 
+Se despliega la pantalla con los datos a ingresar. 
+ 
+ 
+Se detallan los campos a visualizar todos ellos son de ingreso obligatorio: 
+- 
+Fecha valor: por defecto refiere a la fecha del sistema 
+- 
+Monto 
+- 
+Plazo 
+- 
+Tipo de carta fianza: Combo parametrizable con los siguientes datos 
+ 
+| 
+- 
+A favor de: Modificar el nombre de la etiqueta a "Beneficiario (Acreedor)". Adicionalmente, se deberá 
+modificar este panel para que, este campo no sea un texto, sino que se tenga un pop up que permita 
+seleccionar una persona (persona creada en BT).  
+- 
+Para garantizar: Campo de texto de ingreso libre.  
+- 
+A partir de: Validez de la carta fianza 
+ 
+Nota: Se aclara que, para el caso de juzgados, el nombre del mismo se indicará en el campo “Para garantizar” como 
+editable y el acreedor será el Poder Judicial, el cual estará dado de alta como una persona jurídica en Bantotal. 
+ 
+Una vez completado los datos se puede ingresar a ver la comisión que se está generando y modificarla si se requiere 
+(la opción de poder modificar o no es parametrizable). Esta comisión debe ser un porcentaje de la carta fianza con 
+un mínimo. 
+ 
+Una vez completado todos los datos, se vuelve a la pantalla anterior donde se agregan los participantes, se graba y 
+continúa y se validan las políticas como el resto de los productos vistos 
+ 
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 5 de 3 
+ 
+Documento Privado 
+ 
+ 
+ 
+B. 
+Evaluación/Propuesta 
+Se manejarán los mismos modelos de evaluación que en los demás productos, NO se maneja ninguna particularidad 
+cuando es carta fianza.  
+ 
+En propuesta, se permitirá relacionar garantías como en el resto de los productos.  
+ 
+1. 
+Para las cartas fianzas empresariales(genéricas) se contemplan 3 tipos de garantías: 
+o 
+Garantías de Depósitos afectados, tipo de Operación 6 
+o 
+Garantías de CA afectados, tipo de Operación 7 
+o 
+Garantías Hipotecarias Preferidas, tipo de operación 1 
+o 
+Combinación de garantías (6 con 1 ó 7 con 1) 
+ 
+Se adiciona cuadro de comisiones de las cartas fianzas (genéricas) donde las 2 primeras corresponden a 
+la comisión de generación y la tercera al punto 2D. El resto se manejan en otra OT. 
+ 
+ 
+ 
+2. 
+Para el caso de Cartas Fianzas – Fondo Mi vivienda, adicional a las garantías descritas anteriormente, se 
+podrían también emitir, desembolsar, renovar o ejecutar (Honramiento) sin la necesidad de asociar 
+garantías dentro del flujo de Evaluación / Propuesta. 
+  
+Nota: En el caso de Cartas Fianzas – Fondo Mi vivienda que se emitan con la finalidad de cubrir líneas de 
+proyectos inmobiliarios, se podrá retirar el control de exigencia de garantías si es que se hubiese evaluado 
+de esta manera. No se realizará control alguno a nivel sistema. 
+ 
+En cuanto a las comisiones de las cartas fianzas relacionadas al Fondo MiVivienda, se tiene el siguiente 
+cuadro con los rangos de comisiones a cobrar: 
+ 
+ 
+ 
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 6 de 3 
+ 
+Documento Privado 
+ 
+Adicionalmente se requiere identificar al Tipo de Crédito SBS: Micro / pequeña / Mediana/ Corporativo/ Gran 
+empresa y el Grupo Deudor: Minorista o No Minorista (relacionado a la OT-254, tipo cliente CMACT) 
+ 
+C. 
+Aprobación 
+Se mantiene lo definido en sesiones anteriores donde: 
+- 
+Si es minorista: Se determina por el cuadro de minoristas no diferenciados 
+- 
+Si es no minorista: Se determina por el cuadro de no minoristas, sin IFI’s 
+ 
+D. 
+Desembolso 
+En la etapa de desembolso que se debe generar la carta fianza (documento físico de manera manual), verifica que el 
+cliente esté de acuerdo con el documento y realizar el envío a contabilizar. 
+En el panel de desembolso se agregará un nuevo campo llamado Tipo de obligación que tendrá una lista desplegable 
+para indicar una de las 3 opciones: Dar / Hacer / No Hacer. 
+La transacción en este caso debe ser con retoma para que jurídica indique el ok. Es decir, el usuario indica la opción 
+en el campo y al contabilizar queda pendiente de que jurídica confirme el asiento. Es importante tener en cuenta 
+que al retomar la transacción no se va a visualizar el campo que ingresaron en desembolso de tipo de obligación. 
+ 
+Nota: Este campo de “Dar” / “Hacer” / “No Hacer” impacta contablemente para las provisiones 
+ 
+Este envío a contabilizar generará el asiento donde se genera la carta fianza de manera contable (ya queda activa) y 
+se cobra la comisión en función de la forma de desembolso seleccionada. 
+ 
+Nota: Para la atención de CF, previo a la contabilización y cuando se está cobrando la comisión, el sistema debe 
+controlar que el cliente presente CA aperturada (se debe considerar en normativa y contrato) 
+ 
+Se aclara que: 
+- 
+Si la forma de desembolso seleccionada es CA, al momento que el usuario manda a confirmar la etapa de 
+desembolso, de manera online se realiza el débito de la CA y se cobra la comisión quedando la carta fianza 
+activa. 
+ 
+- 
+Si la forma de desembolso es efectivo, al enviar a contabilizar por un usuario no cajero, la transacción 
+queda pendiente que un cajero la confirme efectivamente cuando reciba el dinero de la comisión. 
+ 
+En este caso, la carta fianza no se registra contablemente ni se queda activa hasta que el cajero confirme la 
+transacción 
+ 
+ 
+- 
+Los impresos se generan en la etapa de desembolso antes del envío a contabilizar (documentos que se 
+deben indicar en el pendiente 310) y a partir de ese momento pueden ser firmados por el cliente cuando 
+se requiera. 
+ 
+Se adjunta formato de solicitud de carta fianza 
+Solicitud de Carta 
+Fianza.pdf
+ 
+ 
+Nota: Los campos “Tiempo Creación”, “Tipo jurídico” y “Magnitud Empr.” Se quitan del impreso. 
+ 
+Se va a requerir la impresión de comprobantes de pago por conceptos de comisiones en el producto Carta Fianza. 
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 7 de 3 
+ 
+Documento Privado 
+ 
+ 
+ 
+EXTORNO DEL PAGO DE LA COMISION: 
+ 
+Se requiere contar con la opción de poder extornar el cobro de la comisión por Carta Fianza, anulando el asiento 
+contable que se generó y la anulación de la Carta Fianza. 
+ 
+2. 
+OPERACIONES POST VENTA 
+ 
+Luego de la generación de la carta fianza se tienen las siguientes acciones: 
+ 
+A. 
+Devolución 
+Es la cancelación de la carta fianza generada en el flujo antes del vencimiento de manera manual. En BT, esta 
+devolución se realiza con la ejecución de una transacción. 
+ 
+ 
+ 
+Al ejecutarla, se debe filtrar por la carta fianza requerida (por cuenta, DOI y/u operación) y seleccionarla 
+ 
+ 
+Se llega a la pantalla de confirmación donde se puede ver que se están cancelando los registros generados en el flujo 
+(sin generar el crédito ni ejecutar la garantía). 
+ 
+ 
+ 
+El esquema contable sería similar al siguiente: 
+ 
+ 
+ 
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 8 de 3 
+ 
+Documento Privado 
+ 
+ 
+ 
+B. 
+Cancelación 
+Refiere a la cancelación de la carta fianza generada en el flujo luego del vencimiento de la carta fianza. 
+En BT, esta cancelación se realiza de la misma manera que la devolución (mediante la ejecución de la transacción 
+manual). 
+Se deberá entonces parametrizar la transacción de cancelación para que el usuario la ejecute manualmente.  
+ 
+En caso la garantía sea un Depósito en efectivo, se deben desbloquear los fondos que respaldaron dicha Carta Fianza. 
+Si el cliente tuviera otras obligaciones respaldadas con el mismo deposito estas deben permanecer Bloqueadas. 
+Este control se realizará de manera operativa y se manejarán dos transacciones una que desbloquee y otra que no. 
+El usuario decidirá en base al análisis manual cual ejecutar.  
+ 
+ 
+ 
+ 
+C. 
+Honramiento 
+Refiere a la ejecución de la carta fianza frente al reclamo de un tercero por el incumplimiento del cliente. 
+En BT, el honramiento se realiza mediante la ejecución de una transacción. 
+ 
+Aclaraciones Importantes:  
+- 
+al honramiento no generarlo por el flujo, no se hace llamado alguno a Experian, no se calculan scores ni 
+se evalúa segmento del cliente o datos definidos en el flujo. 
+ 
+- 
+la resolución de la tasa que aplica para el préstamo que se genera, no evalúa las mismas condiciones que 
+el flujo. En estos casos, la tasa se resuelve en función del producto que se está generando, el monto 
+desembolsado y el plazo del crédito. 
+ 
+ 
+ 
+Al ejecutarla, se debe filtrar por la carta fianza requerida (por cuenta, DOI y/u operación) y seleccionarla 
+ 
+ 
+ 
+Al seleccionar la carta fianza, se ejecuta la transacción donde se permite generar el crédito al cliente por el 
+honramiento de la carta fianza al tercero. 
+Se despliega la pantalla de simulación del crédito en la cual, como se ha mostrado en sesiones anteriores, se deben 
+indicar las diferentes condiciones para la generación del crédito. 
+ 
+Condiciones para la generación del crédito: 
+- 
+Cuando el beneficiario (acreedor) solicita la ejecución u honramiento dentro del plazo legal establecido 
+(actualmente es 15 días calendarios posteriores al vencimiento de la carta fianza). 
+- 
+Cuando la garantía de la carta Fianza no sea un Depósito en Efectivo (CA o DPF) o no esté totalmente 
+cubierto con CA o DPF. Control operativo 
+- 
+En caso de combinación de garantías, se debe generar el crédito por la parte no cubierta por el depósito 
+en efectivo. Control operativo 
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 9 de 3 
+ 
+Documento Privado 
+ 
+ 
+ 
+ 
+Nota: para la prueba se generó un producto específico y en la transacción se forzó a la ejecución de ese producto, 
+pero se aclara que podría ser cualquier producto de los definidos. Al tener un producto específico por carta fianza 
+permite poder identificar que este préstamo se ha generado por este motivo y no por otro. 
+ 
+Adicionalmente, en la prueba se está generando el crédito por el mismo importe de la carta fianza, pero se solicita 
+poder modificarlo. 
+Luego del ingreso de los datos se despliega la pantalla de seguros para indicar los que correspondan. Se deberá tener 
+la opción de no aplica seguros. 
+ 
+ 
+Al continuar, se genera el plan de pagos correspondiente. 
+ 
+ 
+ 
+Al continuar, llegamos a la pantalla de confirmación donde podemos ver que se baja la carta fianza correspondiente, 
+se genera el préstamo y se genera un pendiente a pagar por el honramiento. 
+ 
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 10 de 3 
+ 
+Documento Privado 
+ 
+ 
+Nota: Se debe aclarar que puede generarse un pendiente, volcar el dinero contra una CA o un corresponsal 
+dependiendo como se decida parametrizar la transacción 
+ 
+Esta transacción mostrada, realizaba la contabilidad apenas se confirmó la pantalla de confirmación, pero se 
+menciona que, como cualquier transacción de BT, se puede parametrizar con retoma para que un usuario diferente 
+al que ingresa el honramiento tenga que confirmar la transacción. 
+ 
+Esta retoma no aplica niveles de autorización, es un usuario con un determinado perfil que puede confirmar estas 
+transacciones. 
+ 
+Se debe parametrizar esta transacción con Retoma Donde: 
+➢ 
+El asesor de negocios Minorista o No Minorista de ser el caso podría ejecutar la transacción  
+➢ 
+Administrador de Tienda o Jefe de Banca Especializada podrá contar con la opción de Retoma para 
+confirmar la transacción y contabilizar la operación. 
+ 
+Verificamos la consulta del cliente para ver que se generó el crédito, se generó el pendiente a pagar y se canceló la 
+carta fianza. 
+ 
+ 
+ 
+Se aclara que una vez dado de alta el crédito para honramiento, al siguiente día calendario de su generación deberá 
+presentar situación de atraso (+1), esto con la finalidad de poder contemplar lo normado en el manual de 
+Contabilidad y la norma externa SBS, el cual señala que dichos créditos deben registrarse como “Créditos por liquidar 
+- 1401” por un periodo de X días, dependiendo si es minorista (30 días) o no minorista (15 días), para luego de 
+cumplido dicho días de atraso sea trasladado a Vencido. 
+ 
+ 
+ 
+En el caso de CT no todas las veces se genera el crédito por el honramiento, algunas veces se posee una garantía de 
+un depósito en CA o incluso mixta donde se tiene parte como saldo de una CA y parte con una garantía hipotecaria 
+por la cual se generaría el crédito. 
+ 
+➢ 
+Si la garantía de la CF a honrar fuese una combinación de garantías (CA o DPF + G Hip), al momento de 
+generar el crédito para honramiento, este debe ser por el 100% del importe de la Carta Fianza, donde:  
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 11 de 3 
+ 
+Documento Privado 
+ 
+ 
+El importe desembolsado del crédito + el importe de CA o DPF, se depositarán a una CA a nombre de 
+cliente y servirán para generar el cheque de gerencia por el importe de la CF (se enviará a acreedor) y el 
+excedente que resulte luego de cubierto los gastos de ITF y otros será amortizado al crédito.  
+ 
+➢ 
+Si la garantía de la CF a honrar presenta G. Hip o sin garantía, al momento de generar el crédito para 
+honramiento, este debe ser por el 100% del importe de la Carta Fianza + el importe que servirá para 
+cubrir los gastos de ITF y otros (calculo manual por usuario), donde:  
+ 
+Del importe total desembolsado, se depositarán a una CA a nombre de cliente y servirá para generar el 
+cheque de gerencia por el importe de la CF (se enviará a acreedor) y el excedente que resulte luego de 
+cubierto los gastos de ITF y otros será amortizado al crédito. 
+ 
+➢ 
+Si la garantía de la CF a honrar presenta solamente CA o DPF, no debe generarse el crédito y el importe 
+de la CA o DPF se depositarán en la CA de ahorros del cliente para la posterior generación del cheque. 
+ 
+Para esto se deberán crear 3 transacciones: 
+ 
+o 
+Transacción que correspondería a las operaciones con garantía hipotecaria únicamente donde se 
+generaría el crédito 
+ 
+o 
+Transacción que correspondería a las operaciones con garantía de una CA donde no se debe generar el 
+crédito, sino que debe tomarse el saldo de la CA. 
+ 
+o 
+Transacción que correspondería a las operaciones con garantías mixtas donde el crédito se genera por el 
+100% de la carta fianza y tanto el monto del crédito como de la CA o DPF se acreditarán en la caja de ahorros del 
+cliente. 
+ 
+ 
+Importante: La selección de que transacción ejecutar dependiendo de la garantía que posee la operación es 
+operativa a decisión del análisis del usuario que ejecuta. 
+ 
+D. 
+Renovación 
+En BT, la renovación de una carta fianza se realiza sin necesidad de ingresar nuevamente al flujo para generar una 
+nueva. Para ello, se posee una transacción de ejecución manual: 
+ 
+La transacción se modificó para que se pueda solicitar el importe en la transacción y así generar la nueva carta fianza 
+por un importe diferente al de la carta fianza existente que se está renovando. 
+En la misma se puede solicitar solamente la nueva fecha de vencimiento como adicionalmente se puede solicitar el 
+plazo para que se ingrese uno de los 2 valores. 
+Se agregó a la transacción la generación y cobro de la comisión por la renovación de la carta fianza. 
+ 
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 12 de 3 
+ 
+Documento Privado 
+ 
+ 
+ 
+Al ejecutar la transacción se debe filtrar la carta fianza a renovar. 
+ 
+ 
+ 
+Una vez seleccionada, se solicita el ingreso de la nueva fecha de vencimiento y se ejecuta la transacción en la cual se 
+baja el saldo de la carta fianza existente y se genera nuevamente con las nuevas condiciones, misma operación y sub 
+operación igual a la de la que se está renovando + 1 
+ 
+ 
+ 
+Verificamos el asiento que se genera 
+ 
+ 
+ 
+ 
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 13 de 3 
+ 
+Documento Privado 
+ 
+ 
+Se adjuntan los esquemas contables entregados por CT 
+DINAMICAS CARTAS 
+FIANZAS 25.07.xlsx  
+ 
+ 
+Premisas o 
+supuestos / 
+Restricciones 
+ 
+<Detallar las premisas o supuestos que puedan afectar el requerimiento> 
+ 
+<Detallar las Restricciones que puedan contribuir a un mejor entendimiento de la Descripción de la Solución. Ej.: 
+Funcionalidades que no serán contempladas en la Solución>  
+ 
+ 
+ 
+Descripción de la solución funcional 
+ 
+ 
+Punto 1 – Alta de carta fianza 
+ 
+Se parametrizará el flujo para que se pueda dar un nuevo tipo de solicitud correspondiente a carta fianza: 
+ 
+1. 
+Comisiones: 
+a. 
+Por el panel HTRT050, crear 2 códigos de comisión (uno para las cartas Genéricas y otro para Fondo Mi Vivienda) 
+ 
+b. 
+Mediante el panel de valores por módulo (HFSV003), para el módulo 121, parametrizar las comisiones creadas con 
+los siguientes valores. 
+o 
+Genérica: 
+ 
+ 
+o 
+Fondo Mi vivienda:  
+ 
+ 
+2. 
+Productos: Por el web panel HPP9120, se crearán 2 productos de carta fianza en el módulo 121 
+• 
+Genérica: Se define en OT 191 
+• 
+Fondo Mi Vivienda: Copia del producto genérica con otro tipo de operación. 
+ 
+Se deberán asociar las comisiones a los productos definidos como visibles y modificables. 
+ 
+3. 
+Parametrizar tipo de solicitud 1: Mediante el panel hsngp001 →parámetro 8 - Tipos de Solicitud de Créd. →  Crear tipo 
+de solicitud 1 
+ 
+En los módulos, asociar el correspondiente a cartas fianzas, módulo 121 (creados en el punto 2): 
+ 
+ 
+ 
+Solicitud →  
+4. 
+Modificaciones en el panel de datos de carta fianza:  
+ 
+a. 
+Mediante el panel HSNG038, filtrar el programa HSNGFCB1. 
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 14 de 3 
+ 
+Documento Privado 
+ 
+ 
+o 
+Parametrizar el id 31 de la siguiente forma: 
+ 
+▪ 
+De fiel cumplimiento 
+▪ 
+Derecho Aduanero 
+▪ 
+Monto Diferencial Prop 
+▪ 
+Otorgamiento Financiero 
+▪ 
+Por Adelanto 
+▪ 
+Seriedad de Oferta 
+ 
+o 
+Modificar la etiqueta del campo id 28 como “Beneficiario (Acreedor)” y modificar el programa para que 
+muestre un pop up que permita buscar a una persona en BT (búsqueda por nombre y DOI) 
+ 
+Evaluación/Propuesta → 
+5. 
+Parametrizar en función de lo desarrollado en la OT 558 las garantías obligatorias por producto: 
+a. 
+En ambos casos: Tipo de operación 6, 7, 1 o combinación 6 con 1 o 7 con 1 Ver si está definido en OT 558 
+b. 
+Fondo Mi Vivienda: Puede no tener garantías 
+ 
+Desembolso → 
+6. 
+Agregar el campo tipo de obligación con las opciones “Dar” / “Hacer” / “No Hacer”.  
+ 
+7. 
+Definir una PAE bloqueante (reporte consulta) que no permita desembolsar si el cliente titular del crédito no posee una 
+caja de ahorros. 
+ 
+8. 
+Parametrizar una transacción que genere la carta fianza y cobre comisión con el siguiente esquema: dicha transacción 
+debe manejar retoma. 
+ 
+Adicionalmente, parametrizar el ticket por la comisión: 
+ 
+ 
+a. 
+Se deberá parametrizar el impreso de Solicitud de Carta Fianza y vincularlo a la etapa de solicitud el cual 
+depende si es persona natral o jurídica: 
+Solicitud de Carta 
+Fianza.pdf
+ 
+i. 
+Persona Natural 
+➢ 
+ENCABEZADO: 
+o 
+Nombre de la Entidad: Texto fijo “Caja Municipal de Trujillo” 
+o 
+Tienda: nombre de la sucursal  
+o 
+Título: " Solicitud de Carta Fianza" 
+o 
+Fecha y Hora: Del día 
+o 
+Carta Fianza: N° de operación (se genera al grabar la solicitud en automático) 
+ 
+➢ 
+DATOS DEL TITULAR 
+o 
+DOI: N° de documento del titular persona natural 
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 15 de 3 
+ 
+Documento Privado 
+ 
+o 
+N° de Documento Tributario: Documento adicional RUC de la persona natural, si es que 
+tiene, sino vacío. 
+o 
+Dirección: Se registra la dirección del domicilio que está en el alta. 
+o 
+Profesión: Se registra la descripción de la profesión. 
+ 
+➢ 
+DATOS DEL ACREEDOR 
+o 
+Nombre: Solo la razón social. 
+ 
+➢ 
+FUENTE DE INGRESO (del Titular) 
+o 
+Razón social: empresa en la que trabaja la persona natural 
+o 
+Dirección: Se registra la dirección del negocio que está en el alta. 
+o 
+Sector: Es la descripción del campo tipo de actividad del alta de la sección datos laborales de 
+la persona 
+o 
+Actividad: se obtiene de la actividad de la empresa donde trabaja, si es que se tiene el dato, 
+sino vacío.  
+o 
+Inicio de Actividades: Es el campo fecha inicio negocio de la sección datos laborales del alta 
+de la persona.  
+ 
+➢ 
+CLIENTES RELACIONADOS (Participantes) 
+o 
+Nombre: nombre completo de integrante 
+o 
+Relación: refiere al vinculo de la con la solicitud (garante, representante legal, etc) 
+o 
+DOI: documento del integrante  
+ 
+➢ 
+DATOS DE LA CARTA FIANZA 
+o 
+Usuario: asesor de la solicitud 
+o 
+Tipo de carta fianza: la que se indicó en el panel de carta fianza. 
+o 
+Condición del cliente: NUEVO, RECURRENTE o RECUPERADO 
+o 
+Vencimiento Referencial 
+o 
+Fecha de valor 
+o 
+Monto  
+o 
+Plazo 
+o 
+Finalidad: refiere al campo "Para garantizar" de Bantotal que se indica en la solicitud. 
+ 
+ii. 
+Persona Jurídica 
+➢ 
+ENCABEZADO: 
+o 
+Nombre de la Entidad: Texto fijo “Caja Municipal de Trujillo” 
+o 
+Tienda: Nombre de la sucursal / sede Institucional 
+o 
+Título: " Solicitud de Carta Fianza" 
+o 
+Fecha y Hora 
+o 
+Carta Fianza: N° de operación 
+o 
+ 
+➢ 
+DATOS DEL TITULAR 
+o 
+Razón social:  
+o 
+Documento tributario: Tipo de documento en el alta de la apersona. 
+o 
+N° de Documento Tributario:  número de documento. 
+o 
+Dirección: Hace referencia al campo dirección de la sección de domicilios y teléfonos del alta 
+de la persona jurídica. 
+o 
+Inicio de Actividades: Se obtiene del dato del alta de la persona jurídica, formato 
+DD/MM/AAAA 
+o 
+Tipo de empresa:  Esta en la sección " Datos de la Persona Jurídica" del mantenimiento de 
+personas. 
+o 
+Magnitud de la empresa: se obtiene de la magnitud, campo de la persona jurídica 
+ 
+➢ 
+DATOS DEL ACREEDOR 
+o 
+Nombre: Es la razón social. 
+➢ 
+FUENTE DE INGRESO 
+o 
+Razón social: es la persona jurídica 
+o 
+Dirección: hace referencia al campo dirección de la sección domicilios y teléfonos del alta de 
+la persona jurídica. 
+o 
+Sector: hace referencia al tipo de actividad de la sección "Datos laborales - CIIU del alta de la 
+persona jurídica". 
+o 
+Actividad: Actividad Principal de la sección "Datos laborales - CIIU del alta de la persona 
+jurídica". 
+o 
+Inicio de Actividades: Es la fecha de inicio de actividades del alta de la persona jurídica. 
+➢ 
+CLIENTES RELACIONADOS (Participantes) 
+o 
+Nombre: nombre completo de integrante 
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 16 de 3 
+ 
+Documento Privado 
+ 
+o 
+Relación: refiere al vinculo de la con la solicitud (garante, representante legal, etc) 
+o 
+DOI: documento del integrante  
+➢ 
+DATOS DE LA CARTA FIANZA 
+o 
+Usuario: Asesor de la solicitud. 
+o 
+Tipo de carta fianza: la que se indicó en el panel de carta fianza. 
+o 
+Condición del cliente: NUEVO, RECURRENTE o RECUPERADO 
+o 
+Vencimiento referencial 
+o 
+Fecha de valor 
+o 
+Monto  
+o 
+Plazo 
+o 
+Finalidad: refiere al campo "Para garantizar" de Bantotal que se indica en la solicitud. 
+ 
+9. 
+Devolución → Parametrizar una transacción de ejecución manual que baja los saldos de la carta fianza y, en caso la 
+garantía sea sobre un DPF o CA y no esté coberturando otro préstamo, desbloqueo de la CA o DPF automáticamente. 
+ 
+Se debe asociar en la transacción las rtes del punto 4 de la solución técnica para la desafectación del DPF 
+ 
+10. Cancelación → Se deberá: 
+a. 
+Dos transacciones copia de la devolución. En una se bloquearán los fondos y en otra no.  
+ 
+11. Honramiento → Se parametrizarán 4 transacciones de ejecución manual: 
+a. 
+Transacción de honramiento de carta fianza con Gtía. hipotecaria → En esta transacción, se genera préstamo 
+y se desembolsa en CA del cliente para posterior generación del cheque de manera operativa. 
+o 
+RTE que genere vencimiento el mismo día del alta (punto 5 de la solución técnica) 
+o 
+Monto del crédito editables 
+b. 
+Transacción de honramiento de carta fianza con Gtía. CA o DPF → No genera préstamo, se vuelca el monto de 
+la garantía a la CA del cliente para posterior generación del cheque de manera operativa. 
+o 
+Se debe asociar en la transacción las rtes del punto 4 de la solución técnica para la desafectación del 
+DPF. 
+c. 
+Transacción de honramiento de carta fianza con Gtía. mixta → Genera crédito por el 100% de la carta fianza y 
+vuelca tanto el desembolso como el saldo de la garantía de DPF o CA en Caja de ahorros del cliente, para 
+posterior generación del cheque de manera operativa. 
+o 
+RTE que genere vencimiento el mismo día del alta 
+o 
+Monto del crédito editables 
+ 
+d. 
+Transacción de generación de cheque: desde la CA del cliente donde se depositó el monto de la carta fianza 
+ 
+12. Renovación → Se parametrizará una transacción de ejecución manual que cancela la carta fianza a renovar y genera una 
+nueva con mismo número de operación y sub-operación + 1 
+Debe solicitar fecha de vencimiento, plazo e importe. 
+ 
+ 
+Descripción de la solución técnica 
+ 
+ 
+Se debe definir una nueva guía especial de procesos X con los siguientes correlativos: 
+ 
+Correlativo 1 = 1 → Módulo y tipos de operación de carta fianza 
+Correlativo 1 = 2 → Días mínimos para cancelación automática  
+ 
+1. 
+Modificación programa HSNGFCB1 para que obtenga pop up de persona 
+ 
+Se debe agregar un nuevo campo de Nro. de Documento del Beneficiario (&CpoNDocBenef) que sea de tipo popup 
+para seleccionarlo vía el popup Hpopd01 
+La visibilidad quedara condicionada a &AspCpoPersona 
+  
+Se debe cambiar la subrutina ‘Cargar Campos’ y agregar tres nuevos elementos, por ejemplo, el 36 de esta forma 
+ 
+If (&sdtElemento.IdCod = 36) 
+    &CpoPaisBenef = Trim(&sdtElemento.Texto) 
+    &AspCpoPersona = &sdtElemento.Aspecto 
+EndIf 
+If (&sdtElemento.IdCod = 37) 
+    &CpoTDocBenef = Trim(&sdtElemento.Texto)    
+EndIf 
+ 
+ 
+ 
+If (&sdtElemento.IdCod = 38) 
+    &CpoNDocBenef = Trim(&sdtElemento.Texto) 
+EndIf 
+ 
+ 
+ 
+Documento de Especificación de Requerimientos - Versión <Nro. de Versión> 
+Página 17 de 3 
+ 
+Documento Privado 
+ 
+ 
+Finalmente se debe modificar 
+- 
+La subrutina ‘Preconfirmar’ para validar la clave de la persona si este nuevo campo es visible 
+- 
+La rutina psng008 y agregarle tres nuevos parámetros de país, tipo y nro. de doc. del beneficiario para grabarlos  
+en la tabla SNG008 (se debe impactar esta tabla y agregar estos 3 campos)    
+ 
+ 
+ 
+ 
+2. 
+RTE que genere vencimiento el mismo día del alta 
+ 
+Se debe desarrollar una rte en ingreso (Webpanel + Procedure) con nomenclatura local que grabe en la fsd016 los 
+siguientes campos: 
+- 
+Itfvto = Itfval 
+- 
+Ittasa = 0 
+- 
+Ittas = 1 /Efectiva anual) 
+- 
+Ittdia – sacar del preseteo mediante pgm Ppp9104d, parámetro 402 
+- 
+Ittano – sacar del preseteo, parámetro 107 
+- 
+Ittvto = ‘’  
+ 
+También en la fsd601 grabe los siguientes campos en 1 solo registro 
+- 
+Clave del préstamo 
+- 
+Pptipo = K 
+- 
+Ppcap = el valor de itimp1  
+- 
+Ppfval = El valor de itfval 
+- 
+Ppfpag = Ppfvto = Ppfval 
+- 
+Pppzo = 0 
+- 
+Tráiler del asiento  
+ 
+ 
+ 
+ 
+¿Impacta en otras funcionalidades de Bantotal? 
+<Ingresar un SI o un NO> 
+<Detallar el impacto de la solución a nivel de procesos, funcionalidades, programas, estructura de datos, etc., que se vean 
+afectados por la solución del requerimiento> 
+ 
+ 
+¿Requiere adjuntar Archivos complementarios? 
+<Ingresar un SI o un NO> 
+<En caso de existir, adjuntar los Archivos que sustentan el requerimiento> 
+ 
+ 
+¿Requiere Matriz de Validación? 
+SI 
+ 
+ 
+Glosario de términos 
+<En el caso que corresponda, detallar  los términos a utilizar que requieran una definición previa> 
+ 
+ 
+ 
+NOTA: La versión final de este documento será la que se adjunta en la instancia del workflow de la 
+Herramienta XPM: ‘Solución Técnica y Estimación’ y sobre la cual se dará solución al presente 
+requerimiento. 
+ 

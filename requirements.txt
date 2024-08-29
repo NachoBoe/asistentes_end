@@ -17,3 +17,7 @@ azure-identity
 azure-storage-blob
 sse_starlette
 langserve
+pymupdf
+docx2txt
+odfpy
+tiktoken

@@ -17,6 +17,9 @@ from azure.core.credentials import AzureKeyCredential
 from azure.search.documents import SearchClient
 from langchain_openai import AzureOpenAIEmbeddings
 import tiktoken
+from langchain_core.runnables import ConfigurableField, RunnableSerializable
+from langchain_core.runnables.config import RunnableConfig
+from langchain_community.document_loaders import PyPDFLoader
 
 
 # VARIABLES DE ENTORNO
@@ -27,11 +30,57 @@ load_dotenv(dotenv_path=dotenv_path)
 
 
 
-# DEFINIR TOOLS
+from typing import Optional, Type, Dict
 
-@tool("empty_tool")
-def empty_tool():
-    """Empty tool. Do not use. Answer directly according to the system prompt."""
-    return None
+from langchain.callbacks.manager import (
+    AsyncCallbackManagerForToolRun,
+    CallbackManagerForToolRun,
+)
 
-tools = [empty_tool]
+from langchain.pydantic_v1 import BaseModel, Field
+from langchain.tools import BaseTool, StructuredTool, tool
+
+
+class EmptyInput(BaseModel):
+    pass
+
+
+class CustomTool(BaseTool):
+    name = "getDocument"
+    description = "Retrieves the complete document uploaded by the user (if it exists)."
+    args_schema: Type[BaseModel] = EmptyInput
+    config = {}
+    
+    def _run(
+        self,run_manager: Optional[CallbackManagerForToolRun] = None
+    ) -> str:
+        """Use the tool."""
+        config = self.config["configurable"]
+        path = "uploads/" + config["user_id"] + "/archivo.txt"
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                doc_content = f.read()
+        except:
+            doc_content = "No se ha subido ningún documento."   
+        return doc_content
+
+    async def _arun(
+        self,  run_manager: Optional[AsyncCallbackManagerForToolRun] = None
+    ) -> str:
+        """Use the tool."""
+        config = self.config["configurable"]
+        path = "uploads/" + config["user_id"] + "/archivo.txt"
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                doc_content = f.read()
+        except:
+            doc_content = "No se ha subido ningún documento."   
+        return doc_content
+    
+    
+    def with_config(self,config):
+        self.config = config
+        return self
+    
+    
+tools = [CustomTool()]
