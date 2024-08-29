@@ -281,7 +281,7 @@ add_routes(
     asistente_pseudoCode.with_types(input_type=Input, output_type=Output).with_config(
         {"run_name": "agent"}
     ),
-    path="/pseudo_code",
+    path="/pseudo_codigo",
 )
 
 add_routes(
