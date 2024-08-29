@@ -248,7 +248,7 @@ add_routes(
     asistente_api.with_types(input_type=Input, output_type=Output).with_config(
         {"run_name": "agent"}
     ),
-    path="/APIdocs",
+    path="/API_docs",
 )
 
 
@@ -281,7 +281,7 @@ add_routes(
     asistente_pseudoCode.with_types(input_type=Input, output_type=Output).with_config(
         {"run_name": "agent"}
     ),
-    path="/pseudoCode",
+    path="/pseudo_code",
 )
 
 add_routes(
