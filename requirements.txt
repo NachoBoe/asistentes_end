@@ -16,7 +16,7 @@ azure-search-documents
 azure-identity
 azure-storage-blob
 sse_starlette
-langserve
+langserve[all]
 pymupdf
 docx2txt
 odfpy

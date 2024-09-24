@@ -119,7 +119,6 @@ def get_method_info_from_name(method:str, sistem: str):
     if len(ret_metod) == 0:
         return "No se encontró el método. Por favor, verifique que el nombre del método y el sistema sean correctos."
     ret_metod = ret_metod[0]
-
     resp =  method_info_as_string(ret_metod,params_info=True)
     return resp
 
