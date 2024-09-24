@@ -1,4 +1,3 @@
-pydantic
 langsmith
 langchain_core
 langchain
@@ -17,7 +16,7 @@ azure-search-documents
 azure-identity
 azure-storage-blob
 sse_starlette
-langserve[all]
+langserve=0.2.2
 pymupdf
 docx2txt
 odfpy
