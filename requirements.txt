@@ -1,3 +1,4 @@
+pydantic
 langsmith
 langchain_core
 langchain
