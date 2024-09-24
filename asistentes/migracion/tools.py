@@ -74,13 +74,13 @@ def remover_tildes(input_str):
 ## TOOL 1: Obtener registros a partir de una descripción
 
 class desc_campo(BaseModel):
-    information: str = Field(description="Information that wants to be stored in a record.")
+    description: str = Field(description="Descripton of the information content stored on the record to find.")
     system = str = Field(description="Filter the search to a particular system. The possible systems are: ['Cuentas Vistas', 'Cuentas y Personas', 'Chequeras', 'Depósitos', 'Microfinanzas', 'Saldos Iniciales', 'Facultades', 'Líneas de Crédito','Garantías', 'Préstamos', 'Acuerdos de Sobregiro', 'Tarjetas de Débito', 'Descuentos', 'all']", default="all")
 
 @tool("retrieve_records_from_description",args_schema=desc_campo)
-def retrieve_records_from_description(information:str, system:str="all"):
-    """Migrating to Bantotal requieres the user to fill in a lot of records. This tool helps you find the records that are related to the information you have."""
-    embedding = embeddings.embed_query(information)
+def retrieve_records_from_description(description:str, system:str="all"):
+    """Search enginge that retrives records provided a description of what information content the records should store. """
+    embedding = embeddings.embed_query(description)
     vector_query = VectorizedQuery(vector=embedding, k_nearest_neighbors=20, fields="content_vector", exhaustive=True)
 
     if system != "all":
@@ -117,7 +117,7 @@ class system_retriever_input(BaseModel):
 
 @tool("retrieve_sistem_migration_information",args_schema=system_retriever_input)
 def retrieve_sistem_migration_information(system:str):
-    """ Retrieves content relevant to the migration of a particular sistem. The content details about elements such as the trays (without the fields), the control and dump programs, the transactions, previous requierements, code errors. It also provides a conceptual guide on how to migrate the system, but not how to actually execute it in Bantotal. """
+    """ Retrieves content relevant to the migration of a particular system. The content resumes the trays (without the fields), the control and dump programs, the transactions, previous requierements and code errors. It also provides a conceptual guide on how to migrate the system, but not how to actually execute it in Bantotal. """
     total_token = 0
     content = ""
     print(remover_tildes(system.lower()))
@@ -151,7 +151,7 @@ class general_retriever_input(BaseModel):
 
 @tool("retrieve_migration_process_information",args_schema=general_retriever_input)
 def retrieve_migration_process_information(retrieve_sec_1: bool = False, retrieve_sec_2: bool = False, retrieve_sec_3: bool = False):
-    """Retrieves information relevant to the migration process and the execution of the migration for a sistem. The informations is grouped in three setions.  """
+    """Retrieves information relevant to the migration process and the execution of the migration process in Bantotal."""
     total_token = 0
     content = ""
 
@@ -180,27 +180,27 @@ def retrieve_migration_process_information(retrieve_sec_1: bool = False, retriev
 
 # TOOL 4: Obtener campos de una bandeja
 class tray_retriever_input(BaseModel):
-    tray: str = Field(description="Tray that wants to be retrieved the fields from.")
+    tray_code: str = Field(description="Code of the tray that wants to be retrieved the fields from.")
     system: str = Field(description="System the tray belongs to. The possible systems are: ['Cuentas Vistas', 'Cuentas y Personas', 'Chequeras', 'Depósitos', 'Microfinanzas', 'Saldos Iniciales', 'Facultades', 'Líneas de Crédito','Garantías', 'Préstamos', 'Acuerdos de Sobregiro', 'Tarjetas de Débito', 'Descuentos']", default="all")
 
 
 
 @tool("retrieve_fields_from_tray",args_schema=tray_retriever_input)
-def retrieve_fields_from_tray(tray:str, system:str="all"):
-    """Retrieves the fields from a tray with a brief description of each."""
+def retrieve_fields_from_tray(tray_code:str, system:str="all"):
+    """Retrieves all records metadata from a tray/table."""
     total_token = 0
     content = ""
-    tray = tray.upper()
+    tray_code = tray_code.upper()
     if system != "all":
         system = "Manual " + remover_tildes(system)
         try:
-            content += f"Bandeja: {tray}\n Descripcion:{str(bandejas[system][tray]['descripcion'])} \n Registros: {str(bandejas[system][tray]['registros'])}\n"
+            content += f"Bandeja: {tray_code}\n Descripcion:{str(bandejas[system][tray_code]['descripcion'])} \n Registros: {str(bandejas[system][tray_code]['registros'])}\n"
         except:
             content += "No se encontraron registros para la bandeja solicitada"
     else:
         for s in bandejas:
             try:
-                content += f"Bandeja: {tray}\n Sistema:{s} \n Descripcion:{str(bandejas[s][tray]['descripcion'])} \n Campos:\n {str(bandejas[s][tray]['registros'])}\n"
+                content += f"Bandeja: {tray_code}\n Sistema:{s} \n Descripcion:{str(bandejas[s][tray_code]['descripcion'])} \n Campos:\n {str(bandejas[s][tray_code]['registros'])}\n"
             except:
                 continue
     return content

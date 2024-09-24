@@ -40,12 +40,13 @@ from langchain.callbacks.manager import (
 from langchain.pydantic_v1 import BaseModel, Field
 from langchain.tools import BaseTool, StructuredTool, tool
 
+from asistentes.src import ConfigurableSearchTool
 
 class EmptyInput(BaseModel):
     pass
 
 
-class CustomTool(BaseTool):
+class CustomTool(ConfigurableSearchTool):
     name = "getDocument"
     description = "Retrieves the complete document uploaded by the user (if it exists)."
     args_schema: Type[BaseModel] = EmptyInput
@@ -77,10 +78,6 @@ class CustomTool(BaseTool):
             doc_content = "No se ha subido ningún documento."   
         return doc_content
     
-    
-    def with_config(self,config):
-        self.config = config
-        return self
     
     
 tools = [CustomTool()]

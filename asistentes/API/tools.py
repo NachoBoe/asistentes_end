@@ -116,9 +116,10 @@ def get_method_info_from_name(method:str, sistem: str):
     ret_metod = []
     for res in results:
         ret_metod.append((res["nombre"],res["sistema"],res["descripcion"], res["entrada"], res["salida"], res["error"], res["ej_in"], res["ej_out"]))
-    ret_metod = ret_metod[0]
     if len(ret_metod) == 0:
         return "No se encontró el método. Por favor, verifique que el nombre del método y el sistema sean correctos."
+    ret_metod = ret_metod[0]
+
     resp =  method_info_as_string(ret_metod,params_info=True)
     return resp
 

@@ -21,7 +21,7 @@ from fastapi import FastAPI
 
 from fastapi.middleware.cors import CORSMiddleware
 
-from asistentes.asistentes import asistente_api, asistente_core, asistente_migracion, asistente_capacitacion, asistente_pseudoCode, asistente_requerimientos
+from asistentes.asistentes import asistente_api, asistente_core, asistente_migracion, asistente_capacitacion, asistente_pseudoCode, asistente_requerimientos, asistente_instalador
 
 from azure.identity import DefaultAzureCredential
 from azure.storage.blob import BlobServiceClient
@@ -249,6 +249,7 @@ add_routes(
         {"run_name": "agent"}
     ),
     path="/API_docs",
+    per_req_config_modifier=per_req_config_modifier
 )
 
 
@@ -257,7 +258,8 @@ add_routes(
     asistente_core.with_types(input_type=Input, output_type=Output).with_config(
         {"run_name": "agent"}
     ),
-    path="/core"
+    path="/core",
+    per_req_config_modifier=per_req_config_modifier
 )
 
 add_routes(
@@ -265,7 +267,8 @@ add_routes(
     asistente_migracion.with_types(input_type=Input, output_type=Output).with_config(
         {"run_name": "agent"}
     ),
-    path="/migracion"
+    path="/migracion",
+    per_req_config_modifier=per_req_config_modifier
 )
 
 add_routes(
@@ -273,7 +276,8 @@ add_routes(
     asistente_capacitacion.with_types(input_type=Input, output_type=Output).with_config(
         {"run_name": "agent"}
     ),
-    path="/capacitacion"
+    path="/capacitacion",
+    per_req_config_modifier=per_req_config_modifier
 )
 
 add_routes(
@@ -282,6 +286,7 @@ add_routes(
         {"run_name": "agent"}
     ),
     path="/pseudo_codigo",
+    per_req_config_modifier=per_req_config_modifier
 )
 
 add_routes(
@@ -290,6 +295,13 @@ add_routes(
     path="/requerimientos",
     per_req_config_modifier=per_req_config_modifier
 )    
+
+add_routes(
+    app,
+    asistente_instalador.with_types(input_type=Input, output_type=Output),
+    path="/instalador",
+    per_req_config_modifier=per_req_config_modifier
+)
 
 if __name__ == "__main__":
     import uvicorn

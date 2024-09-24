@@ -32,7 +32,7 @@ load_dotenv(dotenv_path=dotenv_path)
 ## Azure AI search
 
 embeddings = AzureOpenAIEmbeddings(model="text-embedding-3-large")
-index_name = "mdu"
+index_name = "instalador"
 credential = AzureKeyCredential(os.environ["AZURE_AI_SEARCH_API_KEY"])
 endpoint = "https://bantotalsearchai.search.windows.net"
 search_client = SearchClient(endpoint=endpoint, index_name=index_name, credential=credential)
@@ -54,17 +54,13 @@ def remover_tildes(input_str):
 class Query(BaseModel):
     query: str = Field(description="Query to search in the engine.")
 
-@tool("bantotal_informaton", args_schema=Query)
-def bantotal_informaton(query:str):
-    """Bantotal Semantic Search engine that retrieves relevant information from Bantotal."""
+
+@tool("system_informaton", args_schema=Query)
+def system_informaton(query:str):
+    """Bantotal Semantic Search engine that retrieves relevant information from Bantotal System."""
 
     embedding = embeddings.embed_query(query)
     vector_query = VectorizedQuery(vector=embedding, k_nearest_neighbors=50, fields="embedding", exhaustive=True)
-    # if system:
-    #     filter_str = f"system eq '{system}'"
-    # else:
-    #     fitler_str = ""
-        
     results = search_client.search(  
         search_text=query,  
         vector_queries=[vector_query],
@@ -78,16 +74,17 @@ def bantotal_informaton(query:str):
     for result in results:
         print(result["path"] + " - " + str(result["@search.reranker_score"]))
         results_record.append(result)
-        
+    
+    retrieved_sections = [x["section"] for x in results_record]
+    
     for result in results_record:
         sec = result["section"]
-        sys = result["system"]
-        if not (any([(sec.startswith(x["section"]) and x["section"]!=sec and sys==x["system"]) for x in results_record])):
-            ans += f"Manual: 'MDU-{(result['system']).replace('_',' ').upper()}' \n"
+        if not any([sec.startswith(x) and x!=sec for x in retrieved_sections]):
+            ans += f"Manual: MDI - {(result['system']).replace('_','' '').upper()} \n"
             ans += f"Sección: {result['path']} \n"
             ans += f"Contenido: \n{result['content']} \n"
             ans += "\n\n"
     return ans
 
 
-tools = [bantotal_informaton]
+tools = [system_informaton]
