@@ -140,7 +140,7 @@ class CustomAgentExecutor(Runnable):
                     configured_tools.append(tool.with_config({"configurable":configurable}))
                 else:
                     configured_tools.append(tool)
-
+            configured_agent = self.agent
             # configured_agent = self.agent.with_config({"callbacks":[CostCalcCallbackHandler( "gpt-4o-mini", configurable["usuario"], configurable["asistente"])]})
         else:
             configured_agent = self.agent
@@ -174,6 +174,7 @@ class CustomAgentExecutor(Runnable):
                     configured_tools.append(tool.with_config({"configurable":configurable}))
                 else:
                     configured_tools.append(tool)
+            configured_agent = self.agent
             # configured_agent = self.agent.with_config({"callbacks":[CostCalcCallbackHandler( "gpt-4o-mini", configurable["usuario"], configurable["asistente"])]})
         else:
             configured_agent = self.agent
