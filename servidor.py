@@ -6,8 +6,6 @@ from dotenv import load_dotenv
 from pyprojroot import here
 import os
 
-
-
 from typing import Any, List, Union, Dict
 
 from fastapi import FastAPI, HTTPException, Request, UploadFile, File, Form
@@ -15,7 +13,6 @@ from langchain_core.messages import AIMessage, FunctionMessage, HumanMessage
 
 from langserve import add_routes
 from langserve.pydantic_v1 import BaseModel, Field
-
 
 from fastapi import FastAPI
 
@@ -86,8 +83,6 @@ class Output(BaseModel):
 @app.get("/health")
 def health_check():
     return 'OK'
-
-
 
 
 def extract_text_from_pdf(file_path: str) -> str:
@@ -191,11 +186,12 @@ class Feedback(BaseModel):
     respuesta: str
     historial: List[List[str]]
     endpoint: str
-    
+
+
+# AGREGAR RUTA PARA FEEDBACK
 @app.post("/feedback")
 async def feedback(request: Request):
     try:
-        # Parse the incoming JSON payload
         json_data = await request.json()
         
         # Log the received JSON data for debugging
@@ -231,6 +227,8 @@ async def feedback(request: Request):
 
 
 
+
+# FUNCION QUE SUSTITUYE LA CONFIGURACION DEL AGENTE POR LA RECIBIDA DEL CLIENTE. 
 async def per_req_config_modifier(config: Dict, request: Request) -> Dict:
     """Modify the config for each request."""
     req = await request.json()
@@ -242,7 +240,9 @@ async def per_req_config_modifier(config: Dict, request: Request) -> Dict:
     return config
     
     
-# AGREGAR RUTA POR ASISTENTE
+# AGREGAR UNA RUTA POR ASISTENTE
+
+## AGENTE DOCS DE API
 add_routes(
     app,
     asistente_api.with_types(input_type=Input, output_type=Output).with_config(
@@ -252,7 +252,7 @@ add_routes(
     per_req_config_modifier=per_req_config_modifier
 )
 
-
+## AGENTE MANUALES DE CORE
 add_routes(
     app,
     asistente_core.with_types(input_type=Input, output_type=Output).with_config(
@@ -262,6 +262,7 @@ add_routes(
     per_req_config_modifier=per_req_config_modifier
 )
 
+## AGENTE DOCS DE MIGRACION
 add_routes(
     app,
     asistente_migracion.with_types(input_type=Input, output_type=Output).with_config(
@@ -271,6 +272,8 @@ add_routes(
     per_req_config_modifier=per_req_config_modifier
 )
 
+
+## AGENTE VIDEOS DE CAPACITACION
 add_routes(
     app,
     asistente_capacitacion.with_types(input_type=Input, output_type=Output).with_config(
@@ -280,6 +283,7 @@ add_routes(
     per_req_config_modifier=per_req_config_modifier
 )
 
+## AGENTE ESCRITOR DE PSEUDO CODIGO
 add_routes(
     app,
     asistente_pseudoCode.with_types(input_type=Input, output_type=Output).with_config(
@@ -289,6 +293,7 @@ add_routes(
     per_req_config_modifier=per_req_config_modifier
 )
 
+## AGENTE ANALIZADOR DE REQUERIMIENTOS
 add_routes(
     app,
     asistente_requerimientos.with_types(input_type=Input, output_type=Output),
@@ -296,6 +301,7 @@ add_routes(
     per_req_config_modifier=per_req_config_modifier
 )    
 
+## AGENTE MANUALES DE INSTALACION
 add_routes(
     app,
     asistente_instalador.with_types(input_type=Input, output_type=Output),
@@ -303,6 +309,8 @@ add_routes(
     per_req_config_modifier=per_req_config_modifier
 )
 
+
+# LEVANTAR SERVIDOR
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host=HOST, port=8000)

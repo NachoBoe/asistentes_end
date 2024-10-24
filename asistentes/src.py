@@ -136,7 +136,7 @@ class CustomAgentExecutor(Runnable):
         configured_tools = []
         if configurable:
             for tool in self.tools:
-                if type(tool) == ConfigurableSearchTool:
+                if issubclass(tool.__class__,ConfigurableSearchTool):
                     configured_tools.append(tool.with_config({"configurable":configurable}))
                 else:
                     configured_tools.append(tool)
@@ -171,9 +171,12 @@ class CustomAgentExecutor(Runnable):
         if configurable:
             print(configurable)
             for tool in self.tools:
-                if type(tool) == ConfigurableSearchTool:
+                print(type(tool))
+                if issubclass(tool.__class__,ConfigurableSearchTool):
+                    print("ConfigurableSearchTool")
                     configured_tools.append(tool.with_config({"configurable":configurable}))
                 else:
+                    print("Not ConfigurableSearchTool")
                     configured_tools.append(tool)
             configured_agent = self.agent
             # configured_agent = self.agent.with_config({"callbacks":[CostCalcCallbackHandler( "gpt-4o-mini", configurable["usuario"], configurable["asistente"])]})
