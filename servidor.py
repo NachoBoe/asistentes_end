@@ -1,46 +1,40 @@
+# IMPORTS
 
-
-from uuid import uuid4
-from langsmith import Client
+## Generales
 from dotenv import load_dotenv
-from pyprojroot import here
 import os
-
 from typing import Any, List, Union, Dict
-
-from fastapi import FastAPI, HTTPException, Request, UploadFile, File, Form
-from langchain_core.messages import AIMessage, FunctionMessage, HumanMessage
-
-from langserve import add_routes
-from langserve.pydantic_v1 import BaseModel, Field
-
-from fastapi import FastAPI
-
-from fastapi.middleware.cors import CORSMiddleware
-
-from asistentes.asistentes import asistente_api, asistente_core, asistente_migracion, asistente_capacitacion, asistente_pseudoCode, asistente_requerimientos, asistente_instalador
-
-from azure.identity import DefaultAzureCredential
-from azure.storage.blob import BlobServiceClient
-from azure.core.credentials import AzureNamedKeyCredential
 import json
 import datetime
 import os
-import fitz  # PyMuPDF for PDF parsing
-import docx2txt  # for DOCX parsing
-from odf.opendocument import load as load_odt  # for ODT parsing
+import fitz
+import docx2txt
+from odf.opendocument import load as load_odt
 from odf.text import P
 import tiktoken
+## Langchain
+from langchain_core.messages import AIMessage, FunctionMessage, HumanMessage
+from langsmith import Client
+from langserve import add_routes
+from langserve.pydantic_v1 import BaseModel, Field
+## fastapi
+from fastapi import FastAPI, HTTPException, Request, UploadFile, File, Form
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+## azure
+from azure.storage.blob import BlobServiceClient
+from azure.core.credentials import AzureNamedKeyCredential
+## internos
+from asistentes.asistentes import asistente_api, asistente_core, asistente_migracion, asistente_capacitacion, asistente_pseudoCode, asistente_requerimientos, asistente_instalador
+
 
 # VARIABLES DE ENTORNO
 dotenv_path = "./.env"
 load_dotenv(dotenv_path=dotenv_path)
 
-print(os.environ["LOCAL"])
+
 # LANGSMITH
 client = Client()
-
-tokenizer = tiktoken.get_encoding("cl100k_base")
 
 if int(os.environ["LOCAL"]) == 1:
     HOST = "127.0.0.1"
@@ -48,6 +42,7 @@ if int(os.environ["LOCAL"]) == 1:
 else:
     os.environ["LANGCHAIN_PROJECT"] = f"ASISTENTES_CLOUD"
     HOST = "0.0.0.0"
+
 
 
 # LEVANTAR SERVIDOR
@@ -68,16 +63,6 @@ app.add_middleware(
 )
 
 
-class Input(BaseModel):
-    input: str
-    chat_history: List[Union[HumanMessage, AIMessage, FunctionMessage]] = Field(
-        ...,
-        extra={"widget": {"type": "chat", "input": "input", "output": "output"}},
-    )
-
-
-class Output(BaseModel):
-    output: Any
 
 # AGREGAR RUTA THE /HEALTH
 @app.get("/health")
@@ -85,6 +70,9 @@ def health_check():
     return 'OK'
 
 
+# AGREGAR RUTA PARA SUBIR ARCHIVOS
+
+## Funciones para extraer texto de archivos PDF, DOCX y ODT
 def extract_text_from_pdf(file_path: str) -> str:
     doc = fitz.open(file_path)
     text = ""
@@ -102,27 +90,27 @@ def extract_text_from_odt(file_path: str) -> str:
         all_text += element.firstChild.data + "\n"
     return all_text
 
-
+## Ruta para subir archivos y extraer texto
 @app.post("/upload")
 async def upload_file(userId: str = Form(...), file: UploadFile = File(...)):
     try:
-        # Verify file type
+        # Verificar que el archivo sea PDF, DOCX o ODT
         if file.content_type not in ["application/pdf", "application/vnd.openxmlformats-officedocument.wordprocessingml.document", "application/vnd.oasis.opendocument.text"]:
             raise HTTPException(status_code=400, detail="Invalid file type. Only PDF, DOCX, and ODT files are allowed.")
 
-        # Define the directory path based on the user ID
+        # Definir el directorio de subida basado en el ID de usuario
         upload_dir = f"./uploads/{userId}"
         if not os.path.exists(upload_dir):
             os.makedirs(upload_dir)
 
-        # Save the file temporarily
+        # Guardar el archivo en el directorio de subida temporalmente
         file_extension = os.path.splitext(file.filename)[1]
         file.filename = "archivo" + file_extension
         file_path = os.path.join(upload_dir, file.filename)
         with open(file_path, "wb") as buffer:
             buffer.write(await file.read())
 
-        # Extract text based on the file type
+        # Extraer texto del archivo
         if file.content_type == "application/pdf":
             text = extract_text_from_pdf(file_path)
         elif file.content_type == "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
@@ -132,39 +120,39 @@ async def upload_file(userId: str = Form(...), file: UploadFile = File(...)):
         else:
             raise HTTPException(status_code=400, detail="Unsupported file type.")
 
-        # Remove the temporary file
+        # Eliminar el archivo subido
         os.remove(file_path)
         
-        # Save extracted text as .txt
+        # Guardar el texto extraído en un archivo de texto
         txt_filename = "archivo.txt"
         txt_path = os.path.join(upload_dir, txt_filename)
         with open(txt_path, "w", encoding="utf-8") as txt_file:
             txt_file.write(text)
+        tokenizer = tiktoken.get_encoding("cl100k_base")
 
-        # Count tokens using tiktoken for GPT-4o-mini
+        # Contar la cantidad de tokens en el texto
         tokens = tokenizer.encode(text)
         token_count = len(tokens)
-
         if token_count > 20000:
             return {"message": "Document is too long, exceeding 20,000 tokens", "token_count": token_count}
 
+        # Devolver el nombre del archivo de texto y la cantidad de tokens
         return {"message": "File uploaded successfully and text extracted", "filename": txt_filename, "token_count": token_count}
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
     
     
-
+## Ruta para eliminar todos los archivos de un directorio
 @app.delete("/delete_files")
 async def delete_files(userId: str = Form(...)):
     try:
-        # Define the directory path based on the user ID
+        # Definir el directorio de subida a eliminar basado en el ID de usuario
         upload_dir = f"./uploads/{userId}"
-
         if not os.path.exists(upload_dir):
             return {"message": f"All files in the directory '{upload_dir}' have been deleted"}
 
-        # Delete all files in the directory
+        # Eliminar todos los archivos en el directorio
         for filename in os.listdir(upload_dir):
             file_path = os.path.join(upload_dir, filename)
             if os.path.isfile(file_path) or os.path.islink(file_path):
@@ -175,7 +163,11 @@ async def delete_files(userId: str = Form(...)):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
    
-    
+
+
+# AGREGAR RUTA PARA FEEDBACK
+
+## Guardar feedback en Azure Blob Storage
 credential = AzureNamedKeyCredential("btalmacenamientoai", os.getenv("AZURE_STORAGE_KEY"))
 blob_service_client = BlobServiceClient("https://btalmacenamientoai.blob.core.windows.net", credential=credential)
 
@@ -187,8 +179,7 @@ class Feedback(BaseModel):
     historial: List[List[str]]
     endpoint: str
 
-
-# AGREGAR RUTA PARA FEEDBACK
+## Ruta para recibir feedback y guardarlo en Azure Blob Storage
 @app.post("/feedback")
 async def feedback(request: Request):
     try:
@@ -227,8 +218,10 @@ async def feedback(request: Request):
 
 
 
+    
+# AGREGAR ENDPOINT POR AGENTE
 
-# FUNCION QUE SUSTITUYE LA CONFIGURACION DEL AGENTE POR LA RECIBIDA DEL CLIENTE. 
+## Funcion para modificar la configuracion del agente en cada request 
 async def per_req_config_modifier(config: Dict, request: Request) -> Dict:
     """Modify the config for each request."""
     req = await request.json()
@@ -240,7 +233,19 @@ async def per_req_config_modifier(config: Dict, request: Request) -> Dict:
     return config
     
     
-# AGREGAR UNA RUTA POR ASISTENTE
+## Modelos de entrada y salida a los agentes
+class Input(BaseModel):
+    input: str
+    chat_history: List[Union[HumanMessage, AIMessage, FunctionMessage]] = Field(
+        ...,
+        extra={"widget": {"type": "chat", "input": "input", "output": "output"}},
+    )
+
+class Output(BaseModel):
+    output: Any
+
+
+## AGENTES
 
 ## AGENTE DOCS DE API
 add_routes(
