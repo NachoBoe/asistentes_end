@@ -21,9 +21,9 @@ import tiktoken
 
 # VARIABLES DE ENTORNO
 
-## envs
-dotenv_path = here() / ".env"
-load_dotenv(dotenv_path=dotenv_path)
+# ## envs
+# dotenv_path = here() / ".env"
+# load_dotenv(dotenv_path=dotenv_path)
 
 
 

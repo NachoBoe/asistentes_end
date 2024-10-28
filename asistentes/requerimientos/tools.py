@@ -22,11 +22,11 @@ from langchain_core.runnables.config import RunnableConfig
 from langchain_community.document_loaders import PyPDFLoader
 
 
-# VARIABLES DE ENTORNO
+# # VARIABLES DE ENTORNO
 
-## envs
-dotenv_path = here() / ".env"
-load_dotenv(dotenv_path=dotenv_path)
+# ## envs
+# dotenv_path = here() / ".env"
+# load_dotenv(dotenv_path=dotenv_path)
 
 
 

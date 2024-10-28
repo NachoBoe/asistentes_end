@@ -1,7 +1,11 @@
-# IMPORTS
-
-## Generales
+# VARIABLES DE ENTORNO
 from dotenv import load_dotenv
+dotenv_path = "./.env"
+load_dotenv(dotenv_path=dotenv_path)
+
+
+# IMPORTS
+## Generales
 import os
 from typing import Any, List, Union, Dict
 import json
@@ -27,10 +31,6 @@ from azure.core.credentials import AzureNamedKeyCredential
 ## internos
 from asistentes.asistentes import asistente_api, asistente_core, asistente_migracion, asistente_capacitacion, asistente_pseudoCode, asistente_requerimientos, asistente_instalador
 
-
-# VARIABLES DE ENTORNO
-dotenv_path = "./.env"
-load_dotenv(dotenv_path=dotenv_path)
 
 
 # LANGSMITH

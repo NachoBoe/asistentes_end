@@ -16,19 +16,51 @@ Este proyecto contiene los asistentes y el código necesario para levantar un se
    pip install -r requirements.txt
    ```
 
-3. Configura las variables de entorno
+3. Variables de Entorno
 
 Asegúrate de tener un archivo `.env` en el directorio raíz con las siguientes variables:
 
-- `LOCAL`: Indica si el servidor se ejecuta localmente (`1`) o en la nube (`0`).
+- `LOCAL`: Indica si el servidor se ejecuta localmente (`1`) o en Azure (`0`).
+- `LANGCHAIN_TRACING_V2`: Activa el tracing para Langsmith (`true` o `false`).
+- `LANGCHAIN_ENDPOINT`: Endpoint para Langsmith.
+- `LANGCHAIN_API_KEY`: Clave de API para Langsmith.
+- `OPENAI_API_KEY`: Clave de API para Azure OpenAI (generación de texto).
+- `AZURE_OPENAI_API_KEY`: Clave de API para Azure OpenAI (embeddings).
+- `AZURE_OPENAI_ENDPOINT`: Endpoint para Azure OpenAI.
+- `OPENAI_API_VERSION`: Versión de la API de OpenAI.
+- `AZURE_AI_SEARCH_SERVICE_NAME`: Nombre del servicio Azure Search.
+- `AZURE_AI_SEARCH_API_KEY`: Clave de API para Azure Search.
 - `AZURE_STORAGE_KEY`: Clave de acceso para Azure Blob Storage.
 
-Ejemplo de archivo `.env`:
+**Ejemplo de archivo `.env`:**
 
+```ini
+# Indica si se corre localmente (1) o en Azure (0)
+LOCAL=
+
+# Langsmith para el tracing
+LANGCHAIN_TRACING_V2=true
+LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
+LANGCHAIN_API_KEY=tu_langchain_api_key
+
+# Azure OpenAI para generación de texto
+OPENAI_API_KEY=tu_openai_api_key
+
+# Azure OpenAI para embeddings
+AZURE_OPENAI_API_KEY=tu_azure_openai_api_key
+AZURE_OPENAI_ENDPOINT=tu_azure_openai_enpoint
+OPENAI_API_VERSION="2023-12-01-preview"
+
+# Azure Search para tools que se usan en el asistente
+AZURE_AI_SEARCH_SERVICE_NAME=tu_azure_search_endpoint
+AZURE_AI_SEARCH_API_KEY=tu_azure_search_api_key
+
+# Azure Storage para guardar el feedback
+AZURE_STORAGE_KEY=tu_azure_storage_key
 ```
-LOCAL=1
-AZURE_STORAGE_KEY=tu_clave_de_acceso
-```
+
+**Nota:** Reemplaza `tu_langchain_api_key`, `tu_openai_api_key`, `tu_azure_openai_api_key`, `tu_azure_search_api_key` y `tu_azure_storage_key` con tus claves de API reales. Asegúrate de mantener estas claves seguras y no compartirlas públicamente.
+
 
 
 4. Ejecutar el servidor

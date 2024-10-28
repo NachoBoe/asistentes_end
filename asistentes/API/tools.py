@@ -21,9 +21,9 @@ from langchain_openai import AzureOpenAIEmbeddings
 
 # VARIABLES DE ENTORNO
 
-## envs
-dotenv_path = here() / ".env"
-load_dotenv(dotenv_path=dotenv_path)
+# ## envs
+# dotenv_path = here() / ".env"
+# load_dotenv(dotenv_path=dotenv_path)
 
 
 
