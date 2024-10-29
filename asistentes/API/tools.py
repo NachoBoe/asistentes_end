@@ -1,30 +1,13 @@
 # IMPORTS
-
-## variables de entorno
-from dotenv import load_dotenv
-from pyprojroot import here
 import os
-## Tools langchain
 from langchain.pydantic_v1 import BaseModel, Field
 from langchain.tools import tool
-## Data local
 import unicodedata
-import dill
-## Azure Ai Search
 from azure.search.documents.models import VectorizedQuery
 from azure.search.documents.models import QueryType, QueryCaptionType, QueryAnswerType
 from azure.core.credentials import AzureKeyCredential
 from azure.search.documents import SearchClient
 from langchain_openai import AzureOpenAIEmbeddings
-
-
-
-# VARIABLES DE ENTORNO
-
-# ## envs
-# dotenv_path = here() / ".env"
-# load_dotenv(dotenv_path=dotenv_path)
-
 
 
 # LEVANTAR DATOS
@@ -36,8 +19,6 @@ credential = AzureKeyCredential(os.getenv("AZURE_AI_SEARCH_API_KEY"))
 endpoint = os.getenv("AZURE_AI_SEARCH_SERVICE_NAME")
 embeddings = AzureOpenAIEmbeddings(model="text-embedding-ada-002", azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT"), api_key=os.getenv("AZURE_OPENAI_API_KEY"))
 search_client = SearchClient(endpoint=endpoint, index_name=index_name, credential=credential)
-
-
 
 
 # FUNCIONES AUXILIARES
@@ -55,10 +36,7 @@ def remover_tildes(input_str):
 
 
 
-# DEFINIR TOOLS
-
-class sistem(BaseModel):
-    sistem: str = Field(description="Sistem to which get the method")
+# ENTRADAS TOOLS
 
 class method_decription(BaseModel):
     method_description: str = Field(description="Description of what the method should do")
@@ -67,18 +45,13 @@ class method_name(BaseModel):
     method: str = Field(description="Method to search information of")
     sistem: str = Field(description="Sistem to which the method belongs to")
 
-
+# TOOLS
 
 ## TOOL 1
 @tool("get_methods_from_description", args_schema=method_decription)
 def get_methods_from_description(method_description:str):
     """ Returns a list of possible methods provided a description. It ONLY returns the name, sistem and brief description of the methods. """
 
-    # # VECTOR SEARCH
-    # if sistem != "all":
-    #     search_str = f"{sistem}. {method_description}"
-    # else:
-    #     search_str = method_description
     vector_query = VectorizedQuery(vector=embeddings.embed_query(method_description), k_nearest_neighbors=50, fields="vector", exhaustive=True)
     results = search_client.search(  
         search_text=method_description,  
@@ -123,6 +96,15 @@ def get_method_info_from_name(method:str, sistem: str):
     return resp
 
 
+
+
+tools = [get_methods_from_description, get_method_info_from_name]
+
+
+
+# class sistem(BaseModel):
+#     sistem: str = Field(description="Sistem to which get the method")
+
 # ## TOOL 3
 # @tool("get_all_method_from_sistem", args_schema=sistem)
 # def get_all_method_from_sistem(sistem: str="all"):
@@ -148,7 +130,3 @@ def get_method_info_from_name(method:str, sistem: str):
 #         resp +=  method_info_as_string(metod) + "\n"
         
 #     return resp
-
-
-
-tools = [get_methods_from_description, get_method_info_from_name]#,get_all_method_from_sistem]

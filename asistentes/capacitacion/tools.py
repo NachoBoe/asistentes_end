@@ -1,33 +1,13 @@
 # IMPORTS
 
-## variables de entorno
-from dotenv import load_dotenv
-from pyprojroot import here
 import os
-## Tools langchain
 from langchain.pydantic_v1 import BaseModel, Field
 from langchain.tools import tool
-## Data local
-import unicodedata
-import dill
-## Azure Ai Search
 from azure.search.documents.models import VectorizedQuery
 from azure.search.documents.models import QueryType, QueryCaptionType, QueryAnswerType
 from azure.core.credentials import AzureKeyCredential
 from azure.search.documents import SearchClient
 from langchain_openai import AzureOpenAIEmbeddings
-import tiktoken
-
-
-# VARIABLES DE ENTORNO
-
-# ## envs
-# dotenv_path = here() / ".env"
-# load_dotenv(dotenv_path=dotenv_path)
-
-
-
-# LEVANTAR DATOS
 
 
 # Levantar base vectorial campos
@@ -40,13 +20,17 @@ search_client = SearchClient(endpoint=endpoint, index_name=index_name, credentia
 
 
 
-# DEFINIR TOOLS
 
+# ENTRADAS A TOOLS
 
-## TOOL 1: Obtener registros a partir de una descripción
-
+## Tool 1
 class query_search_engine(BaseModel):
     question: str = Field(description="Question for the engine to search for in the database.")
+
+
+# TOOLS
+
+## Tool 1
 
 @tool("bantotal_search_engine",args_schema=query_search_engine)
 def bantotal_search_engine(question:str):

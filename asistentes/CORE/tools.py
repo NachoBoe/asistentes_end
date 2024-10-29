@@ -1,29 +1,13 @@
 # IMPORTS
-
-## variables de entorno
-from dotenv import load_dotenv
-from pyprojroot import here
 import os
-## Tools langchain
 from langchain.pydantic_v1 import BaseModel, Field
 from langchain.tools import tool
-## Data local
 import unicodedata
-import dill
-## Azure Ai Search
 from azure.search.documents.models import VectorizedQuery
 from azure.search.documents.models import QueryType, QueryCaptionType, QueryAnswerType
 from azure.core.credentials import AzureKeyCredential
 from azure.search.documents import SearchClient
 from langchain_openai import AzureOpenAIEmbeddings
-import tiktoken
-
-
-# VARIABLES DE ENTORNO
-
-# ## envs
-# dotenv_path = here() / ".env"
-# load_dotenv(dotenv_path=dotenv_path)
 
 
 
@@ -51,6 +35,9 @@ def remover_tildes(input_str):
 
 # DEFINIR TOOLS
 
+
+## Tool 1
+
 class Query(BaseModel):
     query: str = Field(description="Query to search in the engine.")
 
@@ -60,11 +47,6 @@ def bantotal_informaton(query:str):
 
     embedding = embeddings.embed_query(query)
     vector_query = VectorizedQuery(vector=embedding, k_nearest_neighbors=50, fields="embedding", exhaustive=True)
-    # if system:
-    #     filter_str = f"system eq '{system}'"
-    # else:
-    #     fitler_str = ""
-        
     results = search_client.search(  
         search_text=query,  
         vector_queries=[vector_query],

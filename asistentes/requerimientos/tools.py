@@ -1,51 +1,23 @@
 # IMPORTS
-
-## variables de entorno
-from dotenv import load_dotenv
-from pyprojroot import here
-import os
-## Tools langchain
-from langchain.pydantic_v1 import BaseModel, Field
-from langchain.tools import tool
-## Data local
-import unicodedata
-import dill
-## Azure Ai Search
-from azure.search.documents.models import VectorizedQuery
-from azure.search.documents.models import QueryType, QueryCaptionType, QueryAnswerType
-from azure.core.credentials import AzureKeyCredential
-from azure.search.documents import SearchClient
-from langchain_openai import AzureOpenAIEmbeddings
-import tiktoken
-from langchain_core.runnables import ConfigurableField, RunnableSerializable
-from langchain_core.runnables.config import RunnableConfig
-from langchain_community.document_loaders import PyPDFLoader
-
-
-# # VARIABLES DE ENTORNO
-
-# ## envs
-# dotenv_path = here() / ".env"
-# load_dotenv(dotenv_path=dotenv_path)
-
-
-
-from typing import Optional, Type, Dict
-
+from langchain.pydantic_v1 import BaseModel
 from langchain.callbacks.manager import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-
-from langchain.pydantic_v1 import BaseModel, Field
-from langchain.tools import BaseTool, StructuredTool, tool
-
+from typing import Optional, Type
 from asistentes.src import ConfigurableSearchTool
 
+
+# INPUTS A LAS TOOLS
+
+## Tool 1
 class EmptyInput(BaseModel):
     pass
 
 
+# TOOLS
+
+## Tool 1
 class CustomTool(ConfigurableSearchTool):
     name = "getDocument"
     description = "Retrieves the complete document uploaded by the user (if it exists)."
@@ -80,4 +52,6 @@ class CustomTool(ConfigurableSearchTool):
     
     
     
+# TOOLS
+
 tools = [CustomTool()]

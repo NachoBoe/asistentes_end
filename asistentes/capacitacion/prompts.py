@@ -3,6 +3,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain.prompts import MessagesPlaceholder
 
 
+# Prompt asistente capacitacion
 
 chat_template = ChatPromptTemplate.from_messages(
     [

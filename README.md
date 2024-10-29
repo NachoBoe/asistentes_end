@@ -1,76 +1,73 @@
 # Proyecto Asistentes Bantotal
 
-Este proyecto contiene los asistentes y el código necesario para levantar un servidor con estos. 
+Este proyecto incluye los asistentes y el código necesario para levantar un servidor con ellos.
 
 ## Ejecución Local
 
-1. Clona este repositorio:
+### Clona este repositorio:
 
    ```bash
    git clone git@git.dlya.com.uy:ialabs/btasistentes.git
    ```
 
-2. Instala las dependencias:
+### Instala las dependencias:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Variables de Entorno
+### Variables de Entorno
 
-Asegúrate de tener un archivo `.env` en el directorio raíz con las siguientes variables:
+   Asegúrate de tener un archivo `.env` en el directorio raíz con las siguientes variables:
 
-- `LOCAL`: Indica si el servidor se ejecuta localmente (`1`) o en Azure (`0`).
-- `LANGCHAIN_TRACING_V2`: Activa el tracing para Langsmith (`true` o `false`).
-- `LANGCHAIN_ENDPOINT`: Endpoint para Langsmith.
-- `LANGCHAIN_API_KEY`: Clave de API para Langsmith.
-- `OPENAI_API_KEY`: Clave de API para Azure OpenAI (generación de texto).
-- `AZURE_OPENAI_API_KEY`: Clave de API para Azure OpenAI (embeddings).
-- `AZURE_OPENAI_ENDPOINT`: Endpoint para Azure OpenAI.
-- `OPENAI_API_VERSION`: Versión de la API de OpenAI.
-- `AZURE_AI_SEARCH_SERVICE_NAME`: Nombre del servicio Azure Search.
-- `AZURE_AI_SEARCH_API_KEY`: Clave de API para Azure Search.
-- `AZURE_STORAGE_KEY`: Clave de acceso para Azure Blob Storage.
+   - `LOCAL`: Indica si el servidor se ejecuta localmente (`1`) o en Azure (`0`).
+   - `LANGCHAIN_TRACING_V2`: Activa el tracing para Langsmith (`true` o `false`).
+   - `LANGCHAIN_ENDPOINT`: Endpoint para Langsmith.
+   - `LANGCHAIN_API_KEY`: Clave de API para Langsmith.
+   - `OPENAI_API_KEY`: Clave de API para Azure OpenAI (generación de texto).
+   - `AZURE_OPENAI_API_KEY`: Clave de API para Azure OpenAI (embeddings).
+   - `AZURE_OPENAI_ENDPOINT`: Endpoint para Azure OpenAI.
+   - `OPENAI_API_VERSION`: Versión de la API de OpenAI.
+   - `AZURE_AI_SEARCH_SERVICE_NAME`: Nombre del servicio Azure Search.
+   - `AZURE_AI_SEARCH_API_KEY`: Clave de API para Azure Search.
+   - `AZURE_STORAGE_KEY`: Clave de acceso para Azure Blob Storage.
 
-**Ejemplo de archivo `.env`:**
+   **Ejemplo de archivo `.env`:**
 
-```ini
-# Indica si se corre localmente (1) o en Azure (0)
-LOCAL=
+   ```ini
+   # Indica si se corre localmente (1) o en Azure (0)
+   LOCAL=1
 
-# Langsmith para el tracing
-LANGCHAIN_TRACING_V2=true
-LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
-LANGCHAIN_API_KEY=tu_langchain_api_key
+   # Langsmith para el tracing
+   LANGCHAIN_TRACING_V2=true
+   LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
+   LANGCHAIN_API_KEY=tu_langchain_api_key
 
-# Azure OpenAI para generación de texto
-OPENAI_API_KEY=tu_openai_api_key
+   # Azure OpenAI para generación de texto
+   OPENAI_API_KEY=tu_openai_api_key
 
-# Azure OpenAI para embeddings
-AZURE_OPENAI_API_KEY=tu_azure_openai_api_key
-AZURE_OPENAI_ENDPOINT=tu_azure_openai_enpoint
-OPENAI_API_VERSION="2023-12-01-preview"
+   # Azure OpenAI para embeddings
+   AZURE_OPENAI_API_KEY=tu_azure_openai_api_key
+   AZURE_OPENAI_ENDPOINT=tu_azure_openai_endpoint
+   OPENAI_API_VERSION="2023-12-01-preview"
 
-# Azure Search para tools que se usan en el asistente
-AZURE_AI_SEARCH_SERVICE_NAME=tu_azure_search_endpoint
-AZURE_AI_SEARCH_API_KEY=tu_azure_search_api_key
+   # Azure Search para herramientas que se usan en el asistente
+   AZURE_AI_SEARCH_SERVICE_NAME=tu_azure_search_service_name
+   AZURE_AI_SEARCH_API_KEY=tu_azure_search_api_key
 
-# Azure Storage para guardar el feedback
-AZURE_STORAGE_KEY=tu_azure_storage_key
-```
+   # Azure Storage para guardar el feedback
+   AZURE_STORAGE_KEY=tu_azure_storage_key
+   ```
 
-**Nota:** Reemplaza `tu_langchain_api_key`, `tu_openai_api_key`, `tu_azure_openai_api_key`, `tu_azure_search_api_key` y `tu_azure_storage_key` con tus claves de API reales. Asegúrate de mantener estas claves seguras y no compartirlas públicamente.
+   **Nota:** Reemplaza `tu_langchain_api_key`, `tu_openai_api_key`, `tu_azure_openai_api_key`, `tu_azure_search_api_key` y `tu_azure_storage_key` con tus claves de API reales. Asegúrate de mantener estas claves seguras y no compartirlas públicamente.
 
+### Ejecuta el servidor:
 
+   ```bash
+   python servidor.py
+   ```
 
-4. Ejecutar el servidor
-
-```bash
-python servidor.py
-```
-
-El servidor quedará corriendo en `http://localhost:8000`.
-
+   El servidor quedará corriendo en `http://localhost:8000`.
 
 ## Despliegue en Azure
 
@@ -78,10 +75,9 @@ Este servidor también está desplegado en Azure y puede ser accedido en la sigu
 
 [https://btasistentes.azurewebsites.net/](https://btasistentes.azurewebsites.net/)
 
-
 ## Endpoints Auxiliares del Servidor
 
-A continuación se presentan y describen como usar los enpoints auxiliares del servidor. Estos corresponden a chequeos de salud, aceptar feedback y subir/eliminar archivos para que los asistentes puedan utilizar.
+A continuación se presentan y describen cómo usar los endpoints auxiliares del servidor. Estos permiten realizar chequeos de salud, aceptar feedback y subir/eliminar archivos que los asistentes pueden utilizar.
 
 ### Salud del Servidor
 
@@ -90,8 +86,8 @@ A continuación se presentan y describen como usar los enpoints auxiliares del s
 - **Descripción**: Verifica si el servidor está funcionando correctamente.
 - **Respuesta Exitosa**:
 
-  - Código: `200 OK`
-  - Cuerpo: `"OK"`
+  - **Código**: `200 OK`
+  - **Cuerpo**: `"OK"`
 
 - **Ejemplo de Uso**:
 
@@ -111,12 +107,12 @@ A continuación se presentan y describen como usar los enpoints auxiliares del s
 
 - **Respuesta Exitosa**:
 
-  - Código: `200 OK`
-  - Cuerpo:
+  - **Código**: `200 OK`
+  - **Cuerpo**:
 
     ```json
     {
-      "message": "File uploaded successfully and text extracted",
+      "message": "Archivo subido correctamente y texto extraído",
       "filename": "archivo.txt",
       "token_count": 1234
     }
@@ -124,8 +120,8 @@ A continuación se presentan y describen como usar los enpoints auxiliares del s
 
 - **Errores**:
 
-  - Código: `400 Bad Request` si el tipo de archivo es inválido.
-  - Código: `500 Internal Server Error` en caso de error interno.
+  - **Código**: `400 Bad Request` si el tipo de archivo es inválido.
+  - **Código**: `500 Internal Server Error` en caso de error interno.
 
 - **Ejemplo de Uso**:
 
@@ -146,18 +142,18 @@ A continuación se presentan y describen como usar los enpoints auxiliares del s
 
 - **Respuesta Exitosa**:
 
-  - Código: `200 OK`
-  - Cuerpo:
+  - **Código**: `200 OK`
+  - **Cuerpo**:
 
     ```json
     {
-      "message": "All files in the directory './uploads/123' have been deleted"
+      "message": "Todos los archivos en el directorio del usuario '123' han sido eliminados"
     }
     ```
 
 - **Errores**:
 
-  - Código: `500 Internal Server Error` en caso de error interno.
+  - **Código**: `500 Internal Server Error` en caso de error interno.
 
 - **Ejemplo de Uso**:
 
@@ -179,26 +175,29 @@ A continuación se presentan y describen como usar los enpoints auxiliares del s
     "comentario": "Muy útil",
     "mensaje": "Consulta realizada",
     "respuesta": "Respuesta obtenida",
-    "historial": Lista de tuplas ("user"/"ai" - "mensaje"),
+    "historial": [
+      {"role": "user", "message": "mensaje_usuario_1"},
+      {"role": "ai", "message": "respuesta_ai_1"}
+    ],
     "endpoint": "nombre_del_endpoint"
   }
   ```
 
 - **Respuesta Exitosa**:
 
-  - Código: `200 OK`
-  - Cuerpo:
+  - **Código**: `200 OK`
+  - **Cuerpo**:
 
     ```json
     {
-      "message": "Feedback uploaded successfully",
+      "message": "Feedback subido correctamente",
       "filename": "2023-10-01_12-00-00.json"
     }
     ```
 
 - **Errores**:
 
-  - Código: `500 Internal Server Error` en caso de error interno.
+  - **Código**: `500 Internal Server Error` en caso de error interno.
 
 - **Ejemplo de Uso**:
 
@@ -210,92 +209,85 @@ A continuación se presentan y describen como usar los enpoints auxiliares del s
       "comentario": "Muy útil",
       "mensaje": "Consulta realizada",
       "respuesta": "Respuesta del asistente",
-      "historial": [("user", "mensaje_usuario_1"), ("ai", "respuesta_ai_1")],
+      "historial": [
+        {"role": "user", "message": "mensaje_usuario_1"},
+        {"role": "ai", "message": "respuesta_ai_1"}
+      ],
       "endpoint": "API_docs"
     }'
   ```
 
 ## Asistentes
 
-Cada asistente es levantado en el servidor como un RemoteRunnable de LangServe ([https://python.langchain.com/docs/langserve/](https://python.langchain.com/docs/langserve/)). 
+Cada asistente es levantado en el servidor como un `RemoteRunnable` de LangServe ([https://python.langchain.com/docs/langserve/](https://python.langchain.com/docs/langserve/)).
 
+### Asistentes Disponibles
 
-### Asistentes disponibles:
+Estos son los agentes que están disponibles una vez que el servidor está en ejecución.
 
-Estos son los agentes que quedan dispoinbles una vez que el servidor se levanta.
+#### API Docs
 
-#### Api Docs
-
-- descripción: Asistente que responde sobre consultas de la API de BTServices
-- path: `/API_docs`
-
+- **Descripción**: Asistente que responde sobre consultas de la API de BTServices.
+- **Path**: `/API_docs`
 
 #### Migración
 
-- descripción: Asistente que responde sobre consultas el proceso de migración a Bantotal.
-- path: `/migracion`
+- **Descripción**: Asistente que responde sobre consultas del proceso de migración a Bantotal.
+- **Path**: `/migracion`
 
 #### Pseudo Código
 
-- descripción: Asistente que ayuda a entender código genexus.
-- path: `/pseudo_codigo`
+- **Descripción**: Asistente que ayuda a entender código GeneXus.
+- **Path**: `/pseudo_codigo`
 
 #### Requerimientos
 
-- descripción: Asistente que se le sube un requermiento y permite hacerle preguntas.
-- path: `/requerimientos`
+- **Descripción**: Asistente al que se le sube un requerimiento y permite hacerle preguntas.
+- **Path**: `/requerimientos`
 
-
-(LOS DE ABAJO ESTAN EN VESRION BETA)
+#### Nota: Los siguientes asistentes están en versión BETA.
 
 #### Core
 
-- descripción: Asistente que responde sobre consultas de los manuales de usuario de BTCore
-- path: `/core`
-
-
+- **Descripción**: Asistente que responde sobre consultas de los manuales de usuario de BTCore.
+- **Path**: `/core`
 
 #### Capacitación
 
-- descripción: Asistente que responde a partir de videos de capacitación Bantotal
-- path: `/capacitacion`
-
+- **Descripción**: Asistente que responde a partir de videos de capacitación Bantotal.
+- **Path**: `/capacitacion`
 
 #### Instalación
 
-- descripción: Asistente que responde sobre los manuales de instalador de BTCore.
-- path: `/instalador`
-
+- **Descripción**: Asistente que responde sobre los manuales del instalador de BTCore.
+- **Path**: `/instalador`
 
 ### Definición de Asistentes
 
-Los asistentes están definidos dentro de la carpeta `asistentes`. La carpeta sigue la siguiente estructura
+Los asistentes están definidos dentro de la carpeta `asistentes`. La carpeta sigue la siguiente estructura:
 
 - `asistentes/`
-    - `asistente1/`
-    - `asistente2/`
-    - ...
-    - asistentes.py
-    - src.py
+  - `asistente1/`
+  - `asistente2/`
+  - ...
+  - `asistentes.py`
+  - `src.py`
 
-En cada carpeta `asistente_i/` se encuentran los prompts y tools que definen el asistente. Dentro de esta carpeta se detalla el funcionamiento de las herramientas y prompts.  
+En cada carpeta `asistente_i/` se encuentran los prompts y herramientas que definen el asistente. Dentro de esta carpeta se detalla el funcionamiento de las herramientas y prompts.
 
-El archivo asistentes.py levanta los prompts y tools de cada asistente y lo genera. Estos luego son importados y levantados en el servidor como RemoteRunnable.
+El archivo `asistentes.py` carga los prompts y herramientas de cada asistente y los genera. Estos luego son importados y ejecutados en el servidor como `RemoteRunnable`.
 
-El archivo src.py contiene modificaciones a las clases bases de langchain de asistentes utilizadas en este proyecto.
+El archivo `src.py` contiene modificaciones a las clases base de asistentes de LangChain utilizadas en este proyecto.
 
+## Uso de los Asistentes
 
+El servidor expone los asistentes como `RemoteRunnable`. Para utilizarlos, es necesario iniciar un cliente y ejecutarlos como si se estuvieran corriendo localmente.
 
-## Uso de los Asistentes:
+### Iniciar Cliente
 
-El servidor deja lavantado los asistentes como RemoteRunnables. Para utilizar estos asistentes es necesario levantar un cliente y ejecutarlos como si se estuviesen corriendo localmente.
+En primer lugar, es necesario iniciar un cliente que se conecte con el asistente remoto.
 
-
-### Levantar Cliente
-
-En primer lugar es necesario leventar un cliente que se conecte con el asistente remoto.
-
-#### python
+#### Python
 
 ```python
 from langserve import RemoteRunnable
@@ -303,7 +295,7 @@ from langserve import RemoteRunnable
 remoteChain = RemoteRunnable("https://your_hostname.com/path")
 ```
 
-#### javascript
+#### JavaScript
 
 ```javascript
 import { RemoteRunnable } from "@langchain/core/runnables/remote";
@@ -313,46 +305,45 @@ const remoteChain = new RemoteRunnable({
 });
 ```
 
-### Llamar a asistente
+### Llamar al Asistente
 
-Luego de levantado el cliente, los asistentes se pueden utilizar como si estuviesen siendo ejecutados localmente. Por más información de como utilizar asistentes se deja referencia a langchain. [https://python.langchain.com/v0.1/docs/modules/agents/quick_start/](https://python.langchain.com/v0.1/docs/modules/agents/quick_start/)
+Una vez iniciado el cliente, los asistentes se pueden utilizar como si se estuviesen ejecutando localmente. Para más información sobre cómo utilizar asistentes, consulta la documentación de LangChain: [https://python.langchain.com/v0.1/docs/modules/agents/quick_start/](https://python.langchain.com/v0.1/docs/modules/agents/quick_start/)
 
-#### python
+#### Python
 
 ```python
 params_in = {"input": "Hola", "chat_history": []}
-config = {"configurable":{"user_id": "1234"}}
+config = {"configurable": {"user_id": "1234"}}
 
-# Con metodo Invoke
-respuesta = remoteChain.invoke(params_in,config=config)
+# Con método invoke
+respuesta = remoteChain.invoke(params_in, config=config)
 print(respuesta)
 
-# Con metodo streamEvents
-async for chunk in agent_executor.astream_events(params_in, version="v1",config=config):
+# Con método astream_events
+async for chunk in remoteChain.astream_events(params_in, config=config):
     print(chunk)
 ```
 
-#### javascript
+#### JavaScript
 
-```javascript 
-const params_in = {"input": "Hola", "chat_history": []}
-const config_invoke = {"configurable":{"user_id": "1234"}}
-const config_stream = {"configurable":{"user_id": "1234"}}
+```javascript
+const params_in = { input: "Hola", chat_history: [] };
+const config_invoke = { configurable: { user_id: "1234" } };
+const config_stream = { configurable: { user_id: "1234" } };
 
-
-// Con metodo Invoke
+// Con método invoke
 const result = await remoteChain.invoke(params_in, config_invoke);
 
-// Con metodo streamEvents
+// Con método streamEvents
 const logStream = await remoteChain.streamEvents(
   params_in,
   config_stream
-)
+);
 ```
+
 ## Más Información
 
-Por más información sobre el uso y despliegue de asistentes se deja referencia a la documentación de langchain y langserve:
+Para más información sobre el uso y despliegue de asistentes, consulta la documentación de LangChain y LangServe:
 
-Langchain: [https://python.langchain.com/docs/introduction/](https://python.langchain.com/docs/introduction/)
-
-Langserve: [https://python.langchain.com/docs/langserve/](https://python.langchain.com/docs/langserve/)
+- **LangChain**: [https://python.langchain.com/docs/introduction/](https://python.langchain.com/docs/introduction/)
+- **LangServe**: [https://python.langchain.com/docs/langserve/](https://python.langchain.com/docs/langserve/)

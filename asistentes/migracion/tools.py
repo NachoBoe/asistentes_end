@@ -1,36 +1,20 @@
 # IMPORTS
 
-## variables de entorno
-from dotenv import load_dotenv
-from pyprojroot import here
 import os
-## Tools langchain
 from langchain.pydantic_v1 import BaseModel, Field
 from langchain.tools import tool
-## Data local
 import unicodedata
 import dill
-## Azure Ai Search
 from azure.search.documents.models import VectorizedQuery
-from azure.search.documents.models import QueryType, QueryCaptionType, QueryAnswerType
 from azure.core.credentials import AzureKeyCredential
 from azure.search.documents import SearchClient
 from langchain_openai import AzureOpenAIEmbeddings
 import tiktoken
 
 
-# VARIABLES DE ENTORNO
+# LEVANTAR DATOS LOCALES
 
-# ## envs
-# dotenv_path = here() / ".env"
-# load_dotenv(dotenv_path=dotenv_path)
-
-
-
-# LEVANTAR DATOS
-
-
-# Levantar manuales
+## manuales
 path = "./asistentes/migracion/data/Manuales_migracion/"
 manuales = []
 for filename in os.listdir(path):
@@ -40,7 +24,7 @@ for m in manuales:
     if m.title == "Manual Proceso de Migracion":
         manual_general = m
 
-# Levantar bandejas
+## bandejas
 with open("./asistentes/migracion/data/manuales_object.pkl", 'rb') as f:
     manulales = dill.load(f)
 with open('./asistentes/migracion/data/bandejas.dill', 'rb') as file:
@@ -48,7 +32,7 @@ with open('./asistentes/migracion/data/bandejas.dill', 'rb') as file:
 
 
 
-# Levantar base vectorial campos
+# LEVANTAR DATOS AZURE
 embeddings = AzureOpenAIEmbeddings(model="text-embedding-ada-002")
 index_name = "migracion_campos"
 credential = AzureKeyCredential(os.getenv("AZURE_AI_SEARCH_API_KEY"))
@@ -66,12 +50,10 @@ def remover_tildes(input_str):
 
 
 
-
-
 # DEFINIR TOOLS
 
 
-## TOOL 1: Obtener registros a partir de una descripción
+## TOOL 1
 
 class desc_campo(BaseModel):
     description: str = Field(description="Descripton of the information content stored on the record to find.")
@@ -109,7 +91,8 @@ def retrieve_records_from_description(description:str, system:str="all"):
 
 
 
-# TOOL 2: Obtener información de un sistema en particular
+# TOOL 2
+
 class system_retriever_input(BaseModel):
     system: str = Field(description="System to retrieve information from. The possible systems are: ['Cuentas Vistas', 'Cuentas y Personas', 'Chequeras', 'Depósitos', 'Microfinanzas', 'Saldos Iniciales', 'Facultades', 'Líneas de Crédito','Garantías', 'Préstamos', 'Acuerdos de Sobregiro', 'Tarjetas de Débito', 'Descuentos']")
 
@@ -141,7 +124,8 @@ def retrieve_sistem_migration_information(system:str):
     return content
 
 
-# TOOL 3: Obtener información del proceso de migración
+# TOOL 3
+
 class general_retriever_input(BaseModel):
     retrieve_sec_1: bool = Field(description="Retrieve an overview of how the migration process works. ", default=False)
     retrieve_sec_2: bool = Field(description="Retrieve a detailed guide on how to execute the migration for a sistem. , such as create trays, execute control/dump programs, paralelize or use sql sentences, among other.", default=False)
@@ -178,7 +162,8 @@ def retrieve_migration_process_information(retrieve_sec_1: bool = False, retriev
 
 
 
-# TOOL 4: Obtener campos de una bandeja
+# TOOL 4
+
 class tray_retriever_input(BaseModel):
     tray_code: str = Field(description="Code of the tray that wants to be retrieved the fields from.")
     system: str = Field(description="System the tray belongs to. The possible systems are: ['Cuentas Vistas', 'Cuentas y Personas', 'Chequeras', 'Depósitos', 'Microfinanzas', 'Saldos Iniciales', 'Facultades', 'Líneas de Crédito','Garantías', 'Préstamos', 'Acuerdos de Sobregiro', 'Tarjetas de Débito', 'Descuentos']", default="all")
@@ -206,5 +191,4 @@ def retrieve_fields_from_tray(tray_code:str, system:str="all"):
     return content
 
 
-# DEFINIR AGENTE
 tools = [retrieve_migration_process_information, retrieve_sistem_migration_information, retrieve_fields_from_tray, retrieve_records_from_description]

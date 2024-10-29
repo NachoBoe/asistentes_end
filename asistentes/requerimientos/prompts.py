@@ -2,7 +2,7 @@
 from langchain_core.prompts import ChatPromptTemplate
 from langchain.prompts import MessagesPlaceholder
 
-
+# Prompt para asistnete de requerimientos
 
 chat_template = ChatPromptTemplate.from_messages(
     [
