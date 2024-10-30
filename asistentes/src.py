@@ -12,12 +12,17 @@ from langchain.callbacks.manager import (
     AsyncCallbackManagerForToolRun,
     CallbackManagerForToolRun,
 )
-## Anotaciones
+from langchain.callbacks.base import AsyncCallbackHandler
+from langchain_core.outputs import LLMResult
+
+## Generales
 from typing import Any, AsyncIterator, Dict, List, Optional, cast, Type
 from abc import ABC, abstractmethod
 from pydantic import BaseModel
-
-
+import tiktoken
+import requests
+from datetime import datetime
+import os
 
 # Clase heredada de BaseTool que permite propagar configuraciones a las Tools
 
@@ -94,8 +99,10 @@ class CustomAgentExecutor(Runnable):
                     configured_tools.append(tool.with_config({"configurable":configurable}))
                 else:
                     configured_tools.append(tool)
-            configured_agent = self.agent
-            # configured_agent = self.agent.with_config({"callbacks":[CostCalcCallbackHandler( "gpt-4o-mini", configurable["usuario"], configurable["asistente"])]})
+            if int(os.environ["LOGGEO_COSTO"]):
+                configured_agent = self.agent.with_config({"callbacks":[CostCalcCallbackHandler("gpt-4o-mini", configurable["usuario"], configurable["asistente"], os.environ["LOGGEO_COSTO_ENDPOINT"])]})
+            else:
+                configured_agent = self.agent
         else:
             configured_agent = self.agent
             configured_tools = self.tools
@@ -122,8 +129,10 @@ class CustomAgentExecutor(Runnable):
                     configured_tools.append(tool.with_config({"configurable":configurable}))
                 else:
                     configured_tools.append(tool)
-            configured_agent = self.agent
-            # configured_agent = self.agent.with_config({"callbacks":[CostCalcCallbackHandler( "gpt-4o-mini", configurable["usuario"], configurable["asistente"])]})
+            if int(os.environ["LOGGEO_COSTO"]):
+                configured_agent = self.agent.with_config({"callbacks":[CostCalcCallbackHandler("gpt-4o-mini", configurable["user_id"], configurable["asistente"], os.environ["LOGGEO_COSTO_ENDPOINT"])]})
+            else:
+                configured_agent = self.agent
         else:
             configured_agent = self.agent
             configured_tools = self.tools
@@ -140,46 +149,46 @@ class CustomAgentExecutor(Runnable):
 
 
 
-## CLASE PARA CALCULAR COSTOS (FALTA IMPLEMENTAR PARTES)
+## CLASE PARA LOGGEAR COSTOS DE LOS ASISTENTES
 
-# class CostCalcCallbackHandler(AsyncCallbackHandler):
-#     def __init__(self, model_name, usuario,asistente, *args, **kwargs):
-#         self.model_name = model_name
-#         self.encoding = tiktoken.encoding_for_model(model_name)
-#         self.endpoint = "http://127.0.0.1:8001/add_trace"
-#         self.usuario = usuario
-#         self.asistente = asistente
-#         super().__init__(*args, **kwargs)
+class CostCalcCallbackHandler(AsyncCallbackHandler):
+    def __init__(self, model_name, usuario,asistente, url, *args, **kwargs):
+        self.model_name = model_name
+        self.encoding = tiktoken.encoding_for_model(model_name)
+        self.endpoint = url + "/add_trace"
+        self.usuario = usuario
+        self.asistente = asistente
+        super().__init__(*args, **kwargs)
 
-#     async def on_llm_start(
-#         self, serialized: Dict[str, Any], prompts: List[str], **kwargs: Any
-#     ) -> None:
-#         for prompt in prompts:
-#             self.trace_prompt_tokens(len(self.encoding.encode(prompt)))
+    async def on_llm_start(
+        self, serialized: Dict[str, Any], prompts: List[str], **kwargs: Any
+    ) -> None:
+        for prompt in prompts:
+            self.trace_prompt_tokens(len(self.encoding.encode(prompt)))
 
-#     async def on_llm_end(self, response: LLMResult, **kwargs: Any) -> None:
-#         for generation_list in response.generations:
-#             for generation in generation_list:
-#                 self.trace_completion_tokens(len(self.encoding.encode(generation.text)))
+    async def on_llm_end(self, response: LLMResult, **kwargs: Any) -> None:
+        for generation_list in response.generations:
+            for generation in generation_list:
+                self.trace_completion_tokens(len(self.encoding.encode(generation.text)))
 
-#     def trace_prompt_tokens(self, prompt_tokens):
-#         trace_data = {
-#             "asistente": self.asistente,
-#             "usuario": self.usuario,
-#             "date": datetime.now().isoformat(),
-#             "tokens_in": prompt_tokens,
-#             "tokens_out": 0
-#         }
-#         response = requests.post(self.endpoint, json=trace_data)
+    def trace_prompt_tokens(self, prompt_tokens):
+        trace_data = {
+            "asistente": self.asistente,
+            "usuario": self.usuario,
+            "date": datetime.now().isoformat(),
+            "tokens_in": prompt_tokens,
+            "tokens_out": 0
+        }
+        response = requests.post(self.endpoint, json=trace_data)
 
 
-#     def trace_completion_tokens(self, completion_tokens):
-#         trace_data = {
-#             "asistente": self.asistente,
-#             "usuario": self.usuario,
-#             "date": datetime.now().isoformat(),
-#             "tokens_in": 0,
-#             "tokens_out": completion_tokens
-#         }
-#         response = requests.post(self.endpoint, json=trace_data)
+    def trace_completion_tokens(self, completion_tokens):
+        trace_data = {
+            "asistente": self.asistente,
+            "usuario": self.usuario,
+            "date": datetime.now().isoformat(),
+            "tokens_in": 0,
+            "tokens_out": completion_tokens
+        }
+        response = requests.post(self.endpoint, json=trace_data)
 

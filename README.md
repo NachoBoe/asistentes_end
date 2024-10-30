@@ -2,78 +2,108 @@
 
 Este proyecto incluye los asistentes y el código necesario para levantar un servidor con ellos.
 
+## Indice
+
+1. [Indice](#indice)
+2. [Ejecución Local](#ejecución-local)
+   - [Clona este repositorio](#clona-este-repositorio)
+   - [Instala las dependencias](#instala-las-dependencias)
+   - [Variables de Entorno](#variables-de-entorno)
+   - [Ejecuta el servidor](#ejecuta-el-servidor)
+3. [Despliegue en Azure](#despliegue-en-azure)
+4. [Endpoints Auxiliares del Servidor](#endpoints-auxiliares-del-servidor)
+   - [Salud del Servidor](#salud-del-servidor)
+   - [Subir Archivos](#subir-archivos)
+   - [Eliminar Archivos](#eliminar-archivos)
+   - [Enviar Feedback](#enviar-feedback)
+5. [Logueo de Costos](#servidor-para-logueo-de-costos)
+   - [Ejecutar el Servidor de Logueo](#ejecutar-el-servidor-de-logueo)
+   - [Endpoints del Servidor de Logueo](#endpoints-del-servidor-de-logueo)
+6. [Asistentes](#asistentes)
+   - [Asistentes Disponibles](#asistentes-disponibles)
+   - [Definición de Asistentes](#definición-de-asistentes)
+7. [Uso de los Asistentes](#uso-de-los-asistentes)
+   - [Iniciar Cliente](#iniciar-cliente)
+   - [Llamar al Asistente](#llamar-al-asistente)
+8. [Más Información](#más-información)
+
+
 ## Ejecución Local
 
 ### Clona este repositorio:
 
-   ```bash
-   git clone git@git.dlya.com.uy:ialabs/btasistentes.git
-   ```
+```bash
+git clone git@git.dlya.com.uy:ialabs/btasistentes.git
+```
 
 ### Instala las dependencias:
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+```bash
+pip install -r requirements.txt
+```
 
 ### Variables de Entorno
 
-   Asegúrate de tener un archivo `.env` en el directorio raíz con las siguientes variables:
+Asegúrate de tener un archivo `.env` en el directorio raíz con las siguientes variables:
 
-   - `LOCAL`: Indica si el servidor se ejecuta localmente (`1`) o en Azure (`0`).
-   - `LANGCHAIN_TRACING_V2`: Activa el tracing para Langsmith (`true` o `false`).
-   - `LANGCHAIN_ENDPOINT`: Endpoint para Langsmith.
-   - `LANGCHAIN_API_KEY`: Clave de API para Langsmith.
-   - `OPENAI_API_KEY`: Clave de API para Azure OpenAI (generación de texto).
-   - `AZURE_OPENAI_API_KEY`: Clave de API para Azure OpenAI (embeddings).
-   - `AZURE_OPENAI_ENDPOINT`: Endpoint para Azure OpenAI.
-   - `OPENAI_API_VERSION`: Versión de la API de OpenAI.
-   - `AZURE_AI_SEARCH_SERVICE_NAME`: Nombre del servicio Azure Search.
-   - `AZURE_AI_SEARCH_API_KEY`: Clave de API para Azure Search.
-   - `AZURE_STORAGE_KEY`: Clave de acceso para Azure Blob Storage.
+- `LOCAL`: Indica si el servidor se ejecuta localmente (`1`) o en Azure (`0`).
+- `LANGCHAIN_TRACING_V2`: Activa el tracing para Langsmith (`true` o `false`).
+- `LANGCHAIN_ENDPOINT`: Endpoint para Langsmith.
+- `LANGCHAIN_API_KEY`: Clave de API para Langsmith.
+- `OPENAI_API_KEY`: Clave de API para Azure OpenAI (generación de texto).
+- `AZURE_OPENAI_API_KEY`: Clave de API para Azure OpenAI (embeddings).
+- `AZURE_OPENAI_ENDPOINT`: Endpoint para Azure OpenAI.
+- `OPENAI_API_VERSION`: Versión de la API de OpenAI.
+- `AZURE_AI_SEARCH_SERVICE_NAME`: Nombre del servicio Azure Search.
+- `AZURE_AI_SEARCH_API_KEY`: Clave de API para Azure Search.
+- `AZURE_STORAGE_KEY`: Clave de acceso para Azure Blob Storage.
+- `LOGGEO_COSTO`: Indica si se loguea el costo (`1`) o no (`0`).
+- `LOGGEO_COSTO_ENDPOINT`: URL del servidor donde se loguea el costo.
 
-   **Ejemplo de archivo `.env`:**
+**Ejemplo de archivo `.env`:**
 
-   ```ini
-   # Indica si se corre localmente (1) o en Azure (0)
-   LOCAL=1
+```ini
+# Indica si se corre localmente (1) o en Azure (0)
+LOCAL=1
 
-   # Langsmith para el tracing
-   LANGCHAIN_TRACING_V2=true
-   LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
-   LANGCHAIN_API_KEY=tu_langchain_api_key
+# Langsmith para el tracing
+LANGCHAIN_TRACING_V2=true
+LANGCHAIN_ENDPOINT=https://api.smith.langchain.com
+LANGCHAIN_API_KEY=tu_langchain_api_key
 
-   # Azure OpenAI para generación de texto
-   OPENAI_API_KEY=tu_openai_api_key
+# Azure OpenAI para generación de texto
+OPENAI_API_KEY=tu_openai_api_key
 
-   # Azure OpenAI para embeddings
-   AZURE_OPENAI_API_KEY=tu_azure_openai_api_key
-   AZURE_OPENAI_ENDPOINT=tu_azure_openai_endpoint
-   OPENAI_API_VERSION="2023-12-01-preview"
+# Azure OpenAI para embeddings
+AZURE_OPENAI_API_KEY=tu_azure_openai_api_key
+AZURE_OPENAI_ENDPOINT=tu_azure_openai_endpoint
+OPENAI_API_VERSION="2023-12-01-preview"
 
-   # Azure Search para herramientas que se usan en el asistente
-   AZURE_AI_SEARCH_SERVICE_NAME=tu_azure_search_service_name
-   AZURE_AI_SEARCH_API_KEY=tu_azure_search_api_key
+# Azure Search para herramientas que se usan en el asistente
+AZURE_AI_SEARCH_SERVICE_NAME=tu_azure_search_service_name
+AZURE_AI_SEARCH_API_KEY=tu_azure_search_api_key
 
-   # Azure Storage para guardar el feedback
-   AZURE_STORAGE_KEY=tu_azure_storage_key
-   ```
+# Azure Storage para guardar el feedback
+AZURE_STORAGE_KEY=tu_azure_storage_key
 
-   **Nota:** Reemplaza `tu_langchain_api_key`, `tu_openai_api_key`, `tu_azure_openai_api_key`, `tu_azure_search_api_key` y `tu_azure_storage_key` con tus claves de API reales. Asegúrate de mantener estas claves seguras y no compartirlas públicamente.
+# Loggeo de costo
+LOGGEO_COSTO=1
+LOGGEO_COSTO_ENDPOINT=http://127.0.0.1:8001
+```
+
+**Nota:** Reemplaza `tu_langchain_api_key`, `tu_openai_api_key`, `tu_azure_openai_api_key`, `tu_azure_search_api_key`, `tu_azure_storage_key` y demás claves con tus valores reales. Asegúrate de mantener estas claves seguras y no compartirlas públicamente.
 
 ### Ejecuta el servidor:
 
-   ```bash
-   python servidor.py
-   ```
+```bash
+python servidor.py
+```
 
-   El servidor quedará corriendo en `http://localhost:8000`.
+El servidor quedará corriendo en `http://localhost:8000`.
 
 ## Despliegue en Azure
 
-Este servidor también está desplegado en Azure y puede ser accedido en la siguiente URL:
-
-[https://btasistentes.azurewebsites.net/](https://btasistentes.azurewebsites.net/)
+Este servidor también está desplegado en Azure y puede ser accedido en  [https://btasistentes.azurewebsites.net/](https://btasistentes.azurewebsites.net/)
 
 ## Endpoints Auxiliares del Servidor
 
@@ -216,6 +246,78 @@ A continuación se presentan y describen cómo usar los endpoints auxiliares del
       "endpoint": "API_docs"
     }'
   ```
+
+## Servidor para Logueo de Costos
+
+Se tiene implementada una funcionalidad que permite registrar los costos asociados al uso de los asistentes. Esta permite mantener un registro de la cantidad de tokens utilizados por cliente para cada asistente. 
+
+Se deja disponible un ejemplo de servidor para hacer uso de esta funcionalidad. Para el funcionamiento correcto asegurarse que el servidor de asistentes fue levantado con las variables de entorno:
+
+- `LOGGEO_COSTO`: `1`
+- `LOGGEO_COSTO_ENDPOINT`: `http://127.0.0.1:8001`
+
+
+Se ha agregado al proyecto un ejemplo de servidor sencillo (`cliente-servidor.py`) que recibe y almacena los registros de costos. Este servidor se ejecuta localmente y está configurado para escuchar en el puerto `8001`.
+
+El servidor está implementado utilizando FastAPI y SQLAlchemy para manejar solicitudes y almacenar los datos en una base de datos SQLite.
+
+- **Funcionalidades:**
+  - **Agregar Registro de Costo:** Recibe datos sobre el asistente utilizado, el usuario, la fecha y los tokens de entrada y salida.
+  - **Ver Registros de Costos:** Permite visualizar todos los registros almacenados en formato JSON o a través de una interfaz HTML simple.
+
+### Ejecutar el Servidor de Logueo
+
+1. **Instalar Dependencias:**
+
+   Asegúrate de tener instaladas las siguientes dependencias:
+
+   ```bash
+   pip install fastapi sqlalchemy uvicorn
+   ```
+
+2. **Ejecutar el Servidor:**
+
+   Ejecuta el script `cost_server.py`:
+
+   ```bash
+   python cost_server.py
+   ```
+
+   El servidor se ejecutará en `http://127.0.0.1:8001`.
+
+### Endpoints del Servidor de Logueo
+
+- **Agregar Registro de Costo:**
+
+  - **URL**: `/add_trace`
+  - **Método**: `POST`
+  - **Descripción**: Permite agregar un nuevo registro de costo.
+  - **Cuerpo de la Solicitud** (JSON):
+
+    ```json
+    {
+      "asistente": "nombre_del_asistente",
+      "usuario": "id_del_usuario",
+      "date": "2023-10-01T12:00:00",
+      "tokens_in": 100,
+      "tokens_out": 150
+    }
+    ```
+
+- **Ver Registros de Costos (JSON):**
+
+  - **URL**: `/view_traces`
+  - **Método**: `GET`
+  - **Descripción**: Devuelve todos los registros de costos en formato JSON.
+
+- **Ver Registros de Costos (HTML):**
+
+  - **URL**: `/`
+  - **Método**: `GET`
+  - **Descripción**: Muestra una tabla HTML con todos los registros de costos.
+
+Por lo tanto, accediendo en el navegador a la url http://127.0.0.1:8001 se podra ver el loggeo de los traces.
+
 
 ## Asistentes
 
